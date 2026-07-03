@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <meta charset="UTF-8" />
 <!-- Import Webcomponents polyfill for older browsers -->
 <link rel="icon" type="image/png" href="static/favicon.png" />
@@ -8,17 +8,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords" content="visualización,grafos,machine learning,javascript">
+  <meta name="keywords" content="visualization,graphs,machine learning,javascript">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Coem proyector de relaciones - Visualización de relaciones de autores">
-  <meta property="og:description" content="relaciones de Autores en Grafos.">
-  <meta property="og:url" content="https://estevefact.github.io/authorToAuthor3D.html">
+  <meta property="og:title" content="Coem Author Relationship Explorer">
+  <meta property="og:description" content="Explore author relationships in interactive graphs.">
+  <meta property="og:url" content="https://projectcoem.github.io/authorToAuthor3DSmall.html">
   <meta property="og:image"
     content="https://raw.githubusercontent.com/Estevefact/Estevefact.github.io/main/preview.png">
 
   <meta name="twitter:card" value="summary_large_image">
-  <meta name="twitter:title" content="Coem proyector de relaciones - Visualización de relaciones de autores">
-  <meta name="twitter:description" content="Visualice relaciones de Autores en Grafos.">
+  <meta name="twitter:title" content="Coem Author Relationship Explorer">
+  <meta name="twitter:description" content="Visualice Explore author relationships in interactive graphs.">
   <meta name="twitter:url" content="">
   <meta name="twitter:image"
     content="https://raw.githubusercontent.com/Estevefact/Estevefact.github.io/main/preview.png">
@@ -29,8 +29,8 @@
   <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT">
   <meta http-equiv="pragma" content="no-cache">
 
-  <meta name="author" content="Esteban Velásquez y Agustín Vallejo">
-  <title>Proyector de links de Autores literarios</title>
+  <meta name="author" content="Esteban Velásquez and Agustín Vallejo">
+  <title>Literary Author Relationship Explorer</title>
   <style>
     body {
       margin: 0;
@@ -268,7 +268,11 @@
       z-index: 1;
     }
 
-    .dropdown-content span {
+    .dropdown-content button {
+      appearance: none;
+      border: 0;
+      width: 100%;
+      text-align: left;
       color: black;
       padding: 12px 16px;
       text-decoration: none;
@@ -276,11 +280,12 @@
       cursor: pointer;
     }
 
-    .dropdown-content span:hover {
+    .dropdown-content button:hover,
+    .dropdown-content button:focus {
       background-color: #ddd;
     }
 
-    .dropdown:hover .dropdown-content {
+    .dropdown-content:not([hidden]) {
       display: block;
     }
 
@@ -807,12 +812,13 @@
       }
     }
   </style>
+  <link rel="stylesheet" href="site_chrome.css?v=2">
 </head>
 
-<body>
+<body class="author-map-page">
   <div id="appbar">
     <div id="title-1">
-      Cuentos Autores
+      Story Authors
       <button id="toggle-popup-btn" onclick="togglePopup();" title="Toggle Popup">
         Ver Autor
       </button>
@@ -820,23 +826,16 @@
     <div class="center-section">
       <img src="static/Coem.png" alt="Logo" />
     </div>
-    <div class="dropdown-2 Stories-Authors-btn" id="dropdown-general">
-      <button class="dropbtn-general" id="Stories-Authors-btn"> Explorar Coem </button>
-      <div class="dropdown-content-2">
-        <span data-filter="stories-authors" onclick="window.location.href='/authorToAuthor3D.html'">Ver todos los
-          Autores
-        </span>
-        <span data-filter="stories-embeddings" onclick="window.location.href='/embeddings.html'"> Ver Embeddings de
-          Cuentos
-        </span>
-        <span data-filter="Poems" onclick="window.location.href='/poems-info.html'"> Explorar Poemas
-        </span>
-        <span data-filter="Autores" onclick="window.location.href='/authorToAuthor3DSmall_english.html'"> Explorar
-          cuentos en inglés
-        </span>
-      </div>
-      </button>
-    </div>
+    <details class="site-menu">
+      <summary>Main menu</summary>
+      <nav aria-label="Main menu">
+        <a href="index.html">Home</a>
+        <a href="stories-info.html">Stories</a>
+        <a href="poems-info.html">Poems</a>
+        <a href="authorToAuthor3D.html">All Authors</a>
+        <a href="embeddings.html">Embeddings</a>
+      </nav>
+    </details>
   </div>
 
   <div id="container">
@@ -846,31 +845,33 @@
   <div id="popup">
     <div id="search-container">
       <div class="dropdown">
-        <button class="dropbtn" id="filter-button"> Filtrar por Nombre</button>
-        <div class="dropdown-content">
-          <span data-filter="id">Nombre</span>
-          <span data-filter="country">País</span>
-          <span data-filter="birth_year">Año de nacimientos</span>
-          <span data-filter="death_year">Año de muerte</span>
-          <span data-filter="genre">Género</span>
+        <button class="dropbtn" id="filter-button" type="button" aria-haspopup="menu"
+          aria-controls="author-filter-menu" aria-expanded="false">Filter by Name</button>
+        <div class="dropdown-content" id="author-filter-menu" role="menu" hidden>
+          <button type="button" role="menuitemradio" aria-checked="true" data-filter="id">Name</button>
+          <button type="button" role="menuitemradio" aria-checked="false" data-filter="country">Country</button>
+          <button type="button" role="menuitemradio" aria-checked="false" data-filter="birth_year">Birth Year</button>
+          <button type="button" role="menuitemradio" aria-checked="false" data-filter="death_year">Death Year</button>
+          <button type="button" role="menuitemradio" aria-checked="false" data-filter="genre">Genre</button>
         </div>
       </div>
-      <input type="text" id="author-search" placeholder="Buscar a un Autor...">
+      <input type="text" id="author-search" placeholder="Search for an author..." role="combobox"
+        aria-autocomplete="list" aria-controls="autocomplete-container" aria-expanded="false">
       <i id="search-icon" class="fas fa-search"></i>
-      <div id="autocomplete-container"></div>
+      <div id="autocomplete-container" role="listbox" aria-label="Matching authors"></div>
     </div>
     <div id="author-info-container">></div>
     <button id="follow-author-btn">Seguir Autor</button>
     <div id="stories-authors-container">
-      <h3>Cuentos</h3>
+      <h3>Stories</h3>
       <ul id="stories-list"></ul>
     </div>
     <div id="top-authors-container">
-      <h3>Top 5 Autores relacionados</h3>
+      <h3>Top 5 Related Authors</h3>
       <ul id="top-authors-list"></ul>
     </div>
     <div id="stories-suggested">
-      <h3>Top 5 Cuentos relacionados</h3>
+      <h3>Top 5 Related Stories</h3>
       <ul id="top-stories-list"></ul>
     </div>
     <form id="donate" action="https://www.paypal.com/donate" method="post" target="_top">
@@ -881,6 +882,8 @@
     </form>
   </div>
   <iframe src="author_info_smaller.html" id="iframeA" style="display:none;"></iframe>
+  <script src="author_similarity.js"></script>
+  <script src="map_controls.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
   <script src="static/particleDraw.js"></script>
 
@@ -899,17 +902,18 @@
       if (popup.style.display === "none" || popup.style.display === "") {
         popup.style.display = "flex";
         popup.style.width = "25%;";
-        toggleLink.textContent = "Ocultar Info Autor";
+        toggleLink.textContent = "Hide Author Info";
         container.style.width = "calc(100% - 25%)";
         container.style.marginLeft = "25%";
 
         loadAuthorInfo();
       } else {
         popup.style.display = "none";
-        toggleLink.textContent = "Mostrar información Autor";
+        toggleLink.textContent = "Show Author Info";
         container.style.width = "100%";
         container.style.marginLeft = "0";
       }
+      requestAnimationFrame(resizeGraphToContainer);
     }
     async function updateAudioSource(audio) {
       let audioUrl = `/static/${audio}`;
@@ -961,7 +965,7 @@
             );
           document.getElementById("author-info-container").innerHTML =
             rendered;
-          updateAudioSource(`audios_es/${story.id}.mp3`);
+          updateAudioSource(`audios_en/${story.id}.mp3`);
           resetAuthorImage(author.image); // Defined in particleDraw.js
           updateTopAuthors(author, gData);
           updateStories(author);
@@ -997,7 +1001,7 @@
           if (author.stories && Object.keys(author.stories).length > 0) {
             firstStoryId = Object.keys(author.stories)[0];  // Get the first story key
           }
-          updateAudioSource(`audios_es/${firstStoryId}.mp3`);
+          updateAudioSource(`audios_en/${firstStoryId}.mp3`);
           resetAuthorImage(author.image); // Defined in particleDraw.js
           updateTopAuthors(author, gData);
           updateStories(author);
@@ -1063,7 +1067,7 @@
           event.preventDefault();
           // Add your desired behavior when a story is clicked
           console.log(`Story ID: ${storyId}`);
-          updateAudioSource(`audios_es/${storyId}.mp3`);
+          updateAudioSource(`audios_en/${storyId}.mp3`);
           popup.scrollTo({ top: 0, behavior: 'smooth' });
           document.getElementById('exampleStory').textContent = storyTitle;
         });
@@ -1075,51 +1079,36 @@
     };
 
 
+    let authorEmbeddingIndex = {};
+    let storyEmbeddingIndex = {};
+
     function updateTopAuthors(node, gData) {
       const topAuthorsList = document.getElementById('top-authors-list');
       topAuthorsList.innerHTML = '';
-
-      let neighbors;
-
-      if (node.neighbors && Array.isArray(node.neighbors) && node.neighbors.length > 0) {
-        neighbors = node.neighbors.map(neighbor => ({
-          ...neighbor,
-          linkCount: neighbor.links.length
-        }));
-      } else {
-        console.error("Node neighbors are not defined or not an array. Adding a random neighbor.");
-        const randomNode = gData.nodes[Math.floor(Math.random() * gData.nodes.length)];
-        neighbors = [randomNode];
-      };
-
-      const topAuthors = neighbors.sort((a, b) => b.linkCount - a.linkCount);
-      // const topAuthors = neighbors; // By sorting we never get to smaller authors
-
-      // Leave uniques
-      const uniqueAuthors = [];
-      topAuthors.forEach(author => {
-        if (!uniqueAuthors.find(a => a.id === author.id)) {
-          uniqueAuthors.push(author);
-        }
-      });
-
-      // Take top 5
-      const topFiveAuthors = uniqueAuthors.slice(0, 5);
-
-      topFiveAuthors.forEach(author => {
+      const authorsById = new Map(gData.nodes.map(author => [author.id, author]));
+      const recommendations = AuthorSimilarity.neighborsFor(
+        node.id, authorEmbeddingIndex, authorsById, 5
+      );
+      if (!recommendations.length) {
+        const item = document.createElement('li');
+        item.textContent = 'There are not enough stories with embeddings to calculate similarity.';
+        topAuthorsList.appendChild(item);
+      }
+      recommendations.forEach(recommendation => {
+        const relatedAuthor = recommendation.author;
         const listItem = document.createElement('li');
-        const listLink = document.createElement('a'); // Correctly create the 'a' element
-        listLink.textContent = `${author.id}`;
-        listLink.href = "#"; // Add href to make it a link
+        const listLink = document.createElement('a');
+        listLink.textContent = AuthorSimilarity.recommendationLabel(recommendation, relatedAuthor);
+        listLink.href = "#";
         listLink.addEventListener('click', (event) => {
-          event.preventDefault(); // Prevent default link behavior
-          setAuthor(author);
-          updateStories(author);
-          updateTopStories(author, gData);
+          event.preventDefault();
+          setAuthor(relatedAuthor);
+          updateStories(relatedAuthor);
+          updateTopStories(relatedAuthor, gData);
         });
-        listItem.appendChild(listLink); // Append the link to the list item
-        listLink.classList.add('top-authors-list');// Append the link to the list item
-        topAuthorsList.appendChild(listItem); // Append the list item to the list
+        listItem.appendChild(listLink);
+        listLink.classList.add('top-authors-list');
+        topAuthorsList.appendChild(listItem);
       });
     }
 
@@ -1127,86 +1116,40 @@
       const topStoriesList = document.getElementById('top-stories-list');
       topStoriesList.innerHTML = '';
 
-      let neighbors;
-
-      if (node.neighbors && Array.isArray(node.neighbors) && node.neighbors.length > 0) {
-        neighbors = node.neighbors.map(neighbor => ({
-          ...neighbor,
-          linkCount: neighbor.links.length
-        }));
-      } else {
-        console.error("Node neighbors are not defined or not an array. Adding a random neighbor.");
-        const randomNode = gData.nodes[Math.floor(Math.random() * gData.nodes.length)];
-        neighbors = [randomNode];
-      }
-
-      const topAuthors = neighbors.sort((a, b) => b.linkCount - a.linkCount);
-
-      // Leave uniques
-      const uniqueAuthors = [];
-      topAuthors.forEach(author => {
-        if (!uniqueAuthors.find(a => a.id === author.id)) {
-          uniqueAuthors.push(author);
-        }
-      });
-
-      const stories = [];
-
-      // Select 5 stories from linked authors or any 5 at random if none
-      if (uniqueAuthors.length > 0) {
-        uniqueAuthors.forEach(author => {
-          const storyIds = Object.keys(author.stories);
-          const randomStoryId = storyIds[Math.floor(Math.random() * storyIds.length)];
-          const story = {
-            id: randomStoryId,
-            title: author.stories[randomStoryId],
-            authorId: author.id,
-            authornew: author
-          };
-          stories.push(story);
+      const storyCatalog = new Map();
+      gData.nodes.forEach(storyAuthor => {
+        Object.entries(storyAuthor.stories || {}).forEach(([id, title]) => {
+          storyCatalog.set(id, { id, title, authornew: storyAuthor });
         });
-      }
-      else {
-        const authorsTotal = gData.nodes.map(node => node.id);
-        const randomAuthorId = authorsTotal[Math.floor(Math.random() * authorsTotal.length)];
-        const newAuthor = gData.nodes.find(node => node.id === randomAuthorId);
-        const storyIdsU = Object.keys(newAuthor.stories)
-        const storyU = {
-          id: storyIdsU,
-          title: newAuthor.stories[storyIdsU],
-          authorId: newAuthor.id,
-          authornew: author
-        };
-        stories.push(storyU);
-      }
-
-      if (stories.length == 0) {
-        const authorsTotal = gData.nodes.map(node => node.id);
-        const randomAuthorId = authorsTotal[Math.floor(Math.random() * authorsTotal.length)];
-        const newAuthor = gData.nodes.find(node => node.id === randomAuthorId);
-        const storyIdsU = Object.keys(newAuthor.stories)
-        const storyU = {
-          id: storyIdsU,
-          title: newAuthor.stories[storyIdsU],
-          authorId: newAuthor.id,
-          authornew: author
-        };
-        stories.push(storyU);
+      });
+      const seen = new Set(Object.keys(node.stories || {}));
+      const stories = Object.keys(node.stories || {}).flatMap(storyId =>
+        (storyEmbeddingIndex[storyId] || []).map(entry => ({
+          ...storyCatalog.get(entry.id),
+          similarity: entry.similarity
+        }))
+      ).filter(story => story.id && !seen.has(story.id) && seen.add(story.id))
+        .sort((a, b) => Number(b.similarity) - Number(a.similarity))
+        .slice(0, 5);
+      if (!stories.length) {
+        const item = document.createElement('li');
+        item.textContent = 'No similar stories are available.';
+        topStoriesList.appendChild(item);
       }
 
       stories.forEach(story => {
         const listItem = document.createElement('li');
-        const listLink = document.createElement('a'); // Correctly create the 'a' element
-        listLink.textContent = `${story.title}`;
-        listLink.href = "#"; // Add href to make it a link
+        const listLink = document.createElement('a');
+        listLink.textContent = `${story.title} · ${AuthorSimilarity.storyMetricLabel(story)}`;
+        listLink.href = "#";
         listLink.addEventListener('click', (event) => {
-          event.preventDefault(); // Prevent default link behavior
+          event.preventDefault();
           updateTopStories(story.authornew, gData);
           update_authorrest(story.authornew, story);
         });
-        listItem.appendChild(listLink); // Append the link to the list item
-        listLink.classList.add('top-stories-list');// Append the link to the list item
-        topStoriesList.appendChild(listItem); // Append the list item to the list
+        listItem.appendChild(listLink);
+        listLink.classList.add('top-stories-list');
+        topStoriesList.appendChild(listItem);
       });
     }
 
@@ -1215,18 +1158,19 @@
     const highlightNodes = new Set();
     const highlightLinks = new Set();
     let graph = null; // Will be set Graph later
+    function resizeGraphToContainer() {
+      if (!graph) return;
+      const container = document.getElementById("container");
+      graph.width(container.clientWidth).height(container.clientHeight);
+    }
     function highlightNodeAndLinks(node) {
       highlightNodes.clear();
       highlightLinks.clear();
       if (node) {
         highlightNodes.add(node);
-        if (node.neighbors && Array.isArray(node.neighbors) && node.neighbors.length > 0) {
-          node.neighbors.forEach(neighbor => highlightNodes.add(neighbor));
-          node.links.forEach(link => highlightLinks.add(link));
-          updateHighlight();
-        } else {
-          console.error("Node neighbors not found");
-        }
+        (node.neighbors || []).forEach(neighbor => highlightNodes.add(neighbor));
+        (node.links || []).forEach(link => highlightLinks.add(link));
+        updateHighlight();
       }
       author = node;
     }
@@ -1245,7 +1189,7 @@
       var popup = document.getElementById("popup");
       var container = document.getElementById("container");
       var toggleLink = document.getElementById("toggle-popup-btn");
-      toggleLink.textContent = "Ocultar Info Autor";
+      toggleLink.textContent = "Hide Author Info";
       popup.style.display = "flex";
       container.style.marginLeft = "25%";
       container.style.width = "calc(100% - 25%)";
@@ -1264,7 +1208,14 @@
 
     let gData;
 
-    fetchJSON().then((gData) => {
+    Promise.all([
+      fetchJSON(),
+      fetch("static/authorEmbeddingNeighbors.json").then(response => response.json()),
+      fetch("static/storyEmbeddingNeighbors.json").then(response => response.json())
+    ]).then(([loadedGraph, loadedAuthorIndex, loadedStoryIndex]) => {
+      gData = loadedGraph;
+      authorEmbeddingIndex = loadedAuthorIndex;
+      storyEmbeddingIndex = loadedStoryIndex;
       // cross-link node objects
       gData.links.forEach((link) => {
         const a = gData.nodes.find(node => node.id === link.source);
@@ -1304,9 +1255,10 @@
         });
 
       graph = Graph;
-      const authorsTotal = gData.nodes.map(node => node.id);
-      const randomAuthorId = authorsTotal[Math.floor(Math.random() * authorsTotal.length)];
-      setAuthor(gData.nodes.find(node => node.id === randomAuthorId));
+      resizeGraphToContainer();
+      window.addEventListener("resize", resizeGraphToContainer);
+      const initialAuthor = gData.nodes.find(node => authorEmbeddingIndex[node.id]) || gData.nodes[0];
+      setAuthor(initialAuthor);
       updateTopAuthors(author, gData);
       updateStories(author);
       updateTopStories(author, gData);
@@ -1340,54 +1292,16 @@
 
       // Add click event listener to the button
       changeAuthorBtn.addEventListener('click', followAuthor);
-      // Implementing the search bar with autosuggest
-      const searchInput = document.getElementById('author-search');
-      const autocompleteContainer = document.getElementById('autocomplete-container');
-      const filterOptions = document.querySelectorAll('.dropdown-content span');
-      const filterButton = document.getElementById('filter-button');
-      let selectedFilter = 'id';
-
-      filterOptions.forEach(option => {
-        option.addEventListener('click', function () {
-          selectedFilter = this.dataset.filter;
-          const filterText = this.textContent;
-          filterButton.textContent = `Filtrar por ${filterText}`;
-          searchInput.placeholder = `Buscar por ${selectedFilter.replace('_', ' ')}...`;
-        });
-      });
-
-      searchInput.addEventListener('input', function () {
-        const query = this.value.toLowerCase();
-        autocompleteContainer.innerHTML = '';
-        if (query.length === 0) return;
-
-        const suggestions = gData.nodes.filter(node =>
-          (node[selectedFilter] && node[selectedFilter].toString().toLowerCase().includes(query))
-        );
-
-        suggestions.forEach(node => {
-          const suggestionItem = document.createElement('div');
-          suggestionItem.classList.add('autocomplete-suggestion');
-          const filterValue = node[selectedFilter] || '';
-          if (selectedFilter === 'id') {
-            suggestionText = `${node.id}`;
-          } else {
-            const filterValue = node[selectedFilter] || '';
-            suggestionText = `${node.id} (${filterValue})`;
-          }
-          suggestionItem.textContent = suggestionText;
-          suggestionItem.addEventListener('click', () => {
-            searchInput.value = node.id;
-            autocompleteContainer.innerHTML = '';
-            author = node;
-            loadAuthorInfo(node);
-            highlightNodeAndLinks(node);
-            followAuthor();
-            updateStories(node);
-            updateTopStories(node, gData);
-          });
-          autocompleteContainer.appendChild(suggestionItem);
-        });
+      MapControls.setup({
+        nodes: gData.nodes,
+        onSelect(node) {
+          author = node;
+          loadAuthorInfo(node);
+          highlightNodeAndLinks(node);
+          followAuthor();
+          updateStories(node);
+          updateTopStories(node, gData);
+        }
       });
     });
 

@@ -2,18 +2,18 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="keywords" content="visualización,embeddings,machine learning,javascript">
+  <meta name="keywords" content="visualization,embeddings,machine learning,javascript">
 
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Coem Proyector de embeddings - visualización de coemas en altas dimensiones">
-  <meta property="og:description" content="Visualice cuentos y poemas en altas dimensiones.">
+  <meta property="og:title" content="Coem Embedding Projector">
+  <meta property="og:description" content="Explore stories and poems in high-dimensional space.">
   <meta property="og:url" content="http://projector.tensorflow.org">
   <meta property="og:image"
     content="https://raw.githubusercontent.com/Estevefact/Estevefact.github.io/main/preview.png">
 
   <meta name="twitter:card" value="summary_large_image">
-  <meta name="twitter:title" content="Coem Proyector de embeddings - visualización de coemas en altas dimensiones">
-  <meta name="twitter:description" content="Visualice cuentos y poemas en altas dimensiones.">
+  <meta name="twitter:title" content="Coem Embedding Projector">
+  <meta name="twitter:description" content="Explore stories and poems in high-dimensional space.">
   <meta name="twitter:url" content="http://projector.tensorflow.org">
   <meta name="twitter:image"
     content="https://raw.githubusercontent.com/Estevefact/Estevefact.github.io/main/preview.png">
@@ -17395,9 +17395,9 @@ THE SOFTWARE.
             MARCADORES ([[savedStates.length]])
             <paper-icon-button icon="help" class="help-icon"></paper-icon-button>
             <paper-tooltip animation-delay="0" position="top" offset="0">
-              Abre este cajón para guardar un conjunto de vistas de la proyección,
-              incluyendo puntos seleccionados. Se puede guardar un archivo que contiene los
-              marcadores y luego cargarlo más tarde para verlos.
+              Open this panel to save a set of projection views,
+              including selected points. You can save a file containing the
+              bookmarks and load it later to view them.
             </paper-tooltip>
           </div>
           <div id="icon-container">
@@ -17413,7 +17413,7 @@ THE SOFTWARE.
           <div id="state-section">
             <template is="dom-if" if="[[!savedStates.length]]">
               <p id="no-bookmarks">
-                Sin marcadores aún, suba un archivo de marcador o añada uno nuevo dando click al "+" abajo.
+                No bookmarks yet. Upload a bookmark file or add one with the "+" button below.
 
             </template>
 
@@ -18214,7 +18214,7 @@ THE SOFTWARE.
         <div hidden$="[[!_hasChoices(colorOptions)]]">
           <div class="colorlabel-container">
 
-            <paper-dropdown-menu id="labelby" no-animations label="Etiquetar por">
+            <paper-dropdown-menu id="labelby" no-animations label="Label by">
               <paper-listbox attr-for-selected="value" class="dropdown-content" selected="{{selectedLabelOption}}"
                 slot="dropdown-content">
                 <template is="dom-repeat" items="[[labelOptions]]">
@@ -18225,7 +18225,7 @@ THE SOFTWARE.
               </paper-listbox>
             </paper-dropdown-menu>
 
-            <paper-dropdown-menu id="colorby" no-animations label="Color por">
+            <paper-dropdown-menu id="colorby" no-animations label="Color by">
               <paper-listbox attr-for-selected="value" class="dropdown-content" selected="{{selectedColorOptionName}}"
                 slot="dropdown-content">
                 <template is="dom-repeat" items="[[colorOptions]]">
@@ -18239,7 +18239,7 @@ THE SOFTWARE.
             </paper-dropdown-menu>
           </div>
           <div hidden$="[[!showForceCategoricalColorsCheckbox]]">
-            <paper-checkbox id="force-categorical-checkbox">Usar coloreado categórico</paper-checkbox>
+            <paper-checkbox id="force-categorical-checkbox">Use categorical coloring</paper-checkbox>
             <paper-icon-button icon="help" class="help-icon"></paper-icon-button>
             <paper-tooltip position="bottom" animation-delay="0" fit-to-visible-bounds>
               For metadata fields that have many unique values we use a gradient color map
@@ -18271,7 +18271,7 @@ THE SOFTWARE.
           </div>
 
           <div class="metadata-editor">
-            <paper-dropdown-menu no-animations label="Editar por">
+            <paper-dropdown-menu no-animations label="Edit by">
               <paper-listbox attr-for-selected="value" class="dropdown-content" slot="dropdown-content"
                 on-selected-item-changed="metadataEditorColumnChange" selected="{{metadataEditorColumn}}">
                 <template is="dom-repeat" items="[[metadataFields]]">
@@ -18289,21 +18289,21 @@ THE SOFTWARE.
         <div id="demo-data-buttons-container">
           <span id="publish-container" class="button-container">
             <paper-tooltip position="bottom" animation-delay="0" fit-to-visible-bounds>
-              Publicar la visualización de los embeddings y los datos.
+              Publish the embedding and data visualization.
             </paper-tooltip>
             <paper-button id="host-embedding" class="ink-button"
               onclick="projectorConfigDialog.open()">Publicar</paper-button>
           </span>
           <span class="button-container">
             <paper-tooltip position="bottom" animation-delay="0" fit-to-visible-bounds>
-              Descargar los metadatos con las modificaciones aplicadas.
+              Download metadata with the applied changes.
             </paper-tooltip>
             <paper-button class="ink-button" on-click="downloadMetadataClicked">Descargar</paper-button>
             <a href="#" id="downloadMetadataLink" hidden></a>
           </span>
           <span id="label-button" class="button-container">
             <paper-tooltip position="bottom" animation-delay="0" fit-to-visible-bounds>
-              Metadatos de las etiquetas seleccionadas.
+              Metadata for selected labels.
             </paper-tooltip>
             <paper-button class="ink-button" on-click="metadataEditorButtonClicked"
               disabled="[[metadataEditorButtonDisabled]]">Etiqueta</paper-button>
@@ -18412,14 +18412,14 @@ THE SOFTWARE.
                 </a>
               </div>
             </paper-dialog-scrollable>
-            <div class="dismiss-dialog-note">Clickea afuera para descartar.</div>
+            <div class="dismiss-dialog-note">Click outside to dismiss.</div>
           </paper-dialog>
         </div>
         <paper-checkbox id="normalize-data-checkbox" checked="{{normalizeData}}">
-          Esferizar datos
+          Spherize data
           <paper-icon-button icon="help" class="help-icon"></paper-icon-button>
           <paper-tooltip position="bottom" animation-delay="0" fit-to-visible-bounds>
-            Los datos se normalizan desplazando cada punto por el centroide y haciéndolo de
+            The data is normalized by shifting each point by the centroid and making it
             norma unitaria.
           </paper-tooltip>
         </paper-checkbox>
@@ -18430,7 +18430,7 @@ THE SOFTWARE.
               <td><span id="checkpoint-file"></span></td>
             </tr>
             <tr>
-              <td>Metadatos:</td>
+              <td>Metadata:</td>
               <td><span id="metadata-file"></span></td>
             </tr>
           </table>
@@ -18443,7 +18443,7 @@ THE SOFTWARE.
       (function (a) {
         a.DataPanelPolymer = a.PolymerElement({
           is: "vz-projector-data-panel", properties: {
-            selectedTensor: { type: String, observer: "_selectedTensorChanged" }, selectedRun: String, selectedColorOptionName: { type: String, notify: !0, observer: "_selectedColorOptionNameChanged" }, selectedLabelOption: { type: String, notify: !0, observer: "_selectedLabelOptionChanged" }, normalizeData: Boolean, showForceCategoricalColorsCheckbox: Boolean, metadataEditorInput: { type: String }, metadataEditorInputLabel: { type: String, value: "Marcar selección como" },
+            selectedTensor: { type: String, observer: "_selectedTensorChanged" }, selectedRun: String, selectedColorOptionName: { type: String, notify: !0, observer: "_selectedColorOptionNameChanged" }, selectedLabelOption: { type: String, notify: !0, observer: "_selectedLabelOptionChanged" }, normalizeData: Boolean, showForceCategoricalColorsCheckbox: Boolean, metadataEditorInput: { type: String }, metadataEditorInputLabel: { type: String, value: "Tag selection as" },
             metadataEditorInputChange: { type: Object }, metadataEditorColumn: { type: String }, metadataEditorColumnChange: { type: Object }, metadataEditorButtonClicked: { type: Object }, metadataEditorButtonDisabled: { type: Boolean }, downloadMetadataClicked: { type: Boolean }, superviseInput: { type: String }, superviseInputTyping: { type: Object }, superviseInputChange: { type: Object }, superviseInputLabel: { type: String, value: "Ignorar marcador" }, superviseColumn: { type: String }, superviseColumnChanged: { type: Object }, showSuperviseSettings: { type: Boolean, value: !1 }
           },
           observers: ["_generateUiForNewCheckpointForRun(selectedRun)"]
@@ -18472,7 +18472,7 @@ THE SOFTWARE.
             }; d.prototype.metadataEditorContext = function (e) { this.metadataEditorButtonDisabled = !e; this.projector && this.projector.metadataEditorContext(e, this.metadataEditorColumn) }; d.prototype.metadataEditorInputChange = function () {
               var e = this.metadataEditorColumn, g = this.metadataEditorInput, h = this.selectedPointIndices.length +
                 this.neighborsOfFirstPoint.length; 0 < h ? null != g && "" !== g.trim() ? this.spriteAndMetadata.stats.filter(function (k) { return k.name === e })[0].isNumeric && isNaN(+g) ? (this.metadataEditorInputLabel = "Label must be numeric", this.metadataEditorContext(!1)) : (0 === this.projector.dataSet.points.filter(function (k) { return k.metadata[e].toString() === g.trim() }).length ? this.metadataEditorInputLabel = "Tag " + h + " with new label" : this.metadataEditorInputLabel = "Tag " + h + " points as", this.metadataEditorContext(!0)) : (this.metadataEditorInputLabel =
-                  "Marcar selección como", this.metadataEditorContext(!1)) : (this.metadataEditorContext(!1), null != g && "" !== g.trim() ? this.metadataEditorInputLabel = "Select points to tag" : this.metadataEditorInputLabel = "Marcar selección como")
+                  "Tag selection as", this.metadataEditorContext(!1)) : (this.metadataEditorContext(!1), null != g && "" !== g.trim() ? this.metadataEditorInputLabel = "Select points to tag" : this.metadataEditorInputLabel = "Tag selection as")
             }; d.prototype.metadataEditorInputKeydown = function (e) { 13 === e.keyCode && this.metadataEditorButtonClicked(); e.stopPropagation() }; d.prototype.metadataEditorColumnChange = function () { this.metadataEditorInputChange() }; d.prototype.metadataEditorButtonClicked = function () {
               if (!this.metadataEditorButtonDisabled) {
                 var e =
@@ -19358,12 +19358,12 @@ THE SOFTWARE.
     <template>
       <div class="container">
         <div class="buttons">
-          <button class="button reset-filter">Mostrar todos los datos</button>
-          <button class="button set-filter">Aislar selección</button>
-          <button class="button clear-selection">Borrar selección</button>
+          <button class="button reset-filter">Show all data</button>
+          <button class="button set-filter">Isolate selection</button>
+          <button class="button clear-selection">Clear selection</button>
         </div>
         <div class="search-by">
-          <vz-projector-input id="search-box" label="Buscar"></vz-projector-input>
+          <vz-projector-input id="search-box" label="Search"></vz-projector-input>
           <paper-dropdown-menu no-animations label="by">
             <paper-listbox attr-for-selected="value" class="dropdown-content" selected="{{selectedMetadataField}}"
               slot="dropdown-content">
@@ -19404,10 +19404,10 @@ THE SOFTWARE.
         <div class="metadata-info" style="display: none">
           <div class="neighbors-options">
             <div class="slider num-nn">
-              <span class="option-label">Vecinos</span>
+              <span class="option-label">Neighbors</span>
               <paper-icon-button icon="help" class="help-icon"></paper-icon-button>
               <paper-tooltip position="bottom" animation-delay="0" fit-to-visible-bounds>
-                El número de vecinos (en el espacio seleccionado) que se mostrarán al hacer clic en un punto.
+                The number of neighbors (in the selected space) shown when clicking a point.
               </paper-tooltip>
               <paper-slider class="nn-slider" pin min="5" max="999" editable value="{{numNN}}"
                 on-change="updateNumNN"></paper-slider>
@@ -19731,7 +19731,7 @@ THE SOFTWARE.
 
             <div data-tab="umap" id="umap-tab" class="ink-tab projection-tab">UMAP</div>
             <paper-tooltip for="umap-tab" position="bottom" animation-delay="0" fit-to-visible-bounds>
-              Aproximación y proyección uniforme del manifold
+              Uniform Manifold Approximation and Projection
             </paper-tooltip>
 
             <div data-tab="tsne" id="tsne-tab" class="ink-tab projection-tab">t-SNE</div>
@@ -19741,13 +19741,13 @@ THE SOFTWARE.
 
             <div data-tab="pca" id="pca-tab" class="ink-tab projection-tab">PCA</div>
             <paper-tooltip for="pca-tab" position="bottom" animation-delay="0" fit-to-visible-bounds>
-              Análisis de componentes principales
+              Principal Component Analysis
             </paper-tooltip>
 
             <div data-tab="custom" id="custom-tab" class="ink-tab projection-tab"
               title="Linear projection of two custom vectors">Custom</div>
             <paper-tooltip for="custom-tab" position="bottom" animation-delay="0" fit-to-visible-bounds>
-              Buscar dos vectores con los cuales proyectar todos los puntos.
+              Find two vectors with which to project all points.
             </paper-tooltip>
 
           </div>
@@ -19756,7 +19756,7 @@ THE SOFTWARE.
 
           <div data-panel="umap" class="ink-panel-content">
             <div class="slider">
-              <label>Dimensión</label>
+              <label>Dimension</label>
               <div class="two-way-toggle">
                 <span>2D</span>
                 <paper-toggle-button id="umap-toggle" checked="{{umapIs3d}}">3D</paper-toggle-button>
@@ -19764,11 +19764,10 @@ THE SOFTWARE.
             </div>
             <div class="slider umap-neighbors">
               <label>
-                Vecinos
-                <paper-icon-button icon="help" class="help-icon"></paper-icon-button>
+                Neighbors                <paper-icon-button icon="help" class="help-icon"></paper-icon-button>
                 <paper-tooltip position="right" animation-delay="0" fit-to-visible-bounds>
-                  El número de vecinos más cercanos utilizados para calcular el conjunto
-                  simplicial difuso, que se utiliza para aproximar la forma general del colector.
+                  The number of nearest neighbors used to calculate the
+                  fuzzy simplicial set used to approximate the manifold’s overall shape.
                   El valor predeterminado es 15.
                 </paper-tooltip>
               </label>
@@ -19779,12 +19778,12 @@ THE SOFTWARE.
               <button id="run-umap" class="ink-button" title="Run UMAP" on-tap="runUmap">Run</button>
 
             <p id="umap-sampling" class="notice">
-              Para resultados más rápidos los datos serán muestreados hasta [[getUmapSampleSizeText()]] puntos.
+              For faster results, the data will be sampled down to [[getUmapSampleSizeText()]] puntos.
 
             <p>
               <iron-icon icon="book" class="book-icon"></iron-icon>
               <a target="_blank" rel="noopener" href="https://umap-learn.readthedocs.io/en/latest/how_umap_works.html">
-                Aprende más acerca de UMAP.
+                Learn more about UMAP.
               </a>
 
           </div>
@@ -19842,9 +19841,9 @@ THE SOFTWARE.
               <button class="pause-tsne ink-button" title="Pause t-SNE">Pause</button>
               <button class="perturb-tsne ink-button" title="Perturb t-SNE">Perturb</button>
 
-            <p>Iteración: <span class="run-tsne-iter">0</span>
+            <p>Iteration: <span class="run-tsne-iter">0</span>
             <p id="tsne-sampling" class="notice">
-              Para resultados más rápidos los datos serán muestreados hasta [[getTsneSampleSizeText()]] puntos.
+              For faster results, the data will be sampled down to [[getTsneSampleSizeText()]] puntos.
             <p>
               <iron-icon icon="book" class="book-icon"></iron-icon>
               <a target="_blank" href="http://distill.pub/2016/misread-tsne/">
@@ -20305,7 +20304,7 @@ THE SOFTWARE.
             <div class="ink-fabs">
               <paper-icon-button id="reset-zoom" class="ink-fab" alt="Reset zoom to fit all points"
                 icon="home"></paper-icon-button>
-              <paper-tooltip for="reset-zoom" position="left" animation-delay="0">Reset al zoom para ajustarlo todo
+              <paper-tooltip for="reset-zoom" position="left" animation-delay="0">Reset zoom to fit all
                 points</paper-tooltip>
             </div>
           </div>
@@ -20403,7 +20402,7 @@ THE SOFTWARE.
             }; d.prototype.onHover = function (e) {
               this.hoverPointIndex = e; var g = null; null != e && (e = this.dataSet.points[e], e.metadata[this.selectedLabelOption] && (g = e.metadata[this.selectedLabelOption].toString()));
               0 === this.selectedPointIndices.length && (this.statusBar.style.display = g ? null : "none", this.statusBar.innerText = g)
-            }; d.prototype.getScatterContainer = function () { return this.querySelector("#scatter") }; d.prototype.onSelectionChanged = function (e, g) { this.selectedPointIndices = e; this.neighborsOfFirstPoint = g; this.dataPanel.onProjectorSelectionChanged(e, g); e = this.selectedPointIndices.length + g.length; this.statusBar.innerText = e + " punto seleccionados"; this.statusBar.style.display = 0 < e ? null : "none" }; d.prototype.onProjectionChanged =
+            }; d.prototype.getScatterContainer = function () { return this.querySelector("#scatter") }; d.prototype.onSelectionChanged = function (e, g) { this.selectedPointIndices = e; this.neighborsOfFirstPoint = g; this.dataPanel.onProjectorSelectionChanged(e, g); e = this.selectedPointIndices.length + g.length; this.statusBar.innerText = e + " points selected"; this.statusBar.style.display = 0 < e ? null : "none" }; d.prototype.onProjectionChanged =
               function (e) { this.dataPanel.projectionChanged(e) }; d.prototype.setProjection = function (e) { this.projection = e; null != e && this.analyticsLogger.logProjectionChanged(e.projectionType); this.notifyProjectionChanged(e) }; d.prototype.notifyProjectionPositionsUpdated = function () { this.projectorScatterPlotAdapter.notifyProjectionPositionsUpdated() }; d.prototype.getCurrentState = function () {
                 var e = new a.State; e.projections = []; for (var g = 0; g < this.dataSet.points.length; g++) {
                   for (var h = this.dataSet.points[g], k = {}, l = Object.keys(h.projections),
@@ -20619,16 +20618,16 @@ THE SOFTWARE.
           <div class="icons">
             
             <div class="dropdown-2 Stories-Authors-btn" id="dropdown-general">
-            <button class="dropbtn-general" id="Stories-Authors-btn"> Explorar Cuentos o Poemas </button>
+            <button class="dropbtn-general" id="Stories-Authors-btn"> Explore Stories or Poems </button>
             <div class="dropdown-content-2">
               <span 
-              data-filter="stories-authors" onclick="window.location.href='/authorToAuthor3D.html'">Ver todos los Autores
+              data-filter="stories-authors" onclick="window.location.href='/authorToAuthor3D.html'">View All Authors
               </span>
               <span 
-              data-filter="stories-authors2" onclick="window.location.href='/authorToAuthor3DSmall.html'" > Ver Autores de Cuentos
+              data-filter="stories-authors2" onclick="window.location.href='/authorToAuthor3DSmall.html'" > View Story Authors
               </span>
               <span 
-              data-filter="Poems" onclick="window.location.href='/poems-info.html'" > Explorar Poemas
+              data-filter="Poems" onclick="window.location.href='/poems-info.html'" > Explore Poems
               </span>
             </div>
             </button>
@@ -20636,7 +20635,7 @@ THE SOFTWARE.
             <a title="Documentation" target="_blank" href="[[documentationLink]]">
               <paper-icon-button icon="help-outline"></paper-icon-button>
               <paper-tooltip position="bottom" animation-delay="0" fit-to-visible-bounds>
-                Abrir documentación
+                Open Documentation
               </paper-tooltip>
             </a>
             <a title="Report bug" target="_blank" href="[[bugReportLink]]">
@@ -20676,6 +20675,126 @@ THE SOFTWARE.
       margin: 0;
       width: 100%;
       height: 100%;
+    }
+
+    @media (max-width: 600px) {
+      html,
+      body {
+        height: auto;
+        min-height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+
+      vz-projector-app #container {
+        width: 100% !important;
+        min-height: 100dvh;
+        height: auto !important;
+        overflow: visible !important;
+      }
+
+      vz-projector-app #appbar {
+        position: sticky;
+        top: 0;
+        z-index: 10000;
+        box-sizing: border-box;
+        width: 100% !important;
+        min-height: 60px;
+        padding: 8px 12px;
+      }
+
+      vz-projector-app #appbar .logo {
+        max-width: 180px;
+        white-space: normal;
+        font-size: 15px;
+        line-height: 1.2;
+      }
+
+      vz-projector-app #appbar .flex-container {
+        box-sizing: border-box;
+        width: 190px !important;
+        min-width: 0;
+        height: 44px !important;
+        overflow: hidden;
+      }
+
+      vz-projector-app #appbar .center-section {
+        display: none !important;
+      }
+
+      vz-projector-app #appbar .icons {
+        margin-left: auto;
+      }
+
+      vz-projector {
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        overflow: visible !important;
+      }
+
+      vz-projector > #container {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        height: auto !important;
+        overflow: visible !important;
+      }
+
+      vz-projector #left-pane,
+      vz-projector #right-pane {
+        box-sizing: border-box;
+        position: relative !important;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        width: 100% !important;
+        height: auto !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+      }
+
+      vz-projector #left-pane {
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      vz-projector #data-panel,
+      vz-projector #main,
+      vz-projector #inspector-panel,
+      vz-projector #bookmark-panel {
+        box-sizing: border-box;
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+      }
+
+      vz-projector .stage {
+        position: relative !important;
+        width: 100% !important;
+        height: 420px !important;
+        min-height: 420px;
+      }
+
+      vz-projector #scatter {
+        position: relative !important;
+        inset: auto !important;
+        width: 100% !important;
+        height: 420px !important;
+        min-height: 420px;
+      }
+
+      vz-projector #right-pane {
+        display: block !important;
+        min-height: 620px;
+      }
+
+      vz-projector input,
+      vz-projector button,
+      vz-projector paper-button,
+      vz-projector paper-icon-button {
+        min-height: 40px;
+      }
     }
   </style>
 
