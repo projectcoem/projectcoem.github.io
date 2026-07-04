@@ -32,8 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
       title: poem.story_name,
       author: poem.author_name || author.author_name || "Unknown author",
       authorId: poem.author_uuid,
-      country: poem.country || author.country || "Unknown country",
-      genre: author.genre || "Unknown genre",
+      country: ReaderFeatures.englishMetadata(poem.country || author.country) || "Unknown country",
+      genre: ReaderFeatures.englishMetadata(author.genre) || "Unknown genre",
       birthYear: poem.birth_year || author.birth_year || "",
       deathYear: author.death_year || "",
       readingTime: Number(poem.reading_time || poemMetadata[poem.id]?.readingTime || 0)
@@ -67,8 +67,8 @@ document.addEventListener("DOMContentLoaded", () => {
         <div>
           <h2>${author.author_name}</h2>
           <div class="author-facts">
-            <p><strong>Country</strong><br>${author.country || "—"}</p>
-            <p><strong>Genre</strong><br>${author.genre || "—"}</p>
+            <p><strong>Country</strong><br>${ReaderFeatures.englishMetadata(author.country) || "—"}</p>
+            <p><strong>Genre</strong><br>${ReaderFeatures.englishMetadata(author.genre) || "—"}</p>
             <p><strong>Birth</strong><br>${author.birth_year || "—"}</p>
             <p><strong>Death</strong><br>${author.death_year || "—"}</p>
           </div>
@@ -312,8 +312,8 @@ document.addEventListener("DOMContentLoaded", () => {
     neighborIndex = loadedNeighbors;
     poemMetadata = loadedMetadata;
     authorNeighborIndex = loadedAuthorNeighbors;
-    populateSelect("country-filter", data.poems.map(poem => poem.country), "Country");
-    populateSelect("genre-filter", data.authors.map(author => author.genre), "Genre");
+    populateSelect("country-filter", data.poems.map(poem => ReaderFeatures.englishMetadata(poem.country)), "Country");
+    populateSelect("genre-filter", data.authors.map(author => ReaderFeatures.englishMetadata(author.genre)), "Genre");
     setupSearch();
     setDiscoveryReady(true);
     refreshCurrentPoemFeatures();

@@ -83,9 +83,12 @@
         option.id = `author-option-${index}`;
         option.className = "autocomplete-suggestion";
         option.setAttribute("role", "option");
+        const displayedValue = window.ReaderFeatures?.englishMetadata
+          ? window.ReaderFeatures.englishMetadata(node[selectedFilter])
+          : node[selectedFilter];
         option.textContent = selectedFilter === "id"
           ? node.id
-          : `${node.id} (${node[selectedFilter]})`;
+          : `${node.id} (${displayedValue})`;
         option.addEventListener("click", () => selectAuthor(node));
         option.addEventListener("keydown", event => {
           if (event.key === "Escape") {

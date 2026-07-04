@@ -115,6 +115,36 @@
       .trim();
   }
 
+  const metadataTranslations = {
+    "Alemania": "Germany", "Arabia": "Arabia", "Austríaco": "Austria",
+    "Belgica": "Belgium", "Boliviano": "Bolivia", "Brasil": "Brazil",
+    "Checoslovaquia": "Czechoslovakia", "Dinamarca": "Denmark",
+    "Egipto": "Egypt", "España": "Spain", "Estados Unidos": "United States",
+    "Finlandia": "Finland", "Francia": "France", "Gales": "Wales",
+    "Grecia": "Greece", "Griego": "Greece", "Inglaterra": "England",
+    "Irán": "Iran", "Irlanda": "Ireland", "Italia": "Italy",
+    "Italiano": "Italy", "Japon": "Japan", "Líbano": "Lebanon",
+    "Marruecos": "Morocco", "México": "Mexico", "Mónaco": "Monaco",
+    "Panamá": "Panama", "Persa": "Persia", "Polonia": "Poland",
+    "Prusia": "Prussia", "Puertorriqueño": "Puerto Rico",
+    "Reino Unido": "United Kingdom", "Republica Dominicana": "Dominican Republic",
+    "República": "Dominican Republic", "Romano": "Rome", "Rumania": "Romania",
+    "Rusia": "Russia", "Suiza": "Switzerland", "África": "Africa",
+    "Antihéroe": "Antihero", "Ambiental": "Environmental",
+    "Crítica literaria": "Literary Criticism", "Cuento corto": "Short Story",
+    "Dramaturgia": "Drama", "Histórico": "Historical", "Historieta": "Comics",
+    "Marina": "Maritime", "Militar": "Military", "Modernismo": "Modernism",
+    "modernismo": "Modernism", "Novela": "Novel", "Pedagógico": "Educational",
+    "Periodismo": "Journalism", "Policiaco": "Crime", "Poética": "Poetry",
+    "Realismo": "Realism", "Realismo mágico": "Magical Realism",
+    "Romanticismo": "Romanticism", "simbólica": "Symbolism",
+    "Simbolismo": "Symbolism", "Social": "Social", "Suspenso": "Suspense"
+  };
+
+  function englishMetadata(value) {
+    return metadataTranslations[String(value || "").trim()] || value;
+  }
+
   function matchesFilters(item, filters) {
     if (filters.country && normalizeText(item.country) !== normalizeText(filters.country)) return false;
     if (filters.genre && normalizeText(item.genre) !== normalizeText(filters.genre)) return false;
@@ -152,6 +182,6 @@
     storageGet, storageSet, recordHistory, toggleBookmark, isBookmarked, getLibrary,
     getItemFromURL, updateURL, getPreferences, applyPreferences, setTheme,
     changeFontSize, shareCurrent, formatTime, normalizeText, matchesFilters,
-    filterItems, randomItem, navigateToReadingStart, toast
+    filterItems, randomItem, navigateToReadingStart, toast, englishMetadata
   };
 });
