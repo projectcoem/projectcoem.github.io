@@ -29,7 +29,20 @@ const server = http.createServer((request, response) => {
   });
   const page = await browser.newPage();
   try {
-    await page.goto(`${base}/stories-info.html`);
+    const storyGraph = JSON.parse(fs.readFileSync(
+      path.join(root, "static/authorLinksSmallerAllStories.json"),
+      "utf8"
+    ));
+    const storyWithoutAudio = storyGraph.nodes
+      .flatMap(author => Object.keys(author.stories || {}))
+      .find(id => !fs.existsSync(path.join(root, "static/audios_en", `${id}.mp3`)));
+    assert.ok(storyWithoutAudio, "expected at least one story without dedicated English audio");
+    await page.goto(`${base}/stories-info.html?story=${storyWithoutAudio}`);
+    await page.waitForFunction(() =>
+      document.querySelector("#popup-audio")?.src
+        .endsWith("/static/audios_en/They_are_made_out_of_meat_terry.mp3")
+    );
+
     await page.getByRole("searchbox", { name: "Search everything" }).fill("Borges");
     await page.getByRole("combobox", { name: "Country" }).selectOption({ label: "Argentina" });
     await page.getByRole("button", { name: "Clear filters" }).click();

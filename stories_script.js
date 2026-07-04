@@ -5,6 +5,7 @@ let authorNeighborIndex = {};
 let storyMetadata = {};
 let currentStory = null;
 let activeStoryLoad = 0;
+const DEFAULT_ENGLISH_AUDIO = "static/audios_en/They_are_made_out_of_meat_terry.mp3";
 
 async function fetchJSON(path) {
   const response = await fetch(path);
@@ -61,7 +62,7 @@ function renderAuthor(author, storyTitle) {
   const container = document.getElementById("author-info-container");
   container.innerHTML = `
     <div class="author-summary">
-      <div id="drawing" aria-label="Retrato animado de ${author.id}"></div>
+      <div id="drawing" aria-label="Animated portrait of ${author.id}"></div>
       <div>
         <h2>${author.id}</h2>
         <div class="author-facts">
@@ -82,9 +83,11 @@ async function setAudio(storyId, audio = document.getElementById("popup-audio"))
   const storyAudio = `static/audios_en/${encodeURIComponent(storyId)}.mp3`;
   try {
     const response = await fetch(storyAudio, { method: "HEAD" });
-    if (audio.isConnected) audio.src = response.ok ? storyAudio : "static/tenquita.mp3";
+    if (audio.isConnected) {
+      audio.src = response.ok ? storyAudio : DEFAULT_ENGLISH_AUDIO;
+    }
   } catch {
-    if (audio.isConnected) audio.src = "static/tenquita.mp3";
+    if (audio.isConnected) audio.src = DEFAULT_ENGLISH_AUDIO;
   }
 }
 
@@ -95,7 +98,7 @@ function renderAuthorStories(author, selectedStoryId) {
     const item = createButton(title, () => loadStory(id));
     if (id === selectedStoryId) {
       item.querySelector("button").setAttribute("aria-current", "true");
-      item.querySelector("button").title = "Cuento actual";
+      item.querySelector("button").title = "Current story";
     }
     list.appendChild(item);
   });

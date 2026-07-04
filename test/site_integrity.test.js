@@ -54,3 +54,18 @@ test("English build excludes Spanish story and audio asset trees", () => {
   assert.equal(fs.existsSync(path.join(root, "static/Cuentos_english")), true);
   assert.equal(fs.existsSync(path.join(root, "static/audios_en")), true);
 });
+
+test("every narration surface uses the packaged English fallback audio", () => {
+  const fallback = "static/audios_en/They_are_made_out_of_meat_terry.mp3";
+  assert.equal(fs.existsSync(path.join(root, fallback)), true);
+  for (const file of [
+    "stories_script.js",
+    "authorToAuthor3D.html",
+    "authorToAuthor3DSmall.html",
+  ]) {
+    const source = fs.readFileSync(path.join(root, file), "utf8");
+    assert.match(source, /audios_en\/They_are_made_out_of_meat_terry\.mp3/);
+    assert.doesNotMatch(source, /tenquita\.mp3|audios_es/);
+  }
+  assert.equal(fs.existsSync(path.join(root, "static/tenquita.mp3")), false);
+});
