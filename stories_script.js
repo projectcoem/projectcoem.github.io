@@ -29,8 +29,8 @@ function storyViewModel(story) {
     id: story.id,
     title: story.title,
     author: author.id,
-    country: author.country || "Unknown country",
-    genre: author.genre || "Unknown genre",
+    country: ReaderFeatures.englishMetadata(author.country) || "Unknown country",
+    genre: ReaderFeatures.englishMetadata(author.genre) || "Unknown genre",
     birthYear: author.birth_year || "",
     deathYear: author.death_year || "",
     readingTime: Number(metadata.readingTime || 0)
@@ -65,8 +65,8 @@ function renderAuthor(author, storyTitle) {
       <div>
         <h2>${author.id}</h2>
         <div class="author-facts">
-          <p><strong>Country</strong><br>${author.country || "—"}</p>
-          <p><strong>Genre</strong><br>${author.genre || "—"}</p>
+          <p><strong>Country</strong><br>${ReaderFeatures.englishMetadata(author.country) || "—"}</p>
+          <p><strong>Genre</strong><br>${ReaderFeatures.englishMetadata(author.genre) || "—"}</p>
           <p><strong>Birth</strong><br>${author.birth_year || "—"}</p>
           <p><strong>Death</strong><br>${author.death_year || "—"}</p>
         </div>
@@ -293,8 +293,8 @@ async function initializeStories() {
   try {
     gData = await fetchJSON("static/storyReaderCatalog.json");
     storyCatalog = StoriesCore.buildStoryCatalog(gData.nodes);
-    populateSelect("country-filter", gData.nodes.map(node => node.country), "Country");
-    populateSelect("genre-filter", gData.nodes.map(node => node.genre), "Genre");
+    populateSelect("country-filter", gData.nodes.map(node => ReaderFeatures.englishMetadata(node.country)), "Country");
+    populateSelect("genre-filter", gData.nodes.map(node => ReaderFeatures.englishMetadata(node.genre)), "Genre");
     setupSearch();
     setupControls();
     const requested = ReaderFeatures.getItemFromURL("story");

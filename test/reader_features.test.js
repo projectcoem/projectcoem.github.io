@@ -251,3 +251,18 @@ test("reader startup renders content before loading semantic discovery indexes",
   assert.ok(storyNeighbors > storyFirstRender);
   assert.match(stories, /loadCoemPortraitAnimator/);
 });
+
+test("filter metadata and examples are presented in English", () => {
+  assert.equal(ReaderFeatures.englishMetadata("España"), "Spain");
+  assert.equal(ReaderFeatures.englishMetadata("Estados Unidos"), "United States");
+  assert.equal(ReaderFeatures.englishMetadata("Romanticismo"), "Romanticism");
+  assert.equal(ReaderFeatures.englishMetadata("Realismo mágico"), "Magical Realism");
+
+  const root = path.resolve(__dirname, "..");
+  for (const file of ["stories-info.html", "poems-info.html"]) {
+    const html = fs.readFileSync(path.join(root, file), "utf8");
+    assert.match(html, /e\.g\./);
+    assert.match(html, /Reading time:/);
+    assert.doesNotMatch(html, /Ej\.|Tiempo de lectura:/);
+  }
+});

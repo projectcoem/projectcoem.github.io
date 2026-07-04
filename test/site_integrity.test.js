@@ -47,3 +47,10 @@ test("local HTML resources exist", () => {
   }
   assert.deepEqual(missing, [], `missing resources:\n${missing.join("\n")}`);
 });
+
+test("English build excludes Spanish story and audio asset trees", () => {
+  assert.equal(fs.existsSync(path.join(root, "static/Cuentos")), false);
+  assert.equal(fs.existsSync(path.join(root, "static/audios_es")), false);
+  assert.equal(fs.existsSync(path.join(root, "static/Cuentos_english")), true);
+  assert.equal(fs.existsSync(path.join(root, "static/audios_en")), true);
+});

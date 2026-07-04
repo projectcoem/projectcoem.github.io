@@ -882,7 +882,7 @@
             <p>Enter any title, author, country, genre, or year. Combine filters to refine the results.</p>
             <div id="search-container">
                 <label class="reader-search-field" for="author-search"><span>Search everything</span>
-                    <input type="search" id="author-search" placeholder="Ej. Borges, Colombia, realismo, 1920…" autocomplete="off">
+                    <input type="search" id="author-search" placeholder="e.g. Borges, Colombia, Realism, 1920…" autocomplete="off">
                 </label>
                 <output id="search-result-count" aria-live="polite"></output>
                 <div id="autocomplete-container" class="autocomplete-container"></div>
@@ -891,7 +891,7 @@
                 <label>Country<select class="reader-select" id="country-filter"><option value="">All</option></select></label>
                 <label>Genre<select class="reader-select" id="genre-filter"><option value="">All</option></select></label>
                 <label>Maximum length<select class="reader-select" id="time-filter">
-                    <option value="">Any</option><option value="2">2minutes</option><option value="5">5minutes</option><option value="8">8minutes</option>
+                    <option value="">Any</option><option value="2">2 minutes</option><option value="5">5 minutes</option><option value="8">8 minutes</option>
                 </select></label>
                 <button class="reader-button reader-button--secondary" id="clear-filters" type="button">Clear filters</button>
             </div>
@@ -907,7 +907,7 @@
         <div class="flex-item info-item" id="author-info-container">></div>
         <div id="container-cuento">
             <h1 class="reader-heading" id="cuentoTitle">Loading story…</h1>
-            <div class="reader-meta">Tiempo de lectura: <span id="cuentoTime">…</span></div>
+            <div class="reader-meta">Reading time: <span id="cuentoTime">…</span></div>
             <div class="flex-item info-text" id="cuentoText"></div>
             <section class="reader-section" id="stories-authors-container">
                 <h3>Stories</h3>
