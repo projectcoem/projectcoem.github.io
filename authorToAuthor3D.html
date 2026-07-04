@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <meta charset="UTF-8" />
   <!-- Import Webcomponents polyfill for older browsers -->
   <link rel="icon" type="image/png" href="static/favicon.png" />
@@ -7,18 +7,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="visualización,grafos,machine learning,javascript">
+    <meta name="keywords" content="visualization,graphs,machine learning,javascript">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Coem proyector de relaciones - Visualización de relaciones de autores">
-    <meta property="og:description" content="Visualice relaciones de Autores en Grafos.">
-    <meta property="og:url" content="https://estevefact.github.io/authorToAuthor3D.html">
+    <meta property="og:title" content="Coem Author Relationship Explorer">
+    <meta property="og:description" content="Visualice Explore author relationships in interactive graphs.">
+    <meta property="og:url" content="https://projectcoem.github.io/authorToAuthor3D.html">
     <meta property="og:image"
       content="https://raw.githubusercontent.com/Estevefact/Estevefact.github.io/main/preview.png">
 
     <meta name="twitter:card" value="summary_large_image">
-    <meta name="twitter:title" content="Coem proyector de relaciones - Visualización de relaciones de autores">
-    <meta name="twitter:description" content="Visualice relaciones de Autores en Grafos.">
+    <meta name="twitter:title" content="Coem Author Relationship Explorer">
+    <meta name="twitter:description" content="Visualice Explore author relationships in interactive graphs.">
     <meta name="twitter:url" content="">
     <meta name="twitter:image"
       content="https://raw.githubusercontent.com/Estevefact/Estevefact.github.io/main/preview.png">
@@ -29,8 +29,8 @@
     <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT">
     <meta http-equiv="pragma" content="no-cache">
 
-    <meta name="author" content="Esteban Velásquez y Agustín Vallejo">
-    <title>Proyector de links de Autores literarios</title>
+    <meta name="author" content="Esteban Velásquez and Agustín Vallejo">
+    <title>Literary Author Relationship Explorer</title>
     <style>
       body {
         margin: 0;
@@ -251,17 +251,22 @@
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
       }
-      .dropdown-content span {
+      .dropdown-content button {
+        appearance: none;
+        border: 0;
+        width: 100%;
+        text-align: left;
         color: black;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
         cursor: pointer;
       }
-      .dropdown-content span:hover {
+      .dropdown-content button:hover,
+      .dropdown-content button:focus {
         background-color: #ddd;
       }
-      .dropdown:hover .dropdown-content {
+      .dropdown-content:not([hidden]) {
         display: block;
       }
       .dropdown:hover .dropbtn {
@@ -663,12 +668,13 @@
       }
     }
     </style>
+    <link rel="stylesheet" href="site_chrome.css?v=2">
   </head>
 
-  <body>
+  <body class="author-map-page">
     <div id="appbar">
       <div id="title-1">
-       Relaciones Autores
+       Author Relationships
         <button
           id="toggle-popup-btn"
           onclick="togglePopup();"
@@ -680,24 +686,16 @@
       <div class="center-section">
         <img src="static/Coem.png" alt="Logo" />
       </div>
-      <div class="dropdown-2 Stories-Authors-btn" id="dropdown-general">
-        <button class="dropbtn-general" id="Stories-Authors-btn"> Explorar Coem </button>
-        <div class="dropdown-content-2">
-          <span 
-          data-filter="stories-authors" onclick="window.location.href='/authorToAuthor3DSmall.html'">Ver Autores Cuentos
-          </span>
-          <span 
-          data-filter="stories-embeddings" onclick="window.location.href='/embeddings.html'" > Ver Embeddings de Cuentos
-          </span>
-          <span 
-          data-filter="Poems" onclick="window.location.href='/poems-info.html'" > Explorar Poemas
-          </span>
-          <span 
-          data-filter="Autores" onclick="window.location.href='/authorToAuthor3DSmall_english.html'" > Explorar Cuentos en Inglés
-          </span>
-        </div>
-        </button>
-      </div>
+      <details class="site-menu">
+        <summary>Main menu</summary>
+        <nav aria-label="Main menu">
+          <a href="index.html">Home</a>
+          <a href="stories-info.html">Stories</a>
+          <a href="poems-info.html">Poems</a>
+          <a href="authorToAuthor3DSmall.html">Authors with Stories</a>
+          <a href="embeddings.html">Embeddings</a>
+        </nav>
+      </details>
     </div>
 
     <div id="container">
@@ -707,23 +705,25 @@
     <div id="popup">
       <div id="search-container">
         <div class="dropdown">
-          <button class="dropbtn" id="filter-button" > Filtrar por Nombre</button>
-          <div class="dropdown-content">
-            <span data-filter="id">Nombre</span>
-            <span data-filter="country">País</span>
-            <span data-filter="birth_year">Año de nacimientos</span>
-            <span data-filter="death_year">Año de muerte</span>
-            <span data-filter="genre">Género</span>
+          <button class="dropbtn" id="filter-button" type="button" aria-haspopup="menu"
+            aria-controls="author-filter-menu" aria-expanded="false">Filter by Name</button>
+          <div class="dropdown-content" id="author-filter-menu" role="menu" hidden>
+            <button type="button" role="menuitemradio" aria-checked="true" data-filter="id">Name</button>
+            <button type="button" role="menuitemradio" aria-checked="false" data-filter="country">Country</button>
+            <button type="button" role="menuitemradio" aria-checked="false" data-filter="birth_year">Birth Year</button>
+            <button type="button" role="menuitemradio" aria-checked="false" data-filter="death_year">Death Year</button>
+            <button type="button" role="menuitemradio" aria-checked="false" data-filter="genre">Genre</button>
           </div>
         </div>
-        <input type="text" id="author-search" placeholder="Buscar a un autor...">
+        <input type="text" id="author-search" placeholder="Search for an author..." role="combobox"
+          aria-autocomplete="list" aria-controls="autocomplete-container" aria-expanded="false">
         <i id="search-icon" class="fas fa-search"></i> 
-        <div id="autocomplete-container"></div>
+        <div id="autocomplete-container" role="listbox" aria-label="Matching authors"></div>
       </div>
       <div id="author-info-container">></div>
       <button id="follow-author-btn">Seguir Autor</button>
       <div id="top-authors-container">
-        <h3>Top 5 Autores relacionados</h3>
+        <h3>Top 5 Related Authors</h3>
         <ul id="top-authors-list"></ul>
       </div>
       <form id="donate" action="https://www.paypal.com/donate" method="post" target="_top">
@@ -733,6 +733,9 @@
       </form>
     </div>
     <iframe src="author_info_smaller.html" id="iframeA" style="display:none;"></iframe>
+    <script src="author_similarity.js"></script>
+    <script src="reader_features.js"></script>
+    <script src="map_controls.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="static/particleDraw.js"></script>
 
@@ -751,7 +754,7 @@
         if (popup.style.display === "none" || popup.style.display === "") {
           popup.style.display = "flex";
           popup.style.width = "25%;";
-          toggleLink.textContent = "Ocultar Info Autor";
+          toggleLink.textContent = "Hide Author Info";
           container.style.width = "calc(100% - 25%)";
           container.style.marginLeft = "25%";
           if (isCellphone()) {
@@ -764,7 +767,7 @@
           loadAuthorInfo();
         } else {
           popup.style.display = "none";
-          toggleLink.textContent = "Mostrar información Autor";
+          toggleLink.textContent = "Show Author Info";
           container.style.width = "100%";
           container.style.marginLeft = "0";
           if (isCellphone()) {
@@ -774,6 +777,7 @@
             graph.style.top="0px"
           }
         }
+        requestAnimationFrame(resizeGraphToContainer);
       }
       async function updateAudioSource(audio) {
           let audioUrl = `/static/${audio}`;
@@ -786,12 +790,12 @@
                   document.getElementById("popup-audio").src = audioUrl;
               } else {
                   // If the response is not ok, log a message or handle the error
-                  document.getElementById("popup-audio").src = `/static/tenquita.mp3`;
+                  document.getElementById("popup-audio").src = `/static/audios_en/They_are_made_out_of_meat_terry.mp3`;
                   console.error(`Audio file not found: ${audioUrl} (status: ${response.status})`);
               }
           } catch (error) {
               // Catch any network errors
-              document.getElementById("popup-audio").src = `/static/tenquita.mp3`;
+              document.getElementById("popup-audio").src = `/static/audios_en/They_are_made_out_of_meat_terry.mp3`;
               console.error(`Error fetching audio file: ${error}`);
           }
       }
@@ -824,7 +828,7 @@
                 author.story_name
               );
             document.getElementById("author-info-container").innerHTML = rendered;
-            updateAudioSource(`audios_es/${author.story_id}.mp3`);
+            updateAudioSource(`audios_en/${author.story_id}.mp3`);
             resetAuthorImage(author.image); // Defined in particleDraw.js
             updateTopAuthors(author);
                   // Apply additional styles dynamically if it's a cellphone
@@ -874,58 +878,54 @@
         var container = document.getElementById("container");
         container.style.height="100%";
         container.style.top="0px"
-        graph.style.height="100%";
-        graph.style.top="0px"
       }
+
+      let authorEmbeddingIndex = {};
+      let currentGraphData = null;
 
       function updateTopAuthors(node) {
         const topAuthorsList = document.getElementById('top-authors-list');
         topAuthorsList.innerHTML = '';
-
-        const neighbors = node.neighbors.map(neighbor => ({
-          ...neighbor,
-          linkCount: neighbor.links.length
-        }));
-
-        const topAuthors = neighbors.sort((a, b) => b.linkCount - a.linkCount);
-        // const topAuthors = neighbors; // By sorting we never get to smaller authors
-
-        // Leave uniques
-        const uniqueAuthors = [];
-        topAuthors.forEach(author => {
-          if (!uniqueAuthors.find(a => a.id === author.id)) {
-            uniqueAuthors.push(author);
-          }
-        });
-
-        // Take top 5
-        const topFiveAuthors = uniqueAuthors.slice(0, 5);
-
-        topFiveAuthors.forEach(author => {
+        const authorsById = new Map(currentGraphData.nodes.map(author => [author.id, author]));
+        const recommendations = AuthorSimilarity.neighborsFor(
+          node.id, authorEmbeddingIndex, authorsById, 5
+        );
+        if (!recommendations.length) {
+          const item = document.createElement('li');
+          item.textContent = 'There are not enough stories with embeddings to calculate similarity.';
+          topAuthorsList.appendChild(item);
+        }
+        recommendations.forEach(recommendation => {
+          const relatedAuthor = recommendation.author;
           const listItem = document.createElement('li');
-          const listLink = document.createElement('a'); // Correctly create the 'a' element
-          listLink.textContent = `${author.id}`;
-          listLink.href = "#"; // Add href to make it a link
+          const listLink = document.createElement('a');
+          listLink.textContent = AuthorSimilarity.recommendationLabel(recommendation, relatedAuthor);
+          listLink.href = "#";
           listLink.addEventListener('click', (event) => {
-            event.preventDefault(); // Prevent default link behavior
-            setAuthor(author);
+            event.preventDefault();
+            setAuthor(relatedAuthor);
           });
-          listItem.appendChild(listLink); 
-          listLink.classList.add('top-authors-list');// Append the link to the list item
-          topAuthorsList.appendChild(listItem); // Append the list item to the list
+          listItem.appendChild(listLink);
+          listLink.classList.add('top-authors-list');
+          topAuthorsList.appendChild(listItem);
         });
       }
 
       const highlightNodes = new Set();
       const highlightLinks = new Set();
       let graph = null; // Will be set Graph later
+      function resizeGraphToContainer() {
+        if (!graph) return;
+        const container = document.getElementById("container");
+        graph.width(container.clientWidth).height(container.clientHeight);
+      }
       function highlightNodeAndLinks( node ){
         highlightNodes.clear();
         highlightLinks.clear();
         if (node) {
           highlightNodes.add(node);
-          node.neighbors.forEach(neighbor => highlightNodes.add(neighbor));
-          node.links.forEach(link => highlightLinks.add(link));
+          (node.neighbors || []).forEach(neighbor => highlightNodes.add(neighbor));
+          (node.links || []).forEach(link => highlightLinks.add(link));
           updateHighlight();
         }
       }
@@ -944,7 +944,7 @@
         var popup = document.getElementById("popup");
         var container = document.getElementById("container");
         var toggleLink = document.getElementById("toggle-popup-btn");
-        toggleLink.textContent = "Ocultar Info Autor";
+        toggleLink.textContent = "Hide Author Info";
         popup.style.display = "flex";
         container.style.marginLeft = "25%";
         container.style.width = "calc(100% - 25%)";
@@ -961,7 +961,12 @@
         }
       }
 
-      fetchJSON().then((gData) => {
+      Promise.all([
+        fetchJSON(),
+        fetch("static/authorEmbeddingNeighbors.json").then(response => response.json())
+      ]).then(([gData, loadedAuthorIndex]) => {
+        currentGraphData = gData;
+        authorEmbeddingIndex = loadedAuthorIndex;
         // cross-link node objects
         gData.links.forEach((link) => {
           const a = gData.nodes.find(node => node.id === link.source );
@@ -1001,6 +1006,8 @@
           });
 
         graph = Graph;
+        resizeGraphToContainer();
+        window.addEventListener("resize", resizeGraphToContainer);
 
         setAuthor( gData.nodes.find(node => node.id === 'Gabriel García Márquez' ) );
         updateTopAuthors(author);
@@ -1034,52 +1041,14 @@
 
         // Add click event listener to the button
         changeAuthorBtn.addEventListener('click', followAuthor);
-        // Implementing the search bar with autosuggest
-        const searchInput = document.getElementById('author-search');
-        const autocompleteContainer = document.getElementById('autocomplete-container');
-        const filterOptions = document.querySelectorAll('.dropdown-content span');
-        const filterButton = document.getElementById('filter-button');
-        let selectedFilter = 'id';
-
-        filterOptions.forEach(option => {
-          option.addEventListener('click', function () {
-            selectedFilter = this.dataset.filter;
-            const filterText = this.textContent;
-            filterButton.textContent = `Filtrar por ${filterText}`;
-            searchInput.placeholder = `Buscar por ${selectedFilter.replace('_', ' ')}...`;
-          });
-        });
-
-        searchInput.addEventListener('input', function () {
-          const query = this.value.toLowerCase();
-          autocompleteContainer.innerHTML = '';
-          if (query.length === 0) return;
-
-          const suggestions = gData.nodes.filter(node =>
-            (node[selectedFilter] && node[selectedFilter].toString().toLowerCase().includes(query))
-          );
-
-          suggestions.forEach(node => {
-            const suggestionItem = document.createElement('div');
-            suggestionItem.classList.add('autocomplete-suggestion');
-            const filterValue = node[selectedFilter] || '';
-            if (selectedFilter === 'id') {
-              suggestionText = `${node.id}`;
-            } else {
-              const filterValue = node[selectedFilter] || '';
-              suggestionText = `${node.id} (${filterValue})`;
-            }
-            suggestionItem.textContent = suggestionText;
-            suggestionItem.addEventListener('click', () => {
-              searchInput.value = node.id;
-              autocompleteContainer.innerHTML = '';
-              author = node;
-              loadAuthorInfo(node);
-              highlightNodeAndLinks(node);
-              followAuthor();
-            });
-            autocompleteContainer.appendChild(suggestionItem);
-          });
+        MapControls.setup({
+          nodes: gData.nodes,
+          onSelect(node) {
+            author = node;
+            loadAuthorInfo(node);
+            highlightNodeAndLinks(node);
+            followAuthor();
+          }
         });
       });
       // See why Así fue salvado Wang-Fo is not available
