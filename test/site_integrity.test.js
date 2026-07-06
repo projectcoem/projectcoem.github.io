@@ -69,3 +69,31 @@ test("every narration surface uses the packaged English fallback audio", () => {
   }
   assert.equal(fs.existsSync(path.join(root, "static/tenquita.mp3")), false);
 });
+
+test("English poem catalog contains only reviewed, source-tracked translations", () => {
+  const catalog = JSON.parse(fs.readFileSync(
+    path.join(root, "static/poems_english.json"),
+    "utf8"
+  ));
+  const progress = JSON.parse(fs.readFileSync(
+    path.join(root, "static/poemTranslationProgress.json"),
+    "utf8"
+  ));
+  assert.equal(catalog.poems.length, progress.completedPoems);
+  assert.ok(catalog.poems.length > 0);
+  for (const poem of catalog.poems) {
+    const translatedPath = path.join(
+      root,
+      "static/Poemas_english",
+      `${poem.id}.json`
+    );
+    assert.ok(fs.existsSync(translatedPath));
+    const translated = JSON.parse(fs.readFileSync(translatedPath, "utf8"));
+    assert.equal(translated.translation.status, "reviewed");
+    assert.equal(translated.translation.source_language, "es");
+    assert.equal(translated.translation.target_language, "en");
+    assert.ok(translated.translation.source_sha256);
+    assert.ok(translated.translation.title);
+    assert.ok(translated.text);
+  }
+});

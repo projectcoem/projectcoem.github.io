@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 126,
+    "words": 22,
+    "reading_time_min": 0.11
+  },
+  "text": "Born from me, from my shadow,\n+\n+it dawns across my skin,\n+\n+daybreak of drowsy light.\n+\n+\n+A wild dove is your name,\n+\n+timid upon my shoulder.",
+  "translation": {
+    "source_sha256": "7db9f561f0d49f268003fd139c161608c267d7f3a3519a2bab5b9f382393fa40",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Your Name",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "795f8dfc-e8a2-4012-ac08-137d39c5c98b"
+  }
+}

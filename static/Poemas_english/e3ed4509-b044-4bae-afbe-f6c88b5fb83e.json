@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 93,
+    "words": 15,
+    "reading_time_min": 0.075
+  },
+  "text": "The birds sing, they sing\n+\n+without knowing what they sing:\n+\n+all their understanding is their throat.",
+  "translation": {
+    "source_sha256": "83a341d84bb0a11f4aaf98c0392fd24fd3337fdcc95fed24d745748954f30ca4",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Rhetoric",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "a7397c5c-2ab7-48bb-a7b5-8d5ddc70fe62"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 539,
+    "words": 94,
+    "reading_time_min": 0.47
+  },
+  "text": "I have committed the worst of sins\n+\n+a man can commit. I have not been\n+\n+happy. May the glaciers of oblivion\n+\n+drag me away and lose me, merciless.\n+\n+\n+My parents engendered me for the beautiful\n+\n+and hazardous game of life,\n+\n+for earth, water, air, and fire.\n+\n+I failed them. I was not happy. Their youthful\n+\n+\n+will was not fulfilled. My mind\n+\n+applied itself to the symmetrical contests\n+\n+of art, which interweaves trivialities.\n+\n+\n+They bequeathed me courage. I was not brave.\n+\n+It does not leave me. Always at my side\n+\n+is the shadow of having been an unhappy man.",
+  "translation": {
+    "source_sha256": "3e4ebe4d92e9061c2e106d02ca5a2dae5c061e7897b663a3307d66d67f575f55",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "I Have Committed the Worst of Sins…",
+    "editorial_note": "This separately hashed witness of “Remorse” preserves the same reviewed translation; its source differs only in the capitalization of the final line."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 62,
+    "words": 11,
+    "reading_time_min": 0.055
+  },
+  "text": "Death always beside me.\n+\n+I listen to what it says.\n+\n+I hear only myself.",
+  "translation": {
+    "source_sha256": "7ff2d4c88282eda0040715195037e7605fbe4eee588bc21df38f316db3dc215c",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Silences",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "b32209d7-abd3-4a2e-949b-2ca60194435c"
+  }
+}

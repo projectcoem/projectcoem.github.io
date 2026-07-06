@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 159,
+    "words": 31,
+    "reading_time_min": 0.155
+  },
+  "text": "Everything makes love with silence.\n+\n+I had been promised a silence like fire, a house of silence.\n+\n+Suddenly the temple is a circus and the light a drum.",
+  "translation": {
+    "source_sha256": "71c523b4d86cea645646f69c8c8d2526ca382cd1026128a67e24c303d4ae95c9",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Everything Makes Love with Silence…",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "5d60edf5-524b-4c4a-b752-96b63b94a6b4"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 166,
+    "words": 27,
+    "reading_time_min": 0.135
+  },
+  "text": "When you look at me\n+\n+my eyes are keys,\n+\n+the wall has secrets,\n+\n+my fear words, poems.\n+\n+Only you make of my memory\n+\n+an entranced traveler,\n+\n+an unceasing fire.",
+  "translation": {
+    "source_sha256": "77413cb5b6ee9a2859cedc2bd9deea69a62f31170ba7e9f1451956b2ce74bf76",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "When You Look at Me…",
+    "editorial_note": "The omitted verb in my fear words, poems is retained; the beloved’s gaze turns memory into both fascinated motion and inexhaustible flame."
+  }
+}

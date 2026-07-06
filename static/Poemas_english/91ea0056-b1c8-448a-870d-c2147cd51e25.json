@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 150,
+    "words": 25,
+    "reading_time_min": 0.125
+  },
+  "text": "An abandoned fire kills its light.\n+\n+A bird in love raises its song.\n+\n+So many ravenous creatures in my silence\n+\n+and this little rain that keeps me company.",
+  "translation": {
+    "source_sha256": "ee49bc0d37f8dea240e42da5be2eeae471e0665d2a2c1b879efcd95b89bd3118",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Farewell",
+    "editorial_note": "The first two inversions are resolved without changing their subjects; the vast appetite inside silence is answered only by the intimate smallness of rain."
+  }
+}

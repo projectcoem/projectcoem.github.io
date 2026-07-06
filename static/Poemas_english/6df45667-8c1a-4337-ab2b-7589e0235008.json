@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 103,
+    "words": 18,
+    "reading_time_min": 0.09
+  },
+  "text": "The wind had eaten away\n+\n+part of my face and my hands.\n+\n+They called me ragged angel.\n+\n+I waited.",
+  "translation": {
+    "source_sha256": "1e86358468e73cd7e25ad79362144c5247be9f9003f8ead16ae752ff54d6b24c",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "The Wind Had Eaten Away…",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "8cba54ed-1e71-4ae4-9e13-0065644f4dff"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 123,
+    "words": 21,
+    "reading_time_min": 0.105
+  },
+  "text": "Sing, my wounded one\n+\n+Cervantes\n+\n+\n+though it is late, it is night,\n+\n+and you cannot.\n+\n+\n+Sing as though nothing were happening.\n+\n+\n+Nothing happens",
+  "translation": {
+    "source_sha256": "bfcb6ed00d21bfaf3fd407f0ae8755fab26fb9b6e906a37f15d42e0f002105ff",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "I Ask for Silence",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "bd7f3302-3843-43b4-a803-88d2d87742e5"
+  }
+}

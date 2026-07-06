@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 94,
+    "words": 15,
+    "reading_time_min": 0.075
+  },
+  "text": "I raised my face to the sky,\n+\n+an immense stone of weathered letters:\n+\n+the stars revealed nothing to me.",
+  "translation": {
+    "source_sha256": "709f46738349ea16d45ad4f00344943b62226f237aa40bd92869d3e80d65ca29",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "I Raised My Face to the Sky…",
+    "editorial_note": "The sky is read as an eroded inscription rather than a source of revelation; weathered keeps both age and exposure to the elements."
+  }
+}

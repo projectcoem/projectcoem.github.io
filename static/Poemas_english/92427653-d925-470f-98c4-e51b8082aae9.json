@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 133,
+    "words": 23,
+    "reading_time_min": 0.115
+  },
+  "text": "Clenched hands confine me to exile.\n+\n+Help me not to ask for help.\n+\n+They want to nightfall me, they are going to die me.\n+\n+Help me not to ask for help.",
+  "translation": {
+    "source_sha256": "810f907073460aae89747382bdceb0c1f94ce4e504b6b135f7b1509d1de46d2e",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Figures and Silences",
+    "editorial_note": "Pizarnik’s transitive anochecer and morir are recreated as nightfall me and die me; grammatical violence enacts the threatened violence against the speaker."
+  }
+}

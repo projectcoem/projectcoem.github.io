@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 92,
+    "words": 13,
+    "reading_time_min": 0.065
+  },
+  "text": "They live beside us,\n+\n+we ignore them, they ignore us.\n+\n+Sometimes they speak with us.",
+  "translation": {
+    "source_sha256": "1a68d8e916bb808e998059dc42e4f51ba722d560291e8e0996db5bbcee296d6c",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "They Live Beside Us…",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "ec7cf4cc-7b27-4ef8-841a-a6cfdb6dddf0"
+  }
+}

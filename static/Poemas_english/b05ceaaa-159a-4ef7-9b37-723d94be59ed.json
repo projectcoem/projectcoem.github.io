@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 103,
+    "words": 19,
+    "reading_time_min": 0.095
+  },
+  "text": "I know nothing of birds,\n+\n+I do not know the history of fire.\n+\n+But I believe my solitude ought to have wings.",
+  "translation": {
+    "source_sha256": "ce1c473cedbc9153f2fc7040d1aa0912d2df27da24f791cd68379f4960e81273",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "The Lack",
+    "editorial_note": "The repeated not-knowing remains plain; wings emerge not as knowledge or escape but as something solitude ought ethically or imaginatively to possess."
+  }
+}

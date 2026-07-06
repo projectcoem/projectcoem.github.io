@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 49,
+    "words": 6,
+    "reading_time_min": 0.03
+  },
+  "text": "alejandra alejandra\n+\n+underneath I am\n+\n+alejandra",
+  "translation": {
+    "source_sha256": "0c4804b85f44f826b3772f453141e5073c7c209bb844d0b025d846f8b24c1dcb",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "alejandra alejandra…",
+    "editorial_note": "The lowercase name and bare spatial debajo remain intact: the speaking self lies beneath the name yet returns to it in the final line."
+  }
+}

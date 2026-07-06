@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 108,
+    "words": 16,
+    "reading_time_min": 0.08
+  },
+  "text": "strange that I was\n+\n+when, neighbor to distant lights,\n+\n+I treasured words of utter purity\n+\n+to create new silences",
+  "translation": {
+    "source_sha256": "086962d05a9fb315f680904ab100454c61a3c48b9b1f30aec3b214e58b106eb6",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Green Paradise",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "425a9329-f7fe-4ca1-bbcb-91a9e1a34844"
+  }
+}

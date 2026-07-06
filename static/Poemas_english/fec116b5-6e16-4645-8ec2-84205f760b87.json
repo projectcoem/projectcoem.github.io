@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 325,
+    "words": 59,
+    "reading_time_min": 0.295
+  },
+  "text": "Little lamb of mine,\n\nsilent softness:\n\nmy breast is your grotto,\n\nvelveted with moss.\n\n\nLittle body, white,\n\na slice of moon:\n\nI have forgotten everything\n\nto become your cradle.\n\n\nI forgot the world,\n\nand of myself I feel\n\nnothing but the living breast\n\nwith which I sustain you.\n\n\nAnd all I know of myself\n\nis that you rest in me.\n\nYour feast, my child,\n\nhas put all feasts out.",
+  "translation": {
+    "source_sha256": "115509a19764d6c921f085be2340ad6c690d2f50076f6df9406e0f00a5919774",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Little Lamb",
+    "editorial_note": "Mistral's diminutives become tactile intimacy; the final apagó keeps both extinguishing and surpassing."
+  }
+}

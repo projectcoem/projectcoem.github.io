@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 149,
+    "words": 29,
+    "reading_time_min": 0.145
+  },
+  "text": "Insist on your embrace,\n+\n+redouble your fury,\n+\n+create a space of insults\n+\n+between I and the mirror,\n+\n+create a leper woman’s song\n+\n+between I and the woman I believe myself to be.",
+  "translation": {
+    "source_sha256": "4fad596554bef7f8d73b06ad8ff230d811dc7748318ae30acb08d30ace4cdcfa",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Invocations",
+    "editorial_note": "This separately hashed witness preserves the reviewed grammatical fracture and invocation while differing from the first-line record only in source spacing."
+  }
+}

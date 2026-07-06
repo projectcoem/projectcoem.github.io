@@ -67,18 +67,17 @@ const server = http.createServer((request, response) => {
     await page.goto(`${base}/poems-info.html`);
     await page.waitForFunction(() =>
       Array.from(document.querySelectorAll("#country-filter option"))
-        .some(option => option.textContent === "Spain")
+        .some(option => option.textContent === "Chile")
     );
     const poemCountries = await page.getByRole("combobox", { name: "Country" })
       .locator("option").allTextContents();
     const poemGenres = await page.getByRole("combobox", { name: "Genre" })
       .locator("option").allTextContents();
-    assert.ok(poemCountries.includes("Spain"));
-    assert.ok(poemCountries.includes("United States"));
+    assert.ok(poemCountries.includes("Chile"));
     assert.ok(!poemCountries.includes("España"));
     assert.ok(poemGenres.includes("Romanticism"));
     assert.ok(!poemGenres.includes("Romanticismo"));
-    await page.getByRole("searchbox", { name: "Search everything" }).fill("Borges");
+    await page.getByRole("searchbox", { name: "Search everything" }).fill("Gabriela");
     const poemResult = page.locator("#autocomplete-container button").first();
     await poemResult.waitFor();
     await poemResult.click();

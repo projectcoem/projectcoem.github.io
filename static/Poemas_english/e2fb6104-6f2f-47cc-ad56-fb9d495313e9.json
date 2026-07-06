@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 152,
+    "words": 31,
+    "reading_time_min": 0.155
+  },
+  "text": "And it is always the lilac garden on the other side of the river. If the soul asks whether it is far away, it will be answered: on the other side of the river, not this one but that one.",
+  "translation": {
+    "source_sha256": "87a340cc2c7c97f9657b2fdea2fb6168c85fc6224a44eff9f02c081f023b785b",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "And It Is Always the Lilac Garden beyond the River…",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "5b64ea06-bb9b-413b-9f5b-fd3237ad9bdf"
+  }
+}

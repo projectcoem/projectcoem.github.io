@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 510,
+    "words": 95,
+    "reading_time_min": 0.475
+  },
+  "text": "Abruptly the afternoon has brightened\n+\n+because now the meticulous rain is falling.\n+\n+It falls or fell. Rain is a thing\n+\n+that surely happens in the past.\n+\n+\n+Whoever hears it fall has recovered\n+\n+the time when fortunate chance\n+\n+revealed to him a flower called the rose\n+\n+and the curious color of the color red.\n+\n+\n+This rain that blinds the windowpanes\n+\n+will gladden, in lost outskirts,\n+\n+the black grapes of a vine in a certain\n+\n+\n+courtyard that no longer exists. The wet\n+\n+afternoon brings me the voice, the longed-for voice,\n+\n+of my father returning, who has not died.",
+  "translation": {
+    "source_sha256": "4a1cd0d7e4a1d69fa61c259f2be4831095106e4c382fa5ea07919f88b9f41709",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "The Rain",
+    "editorial_note": "The temporal correction cae o cayó becomes falls or fell; colorado retains its childlike revelation through the deliberately recursive color of the color red."
+  }
+}

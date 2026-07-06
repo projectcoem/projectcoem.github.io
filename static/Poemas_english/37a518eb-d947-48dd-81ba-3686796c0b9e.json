@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 307,
+    "words": 57,
+    "reading_time_min": 0.285
+  },
+  "text": "The air shines, shines,\n+\n+midday shines,\n+\n+but I do not see the sun.\n+\n+\n+And from presence to presence\n+\n+everything turns transparent to me,\n+\n+but I do not see the sun.\n+\n+\n+Lost among transparencies,\n+\n+I go from reflection to radiance,\n+\n+but I do not see the sun.\n+\n+\n+And it strips itself bare in the light\n+\n+and questions every splendor,\n+\n+but does not see the sun.",
+  "translation": {
+    "source_sha256": "749b92ce6305c1d76129c08cdad58a12043cec4e4f067fa38ebfdb3393a3b6b7",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "The Air Shines, Shines…",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "60c6ca2f-8371-4016-abda-0bef6355dec0"
+  }
+}

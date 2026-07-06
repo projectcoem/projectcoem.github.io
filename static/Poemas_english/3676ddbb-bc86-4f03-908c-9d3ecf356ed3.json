@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 121,
+    "words": 23,
+    "reading_time_min": 0.115
+  },
+  "text": "My footsteps on this street\n+echo\n+on another street\n+where\n+I hear my footsteps\n+passing on this street\n+where\n+\n+\n+Only the fog is real.",
+  "translation": {
+    "source_sha256": "e1eaa3e6c138ad008962909893b637d7025e68bea098e528663ba3fae0e86ae2",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Here",
+    "editorial_note": "The repeated street and suspended where preserve the spatial loop; the fog’s reality arrives only after syntax and footsteps lose their bearings."
+  }
+}

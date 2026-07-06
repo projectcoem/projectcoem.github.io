@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 78,
+    "words": 17,
+    "reading_time_min": 0.085
+  },
+  "text": "Still\n+\n+not upon the branch\n+\n+in the air\n+\n+Not in the air\n+\n+in the instant\n+\n+the hummingbird",
+  "translation": {
+    "source_sha256": "dc635c60b78696215e387d3805c1d09ee2517c8b4a98cfdc6f0fa06481dee750",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "The Exclamation",
+    "editorial_note": "Quieto remains the paradoxical stillness of a hovering bird; punctuation is not added, allowing the hummingbird itself to arrive as the final exclamation."
+  }
+}

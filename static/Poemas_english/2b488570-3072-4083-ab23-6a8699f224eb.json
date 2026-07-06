@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 164,
+    "words": 30,
+    "reading_time_min": 0.15
+  },
+  "text": "Tomorrow\n+\n+they will dress me in ashes at dawn,\n+\n+they will fill my mouth with flowers.\n+\n+I shall learn to sleep\n+\n+in the memory of a wall,\n+\n+in the breathing of an animal that dreams.",
+  "translation": {
+    "source_sha256": "1ba5c2c5f117b846d5e2deea4fdf91ac5c8997eeb5065cfa0a8917d84ab20514",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Tomorrow…",
+    "editorial_note": "The anticipated burial passes from ash and flowers into an apprenticeship in sleep, housed within wall-memory and an animal’s dream-breath."
+  }
+}

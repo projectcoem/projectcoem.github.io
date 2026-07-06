@@ -1,0 +1,58 @@
+[
+  {
+    "id": "078a3d98-cb3c-4090-9f07-e94e0080c3ee",
+    "source_sha256": "709f46738349ea16d45ad4f00344943b62226f237aa40bd92869d3e80d65ca29",
+    "title": "I Raised My Face to the Sky…",
+    "text": "I raised my face to the sky,\n+\n+an immense stone of weathered letters:\n+\n+the stars revealed nothing to me.",
+    "editorial_note": "The sky is read as an eroded inscription rather than a source of revelation; weathered keeps both age and exposure to the elements."
+  },
+  {
+    "id": "a1b05530-b5fb-40c0-b4ab-ec4a784ea40b",
+    "source_sha256": "02e16b8cc19953508063364e1da1d62562bed384bca745d0b58aaffba4b65723",
+    "title": "Lady",
+    "text": "Every night she descends into the well\n+\n+and in the morning reappears\n+\n+with a new reptile in her arms.",
+    "editorial_note": "The mythic descent and unexplained reptile remain starkly literal; no identity is imposed upon the poem’s archetypal lady."
+  },
+  {
+    "id": "d459ee0d-6240-4ead-b752-63456197969d",
+    "source_sha256": "b76a7ed93504eb1e3128b91b747c616f8b3a7e2cbc4d35a5130c9a154296e22c",
+    "title": "Epitaph for a Poet",
+    "text": "He wished to sing, to sing\n+\n+so as to forget\n+\n+his true life made of lies\n+\n+and remember\n+\n+his lying life made of truths.",
+    "editorial_note": "The mirrored paradoxy of verdadera, mentiras, mentirosa, and verdades is kept structurally exact, with song suspended between forgetting and memory."
+  },
+  {
+    "id": "60d839cb-5717-49f5-b694-54a863102279",
+    "source_sha256": "348d03137eb5716b70f8fe282d34d7294bcda12f111bf38c6f799e39cd707b5e",
+    "title": "The Scream, the Beak, the Tooth, the Howls…",
+    "text": "The scream, the beak, the tooth, the howls,\n+\n+butcher nothingness and all its racket,\n+\n+before this simple flower fade away.",
+    "editorial_note": "Carnicera remains the compact compound butcher nothingness; violence and noise grammatically dissolve before the flower’s simplicity."
+  },
+  {
+    "id": "3676ddbb-bc86-4f03-908c-9d3ecf356ed3",
+    "source_sha256": "e1eaa3e6c138ad008962909893b637d7025e68bea098e528663ba3fae0e86ae2",
+    "title": "Here",
+    "text": "My footsteps on this street\n+echo\n+on another street\n+where\n+I hear my footsteps\n+passing on this street\n+where\n+\n+\n+Only the fog is real.",
+    "editorial_note": "The repeated street and suspended where preserve the spatial loop; the fog’s reality arrives only after syntax and footsteps lose their bearings."
+  },
+  {
+    "id": "795f8dfc-e8a2-4012-ac08-137d39c5c98b",
+    "source_sha256": "7db9f561f0d49f268003fd139c161608c267d7f3a3519a2bab5b9f382393fa40",
+    "title": "Born from Me, from My Shadow…",
+    "text": "Born from me, from my shadow,\n+\n+it dawns across my skin,\n+\n+daybreak of drowsy light.\n+\n+\n+A wild dove is your name,\n+\n+timid upon my shoulder.",
+    "editorial_note": "The unnamed presence is allowed to shift between dawn, body, and name; brava becomes wild while its dove remains tenderly timid."
+  },
+  {
+    "id": "617cc33f-ca97-46a9-9af0-deac02257140",
+    "source_sha256": "b75d0410bcbab69846dd7043133209afbcfe31b23a59d5575b78ce04eb774dfc",
+    "title": "My Footsteps on This Street…",
+    "text": "My footsteps on this street\n+\n+echo\n+\n+on another street\n+\n+where\n+\n+I hear my footsteps\n+\n+passing on this street\n+\n+where\n+\n+\n+Only the fog is real.",
+    "editorial_note": "This separately sourced witness of “Here” receives the same reviewed wording while preserving its expanded stanza spacing and first-line title."
+  },
+  {
+    "id": "cda3ae93-0fd6-4750-9ec3-40e83af0a6f2",
+    "source_sha256": "eea01f7bae4cccba4d28b1ad94650d5f5c99447f5b07c7514b8c701e450e9a36",
+    "title": "Daybreak",
+    "text": "Swift cold hands\n+\n+remove one by one\n+\n+the bandages of shadow\n+\n+\n+I open my eyes\n+\n+still\n+\n+I am alive\n+\n+at the center\n+\n+of a still-fresh wound.",
+    "editorial_note": "Todavía is first temporal and then adjectival through still and still-fresh; waking becomes survival inside the wound opened by dawn."
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 147,
+    "words": 26,
+    "reading_time_min": 0.13
+  },
+  "text": "Swift cold hands\n+\n+remove one by one\n+\n+the bandages of shadow\n+\n+\n+I open my eyes\n+\n+still\n+\n+I am alive\n+\n+at the center\n+\n+of a still-fresh wound.",
+  "translation": {
+    "source_sha256": "eea01f7bae4cccba4d28b1ad94650d5f5c99447f5b07c7514b8c701e450e9a36",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Daybreak",
+    "editorial_note": "Todavía is first temporal and then adjectival through still and still-fresh; waking becomes survival inside the wound opened by dawn."
+  }
+}

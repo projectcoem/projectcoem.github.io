@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 94,
+    "words": 15,
+    "reading_time_min": 0.075
+  },
+  "text": "I raised my face to the sky,\n+\n+an immense stone of weathered letters:\n+\n+the stars revealed nothing to me.",
+  "translation": {
+    "source_sha256": "709f46738349ea16d45ad4f00344943b62226f237aa40bd92869d3e80d65ca29",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Illiterate",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "078a3d98-cb3c-4090-9f07-e94e0080c3ee"
+  }
+}

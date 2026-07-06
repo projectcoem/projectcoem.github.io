@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 133,
+    "words": 23,
+    "reading_time_min": 0.115
+  },
+  "text": "Clenched hands confine me to exile.\n+\n+Help me not to ask for help.\n+\n+They want to nightfall me, they are going to die me.\n+\n+Help me not to ask for help.",
+  "translation": {
+    "source_sha256": "810f907073460aae89747382bdceb0c1f94ce4e504b6b135f7b1509d1de46d2e",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Clenched Hands Confine Me to Exile…",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "92427653-d925-470f-98c4-e51b8082aae9"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 102,
+    "words": 16,
+    "reading_time_min": 0.08
+  },
+  "text": "Strange, to unaccustom myself\n+\n+to the hour in which I was born.\n+\n+Strange, no longer to ply\n+\n+the trade of the newly arrived.",
+  "translation": {
+    "source_sha256": "a509d87e037c36fc2e047c90f9998c50b2df58529b5f02d46cd186495b6dfb7a",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Strange, to Unaccustom Myself…",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "8ea69217-490f-4079-b2a8-b498a63890d1"
+  }
+}

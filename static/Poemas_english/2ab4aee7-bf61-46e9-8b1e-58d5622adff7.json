@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 69,
+    "words": 10,
+    "reading_time_min": 0.05
+  },
+  "text": "musical forest\n+\n+\n+the birds drew inside my eyes\n+\n+little cages",
+  "translation": {
+    "source_sha256": "a0a06b34b105acf6610e8831821e55e27042972005c7c650dba4ca6dfa0164e4",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Before",
+    "editorial_note": "The image is left in its original reversal: birds do not escape cages but draw them within the perceiving eyes."
+  }
+}

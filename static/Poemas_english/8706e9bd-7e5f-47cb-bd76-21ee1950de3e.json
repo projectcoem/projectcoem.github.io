@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 123,
+    "words": 21,
+    "reading_time_min": 0.105
+  },
+  "text": "You choose the place of the wound\n+\n+where we speak our silence.\n+\n+You make of my life\n+\n+this ceremony too pure.",
+  "translation": {
+    "source_sha256": "d428075069210816dc1c0644e23439c08e45a2ca73c1d8da28ac9be0ad719519",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "You Choose the Place of the Wound…",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "071b5bbf-ca66-4b2e-b08f-6a92eec94b48"
+  }
+}

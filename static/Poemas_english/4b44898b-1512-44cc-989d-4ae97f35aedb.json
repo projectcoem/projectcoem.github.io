@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 191,
+    "words": 28,
+    "reading_time_min": 0.14
+  },
+  "text": "Why do you wither, generous violets,\n\ngiven me in bitterness by a merciful hand?\n\nTimorous flowers, you give my soul a homeland—\n\nyou shall not wither in my memory!",
+  "translation": {
+    "source_sha256": "db7a963278260e08d086c43af927f0a1456cde9a9cac85aa200e0384f38c5641",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Homeland in the Flowers",
+    "editorial_note": "Patria retains its political and intimate force as homeland; pía is rendered through mercy rather than piety alone."
+  }
+}
