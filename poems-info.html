@@ -18,7 +18,7 @@
     .search-filter { flex: 0 1 190px; }
   </style>
   <link rel="stylesheet" href="site_chrome.css?v=1">
-  <link rel="stylesheet" href="reader_ui.css?v=13">
+  <link rel="stylesheet" href="reader_ui.css?v=14">
 </head>
 <body>
   <header id="appbar">
@@ -29,7 +29,7 @@
       <nav aria-label="Main menu">
         <a href="index.html">Home</a><a href="stories-info.html">Stories</a><a href="poems-info.html">Poems</a>
         <a href="authorToAuthor3DSmall.html">Author map</a><a href="embeddings.html">Embeddings</a>
-        <a href="https://estevefact.github.io/">Spanish</a>
+        <a href="https://estevefact.github.io/poems-info.html" data-spanish-counterpart>Spanish</a>
       </nav>
     </details>
   </header>
@@ -63,6 +63,7 @@
       <button class="reader-button" id="bookmark-toggle" type="button" aria-pressed="false">☆ Save</button>
       <button class="reader-button" id="share-button" type="button">Share</button>
       <button class="reader-button" id="surprise-button" type="button">Surprise me</button>
+      <a class="reader-button" href="https://estevefact.github.io/poems-info.html" data-spanish-counterpart>Read this in Spanish</a>
     </nav>
 
     <section id="content" aria-live="polite"></section>
@@ -93,9 +94,9 @@
   </main>
 
   <script src="static/particleDrawStories.js?v=13"></script>
-  <script src="reader_features.js?v=11"></script>
+  <script src="reader_features.js?v=12"></script>
   <script src="stories_core.js?v=11"></script>
   <script src="author_similarity.js?v=1"></script>
-  <script src="poems_script.js?v=13"></script>
+  <script src="poems_script.js?v=14"></script>
 </body>
 </html>

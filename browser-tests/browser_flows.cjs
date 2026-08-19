@@ -54,14 +54,37 @@ const server = http.createServer((request, response) => {
       path.join(root, "static/authorLinksSmallerAllStories.json"),
       "utf8"
     ));
+    const storyIds = storyGraph.nodes.flatMap(author => Object.keys(author.stories || {}));
+    const storyWithAudio = storyIds
+      .find(id => fs.existsSync(path.join(root, "static/audios_en", `${id}.mp3`)));
     const storyWithoutAudio = storyGraph.nodes
       .flatMap(author => Object.keys(author.stories || {}))
       .find(id => !fs.existsSync(path.join(root, "static/audios_en", `${id}.mp3`)));
+    assert.ok(storyWithAudio, "expected at least one story with dedicated English audio");
     assert.ok(storyWithoutAudio, "expected at least one story without dedicated English audio");
+
+    await page.goto(`${base}/stories-info.html?story=${storyWithAudio}`);
+    await page.waitForFunction(id => {
+      const audio = document.querySelector("#popup-audio");
+      return audio
+        && !audio.hidden
+        && audio.src.endsWith(`/static/audios_en/${id}.mp3`)
+        && document.querySelector("#audio-status")?.textContent
+          .includes("English narration available");
+    }, storyWithAudio);
+
     await page.goto(`${base}/stories-info.html?story=${storyWithoutAudio}`);
-    await page.waitForFunction(() =>
-      document.querySelector("#popup-audio")?.src
-        .endsWith("/static/audios_en/They_are_made_out_of_meat_terry.mp3")
+    await page.waitForFunction(() => {
+      const audio = document.querySelector("#popup-audio");
+      return audio
+        && audio.hidden
+        && !audio.getAttribute("src")
+        && document.querySelector("#audio-status")?.textContent
+          .includes("No English narration is available");
+    });
+    assert.equal(
+      await page.getByRole("link", { name: "Read this in Spanish" }).getAttribute("href"),
+      `https://estevefact.github.io/stories-info.html?story=${storyWithoutAudio}`
     );
 
     await page.getByRole("searchbox", { name: "Search everything" }).fill("Borges");
@@ -90,6 +113,18 @@ const server = http.createServer((request, response) => {
       Array.from(document.querySelectorAll("#country-filter option"))
         .some(option => option.textContent === "Chile")
     );
+    await page.waitForFunction(() =>
+      document.querySelectorAll("#suggested-author-poems .recommendation-card").length >= 5
+    );
+    await page.waitForFunction(() =>
+      document.querySelectorAll("#related-poem-authors button[data-source='embedding']").length > 0
+    );
+    const startupPoemId = new URL(page.url()).searchParams.get("poem");
+    assert.ok(startupPoemId, "startup poem should update the URL");
+    assert.equal(
+      await page.getByRole("link", { name: "Read this in Spanish" }).getAttribute("href"),
+      `https://estevefact.github.io/poems-info.html?poem=${startupPoemId}`
+    );
     const poemCountries = await page.getByRole("combobox", { name: "Country" })
       .locator("option").allTextContents();
     const poemGenres = await page.getByRole("combobox", { name: "Genre" })
@@ -106,6 +141,15 @@ const server = http.createServer((request, response) => {
       document.querySelector("#poemTitle")?.textContent === document.querySelector("#author-search")?.value
     );
     assert.equal(await page.locator("#poemTitle").innerText(), await page.getByRole("searchbox").inputValue());
+    await page.waitForFunction(() =>
+      document.querySelectorAll("#suggested-author-poems .recommendation-card").length >= 5
+    );
+    const selectedPoemId = new URL(page.url()).searchParams.get("poem");
+    assert.ok(selectedPoemId, "selected poem should update the URL");
+    assert.equal(
+      await page.getByRole("link", { name: "Read this in Spanish" }).getAttribute("href"),
+      `https://estevefact.github.io/poems-info.html?poem=${selectedPoemId}`
+    );
 
     await page.goto(`${base}/test/fixtures/map_controls.html`);
     const filter = page.getByRole("button", { name: "Filter by Name" });

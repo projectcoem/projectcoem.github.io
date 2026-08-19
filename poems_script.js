@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let poemMetadata = {};
   let currentPoem = null;
   let activePoemLoad = 0;
+  const SPANISH_POEM_URL = "https://estevefact.github.io/poems-info.html";
 
   async function fetchJSON(path) {
     const response = await fetch(path);
@@ -59,6 +60,15 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   }
 
+  function updateSpanishCounterpart(poemId) {
+    const href = poemId
+      ? `${SPANISH_POEM_URL}?poem=${encodeURIComponent(poemId)}`
+      : SPANISH_POEM_URL;
+    document.querySelectorAll("[data-spanish-counterpart]").forEach(link => {
+      link.href = href;
+    });
+  }
+
   function renderAuthor(author, poem) {
     document.getElementById("content").innerHTML = `
       <div class="author-summary">
@@ -96,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
     note.textContent = suggestions.length
       ? "Affinity calculated exclusively from the centroids of this author’s poem embeddings."
-      : "There are not enough poems with embeddings to calculate affinity.";
+      : "Translations are still in progress.";
     suggestions.forEach(entry => {
       const suggested = entry.author;
       const candidate = data.poems.find(poem => poem.author_uuid === suggested.author_uuid);
@@ -177,6 +187,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const author = authorCatalog[poem.author_uuid];
       const model = poemViewModel(poem);
       currentPoem = model;
+      updateSpanishCounterpart(poemId);
       document.getElementById("poemTitle").textContent = poem.story_name;
       document.getElementById("poemTime").textContent = ReaderFeatures.formatTime(model.readingTime);
       text.textContent = poemData.text || "This poem has no text available.";
@@ -220,7 +231,7 @@ document.addEventListener("DOMContentLoaded", () => {
       count.textContent = "";
       if (!active) return;
       const matches = ReaderFeatures.filterItems(data.poems.map(poemViewModel), filters);
-      count.textContent = `${matches.length} coincidencia${matches.length === 1 ? "" : "s"}`;
+      count.textContent = `${matches.length} match${matches.length === 1 ? "" : "es"}`;
       matches.slice(0, 30).forEach(model => {
           const suggestion = document.createElement("button");
           suggestion.type = "button";
@@ -303,9 +314,9 @@ document.addEventListener("DOMContentLoaded", () => {
   async function hydrateDiscoveryFeatures(fullDataPromise) {
     const [fullData, loadedNeighbors, loadedMetadata, loadedAuthorNeighbors] = await Promise.all([
       fullDataPromise,
-      fetchJSON("static/poemEmbeddingNeighbors.json"),
+      fetchJSON("static/poemEnglishEmbeddingNeighbors.json"),
       fetchJSON("static/poemReaderMetadata.json"),
-      fetchJSON("static/poemAuthorEmbeddingNeighbors.json")
+      fetchJSON("static/poemEnglishAuthorEmbeddingNeighbors.json")
     ]);
     hydrateCatalog(fullData);
     neighborIndex = loadedNeighbors;
@@ -329,6 +340,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const startupPool = await fetchJSON("static/poemEnglishStartupPool.json");
         hydrateCatalog(startupPool);
         const initialId = StoriesCore.chooseInitialStoryId(null, poemCatalog);
+        updateSpanishCounterpart(initialId);
         if (initialId) await loadPoem(initialId, { scroll: false });
         fullDataPromise = fetchJSON("static/poems_english.json");
       } else {
@@ -338,6 +350,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const initialId = poemCatalog[requested]
           ? requested
           : StoriesCore.chooseInitialStoryId(null, poemCatalog);
+        updateSpanishCounterpart(initialId);
         if (initialId) await loadPoem(initialId, { scroll: false });
       }
       loadCoemPortraitAnimator(() => {

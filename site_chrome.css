@@ -79,6 +79,12 @@ html, body, button, input, select, textarea, summary {
   background: var(--coem-header-hover);
 }
 
+.audio-status {
+  color: var(--coem-muted, #5d6b75);
+  font: 600 14px/1.4 var(--coem-font, Georgia, serif);
+  margin: 8px 0 0;
+}
+
 @media (max-width: 560px) {
   .site-menu summary { padding-inline: 10px; font-size: 13px; }
   .site-menu nav { position: fixed; top: 58px; right: 10px; left: 10px; }

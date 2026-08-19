@@ -68,6 +68,12 @@
             gap: 10px;
             /* Adds space between the items */
         }
+
+        .audio-status {
+            color: #555;
+            font-size: 14px;
+            margin: 8px 0 0;
+        }
     </style>
 </head>
 
@@ -82,9 +88,10 @@
         <div class="info-item">Death: <span id="deathYear">{{deathYear}}</span></div>
         <div class="info-item">Genre: <span id="genre">{{Genre}}</span></div>
         <div class="info-item">Story title: <span id="exampleStory">{{exampleStory}}</span></div>
-        <audio id="popup-audio" controls>
+        <audio id="popup-audio" controls hidden>
             Your browser does not support the audio element.
         </audio>
+        <p id="audio-status" class="audio-status" role="status" aria-live="polite"></p>
     </div>
 </body>
 
