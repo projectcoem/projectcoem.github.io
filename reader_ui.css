@@ -176,6 +176,9 @@ body {
 }
 
 .reader-button, .reader-select {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   min-height: 42px;
   border: 1px solid var(--reader-border);
   border-radius: 999px;
@@ -185,6 +188,8 @@ body {
   border-color: var(--reader-action);
   font: 700 15px/1.1 var(--coem-font, Georgia, serif);
   cursor: pointer;
+  text-align: center;
+  text-decoration: none;
   box-shadow: 0 4px 10px rgba(0,49,83,.12);
 }
 
@@ -322,6 +327,10 @@ body {
   margin: -6px 0 16px;
   color: var(--reader-muted);
   font-size: 14px;
+}
+
+.audio-status {
+  margin-top: 8px;
 }
 
 .reader-meta {

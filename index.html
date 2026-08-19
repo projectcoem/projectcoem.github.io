@@ -10,7 +10,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="Coem Story, Poem, and Author Explorer">
     <meta property="og:description" content="Explore stories and poems by classic authors.">
-    <meta property="og:url" content="https://theprojectcoem.github.io/">
+    <meta property="og:url" content="https://projectcoem.github.io/">
     <meta property="og:image"
         content="https://raw.githubusercontent.com/Estevefact/Estevefact.github.io/main/preview.png">
 
@@ -83,6 +83,20 @@
             opacity: 0;
             box-shadow: 10px 0px 30px rgba(0, 0, 0, 0.5);
             animation: slideInFadeIn 3s forwards, shadowDisappear 3s forwards;
+        }
+
+        .home-tagline {
+            display: block;
+            width: min(1000px, calc(100% - 32px));
+            margin: 0 auto;
+            box-sizing: border-box;
+            color: #003153;
+            font-family: 'Allura', cursive;
+            font-size: clamp(2.1rem, 6vw, 5rem);
+            line-height: 1.1;
+            text-align: center;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, .72);
+            box-shadow: none;
         }
 
         @keyframes slideInFadeIn {
@@ -415,6 +429,14 @@
                 font-size: 8px;
             }
 
+            .image-container {
+                top: 24%;
+            }
+
+            .home-tagline {
+                font-size: clamp(2.4rem, 14vw, 4.5rem);
+            }
+
             body,
             html {
                 margin: 0;
@@ -449,10 +471,10 @@
             <a href="https://estevefact.github.io/" class="spanish-button">Spanish</a>
         </div>
         <div class="image-container-title">
-            <img src="static/Coem.png" alt="Inverted Image" class="inverted-image">
+            <img src="static/Coem.png" alt="Coem logo" class="inverted-image">
         </div>
         <div class="image-container">
-            <img src="coem_description.png" alt="Animated Image" class="animated-image">
+            <p class="home-tagline animated-image">Sketching the map of universal literature</p>
         </div>
 
         <div class="container">

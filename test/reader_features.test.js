@@ -223,6 +223,48 @@ test("poem embedding recommendations cover every poem and reference valid distin
   }
 });
 
+test("English poem recommendations render five translated poem choices", () => {
+  const root = path.resolve(__dirname, "..");
+  const poems = JSON.parse(fs.readFileSync(
+    path.join(root, "static/poems_english.json")
+  )).poems;
+  const index = JSON.parse(fs.readFileSync(
+    path.join(root, "static/poemEnglishEmbeddingNeighbors.json")
+  ));
+  const ids = new Set(poems.map(poem => poem.id));
+
+  assert.equal(Object.keys(index).length, poems.length);
+  for (const poem of poems) {
+    assert.equal(index[poem.id].length, 5, poem.story_name);
+    assert.ok(index[poem.id].every(entry =>
+      entry.id !== poem.id
+      && ids.has(entry.id)
+      && Number.isFinite(Number(entry.similarity))
+    ));
+  }
+});
+
+test("English poem-author recommendations stay inside translated authors", () => {
+  const root = path.resolve(__dirname, "..");
+  const catalog = JSON.parse(fs.readFileSync(
+    path.join(root, "static/poems_english.json")
+  ));
+  const index = JSON.parse(fs.readFileSync(
+    path.join(root, "static/poemEnglishAuthorEmbeddingNeighbors.json")
+  ));
+  const authorIds = new Set(catalog.authors.map(author => author.author_uuid));
+
+  for (const [authorId, neighbors] of Object.entries(index)) {
+    assert.ok(authorIds.has(authorId));
+    assert.equal(neighbors.length, 5, authorId);
+    assert.ok(neighbors.every(entry =>
+      entry.id !== authorId
+      && authorIds.has(entry.id)
+      && Number.isFinite(Number(entry.similarity))
+    ));
+  }
+});
+
 test("poem reader intentionally contains no audio player", () => {
   const html = fs.readFileSync(path.resolve(__dirname, "../poems-info.html"), "utf8");
   assert.doesNotMatch(html, /<audio\b/i);
@@ -240,6 +282,11 @@ test("reader startup renders content before loading semantic discovery indexes",
   assert.ok(poemFullCatalog > poemFirstRender);
   assert.ok(poemHydration > poemFirstRender);
   assert.match(poems, /fetchJSON\("static\/poemEnglishStartupPool\.json"\)/);
+  assert.match(poems, /fetchJSON\("static\/poemEnglishEmbeddingNeighbors\.json"\)/);
+  assert.match(
+    poems,
+    /fetchJSON\("static\/poemEnglishAuthorEmbeddingNeighbors\.json"\)/
+  );
   assert.match(poems, /static\/Poemas_english\//);
   assert.doesNotMatch(poems, /static\/Poemas\//);
   assert.match(poems, /chooseInitialStoryId\(null, poemCatalog\)/);
@@ -267,4 +314,10 @@ test("filter metadata and examples are presented in English", () => {
     assert.match(html, /Reading time:/);
     assert.doesNotMatch(html, /Ej\.|Tiempo de lectura:/);
   }
+  const readerFeatures = fs.readFileSync(path.join(root, "reader_features.js"), "utf8");
+  const stories = fs.readFileSync(path.join(root, "stories_script.js"), "utf8");
+  const poems = fs.readFileSync(path.join(root, "poems_script.js"), "utf8");
+  assert.doesNotMatch(readerFeatures, /Enlace copiado| en Coem/);
+  assert.doesNotMatch(stories, /coincidencia/);
+  assert.doesNotMatch(poems, /coincidencia/);
 });

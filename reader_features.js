@@ -92,13 +92,13 @@
   }
 
   async function shareCurrent(title) {
-    const data = { title, text: `${title} en Coem`, url: location.href };
+    const data = { title, text: `${title} on Coem`, url: location.href };
     if (navigator.share) {
       await navigator.share(data);
       return "shared";
     }
     await navigator.clipboard.writeText(location.href);
-    toast("Enlace copiado");
+    toast("Link copied");
     return "copied";
   }
 

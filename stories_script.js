@@ -5,7 +5,7 @@ let authorNeighborIndex = {};
 let storyMetadata = {};
 let currentStory = null;
 let activeStoryLoad = 0;
-const DEFAULT_ENGLISH_AUDIO = "static/audios_en/They_are_made_out_of_meat_terry.mp3";
+const SPANISH_STORY_URL = "https://estevefact.github.io/stories-info.html";
 
 async function fetchJSON(path) {
   const response = await fetch(path);
@@ -58,6 +58,15 @@ function activeFilters() {
   };
 }
 
+function updateSpanishCounterpart(storyId) {
+  const href = storyId
+    ? `${SPANISH_STORY_URL}?story=${encodeURIComponent(storyId)}`
+    : SPANISH_STORY_URL;
+  document.querySelectorAll("[data-spanish-counterpart]").forEach(link => {
+    link.href = href;
+  });
+}
+
 function renderAuthor(author, storyTitle) {
   const container = document.getElementById("author-info-container");
   container.innerHTML = `
@@ -73,21 +82,50 @@ function renderAuthor(author, storyTitle) {
         </div>
         <p>Now reading: <strong>${storyTitle}</strong></p>
         <audio id="popup-audio" controls aria-label="Story narration"></audio>
+        <p class="reader-section-note audio-status" id="audio-status" role="status" aria-live="polite"></p>
       </div>
     </div>`;
   resetAuthorImage(author.image);
 }
 
+function setAudioUnavailable(audio, message) {
+  const status = document.getElementById("audio-status");
+  if (audio) {
+    audio.pause();
+    audio.removeAttribute("src");
+    audio.hidden = true;
+    audio.load();
+  }
+  if (status) status.textContent = message;
+}
+
 async function setAudio(storyId, audio = document.getElementById("popup-audio")) {
   if (!audio) return;
+  const status = document.getElementById("audio-status");
   const storyAudio = `static/audios_en/${encodeURIComponent(storyId)}.mp3`;
+  audio.hidden = true;
+  if (status) status.textContent = "Checking English narration…";
   try {
     const response = await fetch(storyAudio, { method: "HEAD" });
     if (audio.isConnected) {
-      audio.src = response.ok ? storyAudio : DEFAULT_ENGLISH_AUDIO;
+      if (response.ok) {
+        audio.src = storyAudio;
+        audio.hidden = false;
+        if (status) status.textContent = "English narration available.";
+      } else {
+        setAudioUnavailable(
+          audio,
+          "No English narration is available for this story yet."
+        );
+      }
     }
   } catch {
-    if (audio.isConnected) audio.src = DEFAULT_ENGLISH_AUDIO;
+    if (audio.isConnected) {
+      setAudioUnavailable(
+        audio,
+        "English narration could not be checked right now."
+      );
+    }
   }
 }
 
@@ -194,6 +232,7 @@ async function loadStory(storyId, options = {}) {
       storyMetadata[storyId] = { readingTime: model.readingTime };
     }
     currentStory = model;
+    updateSpanishCounterpart(storyId);
     document.getElementById("cuentoTitle").textContent = story.title;
     document.getElementById("cuentoTime").textContent = ReaderFeatures.formatTime(model.readingTime);
     textContainer.textContent = data.text || "This story has no text available.";
@@ -238,7 +277,7 @@ function setupSearch() {
     count.textContent = "";
     if (!active) return;
     const matches = ReaderFeatures.filterItems(Object.values(storyCatalog).map(storyViewModel), filters);
-    count.textContent = `${matches.length} coincidencia${matches.length === 1 ? "" : "s"}`;
+    count.textContent = `${matches.length} match${matches.length === 1 ? "" : "es"}`;
     matches.slice(0, 30).forEach(model => {
       const suggestion = document.createElement("button");
       suggestion.type = "button";
@@ -302,6 +341,7 @@ async function initializeStories() {
     setupControls();
     const requested = ReaderFeatures.getItemFromURL("story");
     const initialId = StoriesCore.chooseInitialStoryId(requested, storyCatalog);
+    updateSpanishCounterpart(initialId);
     if (initialId) await loadStory(initialId, { scroll: false });
     loadCoemPortraitAnimator(() => {
       const story = currentStory && storyCatalog[currentStory.id];

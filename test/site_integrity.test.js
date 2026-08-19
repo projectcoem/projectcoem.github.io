@@ -102,18 +102,53 @@ test("embedding projector uses the English visualization config", () => {
   assert.match(configText, /stories_metadata_english\.tsv/);
 });
 
-test("English pages advertise the theprojectcoem.github.io domain", () => {
+test("English pages advertise the live projectcoem.github.io domain", () => {
   const offenders = [];
+  const legacyPagesUrl = ["https://theprojectcoem", "github", "io"].join(".");
+  const canonicalPages = [
+    "index.html",
+    "stories-info.html",
+    "authorToAuthor3D.html",
+    "authorToAuthor3DSmall.html",
+    "embeddings.html",
+  ];
   for (const file of authoredHtml.concat(["embeddings.html"])) {
     const html = fs.readFileSync(path.join(root, file), "utf8");
-    if (html.includes("https://projectcoem.github.io")) offenders.push(file);
+    if (html.includes(legacyPagesUrl)) offenders.push(file);
     assert.doesNotMatch(html, /theprojectcoem\.co/);
+  }
+  for (const file of canonicalPages) {
+    const html = fs.readFileSync(path.join(root, file), "utf8");
+    assert.match(html, /https:\/\/projectcoem\.github\.io\//);
   }
   assert.deepEqual(
     offenders,
     [],
-    `English pages still mention projectcoem.github.io:\n${offenders.join("\n")}`
+    `English pages still mention the legacy Pages URL:\n${offenders.join("\n")}`
   );
+});
+
+test("reader pages expose same-item Spanish counterparts", () => {
+  const storiesHtml = fs.readFileSync(path.join(root, "stories-info.html"), "utf8");
+  const poemsHtml = fs.readFileSync(path.join(root, "poems-info.html"), "utf8");
+  const storiesScript = fs.readFileSync(path.join(root, "stories_script.js"), "utf8");
+  const poemsScript = fs.readFileSync(path.join(root, "poems_script.js"), "utf8");
+
+  assert.match(storiesHtml, /data-spanish-counterpart/);
+  assert.match(storiesHtml, /https:\/\/estevefact\.github\.io\/stories-info\.html/);
+  assert.match(storiesScript, /SPANISH_STORY_URL/);
+  assert.match(storiesScript, /\?story=\$\{encodeURIComponent\(storyId\)\}/);
+
+  assert.match(poemsHtml, /data-spanish-counterpart/);
+  assert.match(poemsHtml, /https:\/\/estevefact\.github\.io\/poems-info\.html/);
+  assert.match(poemsScript, /SPANISH_POEM_URL/);
+  assert.match(poemsScript, /\?poem=\$\{encodeURIComponent\(poemId\)\}/);
+});
+
+test("homepage tagline is English text instead of the old Spanish bitmap", () => {
+  const html = fs.readFileSync(path.join(root, "index.html"), "utf8");
+  assert.match(html, /Sketching the map of universal literature/);
+  assert.doesNotMatch(html, /coem_description\.png/);
 });
 
 test("English build does not declare an abandoned custom domain", () => {
@@ -127,19 +162,53 @@ test("English build excludes Spanish story and audio asset trees", () => {
   assert.equal(fs.existsSync(path.join(root, "static/audios_en")), true);
 });
 
-test("every narration surface uses the packaged English fallback audio", () => {
-  const fallback = "static/audios_en/They_are_made_out_of_meat_terry.mp3";
-  assert.equal(fs.existsSync(path.join(root, fallback)), true);
+test("story narration only plays exact English audio matches", () => {
+  const graph = JSON.parse(fs.readFileSync(
+    path.join(root, "static/storyReaderCatalog.json"),
+    "utf8"
+  ));
+  const storyIds = graph.nodes.flatMap(author => Object.keys(author.stories || {}));
+  const audioFiles = new Set(fs.readdirSync(path.join(root, "static/audios_en")));
+  const exactAudioCount = storyIds.filter(id => audioFiles.has(`${id}.mp3`)).length;
+  const missingAudioCount = storyIds.length - exactAudioCount;
+  const fallbackName = ["They_are_made_out_of_meat", "terry.mp3"].join("_");
+  const oldSpanishAudio = ["algo_grave", "va_a_ocurrir.mp3"].join("_");
+
+  assert.ok(exactAudioCount > 0);
+  assert.ok(missingAudioCount > 0);
+  for (const file of [
+    "static/authorLinksSmallerAllStories.json",
+    "static/authorLinksSmaller_new.json",
+    "static/authorLinksSmallerShortCleaned_new.json",
+    "static/storyReaderCatalog.json",
+  ]) {
+    const data = JSON.parse(fs.readFileSync(path.join(root, file), "utf8"));
+    const nodesWithLegacyAudio = (data.nodes || [])
+      .filter(node => Object.hasOwn(node, "audio"))
+      .map(node => node.id);
+    assert.deepEqual(
+      nodesWithLegacyAudio,
+      [],
+      `${file} still contains legacy audio fields`
+    );
+  }
   for (const file of [
     "stories_script.js",
     "authorToAuthor3D.html",
     "authorToAuthor3DSmall.html",
+    "authorToAuthor3DSmall_english.html",
+    "author_info_smaller.html",
+    "author_info_smaller_stories.html",
   ]) {
     const source = fs.readFileSync(path.join(root, file), "utf8");
-    assert.match(source, /audios_en\/They_are_made_out_of_meat_terry\.mp3/);
+    assert.match(source, /audios_en|audio-status|popup-audio/);
+    assert.doesNotMatch(source, new RegExp(fallbackName));
+    assert.doesNotMatch(source, new RegExp(oldSpanishAudio));
     assert.doesNotMatch(source, /tenquita\.mp3|audios_es/);
   }
-  assert.equal(fs.existsSync(path.join(root, "static/tenquita.mp3")), false);
+  const readerScript = fs.readFileSync(path.join(root, "stories_script.js"), "utf8");
+  assert.match(readerScript, /No English narration is available/);
+  assert.match(readerScript, /audio\.hidden = true/);
 });
 
 test("English poem catalog contains only reviewed, source-tracked translations", () => {

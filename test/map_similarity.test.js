@@ -51,6 +51,12 @@ test("poem author recommendations use a separate poem-only UUID index", () => {
   const poemIndex = JSON.parse(
     fs.readFileSync(path.join(root, "static/poemAuthorEmbeddingNeighbors.json"))
   );
+  const englishPoemIndex = JSON.parse(
+    fs.readFileSync(path.join(
+      root,
+      "static/poemEnglishAuthorEmbeddingNeighbors.json"
+    ))
+  );
   const storyIndex = JSON.parse(
     fs.readFileSync(path.join(root, "static/authorEmbeddingNeighbors.json"))
   );
@@ -79,6 +85,7 @@ test("poem author recommendations use a separate poem-only UUID index", () => {
   }
 
   const poemScript = fs.readFileSync(path.join(root, "poems_script.js"), "utf8");
-  assert.match(poemScript, /poemAuthorEmbeddingNeighbors\.json/);
+  assert.match(poemScript, /poemEnglishAuthorEmbeddingNeighbors\.json/);
   assert.doesNotMatch(poemScript, /fetchJSON\("static\/authorEmbeddingNeighbors\.json"\)/);
+  assert.ok(Object.keys(englishPoemIndex).length > 0);
 });

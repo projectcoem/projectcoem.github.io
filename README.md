@@ -2,7 +2,7 @@
 
 Coem is an English-language interface for reading, listening to, and discovering classic short stories and poems through semantic embeddings.
 
-The site is published with GitHub Pages at [theprojectcoem.github.io](https://theprojectcoem.github.io/).
+The site is published with GitHub Pages at [projectcoem.github.io](https://projectcoem.github.io/).
 The Spanish edition is available at [estevefact.github.io](https://estevefact.github.io/).
 There is intentionally no `CNAME` file because this edition should not use a
 custom domain.
@@ -48,6 +48,9 @@ The first literary work and its author information load before secondary discove
 - Stories start from `static/storyReaderCatalog.json` instead of the full author graph.
 - Story text is loaded from the English corpus in `static/Cuentos_english/`,
   with narration resolved from `static/audios_en/`.
+- Story narration is only shown when `static/audios_en/<story-id>.mp3` exists.
+  Stories without a matching English MP3 display an unavailable-audio message
+  instead of falling back to an unrelated narration.
 - Story neighbors, metadata, and related-author indexes also hydrate after the first story renders.
 - p5 loads in the background, so portrait animation cannot block the text.
 - Theme, typography, bookmarks, and reading remain available during discovery hydration.
@@ -62,6 +65,8 @@ Recommendations are precalculated with cosine similarity over exported embedding
 - `static/poemEmbeddingNeighbors.json`
 - `static/authorEmbeddingNeighbors.json`
 - `static/poemAuthorEmbeddingNeighbors.json`
+- `static/poemEnglishEmbeddingNeighbors.json`
+- `static/poemEnglishAuthorEmbeddingNeighbors.json`
 
 Story-author and poem-author recommendations are kept separate. Author similarity is calculated by normalizing each work vector, grouping works by author, calculating each author centroid, and comparing centroids with cosine similarity.
 
