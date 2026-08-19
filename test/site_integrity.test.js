@@ -10,6 +10,7 @@ const authoredHtml = [
   "poems-info.html",
   "authorToAuthor3D.html",
   "authorToAuthor3DSmall.html",
+  "authorToAuthor3DSmall_english.html",
   "author_info_smaller.html",
   "author_info_smaller_stories.html",
   "custom-icons.html",
@@ -46,6 +47,77 @@ test("local HTML resources exist", () => {
     }
   }
   assert.deepEqual(missing, [], `missing resources:\n${missing.join("\n")}`);
+});
+
+test("authored navigation keeps GitHub Pages-safe relative links", () => {
+  const offenders = [];
+  for (const file of authoredHtml.concat(["embeddings.html"])) {
+    const html = fs.readFileSync(path.join(root, file), "utf8");
+    for (const match of html.matchAll(/window\.location\.href\s*=\s*['"]\/[^'"]+/g)) {
+      offenders.push(`${file}: ${match[0]}`);
+    }
+    for (const match of html.matchAll(/\blocation\.href\s*=\s*['"]\/[^'"]+/g)) {
+      offenders.push(`${file}: ${match[0]}`);
+    }
+  }
+  assert.deepEqual(offenders, [], `root-relative JS navigation:\n${offenders.join("\n")}`);
+});
+
+test("public pages link to the updated Spanish edition", () => {
+  for (const file of [
+    "index.html",
+    "stories-info.html",
+    "poems-info.html",
+    "authorToAuthor3D.html",
+    "authorToAuthor3DSmall.html",
+    "embeddings.html",
+  ]) {
+    const html = fs.readFileSync(path.join(root, file), "utf8");
+    assert.match(
+      html,
+      /https:\/\/estevefact\.github\.io\//,
+      `${file} must link to the Spanish edition`
+    );
+  }
+});
+
+test("embedding projector uses the English visualization config", () => {
+  const html = fs.readFileSync(path.join(root, "embeddings.html"), "utf8");
+  assert.match(
+    html,
+    /projector-config-json-path="oss_data\/oss_demo_projector_config_english\.json"/
+  );
+  assert.doesNotMatch(
+    html,
+    /projector-config-json-path="oss_data\/oss_demo_projector_config\.json"/
+  );
+
+  const config = JSON.parse(fs.readFileSync(
+    path.join(root, "oss_data/oss_demo_projector_config_english.json"),
+    "utf8"
+  ));
+  const configText = JSON.stringify(config);
+  assert.match(configText, /Short story embeddings/);
+  assert.doesNotMatch(configText, /Embeddings de|stories_metadata\.tsv/);
+  assert.match(configText, /stories_metadata_english\.tsv/);
+});
+
+test("English pages advertise the theprojectcoem.github.io domain", () => {
+  const offenders = [];
+  for (const file of authoredHtml.concat(["embeddings.html"])) {
+    const html = fs.readFileSync(path.join(root, file), "utf8");
+    if (html.includes("https://projectcoem.github.io")) offenders.push(file);
+    assert.doesNotMatch(html, /theprojectcoem\.co/);
+  }
+  assert.deepEqual(
+    offenders,
+    [],
+    `English pages still mention projectcoem.github.io:\n${offenders.join("\n")}`
+  );
+});
+
+test("English build does not declare an abandoned custom domain", () => {
+  assert.equal(fs.existsSync(path.join(root, "CNAME")), false);
 });
 
 test("English build excludes Spanish story and audio asset trees", () => {

@@ -29,6 +29,27 @@ const server = http.createServer((request, response) => {
   });
   const page = await browser.newPage();
   try {
+    const homeButtons = [
+      ["Explore Stories", "/stories-info.html"],
+      ["Explore Written Poems", "/poems-info.html"],
+      ["Explore Author Relationships", "/authorToAuthor3DSmall.html"],
+      ["Story and Poem Embeddings", "/embeddings.html"],
+      ["Explore All Authors", "/authorToAuthor3D.html"],
+    ];
+    for (const [label, route] of homeButtons) {
+      await page.goto(`${base}/`, { waitUntil: "domcontentloaded" });
+      await page.getByRole("button", { name: label }).click();
+      await page.waitForURL(`**${route}`);
+      assert.equal(new URL(page.url()).pathname, route);
+    }
+
+    await page.goto(`${base}/embeddings.html`, { waitUntil: "domcontentloaded" });
+    assert.equal(
+      await page.locator("vz-projector-app").getAttribute("projector-config-json-path"),
+      "oss_data/oss_demo_projector_config_english.json"
+    );
+    assert.ok(await page.getByText("Spanish version").count());
+
     const storyGraph = JSON.parse(fs.readFileSync(
       path.join(root, "static/authorLinksSmallerAllStories.json"),
       "utf8"

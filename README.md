@@ -2,7 +2,10 @@
 
 Coem is an English-language interface for reading, listening to, and discovering classic short stories and poems through semantic embeddings.
 
-The site is published with GitHub Pages. The Spanish edition is available at [estevefact.github.io](https://estevefact.github.io/).
+The site is published with GitHub Pages at [theprojectcoem.github.io](https://theprojectcoem.github.io/).
+The Spanish edition is available at [estevefact.github.io](https://estevefact.github.io/).
+There is intentionally no `CNAME` file because this edition should not use a
+custom domain.
 
 ## Explore
 
