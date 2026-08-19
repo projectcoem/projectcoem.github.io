@@ -265,6 +265,19 @@ test("English poem-author recommendations stay inside translated authors", () =>
   }
 });
 
+test("poem related-author fallback explains translation progress", () => {
+  const script = fs.readFileSync(
+    path.resolve(__dirname, "../poems_script.js"),
+    "utf8"
+  );
+
+  assert.match(script, /Translations are still in progress\./);
+  assert.doesNotMatch(
+    script,
+    /There are not enough poems with embeddings to calculate affinity\./
+  );
+});
+
 test("poem reader intentionally contains no audio player", () => {
   const html = fs.readFileSync(path.resolve(__dirname, "../poems-info.html"), "utf8");
   assert.doesNotMatch(html, /<audio\b/i);

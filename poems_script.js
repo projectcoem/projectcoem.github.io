@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
     note.textContent = suggestions.length
       ? "Affinity calculated exclusively from the centroids of this author’s poem embeddings."
-      : "There are not enough poems with embeddings to calculate affinity.";
+      : "Translations are still in progress.";
     suggestions.forEach(entry => {
       const suggested = entry.author;
       const candidate = data.poems.find(poem => poem.author_uuid === suggested.author_uuid);
