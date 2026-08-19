@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 123,
+    "words": 21,
+    "reading_time_min": 0.105
+  },
+  "text": "Sing, my wounded one\n+\n+Cervantes\n+\n+\n+though it is late, it is night,\n+\n+and you cannot.\n+\n+\n+Sing as though nothing were happening.\n+\n+\n+Nothing happens",
+  "translation": {
+    "source_sha256": "bfcb6ed00d21bfaf3fd407f0ae8755fab26fb9b6e906a37f15d42e0f002105ff",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Sing, My Wounded One…",
+    "editorial_note": "The isolated Cervantes is preserved as it appears in the source, between address and impossibility; the final nada turns consolation into literal nothingness."
+  }
+}

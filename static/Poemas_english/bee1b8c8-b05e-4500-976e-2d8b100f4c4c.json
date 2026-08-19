@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 97,
+    "words": 17,
+    "reading_time_min": 0.085
+  },
+  "text": "Tiny lady\n+\n+dwelling in the heart of a bird\n+\n+goes out at dawn to utter one syllable\n+\n+NO",
+  "translation": {
+    "source_sha256": "10c8a0f9458ac2e42aab41c312fd8411451a1c21b391637e576bd0788e8b271b",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Tiny Lady…",
+    "editorial_note": "The diminutive figure’s entire dawn utterance remains the capitalized refusal; moradora is rendered as dwelling to keep her inhabitation active."
+  }
+}

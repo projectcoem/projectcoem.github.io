@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 60,
+    "words": 10,
+    "reading_time_min": 0.05
+  },
+  "text": "Logs and straw;\n+\n+through the cracks come in\n+\n+Buddhas and insects.",
+  "translation": {
+    "source_sha256": "1cec281377ad28f0b6de1af947bde9d552cabd873c96e2f4b2a721848291c8fc",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Logs and Straw",
+    "editorial_note": "The same humble openings admit enlightenment and ordinary life; the plural Buddhas is kept without interpretive expansion."
+  }
+}

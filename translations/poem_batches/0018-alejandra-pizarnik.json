@@ -1,0 +1,58 @@
+[
+  {
+    "id": "0a88b5e1-6349-4c19-98cc-b65844557bfe",
+    "source_sha256": "4c574147497bb036383ddeccb8b06652bd207a5443853ed8eb912d512810f38d",
+    "title": "Lovers",
+    "text": "a flower\n+\n+not far from night\n+\n+my mute body\n+\n+opens\n+\n+to the delicate urgency of dew",
+    "editorial_note": "The body, flower, and night are left in apposition without explanatory links; dew retains its paradoxical delicacy and urgency."
+  },
+  {
+    "id": "bee1b8c8-b05e-4500-976e-2d8b100f4c4c",
+    "source_sha256": "10c8a0f9458ac2e42aab41c312fd8411451a1c21b391637e576bd0788e8b271b",
+    "title": "Tiny Lady…",
+    "text": "Tiny lady\n+\n+dwelling in the heart of a bird\n+\n+goes out at dawn to utter one syllable\n+\n+NO",
+    "editorial_note": "The diminutive figure’s entire dawn utterance remains the capitalized refusal; moradora is rendered as dwelling to keep her inhabitation active."
+  },
+  {
+    "id": "d8ad1b95-703c-490e-9126-0cc148a09245",
+    "source_sha256": "a17d1b20db68f14cb2c146e625e78fc64cf13d03e413ac7a98bd1cacf8040a48",
+    "title": "This Lilac Sheds Its Petals…",
+    "text": "This lilac sheds its petals.\n+\n+Out of itself it falls\n+\n+and hides its ancient shadow.\n+\n+I shall die of things like this.",
+    "editorial_note": "Desde sí misma becomes out of itself, preserving the flower’s self-originating fall and the speaker’s fatal susceptibility to such small transformations."
+  },
+  {
+    "id": "8ea69217-490f-4079-b2a8-b498a63890d1",
+    "source_sha256": "a509d87e037c36fc2e047c90f9998c50b2df58529b5f02d46cd186495b6dfb7a",
+    "title": "15",
+    "text": "Strange, to unaccustom myself\n+\n+to the hour in which I was born.\n+\n+Strange, no longer to ply\n+\n+the trade of the newly arrived.",
+    "editorial_note": "Extraño is held as the adjective strange rather than resolved into I miss; birth persists as an hour and newcomer as a lifelong profession."
+  },
+  {
+    "id": "8cba54ed-1e71-4ae4-9e13-0065644f4dff",
+    "source_sha256": "1e86358468e73cd7e25ad79362144c5247be9f9003f8ead16ae752ff54d6b24c",
+    "title": "Communications",
+    "text": "The wind had eaten away\n+\n+part of my face and my hands.\n+\n+They called me ragged angel.\n+\n+I waited.",
+    "editorial_note": "The title’s promise of exchange contracts into mutilation, a name imposed by others, and the unresolved final act of waiting."
+  },
+  {
+    "id": "b05ceaaa-159a-4ef7-9b37-723d94be59ed",
+    "source_sha256": "ce1c473cedbc9153f2fc7040d1aa0912d2df27da24f791cd68379f4960e81273",
+    "title": "The Lack",
+    "text": "I know nothing of birds,\n+\n+I do not know the history of fire.\n+\n+But I believe my solitude ought to have wings.",
+    "editorial_note": "The repeated not-knowing remains plain; wings emerge not as knowledge or escape but as something solitude ought ethically or imaginatively to possess."
+  },
+  {
+    "id": "425a9329-f7fe-4ca1-bbcb-91a9e1a34844",
+    "source_sha256": "086962d05a9fb315f680904ab100454c61a3c48b9b1f30aec3b214e58b106eb6",
+    "title": "Strange That I Was…",
+    "text": "strange that I was\n+\n+when, neighbor to distant lights,\n+\n+I treasured words of utter purity\n+\n+to create new silences",
+    "editorial_note": "The paradox of being neighbor to distant lights is retained, as is the transformation of pure words into newly made silences."
+  },
+  {
+    "id": "bf76f1b2-41ce-44a2-b23f-4e3aae5250f8",
+    "source_sha256": "ecd757e8ac36d23bc90a2794fa2b18671c2a3b01b2c545a66d036a51585b4ab0",
+    "title": "Ballad of the Weeping Stone",
+    "text": "death dies laughing but life\n+\n+dies weeping but death but life\n+\n+but nothing nothing nothing",
+    "editorial_note": "The lowercase rush and repeated pero remain unpunctuated; death and life cancel each other until only the triple nothing is left."
+  }
+]

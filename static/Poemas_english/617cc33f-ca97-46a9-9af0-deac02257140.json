@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 127,
+    "words": 23,
+    "reading_time_min": 0.115
+  },
+  "text": "My footsteps on this street\n+\n+echo\n+\n+on another street\n+\n+where\n+\n+I hear my footsteps\n+\n+passing on this street\n+\n+where\n+\n+\n+Only the fog is real.",
+  "translation": {
+    "source_sha256": "b75d0410bcbab69846dd7043133209afbcfe31b23a59d5575b78ce04eb774dfc",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "My Footsteps on This Street…",
+    "editorial_note": "This separately sourced witness of “Here” receives the same reviewed wording while preserving its expanded stanza spacing and first-line title."
+  }
+}

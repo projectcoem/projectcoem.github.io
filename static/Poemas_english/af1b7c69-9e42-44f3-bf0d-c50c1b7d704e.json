@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 75,
+    "words": 13,
+    "reading_time_min": 0.065
+  },
+  "text": "to explain with words of this world\n+\n+that a ship departed from me carrying me away",
+  "translation": {
+    "source_sha256": "154f7f40899516a053869c9914b9c2b33ecba7ab4a5e3e24f0ea88c4b2e91740",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "13",
+    "editorial_note": "The infinitive remains without a governing verb, while partió de mí holds both departure from the self and the self’s removal aboard the ship."
+  }
+}

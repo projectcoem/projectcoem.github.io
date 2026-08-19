@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 173,
+    "words": 31,
+    "reading_time_min": 0.155
+  },
+  "text": "Life, my life, let yourself fall, let yourself ache, my life,\n+\n+let yourself be entwined with fire, with innocent silence, with\n+\n+green stones in the house of night, let yourself\n+\n+fall and ache, my life.",
+  "translation": {
+    "source_sha256": "535ab9dfa51fc6d7f8d826c6609601ff6af6f668458237537f573aedf1696fda",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Life, My Life, Let Yourself Fall, Let Yourself Ache…",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "55cb5536-93fb-48bf-bad1-0c9a7fad11c0"
+  }
+}

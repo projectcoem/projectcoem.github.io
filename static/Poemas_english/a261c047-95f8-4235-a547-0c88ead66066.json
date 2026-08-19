@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 60,
+    "words": 11,
+    "reading_time_min": 0.055
+  },
+  "text": "The wind dies in my wound.\n+\n+The night begs for my blood.",
+  "translation": {
+    "source_sha256": "790c2b181392b6b2760b5094e58505adc55bc04e9f9939eccdef87a71d24001b",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Nothing",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "f84b68fa-ac35-4447-8bb6-8373849d69da"
+  }
+}

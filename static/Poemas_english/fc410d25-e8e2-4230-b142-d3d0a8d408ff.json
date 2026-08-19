@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 128,
+    "words": 22,
+    "reading_time_min": 0.11
+  },
+  "text": "What is the name called?\n+\n+\n+A color like a coffin, a transparency you will not cross.\n+\n+\n+And how is it possible not to know so much?",
+  "translation": {
+    "source_sha256": "8608f24ae1e8dbd777d48ef019fd7d4bd56b0d5c3ae1ea0e352ea5184e70b8e8",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "What Is the Name Called?…",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "40947461-c5ac-4434-a1e5-9865ef82cb46"
+  }
+}

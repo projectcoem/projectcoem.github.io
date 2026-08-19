@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 97,
+    "words": 17,
+    "reading_time_min": 0.085
+  },
+  "text": "Tiny lady\n+\n+dwelling in the heart of a bird\n+\n+goes out at dawn to utter one syllable\n+\n+NO",
+  "translation": {
+    "source_sha256": "10c8a0f9458ac2e42aab41c312fd8411451a1c21b391637e576bd0788e8b271b",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Clock",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "bee1b8c8-b05e-4500-976e-2d8b100f4c4c"
+  }
+}

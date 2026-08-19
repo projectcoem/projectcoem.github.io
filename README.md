@@ -2,7 +2,10 @@
 
 Coem is an English-language interface for reading, listening to, and discovering classic short stories and poems through semantic embeddings.
 
-The site is published with GitHub Pages. The Spanish edition is available at [estevefact.github.io](https://estevefact.github.io/).
+The site is published with GitHub Pages at [theprojectcoem.github.io](https://theprojectcoem.github.io/).
+The Spanish edition is available at [estevefact.github.io](https://estevefact.github.io/).
+There is intentionally no `CNAME` file because this edition should not use a
+custom domain.
 
 ## Explore
 
@@ -39,7 +42,8 @@ When the story reader opens without a valid `?story=` parameter, it chooses a ra
 
 The first literary work and its author information load before secondary discovery indexes:
 
-- Poems start from `static/poemStartupPool.json`, a compact and varied startup set.
+- English poems start from `static/poemEnglishStartupPool.json`, a compact
+  subset containing only reviewed translations.
 - The full poem catalog, semantic neighbors, metadata, and author recommendations load after the first poem is visible.
 - Stories start from `static/storyReaderCatalog.json` instead of the full author graph.
 - Story text is loaded from the English corpus in `static/Cuentos_english/`,
@@ -109,6 +113,34 @@ python3 tools/generate_reader_startup_data.py
 ```
 
 Heavy tensor inputs live in `tensors_generator/`. Generated browser-ready artifacts live in `static/`.
+
+## Resumable poem translation
+
+Reviewed English poems live in `static/Poemas_english/`. The English reader only
+uses entries in `static/poems_english.json`, so untranslated Spanish bodies never
+leak into the English site.
+
+Check progress or request a compact, deduplicated batch:
+
+```bash
+python3 tools/poem_translation_tracker.py status
+python3 tools/poem_translation_tracker.py next --limit 10 --author "Gabriela Mistral"
+```
+
+Translations are reviewed in `translations/poem_batches/`. Importing a batch
+validates every source hash and regenerates the English catalog, startup pool,
+and progress report:
+
+```bash
+python3 tools/poem_translation_tracker.py import-batch \
+  translations/poem_batches/0001-gabriela-mistral.json
+```
+
+`static/poemTranslationProgress.json` records completed poems and unique source
+texts. Duplicate source bodies are detected by SHA-256 so later runs do not
+spend translation context on the same poem twice. Corrupt title/body pairings
+are recorded in `translations/poem_exclusions.json` for source repair instead
+of being silently mistranslated.
 
 ## Project structure
 

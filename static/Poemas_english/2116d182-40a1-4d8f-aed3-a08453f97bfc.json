@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 168,
+    "words": 33,
+    "reading_time_min": 0.165
+  },
+  "text": "I feel my heart, in sweetness,\n\nmelting away like wax:\n\nmy veins are a slow oil,\n\nand not wine,\n\nand I feel my life slipping away,\n\nsilent and gentle as the gazelle.",
+  "translation": {
+    "source_sha256": "b80485b51c747e802f3fafef4b3e295ddc8d0fa716b8c24b7c099f6bdf3d43f7",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "I Feel My Heart, in Sweetness…",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "51730d87-21de-4c90-9181-9dbd4820ca92"
+  }
+}

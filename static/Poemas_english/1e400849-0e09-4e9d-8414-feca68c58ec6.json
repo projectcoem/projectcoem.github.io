@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 122,
+    "words": 19,
+    "reading_time_min": 0.095
+  },
+  "text": "Someone measures, sobbing,\n+\n+the breadth of dawn.\n+\n+Someone stabs the pillow\n+\n+in search of their impossible\n+\n+resting place.",
+  "translation": {
+    "source_sha256": "a44b0147572007aa44e4168d0af5cdc2f1dbbbfd6fc03d35515129a20ec3081a",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Someone Measures, Sobbing…",
+    "editorial_note": "The anonymous alguien remains ungendered; dawn becomes measurable only through sobbing, and rest an impossible place sought through violence."
+  }
+}

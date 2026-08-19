@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 95,
+    "words": 18,
+    "reading_time_min": 0.09
+  },
+  "text": "Every night she descends into the well\n+\n+and in the morning reappears\n+\n+with a new reptile in her arms.",
+  "translation": {
+    "source_sha256": "02e16b8cc19953508063364e1da1d62562bed384bca745d0b58aaffba4b65723",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Every Night She Descends into the Well…",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "a1b05530-b5fb-40c0-b4ab-ec4a784ea40b"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 124,
+    "words": 20,
+    "reading_time_min": 0.1
+  },
+  "text": "The scream, the beak, the tooth, the howls,\n+\n+butcher nothingness and all its racket,\n+\n+before this simple flower fade away.",
+  "translation": {
+    "source_sha256": "348d03137eb5716b70f8fe282d34d7294bcda12f111bf38c6f799e39cd707b5e",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Flower",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "60d839cb-5717-49f5-b694-54a863102279"
+  }
+}

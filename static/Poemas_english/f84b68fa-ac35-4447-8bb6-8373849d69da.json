@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 60,
+    "words": 11,
+    "reading_time_min": 0.055
+  },
+  "text": "The wind dies in my wound.\n+\n+The night begs for my blood.",
+  "translation": {
+    "source_sha256": "790c2b181392b6b2760b5094e58505adc55bc04e9f9939eccdef87a71d24001b",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "The Wind Dies in My Wound…",
+    "editorial_note": "Mendiga is kept as an active begging rather than generalized hunger, making night a destitute presence at the wound."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 75,
+    "words": 13,
+    "reading_time_min": 0.065
+  },
+  "text": "to explain with words of this world\n+\n+that a ship departed from me carrying me away",
+  "translation": {
+    "source_sha256": "154f7f40899516a053869c9914b9c2b33ecba7ab4a5e3e24f0ea88c4b2e91740",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "To Explain with Words of This World…",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "af1b7c69-9e42-44f3-bf0d-c50c1b7d704e"
+  }
+}

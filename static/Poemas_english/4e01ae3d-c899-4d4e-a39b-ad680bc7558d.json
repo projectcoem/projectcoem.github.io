@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 81,
+    "words": 14,
+    "reading_time_min": 0.07
+  },
+  "text": "Hide me from the struggle with words\n+\n+and extinguish the fury of my elemental body.",
+  "translation": {
+    "source_sha256": "bd0bd7ff23ab5f10124f6b4ce55d5244a5df50158cd7a9235e12516c03a2d5ae",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Destructions",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "d6650eda-a818-472d-aa49-9f8f0c245068"
+  }
+}

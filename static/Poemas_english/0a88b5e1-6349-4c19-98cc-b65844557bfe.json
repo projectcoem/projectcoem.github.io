@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 91,
+    "words": 18,
+    "reading_time_min": 0.09
+  },
+  "text": "a flower\n+\n+not far from night\n+\n+my mute body\n+\n+opens\n+\n+to the delicate urgency of dew",
+  "translation": {
+    "source_sha256": "4c574147497bb036383ddeccb8b06652bd207a5443853ed8eb912d512810f38d",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Lovers",
+    "editorial_note": "The body, flower, and night are left in apposition without explanatory links; dew retains its paradoxical delicacy and urgency."
+  }
+}

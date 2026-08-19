@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 287,
+    "words": 54,
+    "reading_time_min": 0.27
+  },
+  "text": "The sea rocks its thousands of waves,\n\ndivine.\n\nHearing the loving seas,\n\nI rock my child.\n\nThe wandering wind in the night\n\nrocks the wheat.\n\nHearing the loving winds,\n\nI rock my child.\n\nGod the Father rocks his thousands of worlds\n\nwithout a sound.\n\nFeeling his hand in the darkness,\n\nI rock my child.",
+  "translation": {
+    "source_sha256": "e3bfb9686303f6e83a6c81ecfff856875e5c8e9a917324e9781995da4ffdbc18",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Rocking",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "a46e95cf-0006-466c-afd0-93e17ce6eedb"
+  }
+}

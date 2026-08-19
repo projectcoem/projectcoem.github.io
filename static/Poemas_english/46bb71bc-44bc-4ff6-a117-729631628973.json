@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 73,
+    "words": 13,
+    "reading_time_min": 0.065
+  },
+  "text": "like a poem aware\n+\n+of the silence of things\n+\n+you speak so as not to see me",
+  "translation": {
+    "source_sha256": "0b7518101302bfb9c5d1a8bab1e58b7c1192a6cb5f8b25cb5f87471400ecd4c4",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Like a Poem Aware…",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "ca63d247-7ec8-44a1-90a4-09aba17c6f0c"
+  }
+}

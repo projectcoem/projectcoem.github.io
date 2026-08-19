@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 203,
+    "words": 30,
+    "reading_time_min": 0.15
+  },
+  "text": "My friend the painter paints\n\nhis great golden angels,\n\nkneeling upon clouds,\n\nwith suns all around them.\n\n\nLet his brushes paint for me\n\nthe timid little angels\n\nwho, in their mercy, brought me\n\ntheir two bouquets of carnations.",
+  "translation": {
+    "source_sha256": "43ea1b2d4e289c533d3f6a0b7efff96dcfc2bad80474d4e0160dc151f06c720e",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Simple Verses XL",
+    "editorial_note": "The contrast between monumental angelones and tender angelitos is preserved through great and little."
+  }
+}

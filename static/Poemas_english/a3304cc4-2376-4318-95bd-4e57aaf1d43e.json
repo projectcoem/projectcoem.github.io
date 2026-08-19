@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 78,
+    "words": 17,
+    "reading_time_min": 0.085
+  },
+  "text": "Still\n+\n+not upon the branch\n+\n+in the air\n+\n+Not in the air\n+\n+in the instant\n+\n+the hummingbird",
+  "translation": {
+    "source_sha256": "dc635c60b78696215e387d3805c1d09ee2517c8b4a98cfdc6f0fa06481dee750",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Still…",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "0a72c26c-cfc0-40a8-b1d6-34aabebc8ab8"
+  }
+}

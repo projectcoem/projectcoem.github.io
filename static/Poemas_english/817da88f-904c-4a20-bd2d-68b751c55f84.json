@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 111,
+    "words": 17,
+    "reading_time_min": 0.085
+  },
+  "text": "He wished to sing, to sing\n+\n+so as to forget\n+\n+his true life made of lies\n+\n+and remember\n+\n+his lying life made of truths.",
+  "translation": {
+    "source_sha256": "b76a7ed93504eb1e3128b91b747c616f8b3a7e2cbc4d35a5130c9a154296e22c",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "He Wished to Sing, to Sing…",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "d459ee0d-6240-4ead-b752-63456197969d"
+  }
+}

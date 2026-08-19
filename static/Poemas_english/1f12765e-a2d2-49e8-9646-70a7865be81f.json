@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 349,
+    "words": 66,
+    "reading_time_min": 0.33
+  },
+  "text": "I live within four mathematical walls,\n\naligned to the meter. I am ringed by listless\n\nlittle souls who do not know the slightest thing\n\nof this blue fever feeding my chimera.\n\n\nI wear a counterfeit skin, striped in gray.\n\nA crow that guards a fleur-de-lis beneath its wing.\n\nMy fierce and sullen beak provokes a certain laughter:\n\nI think myself pure farce and hindrance.",
+  "translation": {
+    "source_sha256": "6839c2e99d6a18ac8765fbbcbfaec9cab68fa0e9ade359d21ca5ca9aaed79bd9",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Appearance",
+    "editorial_note": "The constrained geometry and self-fashioned disguise retain their tension with the hidden blue fever."
+  }
+}

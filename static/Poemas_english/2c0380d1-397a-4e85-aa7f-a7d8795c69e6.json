@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 148,
+    "words": 29,
+    "reading_time_min": 0.145
+  },
+  "text": "I know nothing of childhood\n+\n+but a luminous fear\n+\n+and a hand that drags me\n+\n+to my other shore.\n+\n+\n+My childhood and its scent\n+\n+of a caressed bird.",
+  "translation": {
+    "source_sha256": "0fd48eb0e7868f499ceba48d4aabe27d55c94f0a2ff6338a1e67ae7f01aa0809",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "I Know Nothing of Childhood…",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "22a2fc85-84e1-4c39-a005-151ef07a942a"
+  }
+}

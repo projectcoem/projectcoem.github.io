@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 208,
+    "words": 44,
+    "reading_time_min": 0.22
+  },
+  "text": "I was rowing in the boat\n\nacross the beguiling lake,\n\nwith the sun all pure gold\n\nand more than one sun in my soul.\n\n\nThen suddenly, there at my feet,\n\ninsulted by the stench, I saw\n\na dead fish, a reeking fish,\n\nin the rowing boat.",
+  "translation": {
+    "source_sha256": "6849d7ea6fdfe73f1f20ddaa71d6c38ebaf155385198db819de8ed1be17bf1d7",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Simple Verses XII",
+    "editorial_note": "The abrupt fall from golden transcendence to bodily disgust remains deliberately comic and harsh."
+  }
+}

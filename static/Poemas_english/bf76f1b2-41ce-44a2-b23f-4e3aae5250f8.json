@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 110,
+    "words": 23,
+    "reading_time_min": 0.115
+  },
+  "text": "death dies laughing but life\n+\n+dies weeping but death but life\n+\n+but nothing nothing nothing",
+  "translation": {
+    "source_sha256": "ecd757e8ac36d23bc90a2794fa2b18671c2a3b01b2c545a66d036a51585b4ab0",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Ballad of the Weeping Stone",
+    "editorial_note": "The lowercase rush and repeated pero remain unpunctuated; death and life cancel each other until only the triple nothing is left."
+  }
+}

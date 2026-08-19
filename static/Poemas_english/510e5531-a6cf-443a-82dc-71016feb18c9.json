@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 352,
+    "words": 67,
+    "reading_time_min": 0.335
+  },
+  "text": "I have faithful happiness\n\nand happiness lost:\n\none like a rose,\n\nthe other like a thorn.\n\nWhat they stole from me\n\ndid not dispossess me;\n\nI have faithful happiness\n\nand happiness lost,\n\nand I am rich in purple\n\nand in melancholy.\n\nOh, how loving is the rose,\n\nand how beloved the thorn!\n\nLike the double outline\n\nof twin fruits,\n\nI have faithful happiness\n\nand happiness lost.",
+  "translation": {
+    "source_sha256": "68e45e69bed1f066a82bf2ad5683d371b6ba98a5cbdda049296da264994e2915",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "I Have Faithful Happiness…",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "7dc88b78-251e-4902-9f55-35df317c9494"
+  }
+}

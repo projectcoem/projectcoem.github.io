@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const FALLBACK_POEM_ID = "d313c7ec-a7c5-48be-878f-d5a89008ed78";
   let data = { poems: [], authors: [] };
   let poemCatalog = {};
   let authorCatalog = {};
@@ -173,7 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("container-poem").setAttribute("aria-busy", "true");
     text.textContent = "Loading…";
     try {
-      const poemData = await fetchJSON(`static/Poemas/${encodeURIComponent(poemId)}.json`);
+      const poemData = await fetchJSON(`static/Poemas_english/${encodeURIComponent(poemId)}.json`);
       if (requestId !== activePoemLoad) return;
       const author = authorCatalog[poem.author_uuid];
       const model = poemViewModel(poem);
@@ -327,17 +326,19 @@ document.addEventListener("DOMContentLoaded", () => {
       let fullDataPromise;
 
       if (!requested) {
-        const startupPool = await fetchJSON("static/poemStartupPool.json");
+        const startupPool = await fetchJSON("static/poemEnglishStartupPool.json");
         hydrateCatalog(startupPool);
         const initialId = StoriesCore.chooseInitialStoryId(null, poemCatalog);
         if (initialId) await loadPoem(initialId, { scroll: false });
-        fullDataPromise = fetchJSON("static/poems.json");
+        fullDataPromise = fetchJSON("static/poems_english.json");
       } else {
-        fullDataPromise = fetchJSON("static/poems.json");
+        fullDataPromise = fetchJSON("static/poems_english.json");
         const fullData = await fullDataPromise;
         hydrateCatalog(fullData);
-        const initialId = poemCatalog[requested] ? requested : FALLBACK_POEM_ID;
-        await loadPoem(initialId, { scroll: false });
+        const initialId = poemCatalog[requested]
+          ? requested
+          : StoriesCore.chooseInitialStoryId(null, poemCatalog);
+        if (initialId) await loadPoem(initialId, { scroll: false });
       }
       loadCoemPortraitAnimator(() => {
         const poem = currentPoem && poemCatalog[currentPoem.id];

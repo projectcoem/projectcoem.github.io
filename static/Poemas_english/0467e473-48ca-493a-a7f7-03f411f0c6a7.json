@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 152,
+    "words": 27,
+    "reading_time_min": 0.135
+  },
+  "text": "He invented himself a face.\n+\n+Behind it\n+\n+he lived, died, and rose again\n+\n+many times.\n+\n+His face\n+\n+today bears that face’s wrinkles.\n+\n+His wrinkles have no face.",
+  "translation": {
+    "source_sha256": "289660d4a973c9fb2d0fe37925b267bea1818bb770ab60ad49ad48754bca44e7",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "The Other",
+    "editorial_note": "The repetitions of face and wrinkles remain unsmoothed, allowing persona, aging, and facelessness to undo one another line by line."
+  }
+}

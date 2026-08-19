@@ -1,0 +1,58 @@
+[
+  {
+    "id": "de512d02-0eba-47a0-aca0-f17a3477d6c3",
+    "source_sha256": "0c4804b85f44f826b3772f453141e5073c7c209bb844d0b025d846f8b24c1dcb",
+    "title": "alejandra alejandra…",
+    "text": "alejandra alejandra\n+\n+underneath I am\n+\n+alejandra",
+    "editorial_note": "The lowercase name and bare spatial debajo remain intact: the speaking self lies beneath the name yet returns to it in the final line."
+  },
+  {
+    "id": "f84b68fa-ac35-4447-8bb6-8373849d69da",
+    "source_sha256": "790c2b181392b6b2760b5094e58505adc55bc04e9f9939eccdef87a71d24001b",
+    "title": "The Wind Dies in My Wound…",
+    "text": "The wind dies in my wound.\n+\n+The night begs for my blood.",
+    "editorial_note": "Mendiga is kept as an active begging rather than generalized hunger, making night a destitute presence at the wound."
+  },
+  {
+    "id": "b32209d7-abd3-4a2e-949b-2ca60194435c",
+    "source_sha256": "7ff2d4c88282eda0040715195037e7605fbe4eee588bc21df38f316db3dc215c",
+    "title": "Death Always Beside Me…",
+    "text": "Death always beside me.\n+\n+I listen to what it says.\n+\n+I hear only myself.",
+    "editorial_note": "The distinction between listening and hearing is preserved; death’s speech closes into the speaker’s own voice without resolving whether it is solitary or prophetic."
+  },
+  {
+    "id": "2ab4aee7-bf61-46e9-8b1e-58d5622adff7",
+    "source_sha256": "a0a06b34b105acf6610e8831821e55e27042972005c7c650dba4ca6dfa0164e4",
+    "title": "Before",
+    "text": "musical forest\n+\n+\n+the birds drew inside my eyes\n+\n+little cages",
+    "editorial_note": "The image is left in its original reversal: birds do not escape cages but draw them within the perceiving eyes."
+  },
+  {
+    "id": "e068f06d-a382-4d54-bf15-51c91a2bd5d3",
+    "source_sha256": "c859a614a9d46395bbe1824496ba3abaa1d84a6930c035f1e6d2a2ef44fdf626",
+    "title": "21",
+    "text": "I have been born so much\n+\n+and suffered doubly\n+\n+in the memory of here and there",
+    "editorial_note": "He nacido tanto remains the deliberately strange born so much, allowing quantity, repetition, and excess to coexist with doubled suffering."
+  },
+  {
+    "id": "ca63d247-7ec8-44a1-90a4-09aba17c6f0c",
+    "source_sha256": "0b7518101302bfb9c5d1a8bab1e58b7c1192a6cb5f8b25cb5f87471400ecd4c4",
+    "title": "18",
+    "text": "like a poem aware\n+\n+of the silence of things\n+\n+you speak so as not to see me",
+    "editorial_note": "Enterado becomes aware rather than merely informed; speech knowingly collaborates with the silence of things to avoid vision."
+  },
+  {
+    "id": "af1b7c69-9e42-44f3-bf0d-c50c1b7d704e",
+    "source_sha256": "154f7f40899516a053869c9914b9c2b33ecba7ab4a5e3e24f0ea88c4b2e91740",
+    "title": "13",
+    "text": "to explain with words of this world\n+\n+that a ship departed from me carrying me away",
+    "editorial_note": "The infinitive remains without a governing verb, while partió de mí holds both departure from the self and the self’s removal aboard the ship."
+  },
+  {
+    "id": "d6650eda-a818-472d-aa49-9f8f0c245068",
+    "source_sha256": "bd0bd7ff23ab5f10124f6b4ce55d5244a5df50158cd7a9235e12516c03a2d5ae",
+    "title": "Hide Me from the Struggle with Words…",
+    "text": "Hide me from the struggle with words\n+\n+and extinguish the fury of my elemental body.",
+    "editorial_note": "The plea binds linguistic combat to bodily fire; elemental retains both primal substance and uncontrollable force."
+  }
+]

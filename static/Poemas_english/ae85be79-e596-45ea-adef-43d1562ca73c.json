@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 150,
+    "words": 28,
+    "reading_time_min": 0.14
+  },
+  "text": "Naked, dreaming a solar night.\n+\n+I have lain through animal days.\n+\n+The wind and rain erased me\n+\n+as they would a fire, as they would a poem\n+\n+written on a wall.",
+  "translation": {
+    "source_sha256": "04df84a0db2a3c3d4034640fd60f23333bab2bbf42d39bc4ccbf6be23c201afa",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Naked, Dreaming a Solar Night…",
+    "editorial_note": "Animal days retains the source’s compressed strangeness; the added pronoun in the erasure clarifies English agency without weakening the equivalence of body, fire, and wall-poem."
+  }
+}

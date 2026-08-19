@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 150,
+    "words": 25,
+    "reading_time_min": 0.125
+  },
+  "text": "Never again hope\n+\n+in a coming and going\n+\n+of names, of figures.\n+\n+Someone dreamed very badly,\n+\n+someone consumed by mistake\n+\n+the forgotten distances.",
+  "translation": {
+    "source_sha256": "1ccc8f8516002a495a4d8a0f4ae9e06e043c4d61ef0c53cc6b61d2fd71bdfb80",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Never Again Hope…",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "c6465b6c-2248-4f09-ad18-83072c9a5663"
+  }
+}

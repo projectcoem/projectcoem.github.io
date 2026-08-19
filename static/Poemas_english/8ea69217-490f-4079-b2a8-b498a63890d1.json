@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 102,
+    "words": 16,
+    "reading_time_min": 0.08
+  },
+  "text": "Strange, to unaccustom myself\n+\n+to the hour in which I was born.\n+\n+Strange, no longer to ply\n+\n+the trade of the newly arrived.",
+  "translation": {
+    "source_sha256": "a509d87e037c36fc2e047c90f9998c50b2df58529b5f02d46cd186495b6dfb7a",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "15",
+    "editorial_note": "Extraño is held as the adjective strange rather than resolved into I miss; birth persists as an hour and newcomer as a lifelong profession."
+  }
+}

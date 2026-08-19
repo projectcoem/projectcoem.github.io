@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 207,
+    "words": 38,
+    "reading_time_min": 0.19
+  },
+  "text": "I grow a white rose\n\nin July as in January,\n\nfor the faithful friend\n\nwho offers me an open hand.\n\n\nAnd for the cruel one who tears out\n\nthe heart by which I live,\n\nI grow neither thistle nor nettle;\n\nI grow the white rose.",
+  "translation": {
+    "source_sha256": "291766a31d04678177f882377ac063a6476390f2b4e29e3aaa458bd36cc46378",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Simple Verses XXXIX",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "57b6c3fa-514b-417f-a82e-90546b1b65f4"
+  }
+}

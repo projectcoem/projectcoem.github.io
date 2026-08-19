@@ -29,6 +29,27 @@ const server = http.createServer((request, response) => {
   });
   const page = await browser.newPage();
   try {
+    const homeButtons = [
+      ["Explore Stories", "/stories-info.html"],
+      ["Explore Written Poems", "/poems-info.html"],
+      ["Explore Author Relationships", "/authorToAuthor3DSmall.html"],
+      ["Story and Poem Embeddings", "/embeddings.html"],
+      ["Explore All Authors", "/authorToAuthor3D.html"],
+    ];
+    for (const [label, route] of homeButtons) {
+      await page.goto(`${base}/`, { waitUntil: "domcontentloaded" });
+      await page.getByRole("button", { name: label }).click();
+      await page.waitForURL(`**${route}`);
+      assert.equal(new URL(page.url()).pathname, route);
+    }
+
+    await page.goto(`${base}/embeddings.html`, { waitUntil: "domcontentloaded" });
+    assert.equal(
+      await page.locator("vz-projector-app").getAttribute("projector-config-json-path"),
+      "oss_data/oss_demo_projector_config_english.json"
+    );
+    assert.ok(await page.getByText("Spanish version").count());
+
     const storyGraph = JSON.parse(fs.readFileSync(
       path.join(root, "static/authorLinksSmallerAllStories.json"),
       "utf8"
@@ -67,18 +88,17 @@ const server = http.createServer((request, response) => {
     await page.goto(`${base}/poems-info.html`);
     await page.waitForFunction(() =>
       Array.from(document.querySelectorAll("#country-filter option"))
-        .some(option => option.textContent === "Spain")
+        .some(option => option.textContent === "Chile")
     );
     const poemCountries = await page.getByRole("combobox", { name: "Country" })
       .locator("option").allTextContents();
     const poemGenres = await page.getByRole("combobox", { name: "Genre" })
       .locator("option").allTextContents();
-    assert.ok(poemCountries.includes("Spain"));
-    assert.ok(poemCountries.includes("United States"));
+    assert.ok(poemCountries.includes("Chile"));
     assert.ok(!poemCountries.includes("España"));
     assert.ok(poemGenres.includes("Romanticism"));
     assert.ok(!poemGenres.includes("Romanticismo"));
-    await page.getByRole("searchbox", { name: "Search everything" }).fill("Borges");
+    await page.getByRole("searchbox", { name: "Search everything" }).fill("Gabriela");
     const poemResult = page.locator("#autocomplete-container button").first();
     await poemResult.waitFor();
     await poemResult.click();

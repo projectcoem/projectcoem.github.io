@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 157,
+    "words": 29,
+    "reading_time_min": 0.145
+  },
+  "text": "no more the sweet metamorphoses of a silken girl\n+\n+now sleepwalking on the ledge of fog\n+\n+her awakening of a breathing hand\n+\n+of a flower opening to the wind",
+  "translation": {
+    "source_sha256": "6b81c5ae72df0e5a95fe3ad3f1b595a51cc52ce79dbe71ea791efab08892c595",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "No More the Sweet Metamorphoses of a Silken Girl…",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "78ddfbc4-929a-4c17-bff1-b98b34ad8d3a"
+  }
+}

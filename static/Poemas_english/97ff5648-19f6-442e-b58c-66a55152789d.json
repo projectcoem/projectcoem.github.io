@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 209,
+    "words": 40,
+    "reading_time_min": 0.2
+  },
+  "text": "I can never forget\n\nthat little autumn morning\n\nwhen a new shoot sprang\n\nfrom the poor severed branch.\n\n\nThat little morning when, in vain,\n\nbeside the cold stove,\n\na girl in love\n\nheld out her hand to the old man.",
+  "translation": {
+    "source_sha256": "1244529b0e849ade67709de024deea410501c3eae56ebf68f8522eb086ef99e6",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Simple Verses XIV",
+    "editorial_note": "The repeated diminutive morning carries tenderness into the stark human tableau."
+  }
+}

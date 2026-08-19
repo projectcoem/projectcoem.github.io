@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 212,
+    "words": 44,
+    "reading_time_min": 0.22
+  },
+  "text": "My love takes fright in the air;\n\nEva is fair-haired, Eva is false;\n\na cloud comes and carries away\n\nmy love, who moans and weeps.\n\n\nThat passing cloud carries off\n\nmy love, who weeps;\n\nEva has betrayed me;\n\nEva will console me!",
+  "translation": {
+    "source_sha256": "bf362b691ffd4a7370b9bcc8bf6b8b73efb68d07d6340dcdcdb93d041d38ec69",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Simple Verses XX",
+    "editorial_note": "The deliberately circular betrayal and consolation are kept, along with the airy instability of the opening."
+  }
+}

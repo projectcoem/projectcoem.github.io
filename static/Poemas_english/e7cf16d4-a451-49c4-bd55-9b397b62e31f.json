@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 99,
+    "words": 19,
+    "reading_time_min": 0.095
+  },
+  "text": "This lilac sheds its petals.\n+\n+Out of itself it falls\n+\n+and hides its ancient shadow.\n+\n+I shall die of things like this.",
+  "translation": {
+    "source_sha256": "a17d1b20db68f14cb2c146e625e78fc64cf13d03e413ac7a98bd1cacf8040a48",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Vertigos or Contemplation of Something That Ends",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "d8ad1b95-703c-490e-9126-0cc148a09245"
+  }
+}

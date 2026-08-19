@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 312,
+    "words": 55,
+    "reading_time_min": 0.275
+  },
+  "text": "Now that I am a queen, though once a beggar,\n\nI live in naked fear that you will leave me,\n\nand pale, I ask you, every passing hour:\n\n“Are you still with me? Oh, do not go far!”\n\nI would like to make the journey smiling,\n\ntrusting now that you have come;\n\nbut even in my sleep I lie afraid\n\nand ask you in my dreams: “Have you not gone?”",
+  "translation": {
+    "source_sha256": "431b27f9d43134fd69f2825f48053a4c3c49e5ddf6b5e996ee9e2c61ddf422dc",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Now That I Am a Queen, Though Once a Beggar…",
+    "editorial_note": "The royal and destitute selves remain in tension; marchas becomes the shared journey rather than a literal march."
+  }
+}

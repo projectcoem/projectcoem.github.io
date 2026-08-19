@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 385,
+    "words": 74,
+    "reading_time_min": 0.37
+  },
+  "text": "The red rose\n\npicked yesterday;\n\nthe fire and cinnamon\n\nthey call carnation;\n\n\nthe oven-baked bread\n\nof anise and honey,\n\nand the fish in the glass bowl\n\nthat sets it burning:\n\n\nall of it yours,\n\nlittle son of woman,\n\nif only you will consent\n\nto sleep at last.\n\n\nThe rose, I say;\n\nI say the carnation.\n\nThe fruit, I say,\n\nand I say the honey;\n\n\nand the fish made of light,\n\nand more and still more too,\n\nif only you will sleep\n\nuntil daybreak!",
+  "translation": {
+    "source_sha256": "31988b9a799f3f7cc140e456017c6f32656d1e11cbe397b392b9fd28a204c243",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "The Red Rose…",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "1e5dae58-fa81-443b-8594-271e62b39cab"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "length": 423,
+    "words": 69,
+    "reading_time_min": 0.345
+  },
+  "text": "Sleep now, my child,\n\nsleep with a smile,\n\nfor the ring of stars\n\nis rocking you.\n\n\nYou delighted in the light\n\nand you were happy.\n\nYou had every good thing\n\nwhen you had me.\n\n\nSleep now, my child,\n\nsleep with a smile,\n\nfor loving Earth\n\nis rocking you.\n\n\nYou gazed upon the burning\n\ncrimson rose.\n\nYou embraced the world:\n\nyou embraced me.\n\n\nSleep now, my child,\n\nsleep with a smile,\n\nfor it is God in the darkness\n\nwho is rocking you.",
+  "translation": {
+    "source_sha256": "5c7d791844106a1a411054bc2a7e07e99406a890900a4d4cff77b2c50e18a9c8",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "You Had Me",
+    "editorial_note": "Reuses a reviewed translation of the identical source body.",
+    "reused_from": "1d5c559f-70bd-4626-9e4c-1a6cab3eb846"
+  }
+}
