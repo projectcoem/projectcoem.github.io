@@ -8,6 +8,7 @@ let activeStoryLoad = 0;
 const SPANISH_STORY_URL = "https://estevefact.github.io/stories-info.html";
 let storySearchItems = [];
 let storySearchIndex = [];
+let activeNarrationHighlighter = null;
 const SEARCH_SUGGESTION_LIMIT = 30;
 
 async function fetchJSON(path) {
@@ -107,7 +108,7 @@ function setAudioUnavailable(audio, message) {
   if (status) status.textContent = message;
 }
 
-async function setAudio(storyId, audio = document.getElementById("popup-audio")) {
+async function setAudio(storyId, text, requestId, audio = document.getElementById("popup-audio")) {
   if (!audio) return;
   const status = document.getElementById("audio-status");
   const storyAudio = `static/audios_en/${encodeURIComponent(storyId)}.mp3`;
@@ -115,11 +116,16 @@ async function setAudio(storyId, audio = document.getElementById("popup-audio"))
   if (status) status.textContent = "Checking English narration…";
   try {
     const response = await fetch(storyAudio, { method: "HEAD" });
-    if (audio.isConnected) {
+    if (audio.isConnected && requestId === activeStoryLoad) {
       if (response.ok) {
         audio.src = storyAudio;
         audio.hidden = false;
         if (status) status.textContent = "English narration available.";
+        activeNarrationHighlighter = AudioHighlighter.attach({
+          audio,
+          container: document.getElementById("cuentoText"),
+          text
+        });
       } else {
         setAudioUnavailable(
           audio,
@@ -227,6 +233,8 @@ function updateBookmarkButton() {
 async function loadStory(storyId, options = {}) {
   const story = storyCatalog[storyId];
   if (!story) return;
+  activeNarrationHighlighter?.destroy();
+  activeNarrationHighlighter = null;
   const requestId = ++activeStoryLoad;
   const textContainer = document.getElementById("cuentoText");
   document.getElementById("container-cuento").setAttribute("aria-busy", "true");
@@ -248,7 +256,7 @@ async function loadStory(storyId, options = {}) {
     renderAuthorStories(story.author, storyId);
     renderRelatedAuthors(story.author);
     renderRecommendations(storyId);
-    setAudio(storyId, document.getElementById("popup-audio"));
+    setAudio(storyId, data.text || "", requestId, document.getElementById("popup-audio"));
     ReaderFeatures.updateURL("story", storyId, story.title);
     if (options.record !== false) ReaderFeatures.recordHistory("story", model);
     renderLibrary();
