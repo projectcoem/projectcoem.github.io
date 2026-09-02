@@ -6,6 +6,9 @@ let storyMetadata = {};
 let currentStory = null;
 let activeStoryLoad = 0;
 const SPANISH_STORY_URL = "https://estevefact.github.io/stories-info.html";
+let storySearchItems = [];
+let storySearchIndex = [];
+const SEARCH_SUGGESTION_LIMIT = 30;
 
 async function fetchJSON(path) {
   const response = await fetch(path);
@@ -65,6 +68,11 @@ function updateSpanishCounterpart(storyId) {
   document.querySelectorAll("[data-spanish-counterpart]").forEach(link => {
     link.href = href;
   });
+}
+
+function rebuildStorySearchIndex() {
+  storySearchItems = Object.values(storyCatalog).map(storyViewModel);
+  storySearchIndex = ReaderFeatures.buildFilterIndex(storySearchItems);
 }
 
 function renderAuthor(author, storyTitle) {
@@ -276,9 +284,10 @@ function setupSearch() {
     results.replaceChildren();
     count.textContent = "";
     if (!active) return;
-    const matches = ReaderFeatures.filterItems(Object.values(storyCatalog).map(storyViewModel), filters);
+    const matches = ReaderFeatures.filterIndexedItems(storySearchIndex, filters);
     count.textContent = `${matches.length} match${matches.length === 1 ? "" : "es"}`;
-    matches.slice(0, 30).forEach(model => {
+    const fragment = document.createDocumentFragment();
+    matches.slice(0, SEARCH_SUGGESTION_LIMIT).forEach(model => {
       const suggestion = document.createElement("button");
       suggestion.type = "button";
       suggestion.className = "autocomplete-suggestion";
@@ -289,8 +298,9 @@ function setupSearch() {
         input.value = model.title;
         loadStory(model.id);
       });
-      results.appendChild(suggestion);
+      fragment.appendChild(suggestion);
     });
+    results.appendChild(fragment);
   };
 
   input.addEventListener("input", renderResults);
@@ -322,7 +332,7 @@ function setupControls() {
   });
   document.getElementById("surprise-button").addEventListener("click", () => {
     const item = ReaderFeatures.randomItem(
-      Object.values(storyCatalog).map(storyViewModel),
+      storySearchItems,
       activeFilters(),
       currentStory?.id
     );
@@ -335,6 +345,7 @@ async function initializeStories() {
   try {
     gData = await fetchJSON("static/storyReaderCatalog.json");
     storyCatalog = StoriesCore.buildStoryCatalog(gData.nodes);
+    rebuildStorySearchIndex();
     populateSelect("country-filter", gData.nodes.map(node => ReaderFeatures.englishMetadata(node.country)), "Country");
     populateSelect("genre-filter", gData.nodes.map(node => ReaderFeatures.englishMetadata(node.genre)), "Genre");
     setupSearch();
@@ -356,6 +367,7 @@ async function initializeStories() {
       storyNeighborIndex = loadedNeighbors;
       storyMetadata = loadedMetadata;
       authorNeighborIndex = loadedAuthorNeighbors;
+      rebuildStorySearchIndex();
       if (!currentStory) return;
       const story = storyCatalog[currentStory.id];
       if (!story) return;
