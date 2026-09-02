@@ -855,14 +855,15 @@
         }
     </style>
     <link rel="stylesheet" href="site_chrome.css?v=1">
-    <link rel="stylesheet" href="reader_ui.css?v=14">
+    <link rel="stylesheet" href="reader_ui.css?v=15">
+    <link rel="stylesheet" href="coem_theme.css?v=4">
 </head>
 
 <body>
     <header id="appbar">
         <strong id="title-1">Stories</strong>
         <div class="center-section">
-            <a href="index.html" aria-label="Coem home"><img src="static/Coem.png" alt="Logo" /></a>
+            <a href="index.html" aria-label="Coem home"><img src="Coem.png" alt="" /></a>
         </div>
         <details class="site-menu">
             <summary>Main menu</summary>
@@ -892,7 +893,7 @@
                 <label>Country<select class="reader-select" id="country-filter"><option value="">All</option></select></label>
                 <label>Genre<select class="reader-select" id="genre-filter"><option value="">All</option></select></label>
                 <label>Maximum length<select class="reader-select" id="time-filter">
-                    <option value="">Any</option><option value="2">2 minutes</option><option value="5">5 minutes</option><option value="8">8 minutes</option>
+                    <option value="">Any</option><option value="2">2 minutes</option><option value="4">4 minutes</option><option value="6">6 minutes</option><option value="8">8 minutes</option><option value="10">10 minutes</option><option value="15">15 minutes</option><option value="20">20 minutes</option>
                 </select></label>
                 <button class="reader-button reader-button--secondary" id="clear-filters" type="button">Clear filters</button>
             </div>
@@ -933,6 +934,7 @@
     <script src="static/particleDrawStories.js?v=13"></script>
     <script src="reader_features.js?v=12"></script>
     <script src="stories_core.js?v=11"></script>
+    <script src="audio_highlighter.js?v=1"></script>
     <script src="author_similarity.js?v=1"></script>
     <script src="stories_script.js?v=13"></script>
 </body>

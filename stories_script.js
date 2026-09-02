@@ -6,6 +6,10 @@ let storyMetadata = {};
 let currentStory = null;
 let activeStoryLoad = 0;
 const SPANISH_STORY_URL = "https://estevefact.github.io/stories-info.html";
+let storySearchItems = [];
+let storySearchIndex = [];
+let activeNarrationHighlighter = null;
+const SEARCH_SUGGESTION_LIMIT = 30;
 
 async function fetchJSON(path) {
   const response = await fetch(path);
@@ -67,6 +71,11 @@ function updateSpanishCounterpart(storyId) {
   });
 }
 
+function rebuildStorySearchIndex() {
+  storySearchItems = Object.values(storyCatalog).map(storyViewModel);
+  storySearchIndex = ReaderFeatures.buildFilterIndex(storySearchItems);
+}
+
 function renderAuthor(author, storyTitle) {
   const container = document.getElementById("author-info-container");
   container.innerHTML = `
@@ -99,7 +108,7 @@ function setAudioUnavailable(audio, message) {
   if (status) status.textContent = message;
 }
 
-async function setAudio(storyId, audio = document.getElementById("popup-audio")) {
+async function setAudio(storyId, text, requestId, audio = document.getElementById("popup-audio")) {
   if (!audio) return;
   const status = document.getElementById("audio-status");
   const storyAudio = `static/audios_en/${encodeURIComponent(storyId)}.mp3`;
@@ -107,11 +116,16 @@ async function setAudio(storyId, audio = document.getElementById("popup-audio"))
   if (status) status.textContent = "Checking English narration…";
   try {
     const response = await fetch(storyAudio, { method: "HEAD" });
-    if (audio.isConnected) {
+    if (audio.isConnected && requestId === activeStoryLoad) {
       if (response.ok) {
         audio.src = storyAudio;
         audio.hidden = false;
         if (status) status.textContent = "English narration available.";
+        activeNarrationHighlighter = AudioHighlighter.attach({
+          audio,
+          container: document.getElementById("cuentoText"),
+          text
+        });
       } else {
         setAudioUnavailable(
           audio,
@@ -219,6 +233,8 @@ function updateBookmarkButton() {
 async function loadStory(storyId, options = {}) {
   const story = storyCatalog[storyId];
   if (!story) return;
+  activeNarrationHighlighter?.destroy();
+  activeNarrationHighlighter = null;
   const requestId = ++activeStoryLoad;
   const textContainer = document.getElementById("cuentoText");
   document.getElementById("container-cuento").setAttribute("aria-busy", "true");
@@ -240,7 +256,7 @@ async function loadStory(storyId, options = {}) {
     renderAuthorStories(story.author, storyId);
     renderRelatedAuthors(story.author);
     renderRecommendations(storyId);
-    setAudio(storyId, document.getElementById("popup-audio"));
+    setAudio(storyId, data.text || "", requestId, document.getElementById("popup-audio"));
     ReaderFeatures.updateURL("story", storyId, story.title);
     if (options.record !== false) ReaderFeatures.recordHistory("story", model);
     renderLibrary();
@@ -276,9 +292,10 @@ function setupSearch() {
     results.replaceChildren();
     count.textContent = "";
     if (!active) return;
-    const matches = ReaderFeatures.filterItems(Object.values(storyCatalog).map(storyViewModel), filters);
+    const matches = ReaderFeatures.filterIndexedItems(storySearchIndex, filters);
     count.textContent = `${matches.length} match${matches.length === 1 ? "" : "es"}`;
-    matches.slice(0, 30).forEach(model => {
+    const fragment = document.createDocumentFragment();
+    matches.slice(0, SEARCH_SUGGESTION_LIMIT).forEach(model => {
       const suggestion = document.createElement("button");
       suggestion.type = "button";
       suggestion.className = "autocomplete-suggestion";
@@ -289,8 +306,9 @@ function setupSearch() {
         input.value = model.title;
         loadStory(model.id);
       });
-      results.appendChild(suggestion);
+      fragment.appendChild(suggestion);
     });
+    results.appendChild(fragment);
   };
 
   input.addEventListener("input", renderResults);
@@ -322,7 +340,7 @@ function setupControls() {
   });
   document.getElementById("surprise-button").addEventListener("click", () => {
     const item = ReaderFeatures.randomItem(
-      Object.values(storyCatalog).map(storyViewModel),
+      storySearchItems,
       activeFilters(),
       currentStory?.id
     );
@@ -335,6 +353,7 @@ async function initializeStories() {
   try {
     gData = await fetchJSON("static/storyReaderCatalog.json");
     storyCatalog = StoriesCore.buildStoryCatalog(gData.nodes);
+    rebuildStorySearchIndex();
     populateSelect("country-filter", gData.nodes.map(node => ReaderFeatures.englishMetadata(node.country)), "Country");
     populateSelect("genre-filter", gData.nodes.map(node => ReaderFeatures.englishMetadata(node.genre)), "Genre");
     setupSearch();
@@ -356,6 +375,7 @@ async function initializeStories() {
       storyNeighborIndex = loadedNeighbors;
       storyMetadata = loadedMetadata;
       authorNeighborIndex = loadedAuthorNeighbors;
+      rebuildStorySearchIndex();
       if (!currentStory) return;
       const story = storyCatalog[currentStory.id];
       if (!story) return;
