@@ -286,6 +286,25 @@ test("the homepage uses the canonical Coem image mark", () => {
   assert.equal(logo.readUInt32BE(20), 288);
 });
 
+test("every branded page uses the canonical root Coem mark", () => {
+  const root = path.resolve(__dirname, "..");
+  const pages = [
+    "index.html",
+    "stories-info.html",
+    "poems-info.html",
+    "authorToAuthor3DSmall.html",
+    "authorToAuthor3DSmall_english.html",
+    "authorToAuthor3D.html",
+    "embeddings.html"
+  ];
+
+  pages.forEach(page => {
+    const html = fs.readFileSync(path.join(root, page), "utf8");
+    assert.match(html, /<img\b[^>]*\bsrc="Coem\.png"/, page);
+    assert.doesNotMatch(html, /static\/Coem\.png/, page);
+  });
+});
+
 test("navigation focuses and scrolls the new reading heading", () => {
   const calls = [];
   const element = {

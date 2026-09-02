@@ -3,13 +3,11 @@
 
     const heroAuthors = [
         { name: 'Jorge Luis Borges', image: 'static/imgs/Borges.png' },
-        { name: 'Ray Bradbury', image: 'static/imgs/Bradbury.png' },
         { name: 'Carl Sagan', image: 'static/imgs/Sagan.png' },
         { name: 'Emily Dickinson', image: 'static/imgs/Dickinson.png' },
         { name: 'Franz Kafka', image: 'static/imgs/Kafka.png' },
         { name: 'Federico García Lorca', image: 'static/imgs/Lorca.png' },
-        { name: 'Gabriel García Márquez', image: 'static/imgs/Marquez.png' },
-        { name: 'Pablo Neruda', image: 'static/imgs/Neruda.png' },
+        { name: 'Gabriel García Márquez', image: 'static/imgs/gabo.png' },
         { name: 'Fernando Pessoa', image: 'static/imgs/Pessoa.png' },
         { name: 'Alejandra Pizarnik', image: 'static/imgs/Pizarnik.png' },
         { name: 'Edgar Allan Poe', image: 'static/imgs/poe.png' },
@@ -19,7 +17,8 @@
         { name: 'Wisława Szymborska', image: 'static/imgs/Szymborska.png' },
         { name: 'Virginia Woolf', image: 'static/imgs/Virginia.png' },
         { name: 'Julio Cortázar', image: 'static/imgs/cortazar.png' },
-        { name: 'Osamu Dazai', image: 'static/imgs/dazai.png' }
+        { name: 'Charles Bukowski', image: 'static/imgs/bukowski.png' },
+        { name: 'Charles Dickens', image: 'static/imgs/Dickens.png' }
     ];
 
     function rotateHeroPortraits() {
@@ -46,34 +45,34 @@
 
     const routes = [
         {
-            label: 'Cuentos', kicker: 'Lectura y escucha', title: 'Cuentos',
-            description: 'Busca entre miles de cuentos clásicos, filtra por país o género y escucha las narraciones disponibles.',
-            action: 'Explorar cuentos', href: 'stories-info.html', image: 'static/imgs/quiroga.png', author: 'Horacio Quiroga'
+            label: 'Stories', kicker: 'Reading and listening', title: 'Stories',
+            description: 'Search thousands of classic stories, filter by country or genre, and hear available English narrations.',
+            action: 'Explore stories', href: 'stories-info.html', image: 'static/imgs/quiroga.png', author: 'Horacio Quiroga'
         },
         {
-            label: 'Poemas', kicker: 'Versos y hallazgos', title: 'Poemas',
-            description: 'Recorre una extensa colección de poesía en español y descubre obras cercanas por autor, país o sensibilidad.',
-            action: 'Explorar poemas', href: 'poems-info.html', image: 'static/imgs/Pizarnik.png', author: 'Alejandra Pizarnik'
+            label: 'Poems', kicker: 'Verse and discovery', title: 'Poems',
+            description: 'Browse a growing collection of English poetry translations and discover nearby works by author, country, or sensibility.',
+            action: 'Explore poems', href: 'poems-info.html', image: 'static/imgs/Pizarnik.png', author: 'Alejandra Pizarnik'
         },
         {
-            label: 'Relaciones', kicker: 'Mapa de afinidades', title: 'Relaciones',
-            description: 'Sigue los vínculos de menciones entre escritores y descubre qué autores se acercan a través de sus obras.',
-            action: 'Ver relaciones', href: 'authorToAuthor3DSmall.html', image: 'static/imgs/cortazar.png', author: 'Julio Cortázar'
+            label: 'Relationships', kicker: 'Map of affinities', title: 'Relationships',
+            description: 'Follow links between writers and discover which authors move closer through their works.',
+            action: 'View relationships', href: 'authorToAuthor3DSmall.html', image: 'static/imgs/cortazar.png', author: 'Julio Cortázar'
         },
         {
-            label: 'Embeddings', kicker: 'Constelación de textos', title: 'Embeddings',
-            description: 'Navega cuentos y poemas como puntos en un espacio compartido, agrupados por la cercanía de su lenguaje.',
-            action: 'Abrir proyector', href: 'embeddings.html', image: 'static/imgs/Borges.png', author: 'Jorge Luis Borges'
+            label: 'Embeddings', kicker: 'Text constellation', title: 'Embeddings',
+            description: 'Navigate stories and poems as points in a shared space, grouped by the closeness of their language.',
+            action: 'Open projector', href: 'embeddings.html', image: 'static/imgs/Borges.png', author: 'Jorge Luis Borges'
         },
         {
-            label: 'Autores', kicker: 'Atlas completo', title: 'Autores',
-            description: 'Explora el mapa mayor de escritores, sus países y las conexiones que atraviesan todo el archivo de COEM.',
-            action: 'Explorar autores', href: 'authorToAuthor3D.html', image: 'static/imgs/Marquez.png', author: 'Gabriel García Márquez'
+            label: 'Authors', kicker: 'Complete atlas', title: 'Authors',
+            description: 'Explore the larger map of writers, their countries, and the connections spanning the COEM archive.',
+            action: 'Explore authors', href: 'authorToAuthor3D.html', image: 'static/imgs/gabo.png', author: 'Gabriel García Márquez'
         },
         {
-            label: 'Describir', kicker: 'Búsqueda experimental', title: 'Describir',
-            description: 'Escribe la historia que imaginas y busca cuentos del archivo que se parezcan a esa descripción en google Colab.',
-            action: 'Describir un cuento', href: 'https://colab.research.google.com/drive/1z9y_NzBtdJrvlEC0siRCjEVZP7VuzMEX?usp=sharing',
+            label: 'Describe', kicker: 'Experimental search', title: 'Describe',
+            description: 'Describe the story you imagine and search for works in the archive that resemble it in Google Colab.',
+            action: 'Describe a story', href: 'https://colab.research.google.com/drive/1z9y_NzBtdJrvlEC0siRCjEVZP7VuzMEX?usp=sharing',
             image: 'static/imgs/Kafka.png', author: 'Franz Kafka', external: true
         }
     ];
@@ -195,7 +194,7 @@
         activeIndex = normalizedIndex;
 
         image.src = route.image;
-        image.alt = `Retrato de ${route.author}`;
+        image.alt = `Portrait of ${route.author}`;
         author.textContent = route.author;
         current.textContent = String(normalizedIndex + 1).padStart(2, '0');
         kicker.textContent = route.kicker;

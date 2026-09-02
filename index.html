@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="visualización, poemas, cuentos, autores, literatura, machine learning">
-    <meta name="description" content="COEM: un archivo interactivo para leer cuentos y poemas clásicos y descubrir las relaciones entre sus autores.">
-    <meta name="author" content="Esteban Velásquez y Agustín Vallejo">
+    <meta name="keywords" content="visualization, poems, stories, authors, literature, machine learning">
+    <meta name="description" content="COEM is an interactive archive for reading classic stories and poems and discovering relationships between their authors.">
+    <meta name="author" content="Esteban Velásquez and Agustín Vallejo">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="COEM — Archivo literario interactivo">
-    <meta property="og:description" content="Cuentos, poemas y relaciones literarias para leer, escuchar y explorar.">
-    <meta property="og:url" content="https://estevefact.github.io/">
+    <meta property="og:title" content="COEM — Interactive Literary Archive">
+    <meta property="og:description" content="Stories, poems, and literary relationships to read, listen to, and explore.">
+    <meta property="og:url" content="https://projectcoem.github.io/">
     <meta property="og:image" content="https://raw.githubusercontent.com/Estevefact/Estevefact.github.io/main/preview.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="COEM — Archivo literario interactivo">
-    <meta name="twitter:description" content="Cuentos, poemas y relaciones literarias para leer, escuchar y explorar.">
+    <meta name="twitter:title" content="COEM — Interactive Literary Archive">
+    <meta name="twitter:description" content="Stories, poems, and literary relationships to read, listen to, and explore.">
     <meta name="twitter:image" content="https://raw.githubusercontent.com/Estevefact/Estevefact.github.io/main/preview.png">
     <link rel="icon" type="image/png" href="static/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,23 +21,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="preload" as="image" href="static/imgs/quiroga.png">
     <link rel="stylesheet" href="index.css?v=5">
-    <title>COEM — Archivo literario interactivo</title>
+    <title>COEM — Interactive Literary Archive</title>
 </head>
 <body>
-    <a class="skip-link" href="#archivo">Ir al archivo</a>
+    <a class="skip-link" href="#archive">Skip to the archive</a>
 
-    <header class="site-header" aria-label="Navegación principal">
-        <a class="wordmark" href="#inicio" aria-label="COEM, inicio">
+    <header class="site-header" aria-label="Main navigation">
+        <a class="wordmark" href="#home" aria-label="COEM, home">
             <img src="Coem.png" alt="" width="572" height="288">
         </a>
-        <nav class="header-nav" aria-label="Accesos">
-            <a href="#archivo">Explorar</a>
-            <a href="https://theprojectcoem.github.io">English</a>
+        <nav class="header-nav" aria-label="Quick links">
+            <a href="#archive">Explore</a>
+            <a href="https://estevefact.github.io/">Spanish</a>
         </nav>
     </header>
 
     <main>
-        <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <section class="hero" id="home" aria-labelledby="hero-title">
             <div class="portrait-field" aria-hidden="true" data-hero-portraits>
                 <figure class="hero-portrait hero-portrait--left" data-hero-portrait>
                     <img src="static/imgs/Pizarnik.png" alt="" width="1024" height="1024">
@@ -55,50 +55,50 @@
             <div class="hero-shade" aria-hidden="true"></div>
 
             <div class="hero-content">
-                <p class="eyebrow">Archivo literario interactivo</p>
+                <p class="eyebrow">Interactive literary archive</p>
                 <h1 id="hero-title" class="hero-title">
                     <img class="hero-title-logo" src="Coem.png" alt="" width="572" height="288">
                     <span class="sr-only">Coem</span>
                 </h1>
-                <p class="hero-copy">Cuentos, poemas y autores clásicos reunidos en un mapa para leer y/o escuchar.</p>
-                <a class="ink-link ink-link--light" href="#archivo" data-write-link>Entrar al archivo</a>
+                <p class="hero-copy">Classic stories, poems, and authors gathered in a map for reading, listening, and discovery.</p>
+                <a class="ink-link ink-link--light" href="#archive" data-write-link>Enter the archive</a>
             </div>
 
-            <a class="scroll-note" href="#archivo">
-                <span>Seis formas de explorar</span>
+            <a class="scroll-note" href="#archive">
+                <span>Six ways to explore</span>
                 <span aria-hidden="true">↓</span>
             </a>
         </section>
 
-        <section class="archive" id="archivo" aria-labelledby="archive-title">
+        <section class="archive" id="archive" aria-labelledby="archive-title">
             <div class="archive-heading">
                 <div>
-                    <p class="section-number">01 / El archivo</p>
-                    <h2 id="archive-title">Elige una ruta por COEM</h2>
+                    <p class="section-number">01 / The archive</p>
+                    <h2 id="archive-title">Choose a path through COEM</h2>
                 </div>
-                <p>Avanza con las flechas, desliza la imagen o elige directamente una ruta.</p>
+                <p>Use the arrows, swipe the image, or select a route directly.</p>
             </div>
 
             <div class="explorer" data-explorer>
-                <div class="route-tabs" role="tablist" aria-label="Rutas de COEM"></div>
+                <div class="route-tabs" role="tablist" aria-label="COEM routes"></div>
 
                 <article class="route-stage" id="route-panel" aria-labelledby="route-title">
                     <figure class="route-portrait">
-                        <img id="route-image" src="static/imgs/quiroga.png" alt="Retrato de Horacio Quiroga" width="1024" height="1024">
+                        <img id="route-image" src="static/imgs/quiroga.png" alt="Portrait of Horacio Quiroga" width="1024" height="1024">
                         <figcaption id="route-author">Horacio Quiroga</figcaption>
                     </figure>
 
                     <div class="route-copy">
-                        <p class="route-count"><span id="route-current">01</span><span aria-hidden="true"> / </span><span class="sr-only">de</span><span>06</span></p>
-                        <p class="route-kicker" id="route-kicker">Lectura y escucha</p>
-                        <h3 id="route-title">Cuentos</h3>
-                        <p id="route-description">Busca entre miles de cuentos clásicos, filtra por país o género y escucha las narraciones disponibles.</p>
-                        <a class="ink-link" id="route-link" href="stories-info.html" data-write-link>Explorar cuentos</a>
+                        <p class="route-count"><span id="route-current">01</span><span aria-hidden="true"> / </span><span class="sr-only">of</span><span>06</span></p>
+                        <p class="route-kicker" id="route-kicker">Reading and listening</p>
+                        <h3 id="route-title">Stories</h3>
+                        <p id="route-description">Search thousands of classic stories, filter by country or genre, and hear available English narrations.</p>
+                        <a class="ink-link" id="route-link" href="stories-info.html" data-write-link>Explore stories</a>
                     </div>
 
-                    <div class="route-controls" aria-label="Cambiar ruta">
-                        <button type="button" class="arrow-button" data-previous aria-label="Ruta anterior" title="Ruta anterior">←</button>
-                        <button type="button" class="arrow-button" data-next aria-label="Ruta siguiente" title="Ruta siguiente">→</button>
+                    <div class="route-controls" aria-label="Change route">
+                        <button type="button" class="arrow-button" data-previous aria-label="Previous route" title="Previous route">←</button>
+                        <button type="button" class="arrow-button" data-next aria-label="Next route" title="Next route">→</button>
                     </div>
                     <p class="sr-only" id="route-announcement" aria-live="polite"></p>
                 </article>
@@ -106,27 +106,27 @@
         </section>
 
         <section class="colophon" aria-labelledby="colophon-title">
-            <p class="section-number">02 / Sobre COEM</p>
+            <p class="section-number">02 / About COEM</p>
             <div class="colophon-copy">
-                <h2 id="colophon-title" class="calligraphy-title" data-calligraphy>Esbozando el mapa de la literatura universal.</h2>
-                <p>Un proyecto independiente construido con software libre para navegar la literatura clásica en español y descubrir conexiones entre obras y autores.</p>
+                <h2 id="colophon-title" class="calligraphy-title" data-calligraphy>Sketching the map of universal literature.</h2>
+                <p>An independent project built with open-source software to navigate classic literature and discover connections between works and authors.</p>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <a class="footer-mark" href="#inicio" aria-label="COEM, volver al inicio">
+        <a class="footer-mark" href="#home" aria-label="COEM, back to home">
             <img src="Coem.png" alt="" width="572" height="288">
         </a>
-        <div class="footer-links" aria-label="Redes sociales">
+        <div class="footer-links" aria-label="Social links">
             <a href="https://www.instagram.com/theprojectcoem/" target="_blank" rel="noreferrer">Instagram</a>
             <a href="https://www.youtube.com/channel/UCsA5OOXPr1bABWuZ_pWIB6g" target="_blank" rel="noreferrer">YouTube</a>
             <a href="https://open.spotify.com/show/0JNvCRIMQSHHGlur0kognQ" target="_blank" rel="noreferrer">Spotify</a>
-            <a href="mailto:theprojectcoem@gmail.com">Contacto</a>
+            <a href="mailto:theprojectcoem@gmail.com">Contact</a>
         </div>
         <form action="https://www.paypal.com/donate" method="post" target="_blank">
             <input type="hidden" name="hosted_button_id" value="F43U7EFMW5N2A">
-            <button type="submit" class="footer-donate">Apoyar el proyecto</button>
+            <button type="submit" class="footer-donate">Support the project</button>
         </form>
     </footer>
 

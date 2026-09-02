@@ -47,7 +47,7 @@
     const text = String(value || "");
     const words = text.match(/[\p{L}\p{N}]+/gu) || [];
     const spokenWeight = words.reduce((total, word) => {
-      const vowelGroups = word.match(/[aeiouáéíóúü]+/giu)?.length || 1;
+      const vowelGroups = word.match(/[aeiouyáéíóúü]+/giu)?.length || 1;
       return total + 0.72 + Math.min(1.2, vowelGroups * 0.18 + word.length * 0.025);
     }, 0);
     const commaPauses = (text.match(/[,;]/g) || []).length * 0.45;
