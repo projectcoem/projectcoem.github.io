@@ -33,7 +33,7 @@ function renderPortraitFallback(container, providedURL) {
   container.dataset.animationPhase = "fallback";
   const image = document.createElement("img");
   image.src = `static/imgs/${encodeURIComponent(providedURL || "Sagan.png")}`;
-  image.alt = "Retrato del autor";
+  image.alt = "Author portrait";
   image.addEventListener("error", () => { image.src = "preview.png"; }, { once: true });
   container.appendChild(image);
 }
@@ -152,6 +152,19 @@ function resetAuthorImage(providedURL) {
   });
 }
 
+function clearAuthorImage() {
+  coemAnimationRun += 1;
+  if (coemPortraitSketch) {
+    coemPortraitSketch.remove();
+    coemPortraitSketch = null;
+  }
+  const container = document.getElementById("drawing");
+  if (container) {
+    container.replaceChildren();
+    delete container.dataset.animationPhase;
+  }
+}
+
 if (typeof module === "object" && module.exports) {
-  module.exports = { COEM_PORTRAIT_TIMING, loadCoemPortraitAnimator };
+  module.exports = { COEM_PORTRAIT_TIMING, loadCoemPortraitAnimator, clearAuthorImage };
 }

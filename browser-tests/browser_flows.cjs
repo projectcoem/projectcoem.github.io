@@ -81,13 +81,16 @@ async function assertReadableCompactList(page, selector, label) {
     assert.notDeepEqual(secondPortraitNames, firstPortraitNames);
     assert.equal(new Set(secondPortraitNames).size, 3);
 
-    assert.equal(await page.getByRole("tab").count(), 6);
+    assert.equal(await page.getByRole("tab").count(), 7);
     await page.getByRole("tab", { name: /02 Poems/ }).click();
     assert.equal(await page.locator("#route-title").innerText(), "Poems");
     assert.match(await page.locator("#route-image").getAttribute("src"), /Pizarnik\.png$/);
     await page.getByRole("tab", { name: /02 Poems/ }).press("ArrowRight");
     assert.equal(await page.locator("#route-title").innerText(), "Relationships");
     assert.equal(await page.getByRole("tab", { name: /03 Relationships/ }).getAttribute("aria-selected"), "true");
+    await page.getByRole("tab", { name: /07 Oracle/ }).click();
+    assert.equal(await page.locator("#route-title").innerText(), "Literary Oracle");
+    assert.equal(await page.locator("#route-link").getAttribute("href"), "literary-guesser.html");
 
     const calligraphyTitle = page.locator("#colophon-title");
     await calligraphyTitle.scrollIntoViewIfNeeded();

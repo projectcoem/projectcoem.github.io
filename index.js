@@ -74,6 +74,11 @@
             description: 'Describe the story you imagine and search for works in the archive that resemble it in Google Colab.',
             action: 'Describe a story', href: 'https://colab.research.google.com/drive/1z9y_NzBtdJrvlEC0siRCjEVZP7VuzMEX?usp=sharing',
             image: 'static/imgs/Kafka.png', author: 'Franz Kafka', external: true
+        },
+        {
+            label: 'Oracle', kicker: 'Reading game', title: 'Literary Oracle',
+            description: 'Choose stories, poems, or both as Coemas. Read short English texts and identify their author, nationality, sex, and birth decade.',
+            action: 'Play Literary Oracle', href: 'literary-guesser.html', image: 'static/imgs/Borges.png', author: 'Jorge Luis Borges'
         }
     ];
 
