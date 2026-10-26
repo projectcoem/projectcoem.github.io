@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 511,
+    "words": 81,
+    "reading_time_min": 0.405
+  },
+  "text": "Wretched timber, shattered and broken,\n\nlying chastened on the sandy beach,\n\nabandoned by the sailor,\n\nvile spoil of south and southwest winds.\n\n\nHow much better you were in the grove,\n\npeopled with birds and branches and greenness,\n\nbefore, vain and dazzled,\n\nyou went to the farthest edge of the world!\n\n\nYou lost the pompous freshness,\n\nthe sweet peace of the shadowed forest,\n\nwhere you mocked the sounding winds.\n\n\nWhat did your proud ambition promise itself?\n\nTo mock them also on the furious sea?\n\nHere is the fruit of lofty thoughts.",
+  "translation": {
+    "source_sha256": "d7139a132fb8016196ede2bf0f7c716ede102a0a6bf1b54085de14a310435c9a",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Wretched Timber",
+    "editorial_note": "The translation keeps the sonnet's moral fable: a forest tree becomes shipwrecked wreckage after proud ambition."
+  }
+}

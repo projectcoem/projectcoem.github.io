@@ -43,7 +43,9 @@ DISPUTED_ATTRIBUTIONS = {
     "43c5dcfd-ac67-4dac-be2e-b97c8a314534": "Aviso",
     "799a672c-3226-4f98-a193-d6cfa4cb94e7": "Vendo zapatos",
 }
-DISPUTED_ATTRIBUTION_SOURCE = "https://quoteinvestigator.com/2013/01/28/baby-shoes/"
+DISPUTED_ATTRIBUTION_SOURCE = (
+    "https://quoteinvestigator.com/2013/01/28/baby-shoes/"
+)
 
 # The English graph is mostly localized, while the poem and Wikipedia
 # snapshots intentionally retain their raw Spanish provenance. Public catalog
@@ -59,11 +61,14 @@ COUNTRY_TRANSLATIONS = {
     "irlanda": "Ireland", "italia": "Italy", "italiano": "Italy",
     "japon": "Japan", "libano": "Lebanon", "marruecos": "Morocco",
     "mexico": "Mexico", "monaco": "Monaco", "panama": "Panama",
-    "persa": "Persia", "peru": "Peru", "polonia": "Poland", "prusia": "Prussia",
+    "persa": "Persia", "peru": "Peru", "polonia": "Poland",
+    "prusia": "Prussia",
     "puertorriqueno": "Puerto Rico", "reino unido": "United Kingdom",
-    "republica": "Dominican Republic", "republica dominicana": "Dominican Republic",
+    "republica": "Dominican Republic",
+    "republica dominicana": "Dominican Republic",
     "romano": "Rome", "rumania": "Romania", "rusia": "Russia",
-    "suiza": "Switzerland", "new zeland": "New Zealand", "nueva zelanda": "New Zealand",
+    "suiza": "Switzerland", "new zeland": "New Zealand",
+    "nueva zelanda": "New Zealand",
     "escocia": "Scotland", "hungria": "Hungary", "noruega": "Norway",
     "suecia": "Sweden", "oriente": "East",
 }
@@ -79,8 +84,10 @@ GENRE_TRANSLATIONS = {
     "realismo magico": "Magical Realism", "romanticismo": "Romanticism",
     "simbolica": "Symbolism", "simbolismo": "Symbolism", "social": "Social",
     "suspenso": "Suspense", "surrealismo": "Surrealism", "comedia": "Comedy",
-    "fantasia": "Fantasy", "historias cortas": "Short Stories", "chejov": "Chekhov",
+    "fantasia": "Fantasy", "historias cortas": "Short Stories",
+    "chejov": "Chekhov",
 }
+
 
 def normalize(value):
     value = unicodedata.normalize("NFKD", str(value or ""))
@@ -101,19 +108,23 @@ def english_genre(value):
 
 
 def english_tag(category):
-    """Translate selected Spanish category facts without changing their claim."""
+    """Translate selected Spanish facts without changing their claim."""
     key = normalize(category)
     if key == "escritores que cometieron suicidio":
         return "Writers who died by suicide"
     if key.startswith("suicidas de "):
-        country = english_country(category.split(" de ", 1)[1]) or category.split(" de ", 1)[1]
+        raw_country = category.split(" de ", 1)[1]
+        country = english_country(raw_country) or raw_country
         return f"People from {country} who died by suicide"
     if key.startswith("suicidas por "):
         methods = {
             "ahogamiento": "drowning", "arma de fuego": "firearm",
-            "envenenamiento": "poisoning", "sobredosis de barbituricos": "barbiturate overdose",
+            "envenenamiento": "poisoning",
+            "sobredosis de barbituricos": "barbiturate overdose",
         }
-        method = methods.get(key.removeprefix("suicidas por "), "a recorded method")
+        method = methods.get(
+            key.removeprefix("suicidas por "), "a recorded method"
+        )
         return f"People who died by suicide by {method}"
     if key == "suicidas bisexuales":
         return "Bisexual people who died by suicide"
@@ -202,13 +213,16 @@ def as_year(value):
 
 def country_value(value):
     value = str(value or "").strip()
-    return value if value and normalize(value) not in {"unknown", "desconocido"} else None
+    if value and normalize(value) not in {"unknown", "desconocido"}:
+        return value
+    return None
 
 
 def word_count(text):
     # Keep punctuation out while counting accented Spanish words.
     without_fin = re.sub(r"(?im)^\s*FIN\s*$", "", text)
-    return len(re.findall(r"[\wÀ-ÿ]+(?:['’][\wÀ-ÿ]+)?", without_fin, flags=re.UNICODE))
+    pattern = r"[\wÀ-ÿ]+(?:['’][\wÀ-ÿ]+)?"
+    return len(re.findall(pattern, without_fin, flags=re.UNICODE))
 
 
 def complexity_score(text, words):
@@ -376,8 +390,10 @@ POEM_INTRO_COMPLEXITY = {
     "a6c745b5-0dcc-497f-ad93-61330cf88f33": 3,
 }
 POEM_TEXT_MISMATCHES = {
-    "a297c490-8997-40e3-a2a8-518119dc1631",  # Martí title, local text starts "Pomona".
-    "f913c5f2-9c6e-4629-8b70-1b527f5026d4",  # Caminante title, different poem body.
+    # Martí title, local text starts "Pomona".
+    "a297c490-8997-40e3-a2a8-518119dc1631",
+    # Caminante title, different poem body.
+    "f913c5f2-9c6e-4629-8b70-1b527f5026d4",
 }
 
 # The poem export has one duplicate Antonio Machado record that says Mexico
@@ -394,7 +410,8 @@ CANONICAL_AUTHORS = {
         "Jorge Luis Borges", "Gabriel García Márquez", "Franz Kafka",
         "Julio Cortázar", "Augusto Monterroso", "Juan Rulfo", "León Tolstói",
         "Edgar Allan Poe", "Anton Chéjov", "Charles Dickens", "Virginia Woolf",
-        "Federico García Lorca", "Pablo Neruda", "Octavio Paz", "Mario Benedetti",
+        "Federico García Lorca", "Pablo Neruda", "Octavio Paz",
+        "Mario Benedetti",
         "José Saramago", "Ray Bradbury", "Isaac Asimov", "Dante Alighieri",
         "William Shakespeare", "Miguel de Cervantes", "Horacio Quiroga",
         "Adolfo Bioy Casares", "Silvina Ocampo", "Clarice Lispector",
@@ -415,7 +432,10 @@ def image_filename(value):
     if not value or normalize(value) in {"sagan png", "preview png"}:
         return None
     filename = Path(value).name
-    if (ROOT / "static/imgs" / filename).exists() or (ROOT / "static" / filename).exists():
+    if (
+        (ROOT / "static/imgs" / filename).exists()
+        or (ROOT / "static" / filename).exists()
+    ):
         return filename
     return None
 
@@ -447,7 +467,8 @@ def poem_source_url(author):
     value = str(author.get("wiki_url") or "").strip()
     if value.startswith("https://") or value.startswith("http://"):
         return value
-    return source_for_author(str(author.get("author_name") or "Unknown").strip(), False)
+    name = str(author.get("author_name") or "Unknown").strip()
+    return source_for_author(name, False)
 
 
 def poem_prior(author_name):
@@ -458,7 +479,11 @@ def poem_prior(author_name):
 
 
 def source_sex(row):
-    categories = {normalize(category) for category in str(row.get("categories") or "").split(",") if category.strip()}
+    categories = {
+        normalize(category)
+        for category in str(row.get("categories") or "").split(",")
+        if category.strip()
+    }
     if "hombres" in categories:
         return "male"
     if "mujeres" in categories:
@@ -476,7 +501,8 @@ def poem_author_facts(rows):
     """
     complete = [
         row for row in rows
-        if english_country(row.get("country")) and as_year(row.get("birth_year")) is not None
+        if english_country(row.get("country"))
+        and as_year(row.get("birth_year")) is not None
     ]
     candidates = complete or list(rows)
     facts = {
@@ -484,11 +510,18 @@ def poem_author_facts(rows):
         for row in complete
     }
     conflict = len(facts) > 1
-    sexes = {source_sex(row) for row in candidates if source_sex(row) != "unknown"}
+    sexes = {
+        source_sex(row)
+        for row in candidates
+        if source_sex(row) != "unknown"
+    }
     if len(sexes) > 1:
         conflict = True
     primary = candidates[0] if candidates else {}
-    country, birth_year = next(iter(facts), (None, None)) if not conflict else (None, None)
+    if conflict:
+        country, birth_year = None, None
+    else:
+        country, birth_year = next(iter(facts), (None, None))
     return {
         "primary": primary,
         "country": country,
@@ -503,7 +536,8 @@ def load_sources(graph):
     fallback_nodes = []
     for fallback_path in FALLBACK_GRAPH_PATHS:
         if fallback_path.exists():
-            fallback_nodes.extend(json.loads(fallback_path.read_text())["nodes"])
+            data = json.loads(fallback_path.read_text())
+            fallback_nodes.extend(data["nodes"])
     # Prefer the complete graph when an id occurs in more than one snapshot.
     # Keep fallback rows even for an author already in the primary graph: they
     # often contribute additional story ids. ``setdefault`` below still gives
@@ -514,7 +548,8 @@ def load_sources(graph):
         for story_id, title in author.get("stories", {}).items():
             by_title[normalize(title)].append((story_id, author["id"]))
         if author.get("story_id") and author.get("story_name"):
-            by_title[normalize(author["story_name"])].append((author["story_id"], author["id"]))
+            title = normalize(author["story_name"])
+            by_title[title].append((author["story_id"], author["id"]))
     story_rows = {}
     author_rows = defaultdict(list)
     for row in rows:
@@ -523,10 +558,11 @@ def load_sources(graph):
             if author_match(source_author["id"], author_name):
                 author_rows[source_author["id"]].append(row)
         candidates = [
-            candidate for candidate in by_title.get(normalize(row.get("Título")), [])
+            candidate
+            for candidate in by_title.get(normalize(row.get("Título")), [])
             if author_match(candidate[1], author_name)
         ]
-        # There can be duplicate title/author entries; consume deterministically.
+        # Duplicate title/author entries are consumed deterministically.
         for story_id, _ in candidates:
             if story_id not in story_rows:
                 story_rows[story_id] = row
@@ -537,7 +573,9 @@ def load_sources(graph):
             for story_id, title in author["stories"].items():
                 attribution.setdefault(story_id, (author, title))
         elif author.get("story_id") and author.get("story_name"):
-            attribution.setdefault(author["story_id"], (author, author["story_name"]))
+            attribution.setdefault(
+                author["story_id"], (author, author["story_name"])
+            )
     return rows, story_rows, author_rows, attribution
 
 
@@ -561,9 +599,9 @@ def main():
         preserved_reading_times = {
             story_id: item["readingTime"]
             for story_id, item in existing.items()
-            if isinstance(item, dict) and isinstance(item.get("readingTime"), (int, float))
+            if isinstance(item, dict)
+            and isinstance(item.get("readingTime"), (int, float))
         }
-    graph_story_ids = {sid for author in graph for sid in author.get("stories", {})}
     attributed_story_ids = set(attribution)
     all_files = sorted(STORIES_DIR.glob("*.json"), key=lambda path: path.stem)
     texts = {}
@@ -576,12 +614,14 @@ def main():
         reading_time = float(
             preserved_reading_times.get(
                 path.stem,
-                data.get("metadata", {}).get("reading_time_min") or (words / 200.0),
+                data.get("metadata", {}).get("reading_time_min")
+                or (words / 200.0),
             )
         )
         texts[path.stem] = (text, words, reading_time)
 
-    # Start with every local story, including texts absent from the attribution graph.
+    # Start with every local story, including texts absent from the
+    # attribution graph.
     metadata = {}
     for story_id, (text, words, reading_time) in texts.items():
         title = None
@@ -611,16 +651,25 @@ def main():
             author_key = normalize(attributed_author.get("id"))
             override_key = (author_key, normalize(attributed_title))
             birth_year = as_year(attributed_author.get("birth_year"))
-            classic = author_key in CANONICAL_AUTHORS or bool(birth_year and birth_year <= 1900)
+            classic = (
+                author_key in CANONICAL_AUTHORS
+                or bool(birth_year and birth_year <= 1900)
+            )
             if override_key in STORY_FAMILIARITY:
                 classic = True
             metadata[story_id].update({
                 "title": attributed_title,
                 "authorId": attributed_author.get("id"),
-                "familiarity": STORY_FAMILIARITY.get(override_key, author_story_prior(author_key)),
-                "readingComplexity": STORY_COMPLEXITY.get(override_key, complexity),
+                "familiarity": STORY_FAMILIARITY.get(
+                    override_key, author_story_prior(author_key)
+                ),
+                "readingComplexity": STORY_COMPLEXITY.get(
+                    override_key, complexity
+                ),
                 "isClassic": int(bool(classic)),
-                "classificationMethod": "editorial-author-tier-and-text-heuristic",
+                "classificationMethod": (
+                    "editorial-author-tier-and-text-heuristic"
+                ),
                 "classificationStatus": "mapped",
                 "confidence": "editorial-estimate",
                 "unmapped": False,
@@ -641,7 +690,11 @@ def main():
         rows = author_rows.get(author.get("id", ""), [])
         representative = rows[0] if rows else {}
         countries = []
-        for value in [author.get("country"), *(row.get("País") for row in rows)]:
+        country_values = [
+            author.get("country"),
+            *(row.get("País") for row in rows),
+        ]
+        for value in country_values:
             value = english_country(value)
             if value and value not in countries:
                 countries.append(value)
@@ -652,15 +705,25 @@ def main():
         categories = []
         for row in rows:
             categories.extend(str(row.get("Categorías") or "").split(","))
-        category_set = {normalize(category) for category in categories if category.strip()}
+        category_set = {
+            normalize(category)
+            for category in categories
+            if category.strip()
+        }
         # A second nationality is accepted only when the imported snapshot
         # explicitly says "Nacionalizados de X". Exile, residence, language,
-        # and birthplace categories are deliberately not treated as nationality.
+        # and birthplace categories do not count as nationality.
         for category in categories:
-            match = re.match(r"^Nacionalizados de (.+)$", category.strip(), flags=re.IGNORECASE)
+            match = re.match(
+                r"^Nacionalizados de (.+)$",
+                category.strip(),
+                flags=re.IGNORECASE,
+            )
             if match:
                 translated = english_country(match.group(1))
-                country = known_countries.get(normalize(translated), translated)
+                country = known_countries.get(
+                    normalize(translated), translated
+                )
                 if country and country not in countries:
                     countries.append(country)
         if "hombres" in category_set:
@@ -668,7 +731,11 @@ def main():
         elif "mujeres" in category_set:
             sex = "female"
         genres = []
-        for value in [author.get("genre"), *(row.get("Género") for row in rows)]:
+        genre_values = [
+            author.get("genre"),
+            *(row.get("Género") for row in rows),
+        ]
+        for value in genre_values:
             value = english_genre(value)
             if value and value not in genres:
                 genres.append(value)
@@ -685,14 +752,20 @@ def main():
             "countries": countries,
             "sex": sex,
             "birthYear": birth_year,
-            "birthDecade": math.trunc(birth_year / 10) * 10 if birth_year else None,
+            "birthDecade": (
+                math.trunc(birth_year / 10) * 10 if birth_year else None
+            ),
             "image": image,
             "genres": genres,
             "weirdTags": categories_to_tags(categories, source_url),
             "source": source_url,
             "biographyConflict": False,
-            "sourceNote": "Wikipedia categories snapshot imported from tensors_generator/stories_metadata.tsv"
-            if rows else "Story graph snapshot; author category row not matched",
+            "sourceNote": (
+                "Wikipedia categories snapshot imported from "
+                "tensors_generator/stories_metadata.tsv"
+            )
+            if rows
+            else "Story graph snapshot; author category row not matched",
         })
         # Author recognition is only a prior. Individual stories remain below
         # the maximum unless a title has a specific, curated override.
@@ -702,31 +775,48 @@ def main():
             normalized_title = normalize(title)
             override_key = (normalized_author, normalized_title)
             score = STORY_FAMILIARITY.get(override_key, familiarity)
-            classic = normalized_author in CANONICAL_AUTHORS or bool(birth_year and birth_year <= 1900)
+            classic = (
+                normalized_author in CANONICAL_AUTHORS
+                or bool(birth_year and birth_year <= 1900)
+            )
             if override_key in STORY_FAMILIARITY:
                 classic = True
             if story_id in metadata:
                 metadata[story_id].update({
                     "familiarity": max(0, min(10, int(score))),
-                    "readingComplexity": STORY_COMPLEXITY.get(override_key, complexity_score(text, words)),
+                    "readingComplexity": STORY_COMPLEXITY.get(
+                        override_key, complexity_score(text, words)
+                    ),
                     "isClassic": int(bool(classic)),
-                    "classificationMethod": "editorial-author-tier-and-text-heuristic",
+                    "classificationMethod": (
+                        "editorial-author-tier-and-text-heuristic"
+                    ),
                     "classificationStatus": "mapped",
                     "confidence": "editorial-estimate",
                     "unmapped": False,
                     "unreviewed": False,
-                    "quizEligible": not is_anonymous and story_id not in DISPUTED_ATTRIBUTIONS,
+                    "quizEligible": (
+                        not is_anonymous
+                        and story_id not in DISPUTED_ATTRIBUTIONS
+                    ),
                 })
             stories.append({
                 "id": story_id,
                 "title": title,
                 "authorId": author_id,
                 "kind": "story",
-                "wordCount": metadata.get(story_id, {}).get("wordCount", words),
+                "wordCount": metadata.get(story_id, {}).get(
+                    "wordCount", words
+                ),
                 "familiarity": max(0, min(10, int(score))),
-                "readingComplexity": metadata.get(story_id, {}).get("readingComplexity", complexity_score(text, words)),
+                "readingComplexity": metadata.get(story_id, {}).get(
+                    "readingComplexity", complexity_score(text, words)
+                ),
                 "isClassic": int(bool(classic)),
-                "quizEligible": not is_anonymous and story_id not in DISPUTED_ATTRIBUTIONS,
+                "quizEligible": (
+                    not is_anonymous
+                    and story_id not in DISPUTED_ATTRIBUTIONS
+                ),
             })
 
     # Poems use the same public catalog and author records. Exact normalized
@@ -740,12 +830,16 @@ def main():
     }
     poem_authors_seen = defaultdict(list)
     for poem_author in poem_source.get("authors", []):
-        poem_authors_seen[normalize(poem_author.get("author_name")) or "unknown"].append(poem_author)
+        author_key = normalize(poem_author.get("author_name")) or "unknown"
+        poem_authors_seen[author_key].append(poem_author)
 
     for normalized_name, source_author_rows in poem_authors_seen.items():
         source_facts = poem_author_facts(source_author_rows)
         source_author = source_facts["primary"]
-        display_name = str(source_author.get("author_name") or "Unknown").strip() or "Unknown"
+        display_name = (
+            str(source_author.get("author_name") or "Unknown").strip()
+            or "Unknown"
+        )
         author_record = author_by_normalized_name.get(normalized_name)
         if author_record is None:
             categories = []
@@ -753,7 +847,11 @@ def main():
                 categories.extend(str(row.get("categories") or "").split(","))
             sex = source_facts["sex"]
             birth_year = source_facts["birthYear"]
-            countries = [source_facts["country"]] if source_facts["country"] else []
+            countries = (
+                [source_facts["country"]]
+                if source_facts["country"]
+                else []
+            )
             genres = []
             for row in source_author_rows:
                 genre = english_genre(row.get("genre"))
@@ -766,16 +864,25 @@ def main():
                 "countries": countries,
                 "sex": sex,
                 "birthYear": birth_year,
-                "birthDecade": math.trunc(birth_year / 10) * 10 if birth_year else None,
+                "birthDecade": (
+                    math.trunc(birth_year / 10) * 10
+                    if birth_year
+                    else None
+                ),
                 "image": image_filename(source_author.get("image")),
                 "genres": genres,
                 "weirdTags": categories_to_tags(categories, source_url),
                 "source": source_url,
-                "sourceNote": "Poem author snapshot imported from static/poems_english.json",
+                "sourceNote": (
+                    "Poem author snapshot imported from "
+                    "static/poems_english.json"
+                ),
                 "biographyConflict": source_facts["conflict"],
             }
             if normalized_name in CURATED_BIOGRAPHY_SOURCES:
-                author_record["biographySource"] = CURATED_BIOGRAPHY_SOURCES[normalized_name]
+                author_record["biographySource"] = (
+                    CURATED_BIOGRAPHY_SOURCES[normalized_name]
+                )
             authors.append(author_record)
             author_by_normalized_name[normalized_name] = author_record
         else:
@@ -788,7 +895,10 @@ def main():
                     author_record["genres"].append(genre)
                 categories = str(row.get("categories") or "").split(",")
                 source_url = poem_source_url(row)
-                existing_categories = {tag.get("rawCategory") for tag in author_record["weirdTags"]}
+                existing_categories = {
+                    tag.get("rawCategory")
+                    for tag in author_record["weirdTags"]
+                }
                 for tag in categories_to_tags(categories, source_url):
                     if tag["rawCategory"] not in existing_categories:
                         author_record["weirdTags"].append(tag)
@@ -797,8 +907,14 @@ def main():
         # Unknown source records refer to different people; their combined
         # biography must never become an answer or a source of distractors.
         if normalized_name == "unknown":
-            author_record.update(countries=[], sex="unknown", birthYear=None,
-                                 birthDecade=None, weirdTags=[], biographyConflict=True)
+            author_record.update(
+                countries=[],
+                sex="unknown",
+                birthYear=None,
+                birthDecade=None,
+                weirdTags=[],
+                biographyConflict=True,
+            )
 
     existing_poem_metadata = (
         json.loads(POEM_METADATA_PATH.read_text())
@@ -806,9 +922,15 @@ def main():
         else {}
     )
     poem_metadata = dict(existing_poem_metadata)
-    poems_by_id = {poem.get("id"): poem for poem in poem_source.get("poems", [])}
+    poems_by_id = {
+        poem.get("id"): poem
+        for poem in poem_source.get("poems", [])
+    }
     poem_texts = {}
-    for poem_path in sorted(POEMS_DIR.glob("*.json"), key=lambda path: path.stem):
+    poem_paths = sorted(
+        POEMS_DIR.glob("*.json"), key=lambda path: path.stem
+    )
+    for poem_path in poem_paths:
         data = json.loads(poem_path.read_text())
         text = str(data.get("text", ""))
         poem_texts[poem_path.stem] = (
@@ -822,12 +944,16 @@ def main():
     for poem in poem_source.get("poems", []):
         text_info = poem_texts.get(poem.get("id"))
         if text_info and text_info[1] >= 4:
-            text_attributions[normalize(text_info[0])].add(normalize(poem.get("author_name")))
+            author_name = normalize(poem.get("author_name"))
+            text_attributions[normalize(text_info[0])].add(author_name)
 
     poem_catalog = []
     for poem in poem_source.get("poems", []):
         poem_id = poem.get("id")
-        author_name = str(poem.get("author_name") or "Unknown").strip() or "Unknown"
+        author_name = (
+            str(poem.get("author_name") or "Unknown").strip()
+            or "Unknown"
+        )
         normalized_author = normalize(author_name) or "unknown"
         author_record = author_by_normalized_name.get(normalized_author)
         author_id = author_record["id"] if author_record else author_name
@@ -843,11 +969,25 @@ def main():
             source_time = 0
         reading_time = existing_item.get("readingTime")
         if not isinstance(reading_time, (int, float)):
-            reading_time = source_time or file_time or (words / 200.0 if words else 0)
+            reading_time = (
+                source_time
+                or file_time
+                or (words / 200.0 if words else 0)
+            )
         override_key = (normalized_author, normalize(poem.get("story_name")))
-        score = POEM_FAMILIARITY_OVERRIDES.get(override_key, poem_prior(author_name))
-        birth_year = author_record.get("birthYear") if author_record else as_year(poem.get("birth_year"))
-        known_author = normalized_author != "unknown" and author_record is not None and not author_record.get("biographyConflict", False)
+        score = POEM_FAMILIARITY_OVERRIDES.get(
+            override_key, poem_prior(author_name)
+        )
+        birth_year = (
+            author_record.get("birthYear")
+            if author_record
+            else as_year(poem.get("birth_year"))
+        )
+        known_author = (
+            normalized_author != "unknown"
+            and author_record is not None
+            and not author_record.get("biographyConflict", False)
+        )
         classic = bool(birth_year is not None and birth_year <= 1900)
         if author_record and normalized_author in CANONICAL_AUTHORS:
             classic = True
@@ -856,11 +996,19 @@ def main():
             "readingTime": round(float(reading_time), 4),
             "wordCount": words,
             "familiarity": int(max(0, min(10, score if known_author else 0))),
-            "readingComplexity": POEM_INTRO_COMPLEXITY.get(poem_id, complexity_score(text, words)),
+            "readingComplexity": POEM_INTRO_COMPLEXITY.get(
+                poem_id, complexity_score(text, words)
+            ),
             "isClassic": int(bool(classic and known_author)),
             "classificationMethod": "editorial-poet-tier-and-verse-heuristic",
-            "classificationStatus": "mapped" if known_author and text_info else "unmapped",
-            "confidence": "editorial-estimate" if known_author and text_info else "unreviewed",
+            "classificationStatus": (
+                "mapped" if known_author and text_info else "unmapped"
+            ),
+            "confidence": (
+                "editorial-estimate"
+                if known_author and text_info
+                else "unreviewed"
+            ),
             "unmapped": not (known_author and text_info),
             "unreviewed": False,
             "quizEligible": bool(known_author and text_info and words >= 4),
@@ -871,14 +1019,19 @@ def main():
         }
         item.pop("attributionStatus", None)
         if len(text_attributions.get(normalize(text), set())) > 1:
-            item["attributionIssues"].append("conflicting-catalog-attributions")
+            item["attributionIssues"].append(
+                "conflicting-catalog-attributions"
+            )
         if poem_id in POEM_TEXT_MISMATCHES:
             item["attributionIssues"].append("title-text-mismatch")
         if author_record and author_record.get("biographyConflict", False):
             item["attributionIssues"].append("conflicting-author-facts")
         if item["attributionIssues"]:
             item["quizEligible"] = False
-            item["attributionStatus"] = item["attributionIssues"][0] if len(item["attributionIssues"]) == 1 else "multiple-attribution-issues"
+            if len(item["attributionIssues"]) == 1:
+                item["attributionStatus"] = item["attributionIssues"][0]
+            else:
+                item["attributionStatus"] = "multiple-attribution-issues"
         item["country"] = english_country(poem.get("country")) or ""
         poem_metadata[poem_id] = item
         poem_catalog.append({
@@ -929,7 +1082,9 @@ def main():
             continue
         old = dict(poem_metadata.get(poem_id, {}))
         try:
-            reading_time = float(old.get("readingTime", poem.get("reading_time") or 0))
+            reading_time = float(
+                old.get("readingTime", poem.get("reading_time") or 0)
+            )
         except (TypeError, ValueError):
             reading_time = 0
         poem_metadata[poem_id] = {
@@ -946,19 +1101,46 @@ def main():
             "unreviewed": True,
             "quizEligible": False,
             "title": poem.get("story_name") or "",
-            "authorId": str(poem.get("author_name") or "Unknown").strip() or "Unknown",
+            "authorId": (
+                str(poem.get("author_name") or "Unknown").strip()
+                or "Unknown"
+            ),
             "country": english_country(poem.get("country")) or "",
             "kind": "poem",
         }
 
-    catalog = {"version": 1, "authors": authors, "stories": stories + poem_catalog}
-    CATALOG_PATH.write_text(json.dumps(catalog, ensure_ascii=False, separators=(",", ":")) + "\n")
-    METADATA_PATH.write_text(json.dumps(metadata, ensure_ascii=False, separators=(",", ":")) + "\n")
-    POEM_METADATA_PATH.write_text(json.dumps(poem_metadata, ensure_ascii=False, separators=(",", ":")) + "\n")
+    catalog = {
+        "version": 1,
+        "authors": authors,
+        "stories": stories + poem_catalog,
+    }
+    CATALOG_PATH.write_text(
+        json.dumps(catalog, ensure_ascii=False, separators=(",", ":")) + "\n"
+    )
+    METADATA_PATH.write_text(
+        json.dumps(metadata, ensure_ascii=False, separators=(",", ":")) + "\n"
+    )
+    POEM_METADATA_PATH.write_text(
+        json.dumps(
+            poem_metadata, ensure_ascii=False, separators=(",", ":")
+        ) + "\n"
+    )
     mapped = sum(1 for item in metadata.values() if not item["unmapped"])
-    print(f"Wrote {len(authors)} authors and {len(stories)} stories plus {len(poem_catalog)} poems to {CATALOG_PATH.relative_to(ROOT)}")
-    print(f"Wrote metadata for {len(metadata)} local texts ({mapped} mapped, {len(metadata) - mapped} unmapped) to {METADATA_PATH.relative_to(ROOT)}")
-    print(f"Wrote metadata for {len(poem_metadata)} poems ({len(poem_catalog)} source poems, {len(poem_texts)} local files) to {POEM_METADATA_PATH.relative_to(ROOT)}")
+    print(
+        f"Wrote {len(authors)} authors and {len(stories)} stories plus "
+        f"{len(poem_catalog)} poems to {CATALOG_PATH.relative_to(ROOT)}"
+    )
+    print(
+        f"Wrote metadata for {len(metadata)} local texts "
+        f"({mapped} mapped, {len(metadata) - mapped} unmapped) to "
+        f"{METADATA_PATH.relative_to(ROOT)}"
+    )
+    print(
+        f"Wrote metadata for {len(poem_metadata)} poems "
+        f"({len(poem_catalog)} source poems, "
+        f"{len(poem_texts)} local files) to "
+        f"{POEM_METADATA_PATH.relative_to(ROOT)}"
+    )
 
 
 if __name__ == "__main__":

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 114,
+    "words": 19,
+    "reading_time_min": 0.095
+  },
+  "text": "The heavy\n\ndrops seem like\n\n\nsomeone climbing\n\nthe step\n\n\nand the wind striking\n\nthe door\n\n\na woman\n\nabout to come in.",
+  "translation": {
+    "source_sha256": "700ddd4d928ab5bdc1ea3334f1b61a5ef4d3434202d47d4ae54d7782d9907ef0",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "The Heavy Ones",
+    "editorial_note": "The translation keeps the rain and wind as the imagined arrival of a woman at the door."
+  }
+}

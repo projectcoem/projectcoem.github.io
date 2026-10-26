@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 257,
+    "words": 48,
+    "reading_time_min": 0.24
+  },
+  "text": "It is good to dream. To wake is better\n\nif one wakes in the morning.\n\nIf we wake at midnight,\n\nit is better to dream of dawn.\n\n\nSweeter the imagined robin\n\nthat never gladdened the tree\n\nthan to face the solidity of a dawn\n\nthat leads to no day at all.",
+  "translation": {
+    "source_sha256": "0f64fab4f180a7f3f9393f246e1a014839faeed9cd222f6f1a6074e849db462d",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "It Is Good to Dream. To Wake Is Better...",
+    "editorial_note": "The translation keeps the waking/dreaming paradox and the imagined robin against a dayless dawn."
+  }
+}

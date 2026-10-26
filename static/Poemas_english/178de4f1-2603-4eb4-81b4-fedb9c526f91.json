@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 198,
+    "words": 31,
+    "reading_time_min": 0.155
+  },
+  "text": "What is this noise that wakes me at night?\n\n\nIt is biology, demanding its rights.\n\nAt night it is heard better,\n\nclearly, when the\n\nsociologists are asleep.",
+  "translation": {
+    "source_sha256": "c08d4bebfd2f55de3a34d7818063e24acbd8c000a650a5bcc32659b09cc9e66a",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "What Is This Noise That Wakes Me at Night?",
+    "editorial_note": "The source includes a Spanish translation credit to Luis López Nieves; the English keeps the poem's dry biological punchline."
+  }
+}

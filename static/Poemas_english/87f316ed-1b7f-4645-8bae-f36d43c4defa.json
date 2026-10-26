@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 135,
+    "words": 26,
+    "reading_time_min": 0.13
+  },
+  "text": "The dry leaves, do they fly or fall? Or is it that in every flight the earth remains waiting, and in every fall there is a shiver of wing?",
+  "translation": {
+    "source_sha256": "36cc2824e1655b67cf16660338ae0300bf7788c363765e10bf84385794165afd",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "The Dry Leaves, Do They Fly or Fall?...",
+    "editorial_note": "The translation keeps Loynaz's question balanced between falling and flight."
+  }
+}

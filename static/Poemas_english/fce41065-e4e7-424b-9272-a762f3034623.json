@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 111,
+    "words": 13,
+    "reading_time_min": 0.065
+  },
+  "text": "We children, we\n\nschoolboys,\n\nGirls of North America\n\nworkers, students\n\ndominated by lust",
+  "translation": {
+    "source_sha256": "179332ef564cf4b4f2d439422a9c831447ac59340d3ea6f071143a1a5a4f4376",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Whitmanic Poem",
+    "editorial_note": "The translation keeps the short catalogue and blunt final phrase of the provided Spanish text."
+  }
+}

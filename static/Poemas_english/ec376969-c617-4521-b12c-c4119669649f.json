@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 94,
+    "words": 15,
+    "reading_time_min": 0.075
+  },
+  "text": "You came to visit me\n\nin dreams\n\n\nbut the emptiness\n\nyou left when\n\nyou went away\n\n\nwas reality",
+  "translation": {
+    "source_sha256": "ab7137e3d650f63cb6a2039dc5e4ddc4880a6a0b5729620a8cdfb67643f9ec96",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "You Came to Visit Me",
+    "editorial_note": "The translation preserves the contrast between the dream visit and the real emptiness afterward."
+  }
+}

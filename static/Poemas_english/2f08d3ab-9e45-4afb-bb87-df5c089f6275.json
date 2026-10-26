@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 312,
+    "words": 51,
+    "reading_time_min": 0.255
+  },
+  "text": "Chiaroscuro, the river sings!\n\nHow does it come so playfully?\n\nAnd the leaves with dew\n\nare green eyes crying!\n\n\nWhat celestial music\n\nis heard in these places;\n\nmurmurings of banana groves\n\nand of wild doves!\n\n\nAmong the mountain fineries\n\neverything is a lyre:\n\nthe turtle-dove that sighs\n\nis a madrigal with wings!",
+  "translation": {
+    "source_sha256": "4aa8d669f2dd8e2fa43dce1323731f0ae020fcba7060e54b39ad882b5a6b3e4a",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Plumbago",
+    "editorial_note": "The translation keeps the bright musical pastoral of river, grove, and dove."
+  }
+}

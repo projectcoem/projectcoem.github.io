@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 675,
+    "words": 120,
+    "reading_time_min": 0.6
+  },
+  "text": "Lucita, what sorrow\n\nit gives me to see, wrapped in timid flashes\n\nof moon, your fields,\n\nyour dark earth;\n\nthe hill that rises\n\nwith the capulín trees for which you sighed,\n\nand those roads along which you passed\n\nbathed and barefoot!\n\nWhat sad sorrow!\n\nYour field is in shadows, for you were the light;\n\nand in the cemetery, after you left,\n\nthey have put another cross...\n\nOne day they said you were lost,\n\nand thorns wounded your own old mother;\n\nand when summer stripped the orchards bare\n\nthey found your dear mother asleep,\n\nbut with her eyes\n\nopen...\n\nYou did not understand that the city was\n\nfire that consumes with its wicked lights,\n\nand that it burns the wings\n\nof innocence from little Lucitas...",
+  "translation": {
+    "source_sha256": "35cdd45be585441b229879bf9981051a59d193f2a68c66d06d3300ca8f786107",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Over There...",
+    "editorial_note": "The translation keeps the rural lament for Lucita and the city as destructive fire."
+  }
+}

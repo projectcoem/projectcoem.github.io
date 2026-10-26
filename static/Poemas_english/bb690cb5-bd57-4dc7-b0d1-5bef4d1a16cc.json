@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 147,
+    "words": 27,
+    "reading_time_min": 0.135
+  },
+  "text": "Girls who someday will read, moved,\n\nthese verses\n\nand dream of a poet:\n\nknow that I made them for one like you\n\nand that it was in vain.",
+  "translation": {
+    "source_sha256": "dd333cf2ca48a0dadd03a0debc509d5d8433a60bafb78e3eef93cf0c38870f44",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Girls Who Someday Will Read, Moved",
+    "editorial_note": "The translation preserves the poem's address to future readers and its final deflation."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 263,
+    "words": 51,
+    "reading_time_min": 0.255
+  },
+  "text": "Traveler, your footprints\n\nare the road and nothing more;\n\nTraveler, there is no road,\n\nthe road is made by walking.\n\nBy walking the road is made,\n\nand turning one's gaze back\n\none sees the path that never\n\nwill be trodden again.\n\nTraveler, there is no road\n\nbut wakes upon the sea.",
+  "translation": {
+    "source_sha256": "a1938b4eb2eb80e404257161036cabb7a396e4a4ba033eadc57a19c61c2b1ec2",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Traveler, There Is No Road",
+    "editorial_note": "The translation keeps the iconic road-made-by-walking image and the sea-wake ending."
+  }
+}

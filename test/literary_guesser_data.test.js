@@ -29,9 +29,9 @@ function assertMetadataShape(item, kind) {
 
 test('English Literary Oracle joins only local translated works to unified authors', () => {
   assert.equal(catalog.version, 1);
-  assert.equal(catalog.authors.length, 269);
+  assert.equal(catalog.authors.length, 349);
   assert.equal(catalog.stories.filter((item) => item.kind === 'story').length, 2758);
-  assert.equal(catalog.stories.filter((item) => item.kind === 'poem').length, 260);
+  assert.equal(catalog.stories.filter((item) => item.kind === 'poem').length, 1334);
   const storyFiles = localIds('static/Cuentos_english');
   const poemFiles = localIds('static/Poemas_english');
   const authorIds = new Set(catalog.authors.map((author) => author.id));
@@ -72,7 +72,7 @@ test('reader metadata classifies every English file and preserves raw poem ids a
 
 test('every playable poem has reviewed English translation provenance', () => {
   const sourceIds = new Set(poemSource.poems.map((poem) => poem.id));
-  assert.equal(sourceIds.size, 260);
+  assert.equal(sourceIds.size, 1334);
   for (const poem of catalog.stories.filter((item) => item.kind === 'poem')) {
     assert.equal(sourceIds.has(poem.id), true);
     const body = read(`static/Poemas_english/${poem.id}.json`);
@@ -129,9 +129,8 @@ test('curated story ratings and disputed attributions retain their boundaries', 
   }
 });
 
-test('Machado authority data is correct when his work is present', () => {
+test('Machado resolves to the cited complete Spain 1875 authority record', () => {
   const machado = catalog.authors.find((author) => author.name === 'Antonio Machado');
-  if (!machado) return;
   assert.deepEqual(machado.countries, ['Spain']);
   assert.equal(machado.birthYear, 1875);
   assert.equal(machado.sex, 'male');

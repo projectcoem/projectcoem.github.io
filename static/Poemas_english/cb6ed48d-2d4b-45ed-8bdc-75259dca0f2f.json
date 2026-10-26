@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 148,
+    "words": 20,
+    "reading_time_min": 0.1
+  },
+  "text": "When the golden corteses bloomed\n\nthe two of us were in love.\n\nThe corteses still have flowers\n\nand we are already two strangers.",
+  "translation": {
+    "source_sha256": "911327d0caf49949ed0a06fcf859d9e0a0dbba20e1807add6313b277d8334dde",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "When the Golden Corteses Bloomed",
+    "editorial_note": "The translation keeps 'corteses' as the flowering tree named in the original and contrasts its return with estrangement."
+  }
+}

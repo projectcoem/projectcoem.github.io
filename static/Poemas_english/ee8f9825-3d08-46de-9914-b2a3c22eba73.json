@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 260,
+    "words": 41,
+    "reading_time_min": 0.205
+  },
+  "text": "The golden shacks fenced with thistles;\n\npigs in the streets;\n\na cartwheel\n\nbeside a shack, a latrine in the yard,\n\na girl filling her jar,\n\nand Momotombo\n\nblue, behind the cheerful underwear hanging up\n\nyellow, white, pink.",
+  "translation": {
+    "source_sha256": "ca1213979d61946055e4e3694ed7d5688ed71b1aa3464292d2e96677b4d2fcde",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Watercolor",
+    "editorial_note": "The translation keeps the watercolor-like inventory of rural detail with Momotombo behind the laundry."
+  }
+}

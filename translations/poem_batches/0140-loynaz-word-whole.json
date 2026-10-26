@@ -1,0 +1,37 @@
+[
+  {
+    "id": "aa3dd6b5-33f8-4ddb-bcb0-7550282ba3cf",
+    "source_sha256": "89bf71c45634f33edb6235c28bc4a36d14733026f150538d203fd69a6d3d104f",
+    "title": "Poem VI",
+    "text": "She lived-she could live-with a word clenched between her lips.\n\nShe died with the word clenched between her lips.\n\nThey threw earth over the word.\n\nThe lips came undone beneath the earth.\n\nAnd still the clenched word remained, I do not know where!",
+    "editorial_note": "The translation keeps the word physically clenched beyond lips, burial, and decay."
+  },
+  {
+    "id": "8d6c208d-ba5c-4546-bc22-8e3a5d694f7b",
+    "source_sha256": "e8e4c0786bd8fa13239c2e5d66045272f8c925c7b0a7cfe2714d8991a99173c7",
+    "title": "If You Love Me, Love Me Whole...",
+    "text": "If you love me, love me whole,\n\nnot by zones of light or shadow...\n\nif you love me, love me black\n\nand white. And gray, and green, and blond,\n\nlove me day,\n\nlove me night...\n\nAnd dawn at the open window!\n\n\nIf you love me, do not cut me down:\n\nlove all of me... or do not love me!",
+    "editorial_note": "The translation keeps Loynaz's demand to be loved without dividing or trimming the self."
+  },
+  {
+    "id": "5832db6e-352a-4557-9dcb-167d7140d46e",
+    "source_sha256": "17fe1b81834c35f87c0d49e6778f44cbfe905e68e5fdeeade1db18f318439965",
+    "title": "Love Me Whole",
+    "text": "If you love me, love me whole,\n\nnot by zones of light or shadow...\n\nIf you love me, love me black\n\nand white. And gray, and green, and blond,\n\nand brunette...\n\nLove me day,\n\nlove me night...\n\nAnd dawn at the open window!\n\n\nIf you love me, do not cut me down:\n\nLove all of me... Or do not love me!",
+    "editorial_note": "The translation preserves this variant's added 'brunette' line and capitalized final command."
+  },
+  {
+    "id": "5a6593e2-22ae-4ab2-ac11-0b74312959ee",
+    "source_sha256": "503233ea715e54c81388ffbfe253164ac8fa4c64ed0cefc44116c6a8243ca4f9",
+    "title": "I Cast My Hope into the Sea...",
+    "text": "I cast my hope into the sea:\n\n\nand even in the sea, my hope was\n\n\n                                      sea-green...\n\n\n I cast my song into the sea:\n\n\nand even in the sea, my song was\n\n\n                                    crystal...\n\n\n Then I cast your love into the sea...\n\n\nand even in the sea your love was\n\n\n                                     salt...",
+    "editorial_note": "The translation keeps the spaced visual endings: sea-green, crystal, and salt."
+  },
+  {
+    "id": "2275fe6d-1dce-4742-a076-d68e548ce6c4",
+    "source_sha256": "8dec159fb9012ac6500880bf6ff4271e808715efb80b6cfe2acb47857ba49cf2",
+    "title": "This Girl Is Painted...",
+    "text": "This girl is painted\n\non rice paper that is transparent\n\nto the light; she flies in her paper\n\nthrough the air... She flies with the dry leaves\n\nand with lost sighs.\n\nShe is the girl of paper and flight;\n\nshe is the light, the weightless\n\ngirl of illuminated paper,\n\nthe one with watercolors...\n\nThe one no one would dare\n\nto kiss for fear of erasing her...",
+    "editorial_note": "The translation keeps the fragile watercolor girl as something loved too delicately to touch."
+  }
+]

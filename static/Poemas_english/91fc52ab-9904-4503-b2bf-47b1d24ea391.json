@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 529,
+    "words": 87,
+    "reading_time_min": 0.435
+  },
+  "text": "It was an age when only the dead\n\ncould smile, freed from wars;\n\nand the emblem, the soul of Leningrad,\n\nhung outside its prison-house;\n\nand the armies of captives,\n\nherded in the railroad yards,\n\nescaped from the song sung by the whistle of the\n\nengine,\n\nwhose refrain went: Go away, pariahs!\n\nThe stars of death hung above us.\n\nAnd Russia, the innocent, the beloved, writhed\n\nunder the tracks of boots stained with blood,\n\nunder the wheels of the Black Marias.",
+  "translation": {
+    "source_sha256": "1fac13af3480e4a5a74161653fb4a9a3a1e6990682aa49f9ff2b4de932dbd560",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Prologue",
+    "editorial_note": "The translation keeps the Requiem prologue's historical scale, prison-house image, and Black Maria vans."
+  }
+}

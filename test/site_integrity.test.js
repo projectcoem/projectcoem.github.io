@@ -238,3 +238,20 @@ test("English poem catalog contains only reviewed, source-tracked translations",
     assert.ok(translated.text);
   }
 });
+
+test("English poem translations do not contain patch newline markers", () => {
+  const files = fs.readdirSync(path.join(root, "static/Poemas_english"))
+    .filter(file => file.endsWith(".json"))
+    .map(file => path.join("static/Poemas_english", file));
+  const batches = fs.readdirSync(path.join(root, "translations/poem_batches"))
+    .filter(file => file.endsWith(".json"))
+    .map(file => path.join("translations/poem_batches", file));
+  const offenders = [];
+
+  for (const file of files.concat(batches)) {
+    const source = fs.readFileSync(path.join(root, file), "utf8");
+    if (source.includes("\\n+")) offenders.push(file);
+  }
+
+  assert.deepEqual(offenders, [], `patch newline markers found:\n${offenders.join("\n")}`);
+});

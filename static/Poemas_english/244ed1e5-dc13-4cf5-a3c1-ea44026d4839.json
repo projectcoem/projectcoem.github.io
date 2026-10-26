@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 135,
+    "words": 23,
+    "reading_time_min": 0.115
+  },
+  "text": "a single dog\n\nwalking alone on a hot\n\nsummer\n\nsidewalk\n\nseems to have the power\n\nof ten thousand gods\n\n\nwhy is that?",
+  "translation": {
+    "source_sha256": "62ce17e520f6efba69291615ae06606ff267ab8ec8ea1c9bc4bec2ee1af2a17e",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Dog",
+    "editorial_note": "The translation preserves Bukowski's plain observation and final unadorned question."
+  }
+}

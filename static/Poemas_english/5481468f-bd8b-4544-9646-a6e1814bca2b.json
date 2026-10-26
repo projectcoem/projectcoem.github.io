@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 552,
+    "words": 94,
+    "reading_time_min": 0.47
+  },
+  "text": "Today I received your letter. I have read it\nwith astonishment, for you say you\n        are returning,\nand I still have not recovered from the surprise...\nIt has been so long since\n        I have lived without surprises!\n\n\n\"That at last you are coming to see me..., that so long\nwas the separation...\" I advise you,\ndo not come, you would suffer a bitter\ndisillusion: you would\n        find me old.\n\n\nAnd like an old man, now, I have called myself\nto quiet, and except\n        —always the past!—\nfor one or another memory that on my forehead\n\n\nputs some wrinkle of sadness,\nI cannot complain:\n        tranquilly\nI smoke my pipe and drink my beer.",
+  "translation": {
+    "source_sha256": "5b801d76b4e5b7207726b8f35f2ffe4d7a0e2a2e2733ab9a69038dad49997920",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "A Surprise",
+    "editorial_note": "The translation regularizes an apparent OCR break in 'always the past' while keeping the old-age resignation."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 286,
+    "words": 48,
+    "reading_time_min": 0.24
+  },
+  "text": "Light is the bird:\n\nAnd its flying shadow,\n\nLighter.\n\n\nAnd the airy waterfall,\n\nFrom its throat,\n\nLighter.\n\n\nAnd what remembers, hearing\n\nIts song slide by,\n\nLighter.\n\n\nAnd the swift desire\n\nOf this ancient instant,\n\nLighter.\n\n\nAnd the invisible flight\n\nOf the bitter passerby,\n\nLighter.",
+  "translation": {
+    "source_sha256": "10f85843167cf55d38fd5167954ef0365d63fe2d39545b3882852450bb7be563",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Light Is the Bird...",
+    "editorial_note": "The translation preserves the repeated comparative lightness that moves from bird to shadow, song, memory, desire, and vanishing."
+  }
+}

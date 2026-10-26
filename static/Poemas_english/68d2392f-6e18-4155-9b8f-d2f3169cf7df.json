@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 513,
+    "words": 95,
+    "reading_time_min": 0.475
+  },
+  "text": "The rose was left written in the air.\n\nMorning wrote it with a delicate pulse.\n\nAnd, setting its cheek against the window\n\nof light, it keeps its appointment with the blue.\n\n\nAlmost perfect and without reason it meditates,\n\nabsorbed in its vain beauty;\n\nforgetting does not touch it, nor does the daisy\n\ntrouble it with her sorrow of love.\n\n\nTo the moon alone it stretches arms\n\nof fragrance, and walks with secret steps\n\nof fragrance, nothing more, toward its star.\n\n\nIt exists, inaccessible to the one who sings it,\n\nignorant of all its thorns,\n\nwhile the nightingale dies for it.",
+  "translation": {
+    "source_sha256": "b829f17b758a561e0baf7e661154d0302ac8084e24f918778216b111311c8904",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "The Rose Was Left Written in the Air...",
+    "editorial_note": "The translation keeps the rose as written air: unreachable, thornless to itself, fatal to the nightingale."
+  }
+}

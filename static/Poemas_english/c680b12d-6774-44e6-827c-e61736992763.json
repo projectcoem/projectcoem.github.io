@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 271,
+    "words": 52,
+    "reading_time_min": 0.26
+  },
+  "text": "Come to me, for you come wounded,\n\nfor on this bed of dreams\n\nyou can rest with me.\n\n\nCome, for it is already midnight,\n\nand there is no clock of oblivion\n\nto pour its chimes\n\ninto my aching breast.\n\n\nI was waiting for your return.\n\nFrom an angle of my life\n\na voiceless voice announced it to me.",
+  "translation": {
+    "source_sha256": "748343232341099e127a60a081e056d192e6bd2d6c0122ef7da1d3b411871937",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Madrigal",
+    "editorial_note": "The translation keeps the madrigal as a nocturnal invitation to a wounded beloved."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 162,
+    "words": 27,
+    "reading_time_min": 0.135
+  },
+  "text": "The best often die by\n\ntheir own hand\n\njust to escape,\n\nand those left behind\n\ncan never understand\n\nwhy anyone\n\nwould want\n\nto escape\n\nfrom\n\nthem.",
+  "translation": {
+    "source_sha256": "98d72fc9b02f3b3b34bd38a49c1a89834c468f1b7408f38718f8e22d134b594f",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Cause and Effect",
+    "editorial_note": "The translation keeps the short descending line breaks and the bitter final turn toward those left behind."
+  }
+}

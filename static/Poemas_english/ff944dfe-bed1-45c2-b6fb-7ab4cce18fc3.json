@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 185,
+    "words": 34,
+    "reading_time_min": 0.17
+  },
+  "text": "there are worse things than\n\nbeing alone\n\nbut it often takes decades\n\nto realize it\n\nand more often\n\nwhen this happens\n\nit is too late\n\nand there is nothing worse\n\nthan\n\na too late",
+  "translation": {
+    "source_sha256": "96ddfa557ba53f5d07f9955598f5e4ee387b04c93b2b2da693153248ebf210c0",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "There Are Worse Things Than...",
+    "editorial_note": "The translation preserves the poem's conversational bluntness and the final noun-like 'too late.'"
+  }
+}

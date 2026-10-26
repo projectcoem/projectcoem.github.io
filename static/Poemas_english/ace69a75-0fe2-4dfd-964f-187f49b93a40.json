@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 192,
+    "words": 37,
+    "reading_time_min": 0.185
+  },
+  "text": "The shadow covers watched petals\n\nThe wind carries off the last gesture of a leaf\n\nThe alien and doubly mute sea\n\nin the summer made merciful by its lights\n\n\nA desire from here\n\nA memory from there",
+  "translation": {
+    "source_sha256": "af76f28237a7180bdcc7894cd1ab93645c72d5f4c8238186a94cfee7b4fd040f",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Twilight",
+    "editorial_note": "The translation keeps the spare demonstratives of distance: here and there."
+  }
+}

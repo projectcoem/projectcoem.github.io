@@ -4,7 +4,7 @@
     "words": 23,
     "reading_time_min": 0.115
   },
-  "text": "My footsteps on this street\n+echo\n+on another street\n+where\n+I hear my footsteps\n+passing on this street\n+where\n+\n+\n+Only the fog is real.",
+  "text": "My footsteps on this street\necho\non another street\nwhere\nI hear my footsteps\npassing on this street\nwhere\n\n\nOnly the fog is real.",
   "translation": {
     "source_sha256": "e1eaa3e6c138ad008962909893b637d7025e68bea098e528663ba3fae0e86ae2",
     "source_language": "es",

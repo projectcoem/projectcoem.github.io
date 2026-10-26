@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 177,
+    "words": 31,
+    "reading_time_min": 0.155
+  },
+  "text": "If when it was\n\nthe April rebellion\n\n\nthey had killed me\n\nwith them\n\n\nI would not have met you\n\n\nand if now\n\nit had been\n\nthe April rebellion\n\n\nthey would have\n\nkilled me with them",
+  "translation": {
+    "source_sha256": "ec66dadd6db64ddda2d0d0a331a2248f7f3e3133e60e7e5b47a7f7d96afd6dd7",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "If When It Was",
+    "editorial_note": "The translation follows the poem's conditional logic between survival, love, and revolutionary death."
+  }
+}

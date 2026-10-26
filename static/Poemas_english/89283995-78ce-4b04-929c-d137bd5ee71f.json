@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 237,
+    "words": 42,
+    "reading_time_min": 0.21
+  },
+  "text": "This untimely storm, these bars in the pupils of my\n\neyes, this little love story closing like a\n\nfan that, open, showed the hallucinated beauty: the most\n\nnaked one in the forest in the musical silence of embraces.",
+  "translation": {
+    "source_sha256": "f9ae3cb963ed2b85fce4aab2bfe073c8e5659eb753a32ff17ddb03e424f783ef",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "This Untimely Storm, These Bars in the Pupils of My...",
+    "editorial_note": "The broken title and lineation are preserved to keep the sentence's interrupted pressure."
+  }
+}

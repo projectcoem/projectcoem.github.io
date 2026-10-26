@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 253,
+    "words": 54,
+    "reading_time_min": 0.27
+  },
+  "text": "I have never seen a wasteland,\n\nand the sea I never came to see,\n\nbut I have seen the eyes of the heather,\n\nand I know what the waves must be.\n\n\nI have never spoken with God,\n\nnor visited Him in Heaven,\n\nbut I am sure where I am traveling,\n\nas if the route had been given to me.",
+  "translation": {
+    "source_sha256": "82613163adbf226710fcc0e90b1561ec087bbe5f21c2090feb7c039fd6c370f1",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Certainty",
+    "editorial_note": "The translation follows the Spanish version's confidence in unseen landscape and destination."
+  }
+}

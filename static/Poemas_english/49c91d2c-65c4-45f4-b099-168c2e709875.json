@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 88,
+    "words": 17,
+    "reading_time_min": 0.085
+  },
+  "text": "Your sorrows were my sorrows,\n\nmine, yours.\n\nIf you were not content,\n\nI was not either.",
+  "translation": {
+    "source_sha256": "1cdcb81952b61f38b32525992d65f6fcfccae45a58268e1852a4014314f8f091",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "As It Was II",
+    "editorial_note": "The translation preserves the compact reciprocity of shared unhappiness."
+  }
+}

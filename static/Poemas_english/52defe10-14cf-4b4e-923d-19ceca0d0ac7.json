@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 208,
+    "words": 28,
+    "reading_time_min": 0.14
+  },
+  "text": "Through the flowered ravines\n\nLast night the downpour passed\n\nAnd the lemon tree dawned\n\nWeeping little white stars.\n\n\nLost cowbells wander\n\nAmong fresh grasslands,\n\nAnd the wintery mists pass,\n\nErasing hills.",
+  "translation": {
+    "source_sha256": "14049f13598f94a219f597a64a879c343641f40f0e0f5ba5d56499b75f7c4ef9",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "After the Rain",
+    "editorial_note": "The translation keeps Espino's rural clarity and the lemon tree's starry tears."
+  }
+}

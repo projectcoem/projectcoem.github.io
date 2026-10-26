@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 44,
+    "words": 8,
+    "reading_time_min": 0.04
+  },
+  "text": "You had none,\n\nI only one,\n\nthat I loved.",
+  "translation": {
+    "source_sha256": "824a74fe193758f7f5709cac05b7b6cc155921946406d0ab998a7563644a00d8",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Weaknesses",
+    "editorial_note": "The translation keeps the poem's miniature balance of blame and confession."
+  }
+}

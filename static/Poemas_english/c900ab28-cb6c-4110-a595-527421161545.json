@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 143,
+    "words": 25,
+    "reading_time_min": 0.125
+  },
+  "text": "The neighborhood of the sea is abolished:\n\nIt is enough to know it guards our backs,\n\nThat there is an immense green window\n\nThrough which to throw oneself swimming.",
+  "translation": {
+    "source_sha256": "1af9e91ab989ddbb243ec768325c80b06f557e1ed7de0c7262c29d2c8b7f6499",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "The Neighborhood of the Sea Is Abolished",
+    "editorial_note": "The translation keeps Reyes's compact image of the sea as a guarded green window."
+  }
+}

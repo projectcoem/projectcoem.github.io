@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 154,
+    "words": 32,
+    "reading_time_min": 0.16
+  },
+  "text": "This will be my revenge:\n\nThat one day the book of a famous\n\npoet reaches your hands\n\nand you read these lines the author wrote for you\n\nand you do not know it.",
+  "translation": {
+    "source_sha256": "38a48652dd5479d3b6a9606c8e15b5e1e254b48308902b718b542ea9dc90e4af",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "This Will Be My Revenge",
+    "editorial_note": "The translation keeps revenge as delayed recognition withheld from the beloved."
+  }
+}

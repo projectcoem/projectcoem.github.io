@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 113,
+    "words": 22,
+    "reading_time_min": 0.11
+  },
+  "text": "The person\n\nclosest\n\nto me\n\n\nis you\n\nthe one\n\nwhom, however,\n\n\nI have not seen\n\nfor so long\n\n\nexcept in dreams.",
+  "translation": {
+    "source_sha256": "cf28de6a8d52546ab7acfe2a03b8f7ebe46b77fc83bcec13df72f4944744df87",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "The Person",
+    "editorial_note": "The translation keeps the poem's slow revelation that nearness survives only in dream."
+  }
+}

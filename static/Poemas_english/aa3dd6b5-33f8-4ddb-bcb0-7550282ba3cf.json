@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 236,
+    "words": 39,
+    "reading_time_min": 0.195
+  },
+  "text": "She lived-she could live-with a word clenched between her lips.\n\nShe died with the word clenched between her lips.\n\nThey threw earth over the word.\n\nThe lips came undone beneath the earth.\n\nAnd still the clenched word remained, I do not know where!",
+  "translation": {
+    "source_sha256": "89bf71c45634f33edb6235c28bc4a36d14733026f150538d203fd69a6d3d104f",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Poem VI",
+    "editorial_note": "The translation keeps the word physically clenched beyond lips, burial, and decay."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 676,
+    "words": 95,
+    "reading_time_min": 0.475
+  },
+  "text": "Brightly arrayed, a gallant knight\n\ntraveled long in sun and in shadow,\n\nsinging his song, in search of Eldorado.\n\n\n--\n\n\nBut he grew old, the spirited knight, and\n\nnight fell upon his heart because nowhere\n\ndid he find the land of Eldorado.\n\n\n--\n\n\nAnd at last, when his strength failed him, he could\n\nfind a pilgrim shadow. \"Shadow,\" he\n\nasked, \"where might that land of\n\nEldorado be?\"\n\n\n--\n\n\n\"Beyond the mountains of the Moon, in\n\nthe depth of the valley of shadows; ride,\n\nride without rest,\" answered the shadow, \"if\n\nyou seek Eldorado...\"",
+  "translation": {
+    "source_sha256": "100306e44b9629f355765e2e1a430cd0515cd4316a3f94debfad5115e7e516f7",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Eldorado",
+    "editorial_note": "The translation follows the Spanish catalog's prose-line form while preserving the quest refrain."
+  }
+}

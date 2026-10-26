@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 259,
+    "words": 46,
+    "reading_time_min": 0.23
+  },
+  "text": "White woman, pink woman.\n\n\nShe comes near me or goes far away.\nBy marvelous virtue,\nshe turns into a butterfly for me\nin a world of reflections.\n\n\nWhite woman, pink woman.\n\n\nShe comes near me or goes far away.\nCatching fire, she becomes divine\nin the mysterious moon\nof the country of mirrors.",
+  "translation": {
+    "source_sha256": "ca42d0f77387afef1acedcd05ccafc09b60ee8451c1b877b2a2fe78e07101f7b",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Song in White and Pink",
+    "editorial_note": "The translation keeps the repeated white/pink apparition and the mirror-world transformation."
+  }
+}

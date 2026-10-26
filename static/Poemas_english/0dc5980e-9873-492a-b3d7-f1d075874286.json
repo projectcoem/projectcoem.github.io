@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 511,
+    "words": 93,
+    "reading_time_min": 0.465
+  },
+  "text": "My father has died.\n\nHis absence repeats itself each day\n\nin the empty home.\n\nI ask,\n\nand besides absence and besides\n\nlosing the roads of this earth,\n\nwhat is death?\n\n\nI ask you, father, what is death?\n\nHave you found the peace you deserved?\n\nDid you find shelter in a new house\n\nor do you wander, and suffer beneath the cold\n\nof the greatest winter, of total\n\nlovelessness?\n\n\nI ask you, father, if the dead are something,\n\nor if death is only\n\nan immense word that contains\n\neverything that does not exist.",
+  "translation": {
+    "source_sha256": "64350ac5f78b93a0b52e185bb97af4602ac3d520ada80fffa35548aa2dbc9dbb",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "My Father Has Died...",
+    "editorial_note": "The translation keeps the direct filial questions and the final definition of death as an immense word."
+  }
+}

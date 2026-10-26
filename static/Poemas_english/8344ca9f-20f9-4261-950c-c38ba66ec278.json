@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 38,
+    "words": 6,
+    "reading_time_min": 0.03
+  },
+  "text": "You do not even\n\ndeserve an\n\nepigram",
+  "translation": {
+    "source_sha256": "a5c581180f2a4b50b0b02867eaed7da223dcff48403123275df5f77e6a223de8",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "You Do Not Even",
+    "editorial_note": "The translation keeps Cardenal's miniature rebuke stripped down to its three-line refusal."
+  }
+}

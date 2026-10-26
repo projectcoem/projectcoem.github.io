@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 190,
+    "words": 36,
+    "reading_time_min": 0.18
+  },
+  "text": "I do not know whether bird or cage\n\nmurderous hand\n\nor dead young woman panting in the great dark throat\n\nor silent\n\nbut perhaps oral as a fountain\n\nperhaps minstrel\n\nor princess in the highest tower.",
+  "translation": {
+    "source_sha256": "0be5255885032fd7df6c96a03ca40a5ecdfe7f0345c7829ad8d85acd834df361",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Forms",
+    "editorial_note": "Oral is kept rather than softened, preserving the poem's strange bodily register."
+  }
+}

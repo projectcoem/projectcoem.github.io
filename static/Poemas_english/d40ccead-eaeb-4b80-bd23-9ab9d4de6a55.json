@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 200,
+    "words": 32,
+    "reading_time_min": 0.16
+  },
+  "text": "one of Lorca's best lines\n\nis,\n\n\"agony, always\n\nagony...\"\n\nthink of this when\n\nyou kill a\n\ncockroach or\n\npick up a blade to\n\nshave\n\nwaking in the morning\n\nto\n\nface the\n\nsun",
+  "translation": {
+    "source_sha256": "cd0646c56a2120e58836e394ac2d2e848b5bdedc4d4146ca38d4222c6a475f99",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "One of Lorca's Best Lines...",
+    "editorial_note": "The translation keeps Bukowski's lowercase plainness and the Lorca line as a blunt morning refrain."
+  }
+}

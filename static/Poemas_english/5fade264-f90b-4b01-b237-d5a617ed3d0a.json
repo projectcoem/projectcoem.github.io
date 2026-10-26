@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 343,
+    "words": 66,
+    "reading_time_min": 0.33
+  },
+  "text": "It is because a little mountain bird has made,\n\nin the hollow of a tree, its morning nest,\n\nthat the tree dawns with music in its breast,\n\nas if it had a musical heart.\n\n\nIf the sweet little bird peeps through the hollow,\n\nto drink dew, to drink aroma,\n\nthe tree of the hills gives me the feeling\n\nthat its heart has come out, singing.",
+  "translation": {
+    "source_sha256": "f5f16323436b5bed52b12a358b7f4c4607900075fe7b4490a683e9704849fa51",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "The Nest",
+    "editorial_note": "The translation keeps the tree's nest as an exposed singing heart."
+  }
+}

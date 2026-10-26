@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 495,
+    "words": 89,
+    "reading_time_min": 0.445
+  },
+  "text": "Leaf by leaf the tender spring\n\nrestores the greenness of the fields,\n\nand, freed from the ice, the brook flees,\n\nmocking the meadow.\n\n\nAwakened yesterday to the first song,\n\nthe wild sparrow senses its wing,\n\nand through the light that spills and flows\n\nclimbs and descends the birdlike scale.\n\n\nNow the poppy sheds its glow,\n\nand the dandelion its golden plume;\n\neverything throws itself into the feast of color;\n\n\nonly in the clear blue, blurred by nothing,\n\na torn and slack cloud floats,\n\nlike a briefest enclosure of foam.",
+  "translation": {
+    "source_sha256": "ff46092d95910a080c2161eafea4d3e83f815bb69562a5497827f0c4bbe4aa76",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Leaf by Leaf the Tender Spring...",
+    "editorial_note": "The translation keeps the spring sonnet's restored green, bird-scale, color feast, and solitary cloud."
+  }
+}

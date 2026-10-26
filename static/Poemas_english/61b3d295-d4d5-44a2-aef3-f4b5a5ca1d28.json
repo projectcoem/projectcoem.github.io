@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 340,
+    "words": 61,
+    "reading_time_min": 0.305
+  },
+  "text": "What is the best thing in the world?\n\nJune roses pearled by May dew;\n\nThe sweet south wind saying there will be no rain;\n\nTruth, with friends stripped of cruelty;\n\nBeauty, not made vain until its pride is spent;\n\nLove, when we are loved again.\n\nWhat is the best thing in the world?\n\nSomething outside it, I think.",
+  "translation": {
+    "source_sha256": "7863c545f1666eccd586ef8ec8c45fb961d8945121d24f6c71dfed69299a379a",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "What Is the Best Thing in the World?...",
+    "editorial_note": "This first-line variant keeps the same English rendering as the matching Browning poem."
+  }
+}

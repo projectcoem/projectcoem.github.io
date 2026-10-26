@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 237,
+    "words": 45,
+    "reading_time_min": 0.225
+  },
+  "text": "You are alone\n\namong the crowds\n\n\nas alone as\n\nthe moon is\n\n\nAnd only the sun\n\nin the sky\n\n\nyesterday you were in the stadium\n\n\namong thousands of people\n\nand I spotted you from\n\nthe moment I came in\n\n\njust as if you had\n\nbeen alone\n\nin an empty stadium",
+  "translation": {
+    "source_sha256": "9fa4fc9264f0939ff70576d1542c2e8350be678bb6298277674bfd1f35dc946d",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "You Are Alone",
+    "editorial_note": "The translation keeps the beloved's singularity visible even inside a crowd."
+  }
+}

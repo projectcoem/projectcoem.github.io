@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 273,
+    "words": 45,
+    "reading_time_min": 0.225
+  },
+  "text": "I still remember\n\nthat street\n\nof yellow lamps,\n\nwith that full\n\nmoon among the electric\n\nwires\n\n\nAnd that star\n\non the corner,\n\na distant radio,\n\nthe tower of La Merced\n\nthat struck those\n\neleven:\n\n\nAnd the golden light\n\nof your open\n\ndoor, on that street.",
+  "translation": {
+    "source_sha256": "0e8fa12ac49aba0049d9a67ab59df4236e052f1aff5affdd8f74383a9dbc3646",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "I Still Remember",
+    "editorial_note": "The translation preserves the remembered street as a sequence of lamps, wires, bells, and the beloved's doorway."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 621,
+    "words": 117,
+    "reading_time_min": 0.585
+  },
+  "text": "A sea of steel with gray waves throbs\n\ninside the rough gnawed walls\n\nof the old port. The north wind blows\n\nand ruffles the sea. The sad sea lulls\n\na bitter illusion with its gray waves.\n\nThe north wind ruffles the sea, and the sea lashes\n\nthe harbor wall.\n\nThe afternoon closes the horizon\n\nclouded over. Above the steel sea\n\nthere is a leaden sky.\n\nThe red brigantine is a bloody\n\nphantom, over the sea, which the sea shakes...\n\nGloomily the north wind hums and whistles sadly\n\non the harsh lyre of the sturdy rigging.\n\nThe red brigantine is a phantom\n\nthat the wind agitates and the ruffled sea rocks,\n\nthe rough ruffled sea of gray waves.",
+  "translation": {
+    "source_sha256": "6b8e95fc39c448743a3197476ee07d3b8274aebbf5e300e3bdb10bb681bcdb66",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "The Sad Sea",
+    "editorial_note": "The translation keeps the metallic sea, red brigantine, and rigging as a harsh lyre."
+  }
+}

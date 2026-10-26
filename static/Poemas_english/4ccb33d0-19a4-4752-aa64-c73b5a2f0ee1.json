@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 610,
+    "words": 94,
+    "reading_time_min": 0.47
+  },
+  "text": "Shipbuilders build you white ships,\n\nfalconers raise falcons for you,\n\nbees bring you a honeycomb from the sun,\n\nfishermen fish gold from the sand,\n\npeasants harvest fruits in the fields,\n\nhunters gather deer antlers,\n\nmonks copy the gospels for you,\n\npainters present their icons and frescoes,\n\nblacksmiths forge the monastery doors,\n\njuniper trees pour incense into the thuribles,\n\nthujas forge golden censers for you,\n\nbut I beg you\n\nonly for the acorn\n\nthat lies beneath the forest branches,\n\nfor a child hungry for joy\n\nwhen he finds it in winter.",
+  "translation": {
+    "source_sha256": "37bf56b14ad6cb39a651f3aa2a4bda2f69cd6da422c3ed4931cc0497a55bacac",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Shipbuilders Build You White Ships...",
+    "editorial_note": "The translation keeps the contrast between royal offerings and the humble winter acorn for a hungry child."
+  }
+}

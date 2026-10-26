@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 29,
+    "words": 6,
+    "reading_time_min": 0.03
+  },
+  "text": "And that light?\n\n-It is your shadow.",
+  "translation": {
+    "source_sha256": "4df5c3509214740739ce672533493f248c9f53d5c5736ebda8e593f7380320c6",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Poem LXXIII",
+    "editorial_note": "The translation preserves Loynaz's miniature reversal of light and shadow."
+  }
+}

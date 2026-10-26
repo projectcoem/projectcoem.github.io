@@ -1,0 +1,37 @@
+[
+  {
+    "id": "8360688a-552a-453b-8928-a59ba49dc612",
+    "source_sha256": "5da5ccc9cee9f054d6c4bf77352169b0cf2a4a9e6eefda5f82c80431c172668d",
+    "title": "On the (Un)usefulness of Things",
+    "text": "A\n\n        scarecrow,\n\n        in the middle of a summer-scorched sea of wheat,\n\n        watches over no one\n\n        consciously.\n\n        But it is not useless, for it takes care of absence.",
+    "editorial_note": "The translation keeps the parenthetical title and the spare paradox of a scarecrow guarding absence."
+  },
+  {
+    "id": "589bf8ba-f431-4680-a573-90a207000971",
+    "source_sha256": "66006eb6fbba271bf2fa869d37b69353b582076082c7c75f66cfa1313b1b2e52",
+    "title": "On the (Un)usefulness of Things",
+    "text": "On the (un)usefulness of things\n\nA\n\n        scarecrow,\n\n        in the middle of a summer-scorched sea of wheat,\n\n        watches over no one\n\n        consciously.\n\n        But it is not useless, for it takes care of absence.",
+    "editorial_note": "The source catalog title differs, but the displayed poem is 'Sobre la in(utilidad) de las cosas,' translated here by the body title."
+  },
+  {
+    "id": "d87c8781-a866-43c4-aab2-8e07c006749d",
+    "source_sha256": "3bc33a2759f6f12d8538c527a1f7cb84182ec471a2663718c55bd42e646a1cf7",
+    "title": "Stony Ground",
+    "text": "Seek your\n\n        hard bed, O body\n\n        of silver.\n\n        In one hand roses and in the other\n\n        sour fruits.\n\nFrom\n\n        \"\" 1964 - 1968",
+    "editorial_note": "The translation keeps the sparse layout and preserves the source's empty quotation in the collection note."
+  },
+  {
+    "id": "cca4d0ec-3623-4ed1-a809-78178c84d957",
+    "source_sha256": "6de6ea8e8e90cf9675ad854336e7ac95aa1be62dd17a6e1a104e7e0f6c347aae",
+    "title": "Stony Ground",
+    "text": "Stony Ground\n\nSeek your\n\n        hard bed, O body\n\n        of silver.\n\n        In one hand roses and in the other\n\n        sour fruits.\n\nFrom\n\n        \"Stony Ground\" 1964 - 1968",
+    "editorial_note": "The source catalog title says 'To a Young Woman in the Park,' but the body displays 'Pedregal,' so the translation follows the body title."
+  },
+  {
+    "id": "765796ac-be7b-41d8-bba6-c2437c662bc1",
+    "source_sha256": "0a2a485686ab6c23879de2b3f5d6a79c16d98f930f67f2c0bf71f6a203cda987",
+    "title": "Trilce: Poem XXVII - I Am Afraid of That Jet",
+    "text": "I am afraid of that jet,\n\ngood memory, strong lord, implacable\n\ncruel sweetness. I am afraid.\n\nThis house gives me complete good, a complete\n\nplace for this not knowing where to be.\n\n\nLet us not enter. I am afraid of this favor\n\nof returning for minutes, over blown-up bridges.\n\nI do not advance, sweet lord,\n\nvaliant memory, sad\n\nsinging skeleton.\n\n\nWhat content this enchanted house has;\n\nit gives me quicksilver deaths, and plugs\n\nwith lead my intakes\n\nto the dry present.\n\n\nThe jet that knows nothing of how we are going\n\nfrightens me, gives me dread.\n\nValiant memory, I do not advance.\n\nBlond and sad skeleton, whistle, whistle.",
+    "editorial_note": "The translation preserves Vallejo's fractured Trilce logic: the jet, memory, house, and singing skeleton remain unstable."
+  }
+]

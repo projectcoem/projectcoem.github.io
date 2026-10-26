@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 177,
+    "words": 31,
+    "reading_time_min": 0.155
+  },
+  "text": "When you have seen a cloud\n\nin the lap of a lake;\n\nand the moon\n\namong the water lilies;\n\ninevitably you are at the mercy\n\nof your own soul.",
+  "translation": {
+    "source_sha256": "92733967a926d1d9c95ceada5b6742f9e686187dda8fff4b8049a77c3e0e00f6",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "When You Have Seen a Cloud",
+    "editorial_note": "The source includes a Spanish translation credit to Luis López Nieves; the English rendering preserves the quiet lake image."
+  }
+}

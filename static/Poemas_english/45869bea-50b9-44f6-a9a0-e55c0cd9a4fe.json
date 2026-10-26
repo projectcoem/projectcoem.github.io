@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 164,
+    "words": 25,
+    "reading_time_min": 0.125
+  },
+  "text": "You have worked\n\ntwenty years\n\n\nto gather\n\ntwenty million pesos\n\n\nbut we\n\nwould give twenty million pesos\n\n\nnot to work\n\nas you have worked",
+  "translation": {
+    "source_sha256": "ced0b346ba9b8c661b02200f973677b1448998f5b4019b53920a61ac9ede172b",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "You Have Worked",
+    "editorial_note": "The translation keeps the poem's blunt reversal of money earned into money one would pay to avoid such labor."
+  }
+}

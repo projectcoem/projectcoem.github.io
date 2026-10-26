@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 225,
+    "words": 35,
+    "reading_time_min": 0.175
+  },
+  "text": "As I go to sleep, I think:\n\ntomorrow I will heat the sauna,\n\npamper myself,\n\nwalk, swim, wash,\n\ninvite myself to evening tea,\n\nspeak to myself in a friendly\n\nand admiring way, praising myself:\n\nBrave little woman,\n\nI believe in you.",
+  "translation": {
+    "source_sha256": "b565a90b7347d11041f2e1119b7aa199ee472c6e1b5efb41e3654f9c86e7fc9f",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "As I Go to Sleep, I Think",
+    "editorial_note": "The translation keeps the self-care list plain and lets the final encouragement stay simple."
+  }
+}

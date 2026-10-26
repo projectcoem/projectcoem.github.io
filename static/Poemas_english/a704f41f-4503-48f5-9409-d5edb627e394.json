@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 226,
+    "words": 45,
+    "reading_time_min": 0.225
+  },
+  "text": "Across the bridges of Zamora,\n\nalone and slow, went my soul.\n\n\nNot across the iron bridge;\n\nthe stone one was the one it loved.\n\n\nAt times it looked at the sky,\n\nat times it looked at the water.\n\n\nAcross the bridges of Zamora,\n\nalone and slow, went my soul.",
+  "translation": {
+    "source_sha256": "544b1797c3c9ce802ca739f1f7044668dc8791814efea8c25abb7be5928eaa3a",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Song Five",
+    "editorial_note": "The translation keeps the simple refrain and the preference for the stone bridge."
+  }
+}

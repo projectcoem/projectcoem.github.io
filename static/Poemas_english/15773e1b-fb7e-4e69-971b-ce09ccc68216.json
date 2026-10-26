@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 220,
+    "words": 38,
+    "reading_time_min": 0.19
+  },
+  "text": "The squirrel runs.\n\nThe squirrel flies.\n\nThe squirrel jumps\n\nlike a little madcap.\n\n—Mother, does the squirrel\n\nnot go to school?\n\n—Come, little squirrel,\n\nI have a cage\n\nthat is very pretty.\n\n—No, I prefer\n\nmy tree trunk\n\nand my hole.",
+  "translation": {
+    "source_sha256": "6d0d00993907525b41a2bed4a3f996c608ebff5d83b2c65037fda79069cf81b3",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "The Squirrel",
+    "editorial_note": "The translation preserves the children's poem simplicity and the squirrel's free answer."
+  }
+}

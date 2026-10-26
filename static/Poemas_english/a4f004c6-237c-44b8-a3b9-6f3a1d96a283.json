@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 189,
+    "words": 30,
+    "reading_time_min": 0.15
+  },
+  "text": "She was sold\n\nto Kelly & Martínez\n\nCo. Ltd.,\n\n\nand many will send her\n\nsilver gifts\n\n\nAnd others will send her\n\nelectroplate gifts,\n\n\nand her former lover\n\nsends her this epigram.",
+  "translation": {
+    "source_sha256": "aaab55e0a1d9ed9c509624351d51fa33f8ac79e9f10be58761c48b173899bc7a",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "She Was Sold",
+    "editorial_note": "The translation preserves the bitter commercial framing and the epigram as the lover's only gift."
+  }
+}

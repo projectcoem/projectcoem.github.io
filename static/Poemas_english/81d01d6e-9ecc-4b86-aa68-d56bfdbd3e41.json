@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 231,
+    "words": 40,
+    "reading_time_min": 0.2
+  },
+  "text": "Stuffed with philosophy,\n\nbecause of the eagerness that devours me,\n\nI, who already knew\n\ntwo grams of living, know nothing now.\n\n\nFrom asking so much\n\nthe road from the wise men who passed,\n\nI was left without arriving,\n\nwhile so many fools arrived...",
+  "translation": {
+    "source_sha256": "470082d0d7284f8cebaa595c843ae8442d02ad526118d509c8f8aebbdacce5aa",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "En Panne",
+    "editorial_note": "The translation keeps the wry complaint that too much inquiry stopped arrival."
+  }
+}

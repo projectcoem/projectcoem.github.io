@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 555,
+    "words": 92,
+    "reading_time_min": 0.46
+  },
+  "text": "A brown and cold afternoon\n\nof winter. The schoolboys\n\nstudy.\n\nMonotony\n\nof rain behind the windowpanes.\n\n\nIt is the classroom. On a poster\n\nCain is shown\n\nfugitive, and\n\nAbel dead,\n\nbeside a crimson stain.\n\n\nWith sonorous hollow timbre\n\nthe teacher thunders, an old man\n\nbadly\n\ndressed, lean and dry,\n\nholding a book in his hand.\n\n\nAnd an entire children's choir\n\ngoes singing the lesson:\n\n\"a thousand times\n\none hundred, one hundred thousand;\n\na thousand times a thousand, a million.\"\n\n\nA brown and cold afternoon\n\nof winter. The schoolboys\n\nstudy.\n\nMonotony\n\nof rain behind the windowpanes.",
+  "translation": {
+    "source_sha256": "08aae59b0304f31961a4598068e5c367d0cee29fadfa68be74ce6f7712835da3",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Childhood Memory",
+    "editorial_note": "The translation keeps the rainy classroom monotony and the mechanical multiplication chant."
+  }
+}

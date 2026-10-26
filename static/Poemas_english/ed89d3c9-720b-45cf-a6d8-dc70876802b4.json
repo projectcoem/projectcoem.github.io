@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 258,
+    "words": 46,
+    "reading_time_min": 0.23
+  },
+  "text": "Our love\n\nwas born in May\n\nwith malinches in bloom\n\n\n—When the malinches are in bloom\n\nin Managua—.\n\n\nOnly that month\n\ndo they give flowers:\n\nin the others\n\nthey give pods\n\nbut the malinches\n\nwill bloom again\n\nin May\n\n\nand the love\n\nthat went away\n\nwill not come back\n\nagain.",
+  "translation": {
+    "source_sha256": "fecbef5d17967783e83b03b0ddaf9dd20c3c94709b4a42c7898e4c2f812406b1",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Our Love",
+    "editorial_note": "The translation keeps 'malinches' as the Managua flowering trees whose annual return contrasts with love's non-return."
+  }
+}

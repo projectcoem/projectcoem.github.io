@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 235,
+    "words": 39,
+    "reading_time_min": 0.195
+  },
+  "text": "it is that long shadow\n\nthat little by little advances over\n\n        the grass\n\nwhen the sun abandons its empires...\n\n\nit is the faint whisper\n\nthat runs through the fearful grass\n\n        to tell it that night is coming.",
+  "translation": {
+    "source_sha256": "46f752e9b3db98a6af21eaee40271ee1050344a5d2b6f3019b82d8761c662b47",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Foreboding",
+    "editorial_note": "The source credits Carlos López Narváez's Spanish version; the translation keeps the shadow and grass-whisper structure."
+  }
+}

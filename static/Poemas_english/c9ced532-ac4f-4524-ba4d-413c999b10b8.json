@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 294,
+    "words": 52,
+    "reading_time_min": 0.26
+  },
+  "text": "When I count the seeds\n\nsown down there\n\nto flower so, side by side;\n\n\nwhen I examine the people\n\nwho lie so low\n\nto rise so high;\n\n\nwhen I think that the garden\n\nmortals will not see\n\nhas chance reap its buds\n\nand draw lots for this bee,\n\nI can do without summer, without complaint.",
+  "translation": {
+    "source_sha256": "708cadb9e82abc5d9965c5e03f635bc8a70e8fd9485c55ddb662e72db1721402",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "When I Count the Seeds...",
+    "editorial_note": "The translation keeps the seed/grave/garden logic of Dickinson as mediated through the Spanish text."
+  }
+}

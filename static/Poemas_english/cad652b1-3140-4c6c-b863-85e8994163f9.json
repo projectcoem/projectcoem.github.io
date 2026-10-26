@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 242,
+    "words": 45,
+    "reading_time_min": 0.225
+  },
+  "text": "To die a little more each day,\n\ntrim one's nails,\n\none's hair,\n\none's desires,\n\nlearn to think of the small\n\nand the immense,\n\nof the farthest\n\nand motionless stars\n\nin the sky\n\nstained like an animal fleeing,\n\nin the sky\n\nfrightened by me.",
+  "translation": {
+    "source_sha256": "f8d543eba779bb2060b64d6841f3f1401a5a8804e46179d0e3fc4a1943066590",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "To Die a Little More Each Day",
+    "editorial_note": "The translation keeps the daily diminishment and the frightened, animal-like sky."
+  }
+}

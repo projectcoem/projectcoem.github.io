@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 175,
+    "words": 35,
+    "reading_time_min": 0.175
+  },
+  "text": "Night has not yet come,\n\nand already it is night in this room\n\nwhere yesterday the whole world fit,\n\nand today there is no room for the two of us,\n\nonly for the night, already late, without end.",
+  "translation": {
+    "source_sha256": "5cb14e614b2a77f8bd6d2c37f6642082ce77ac5d85b3d96da35a860e92d58a70",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Night Has Not Yet Come",
+    "editorial_note": "The contradiction between clock-time and emotional night is kept plain and compressed."
+  }
+}

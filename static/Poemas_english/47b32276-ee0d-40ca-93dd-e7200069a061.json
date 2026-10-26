@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 106,
+    "words": 7,
+    "reading_time_min": 0.035
+  },
+  "text": "I survive\n\nI survive.\n\n        Joy-grievingly\n\n        I\n\n     sur\n\n             vive.",
+  "translation": {
+    "source_sha256": "bb989a74af3e052b341016335c6c5f0dcf0948d5f073ec7682b2299ca6092433",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Love",
+    "editorial_note": "The translation preserves the catalog title while translating the visual survival poem visible in the source."
+  }
+}

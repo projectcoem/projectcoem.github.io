@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 340,
+    "words": 52,
+    "reading_time_min": 0.26
+  },
+  "text": "I am tired.\n\nI look at\n\nthis city\n\n-any city-\n\nwhere for twenty years I have lived.\n\n\nEverything is the same.\n\nA child\n\nuselessly counts the stars\n\non the neighboring balcony.\n\n\nI start as well...\n\nBut he goes faster: I cannot\n\ncatch up with him:\n\nOne, two, three, four,\n\nfive...\n\n\nI cannot\n\ncatch up with him: One, two...\n\nthree...\n\nfour...\n\nfive...",
+  "translation": {
+    "source_sha256": "7a0cee675d0b8416ec7185e63792ba9282a9dd2eb698ea28ecf52ba5fda3a1f1",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "The Star Counters",
+    "editorial_note": "The translation keeps the counting rhythm and the speaker's quiet inability to keep pace."
+  }
+}

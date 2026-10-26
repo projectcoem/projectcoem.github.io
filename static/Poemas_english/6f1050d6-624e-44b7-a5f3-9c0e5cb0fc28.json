@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 621,
+    "words": 116,
+    "reading_time_min": 0.58
+  },
+  "text": "Because I feel that in the heavens\n\nthe angels, whispering among themselves,\n\nfind among their burning words of love\n\nnone so devout as that of \"mother.\"\n\n\nLong have I called you by that dear name,\n\nyou who are more than a mother to me,\n\nbecause you fill the heart of my heart, where death placed you\n\nwhen it set free the spirit of my beloved Virginia.\n\n\nMy mother, my own mother, dead early,\n\nwas only my mother; but you are the mother\n\nof the woman I loved so much,\n\n\nand so you are dearer than the mother I knew,\n\nby that eternity with which my soul\n\nidolized my wife more than its own soul.",
+  "translation": {
+    "source_sha256": "7abd75bcc413f2616d5130d4e733ca43f732d059640973271b7942d00814fd82",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Because I Feel That in the Heavens...",
+    "editorial_note": "The translation repairs the source's broken quote around 'mother' while preserving the Spanish text's elegiac address."
+  }
+}

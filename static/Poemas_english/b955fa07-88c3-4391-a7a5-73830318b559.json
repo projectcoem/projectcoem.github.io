@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 350,
+    "words": 68,
+    "reading_time_min": 0.34
+  },
+  "text": "Venezuelan citizen,\n\nCasiquiare is the open hand of the Orinoco\n\nand the Orinoco is the soul of Venezuela,\n\nwhich gives to the one who does not ask the water it has left over\n\nand to whoever comes to ask it, the water it still has.\n\nCasiquiare is the symbol\n\nof that man of my people\n\nwho kept giving everything, and when he was left with nothing\n\nflowed into Death, great as the Ocean.",
+  "translation": {
+    "source_sha256": "8d8f3fd40bdf0c211d02582c4f6a8da0255c405122d970c64d5f7f3f2a2c27dd",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Casiquiare",
+    "editorial_note": "The translation keeps the river as a civic symbol of generosity that empties itself into death."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 157,
+    "words": 27,
+    "reading_time_min": 0.135
+  },
+  "text": "Automobile\n\nA cantata of horns.\n\nGlowworm down the shadowed street.\n\nShining eyes beneath the cold night.\n\nCity reptile sliding swiftly by.",
+  "translation": {
+    "source_sha256": "f2c03be86757586b3715a46fef3afbf8242bf9222f2f003fc62ea32baa74a613",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Automobile",
+    "editorial_note": "The translation keeps Méndez's urban-machine imagery: horn music, glowworm, eyes, and reptile."
+  }
+}

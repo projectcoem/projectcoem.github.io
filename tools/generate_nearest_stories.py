@@ -139,7 +139,11 @@ def main():
                 story_data = json.loads(story_file.read_text())
                 set_reading_time(
                     story_id,
-                    float(story_data.get("metadata", {}).get("reading_time_min", 0)),
+                    float(
+                        story_data.get("metadata", {}).get(
+                            "reading_time_min", 0
+                        )
+                    ),
                 )
 
     output = ROOT / "static/storyEmbeddingNeighbors.json"

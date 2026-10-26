@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 251,
+    "words": 48,
+    "reading_time_min": 0.24
+  },
+  "text": "you can tell me anything\n\nbelieving is not important\n\nwhat matters is that the air move your lips\n\nor that your lips move the air,\n\nthat you invent your story, your body,\n\nat every hour, without truce,\n\nlike a flame that resembles nothing\n\nbut a flame.",
+  "translation": {
+    "source_sha256": "e4abb1b956b99c80ca28c9ea5ae26a9d88e99f9d645ea548667dd8d1d9ca6096",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Story",
+    "editorial_note": "The translation preserves the lower-case intimacy and the self-making flame."
+  }
+}

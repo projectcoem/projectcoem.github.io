@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 157,
+    "words": 28,
+    "reading_time_min": 0.14
+  },
+  "text": "Pure water ran\n\nthrough the piano.\n\nSweetly it flowed\n\nfrom the channel of her hands.\n\n\nNostalgia slept.\n\nAnd the West slept.\n\nMusic was drinking\n\nthe water from its glass.",
+  "translation": {
+    "source_sha256": "6a65a33813dcd0d1b9b7177b4dcb64ba1ab94a27a250a20413b1a37afd33078f",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Pure Water Ran...",
+    "editorial_note": "The translation keeps the piano image as water moving through hands while music drinks from its own glass."
+  }
+}

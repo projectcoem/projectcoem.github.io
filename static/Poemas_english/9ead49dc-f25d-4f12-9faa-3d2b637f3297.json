@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 400,
+    "words": 68,
+    "reading_time_min": 0.34
+  },
+  "text": "Terrible arguments.\n\nand, finally, lying peacefully\n\nin her long bed\n\nprinted\n\nin red with fresh flower designs,\n\nmy head and belly down\n\nhead to the sides\n\nbathed by dull light\n\nwhile she bathes silently in the\n\nother room,\n\neverything goes beyond me,\n\nlike most things,\n\nI hear classical music on the little radio,\n\nshe bathes, I hear the sound of water.",
+  "translation": {
+    "source_sha256": "a4d93ee28e47a1210a247bd993a7419490032ca3668b8cbd36480069ff466365",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "The Tigress",
+    "editorial_note": "The translation preserves the quiet aftermath of argument and the speaker's passive listening from the bed."
+  }
+}

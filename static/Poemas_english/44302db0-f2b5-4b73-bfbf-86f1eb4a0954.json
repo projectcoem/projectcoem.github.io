@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 155,
+    "words": 22,
+    "reading_time_min": 0.11
+  },
+  "text": "Tell me if I am disturbing you,\n\nhe said as he came in,\n\nbecause I will leave immediately.\n\nYou are not only disturbing me,\n\nI answered,\n\nyou are turning my whole existence upside down.\n\nWelcome.",
+  "translation": {
+    "source_sha256": "fa52909ba3a2bce5a2df451ef1f94e03edb881aa8155ffaf39d336da146becb8",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Tell Me If I Am Disturbing You",
+    "editorial_note": "The translation keeps Kilpi's conversational timing and the final reversal into welcome."
+  }
+}

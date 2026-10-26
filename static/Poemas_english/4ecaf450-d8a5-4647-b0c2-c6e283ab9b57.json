@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 254,
+    "words": 49,
+    "reading_time_min": 0.245
+  },
+  "text": "I\n\n\nThis love that wants to be\n\nperhaps soon will be;\n\nbut when shall return\n\nwhat has just passed?\n\nToday lies far from yesterday.\n\nYesterday is Nevermore!\n\n\nII\n\n\nA coin in the hand\n\nperhaps should be kept:\n\nthe little coin of the soul\n\nis lost if it is not given.",
+  "translation": {
+    "source_sha256": "87aae8836ccb03bb5d204970b259fb2b06a98096e5a44c2914ff6ea259ab78ea",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Advice",
+    "editorial_note": "The translation keeps Machado's two aphoristic counsels on time and the soul's coin."
+  }
+}

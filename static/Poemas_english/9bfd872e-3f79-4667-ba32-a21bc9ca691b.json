@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 360,
+    "words": 55,
+    "reading_time_min": 0.275
+  },
+  "text": "Sonata\n\n\n\n        Eyes that discover\n\n        the voice of things.\n\n\n\n        Ears that hear\n\n        the passing of roses.\n\n\n\n        Smell that fuses everything\n\n        into a single aroma.\n\n\n\n        Tongue that longs for\n\n        the taste of another.\n\n\n\n        Body the absence\n\n        suffered by the four\n\n\n\n        senses that carry it.\n\n        Body that barely enjoys.\n\n\n\n        It lacks touch.\n\n        It has too much memory.",
+  "translation": {
+    "source_sha256": "442641d65b54e346df545014e9683e03ba748965d1651407fb1ecf88c64317c3",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Sonata",
+    "editorial_note": "The source catalog title differs, but the body is 'Sonata'; this version preserves the visible heading."
+  }
+}

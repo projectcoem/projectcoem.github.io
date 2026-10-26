@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 561,
+    "words": 100,
+    "reading_time_min": 0.5
+  },
+  "text": "The little jackets flame, glittering,\n\nthe light over the clothes trembles and slips,\n\nand the banderillas feign pyrotechnics\n\nand the crimson gala capes feign dawns.\n\n\nThe sun burns in the panels of the parasols,\n\nthe bugle exhales its howl of death,\n\nand the matador, before charros and mantillas,\n\noffers and dedicates the beast that bellows.\n\nMeanwhile a little lady, all nervous,\n\ncovers with her hands her beautiful face\n\n\nframed by silk and gold ringlets,\n\nand half-opens her slight fingers like a fan,\n\nto see behind that grille, without fear,\n\nhow the noble blood of the bull springs forth.",
+  "translation": {
+    "source_sha256": "cb9ebb47283073cf6c87aa12ca2a13a14ab6b2a60fc44503c8614c629ac18111",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Fan",
+    "editorial_note": "The translation keeps the bullring spectacle framed by the lady's fan-like fingers."
+  }
+}

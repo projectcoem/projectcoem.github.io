@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 102,
+    "words": 15,
+    "reading_time_min": 0.075
+  },
+  "text": "It is better that we met now.\n\nIf we had met earlier\n\nwe would already be separated.",
+  "translation": {
+    "source_sha256": "61318464fff4e179b16796a0ce56f06c1f5d57588ab476dabcd513656ff29580",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "It Is Better That We Met Now",
+    "editorial_note": "The translation keeps Kilpi's plain, aphoristic compression."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 152,
+    "words": 31,
+    "reading_time_min": 0.155
+  },
+  "text": "Your eyes are a moon\n\nthat shimmers\n\non a black lagoon\n\n\nYour hair the black waves\n\nunder the moonless sky\n\n\nAnd the flight\n\nof the owl in the\n\nblack night",
+  "translation": {
+    "source_sha256": "dfff6f6eecae900fe30dc3b0c13c3a58d7e0ab4d7841e0b1fb341410febf62ff",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Your Eyes Are a Moon",
+    "editorial_note": "The translation preserves the poem's nocturnal sequence of moon, lagoon, hair, and owl."
+  }
+}
