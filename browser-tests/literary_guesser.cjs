@@ -95,13 +95,38 @@ async function answerRound(page, answer) {
         await page.waitForFunction(() => !document.querySelector("#start-game").disabled);
         await page.locator("#kind-filter").selectOption("story");
         await page.locator("#start-game").click();
+        await page.waitForFunction(() => !document.querySelector("#submit-guess")?.disabled);
         const recentAfterReload=await page.evaluate(() => JSON.parse(localStorage.getItem("coem:literary-guesser:recent-stories")));
         const secondGameIds=recentAfterReload.slice(-4);
         assert.equal(secondGameIds.length,4);
         assert.equal(secondGameIds.some(id => firstGameIds.includes(id)),false);
+        const resumedId=pageCurrentText.id;
+        const authorOptions=await page.locator("#answer-author option").evaluateAll(options => options.map(option => option.value));
+        await page.locator("#answer-author").selectOption(authorOptions[1]);
+        await page.goto(base + "/literary-guesser.html?play=1");
+        await page.waitForSelector("#resume-game-panel:not([hidden])");
+        assert.equal(await page.locator("#game-panel").isHidden(),true,"play=1 must preserve a saved game");
+        await page.getByRole("button",{name:/Resume game/}).click();
+        await page.waitForFunction(() => !document.querySelector("#submit-guess")?.disabled);
+        assert.equal(pageCurrentText.id,resumedId);
+        assert.deepEqual(await page.locator("#answer-author option").evaluateAll(options => options.map(option => option.value)),authorOptions);
+        assert.equal(await page.locator("#answer-author").inputValue(),authorOptions[1]);
+        const resumedText=texts.get(pageCurrentText.id), resumedAuthor=authors.get(resumedText.authorId);
+        await answerRound(page,{author:resumedAuthor.name,country:resumedAuthor.countries[0],sex:resumedAuthor.sex,decade:String(resumedAuthor.birthDecade)});
+        const restoredResult=await page.locator("#round-result").innerText();
+        const restoredQuote=await page.locator("#round-result .quote-text").innerText();
         await page.reload();
-        await page.waitForFunction(() => !document.querySelector("#start-game").disabled);
-        await page.locator("#level-filter").selectOption("hard");
+        await page.waitForSelector("#resume-game-panel:not([hidden])");
+        await page.getByRole("button",{name:/Resume game/}).click();
+        await page.waitForSelector("#round-result:not([hidden])");
+        assert.equal(await page.locator("#round-result").innerText(),restoredResult);
+        assert.equal(await page.locator("#round-result .quote-text").innerText(),restoredQuote);
+        await page.locator("#guess-form").evaluate(form => { form.dispatchEvent(new Event("submit",{bubbles:true,cancelable:true})); form.dispatchEvent(new Event("submit",{bubbles:true,cancelable:true})); });
+        assert.equal(await page.locator("#score-breakdown").count(),1);
+        await page.reload();
+        await page.waitForSelector("#resume-game-panel:not([hidden])");
+        await page.getByRole("button",{name:"New game"}).click();
+        await page.waitForSelector("#game-panel:not([hidden])");
         assert.equal(await page.locator("html").getAttribute("lang"), "en");
         assert.match(await page.locator("#game-title").innerText(), /Literary Oracle/);
         assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
@@ -109,6 +134,42 @@ async function answerRound(page, answer) {
         assert.equal(await page.locator(".guesser-start").evaluate(element => getComputedStyle(element, "::after").animationName), "none");
         await page.setViewportSize({ width: 320, height: 640 });
         assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
+        await page.evaluate(() => localStorage.removeItem("coem:literary-guesser:resume:en:v1"));
+
+        const malformedPage = await browser.newPage();
+        await malformedPage.goto(base + "/literary-guesser.html");
+        await malformedPage.evaluate(() => localStorage.setItem("coem:literary-guesser:resume:en:v1", "{bad"));
+        await malformedPage.reload();
+        await malformedPage.waitForFunction(() => !document.querySelector("#start-game").disabled);
+        assert.equal(await malformedPage.locator("#resume-game-panel").isHidden(),true);
+        assert.equal(await malformedPage.evaluate(() => localStorage.getItem("coem:literary-guesser:resume:en:v1")),null);
+        await malformedPage.close();
+
+        const autoStartPage = await browser.newPage({ viewport: { width: 390, height: 844 } });
+        await autoStartPage.goto(base + "/");
+        await autoStartPage.locator('.hero-actions a[href="literary-guesser.html?play=1"]').click();
+        await autoStartPage.waitForSelector("#game-panel:not([hidden])");
+        await autoStartPage.waitForSelector("#story-text p");
+        assert.equal(await autoStartPage.locator(".filters-panel").isHidden(), true);
+        assert.equal(await autoStartPage.locator("#start-game").isHidden(), true);
+        assert.equal(await autoStartPage.locator("#kind-filter").inputValue(), "both");
+        assert.equal(
+            await autoStartPage.getByRole("link", { name: "COEM, main menu" }).getAttribute("href"),
+            "index.html#archive"
+        );
+        await autoStartPage.close();
+
+        const catalogRetryPage = await browser.newPage({ viewport: { width: 390, height: 844 } });
+        let failCatalogOnce = true;
+        await catalogRetryPage.route("**/static/literaryGuesserCatalog.json", route => {
+            if (failCatalogOnce) { failCatalogOnce = false; route.abort(); } else route.continue();
+        });
+        await catalogRetryPage.goto(base + "/literary-guesser.html?play=1");
+        await catalogRetryPage.getByRole("button", { name: "Try again" }).click();
+        await catalogRetryPage.waitForSelector("#game-panel:not([hidden])");
+        await catalogRetryPage.waitForSelector("#story-text p");
+        assert.equal(await catalogRetryPage.locator(".filters-panel").isHidden(), true);
+        await catalogRetryPage.close();
 
         const modesPage = await browser.newPage({ viewport: { width: 390, height: 844 }, reducedMotion: "reduce" });
         const errors = [];

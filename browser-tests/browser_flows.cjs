@@ -69,6 +69,19 @@ async function assertReadableCompactList(page, selector, label) {
       assert.equal(await mark.evaluate(image => image.naturalWidth), 572);
       assert.ok(await mark.evaluate(image => image.getBoundingClientRect().width > 0));
     }
+    assert.equal(
+      await page.getByRole("link", { name: "COEM, main menu" }).getAttribute("href"),
+      "index.html#archive"
+    );
+    assert.equal(
+      await page.locator('.hero-actions a[href="literary-guesser.html?play=1"]').getAttribute("href"),
+      "literary-guesser.html?play=1"
+    );
+    assert.equal(await page.evaluate(() => {
+      const oracle = document.querySelector("#oracle");
+      const archive = document.querySelector("#archive");
+      return Boolean(oracle.compareDocumentPosition(archive) & Node.DOCUMENT_POSITION_FOLLOWING);
+    }), true);
     await page.evaluate(() => sessionStorage.setItem("coem:hero-portrait-offset", "15"));
     await page.reload();
     const firstPortraitNames = await page.locator("[data-hero-portrait] figcaption").allTextContents();
@@ -91,6 +104,15 @@ async function assertReadableCompactList(page, selector, label) {
     await page.getByRole("tab", { name: /07 Oracle/ }).click();
     assert.equal(await page.locator("#route-title").innerText(), "Literary Oracle");
     assert.equal(await page.locator("#route-link").getAttribute("href"), "literary-guesser.html");
+    assert.ok(await page.locator("#route-link").evaluate(element =>
+      element.getBoundingClientRect().height >= 44
+    ));
+    assert.equal(
+      await page.locator("#route-link").evaluate(element =>
+        getComputedStyle(element, "::after").content
+      ),
+      '"→"'
+    );
 
     const calligraphyTitle = page.locator("#colophon-title");
     await calligraphyTitle.scrollIntoViewIfNeeded();
@@ -121,6 +143,7 @@ async function assertReadableCompactList(page, selector, label) {
       "utf8"
     ));
     const storyIds = storyGraph.nodes.flatMap(author => Object.keys(author.stories || {}));
+    const storyTitles = new Map(storyGraph.nodes.flatMap(author => Object.entries(author.stories || {})));
     const storyWithAudio = storyIds
       .find(id => fs.existsSync(path.join(root, "static/audios_en", `${id}.mp3`)));
     const storyWithoutAudio = storyGraph.nodes
@@ -266,6 +289,51 @@ async function assertReadableCompactList(page, selector, label) {
     assert.match(selectedFacts, /Colombia/);
     assert.match(selectedFacts, /Unknown/);
 
+    const mobileReader = await browser.newPage({ viewport: { width: 390, height: 844 } });
+    await mobileReader.goto(`${base}/stories-info.html?story=${storyWithAudio}`);
+    await mobileReader.waitForFunction(id => new URL(location.href).searchParams.get("story") === id &&
+      document.querySelector("#cuentoText")?.textContent.length > 200, storyWithAudio);
+    assert.equal(await mobileReader.locator("#discovery-panel").isHidden(), true);
+    assert.equal(await mobileReader.locator("#discovery-toggle").getAttribute("aria-expanded"), "false");
+    await mobileReader.locator("#discovery-toggle").click();
+    await mobileReader.getByRole("searchbox", { name: "Search everything" }).fill(storyTitles.get(storyWithoutAudio));
+    await mobileReader.locator("#autocomplete-container button").first().click();
+    await mobileReader.waitForFunction(id => new URL(location.href).searchParams.get("story") === id &&
+      document.querySelector("#cuentoText")?.textContent.length > 200, storyWithoutAudio);
+    assert.equal(await mobileReader.locator("#discovery-panel").isHidden(), true);
+    await mobileReader.locator("#discovery-toggle").click();
+    assert.equal(
+      await mobileReader.getByRole("searchbox", { name: "Search everything" }).inputValue(),
+      storyTitles.get(storyWithoutAudio)
+    );
+    await mobileReader.evaluate(() => {
+      const text = document.querySelector("#cuentoText");
+      scrollTo(0, scrollY + text.getBoundingClientRect().top + Math.min(420, text.scrollHeight / 2));
+    });
+    await mobileReader.waitForTimeout(400);
+    const savedOffset = await mobileReader.evaluate(() => {
+      const text = document.querySelector("#cuentoText");
+      return scrollY - (scrollY + text.getBoundingClientRect().top);
+    });
+    await mobileReader.reload();
+    await mobileReader.waitForFunction(() => document.querySelector("#cuentoText")?.textContent.length > 200);
+    await mobileReader.waitForTimeout(250);
+    const restoredOffset = await mobileReader.evaluate(() => {
+      const text = document.querySelector("#cuentoText");
+      return scrollY - (scrollY + text.getBoundingClientRect().top);
+    });
+    assert.ok(Math.abs(restoredOffset - savedOffset) < 35, `${restoredOffset} should restore near ${savedOffset}`);
+    assert.equal(await mobileReader.locator("#discovery-panel").isHidden(), true);
+    await mobileReader.goto(`${base}/stories-info.html`);
+    await mobileReader.waitForSelector("#continue-reading:not([hidden])");
+    assert.match(await mobileReader.locator("#continue-reading").innerText(), /Continue reading/);
+    const continueId = await mobileReader.locator("#continue-reading").getAttribute("data-id");
+    await mobileReader.locator("#continue-reading").click();
+    await mobileReader.waitForFunction(id => new URL(location.href).searchParams.get("story") === id, continueId);
+    await mobileReader.goBack();
+    await mobileReader.waitForFunction(() => new URL(location.href).searchParams.has("story"));
+    await mobileReader.close();
+
     await page.goto(`${base}/poems-info.html`);
     assert.deepEqual(
       await page.getByRole("combobox", { name: "Maximum length" }).locator("option").evaluateAll(options =>
@@ -365,6 +433,13 @@ async function assertReadableCompactList(page, selector, label) {
         true,
         `${route} has horizontal overflow at 390px`
       );
+      const homeLink = page.getByRole("link", { name: "COEM, main menu" }).first();
+      await homeLink.waitFor();
+      assert.match(await homeLink.getAttribute("href"), /index\.html#archive$/);
+      assert.ok(await homeLink.evaluate(element => element.getBoundingClientRect().height >= 44));
+      if (route !== "/") {
+        assert.ok(await page.locator('a[href$="literary-guesser.html"]').count());
+      }
       if (route === "/stories-info.html" || route === "/poems-info.html") {
         const compactButton = page.locator(".compact-list button").first();
         await compactButton.waitFor();
@@ -390,6 +465,50 @@ async function assertReadableCompactList(page, selector, label) {
     assert.equal(await page.locator("#container").evaluate(element =>
       Math.round(element.getBoundingClientRect().width)
     ), 390);
+
+    await page.setViewportSize({ width: 320, height: 640 });
+    await page.goto(`${base}/`);
+    const routeActions = [
+      "Explore stories",
+      "Explore poems",
+      "View relationships",
+      "Explore literary map",
+      "Explore authors",
+      "Describe a story",
+      "Play Literary Oracle"
+    ];
+    for (let index = 0; index < routeActions.length; index += 1) {
+      await page.locator(".route-tab").nth(index).click();
+      assert.equal(await page.locator("#route-link").innerText(), routeActions[index]);
+      const bounds = await page.locator("#route-link").evaluate(element => {
+        const rect = element.getBoundingClientRect();
+        return { height: rect.height, left: rect.left, right: rect.right };
+      });
+      assert.ok(bounds.height >= 44, `${routeActions[index]} is too small for touch`);
+      assert.ok(bounds.left >= 0 && bounds.right <= 320, `${routeActions[index]} is clipped at 320px`);
+    }
+    for (const route of [
+      "/stories-info.html",
+      "/poems-info.html",
+      "/authorToAuthor3DSmall.html",
+      "/authorToAuthor3D.html",
+      "/embeddings.html"
+    ]) {
+      await page.goto(`${base}${route}`, { waitUntil: "domcontentloaded" });
+      await page.waitForTimeout(500);
+      const headerLayout = await page.locator("#appbar").evaluate(appbar => {
+        const visible = [...appbar.children].map(element => {
+          const rect = element.getBoundingClientRect();
+          return { left: rect.left, right: rect.right, width: rect.width };
+        }).filter(item => item.width > 0).sort((a, b) => a.left - b.left);
+        return {
+          overlap: visible.some((item, index) => index && visible[index - 1].right > item.left + 1),
+          overflow: visible.some(item => item.left < 0 || item.right > innerWidth)
+        };
+      });
+      assert.equal(headerLayout.overlap, false, `${route} header controls overlap at 320px`);
+      assert.equal(headerLayout.overflow, false, `${route} header controls overflow at 320px`);
+    }
   } finally {
     await browser.close();
     server.close();

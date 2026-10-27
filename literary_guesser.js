@@ -1,17 +1,20 @@
 (function () {
     "use strict";
     const Core = window.LiteraryGuesserCore;
-    if (!Core) return;
+    const Resume = window.LiteraryGuesserResume;
+    if (!Core || !Resume) return;
 
     const RECENT_STORIES_KEY = "coem:literary-guesser:recent-stories";
+    const RESUME_KEY = "coem:literary-guesser:resume:en:v1";
     const translations = {
         en: {
             gameTitle:"Literary Oracle",skip:"Go to game",backArchive:"Back to archive",eyebrow:"Reading game",intro:"Read a short text and guess its origins",note:"Four short texts. Begin with the easiest and meet the final challenge.",setup:"Prepare the game",filtersTitle:"Choose your clues",filtersCopy:"Customize your next game.",kind:"Literary form",bothKinds:"Coemas · stories & poems",storiesOnly:"Stories only",poemsOnly:"Poems only",level:"Level",easy:"Easy",medium:"Medium",hard:"Hard",nationality:"Nationality",nationalityNote:"Recorded nationalities; documented alternatives are accepted.",allCountries:"All nationalities",genre:"Genre",allGenres:"All genres",classics:"Classical works only",matching:"matching texts",rounds:"4 rounds",start:"Start game",round:"Round",currentScore:"Total score",fragment:"Unsigned text",roundPrompt:"Who wrote this text?",originalNote:"English text from the COEM archive.",author:"Author",nationalityAnswer:"Nationality",sex:"Author's sex",decade:"Birth decade",choose:"Choose an option",male:"Male",female:"Female",required:"Complete all four answers to reveal the signature.",submit:"Reveal my answer",result:"Result",finalTitle:"Your literary compass",companion:"Your reading companion",replay:"Play another game",archive:"Archive",contact:"Contact",loadingStory:"The text is arriving…",storyError:"We could not load this text.",retry:"Try again",empty:"There are {count} matching texts. Broaden a filter to gather four rounds.",reset:"Reset filters",unavailable:"We could not open the catalogue.",correct:"Correct",incorrect:"Not this time",authorCorrect:"The signature was",nationalityCorrect:"The nationality was",sexCorrect:"The recorded answer was",decadeCorrect:"The decade was",source:"Source",translation:"COEM English translation",continueReading:"For further reading",curious:"Unusual tags",editorial:"Editorial estimate",familiarity:"familiarity",complexity:"complexity",classic:"classic",noTags:"No unusual tags recorded.",scoreLine:"Author +4 / −2 · Nationality +2 / −1 · Sex +1 / −0.5 · Decade +2 / −1 · Perfect answer +1",rating:"Average guide: 0–2 learner, 3–5 attentive, 6–8 literary scholar, above 8 oracle.",finalCopy:"Your average was {score} out of 10.",scoreRound:"Round score",breakdown:"Breakdown",nextRound:"Next round",finalButton:"See my result",allScores:"Your four rounds totaled {total} points.",storyRead:"Read the complete text"
         }
     };
-    const state = { lang:"en", catalog:null, currentGame:[], roundIndex:0, roundScores:[], roundCompanions:[], finalCompanion:null, lastQuoteIds:{}, recentIds:[], currentStory:null, currentAuthor:null, currentLevel:"easy", kind:"both", submitted:false, storyReady:false, loadToken:0, portraitToken:0, finalShown:false };
+    const state = { lang:"en", catalog:null, currentGame:[], roundIndex:0, roundScores:[], roundCompanions:[], finalCompanion:null, lastQuoteIds:{}, recentIds:[], currentStory:null, currentAuthor:null, currentLevel:"easy", kind:"both", submitted:false, submittedByRound:[], answersByRound:[], optionSets:[], storyReady:false, loadToken:0, portraitToken:0, finalShown:false, savedGame:null };
+    let autoStartPending = new URLSearchParams(window.location.search).get("play") === "1";
     const $ = id => document.getElementById(id);
-    const els = { filters:document.querySelector(".filters-panel"), kind:$("kind-filter"), level:$("level-filter"),nationality:$("nationality-filter"),genre:$("genre-filter"),classics:$("classic-filter"),count:$("matching-count"),empty:$("empty-state"),start:$("start-game"),game:$("game-panel"),final:$("final-panel"),form:$("guess-form"),story:$("story-text"),round:$("round-number"),roundKind:$("round-kind"),progress:$("progress-bar"),roundProgress:document.querySelector(".progress-track"),score:$("current-score"),levelLabel:$("round-level"),result:$("round-result"),announcement:$("game-announcement"),finalAverage:$("final-average"),finalCopy:$("final-copy"),companionPortrait:$("drawing"),companionName:$("companion-name"),companionPhrase:$("companion-phrase"),companionSource:$("companion-source"),breakdown:$("score-breakdown"),closingQuote:$("final-closing-quote")};
+    const els = { filters:document.querySelector(".filters-panel"), kind:$("kind-filter"), level:$("level-filter"),nationality:$("nationality-filter"),genre:$("genre-filter"),classics:$("classic-filter"),count:$("matching-count"),empty:$("empty-state"),start:$("start-game"),resumePanel:$("resume-game-panel"),resume:$("resume-game"),newGame:$("new-game"),game:$("game-panel"),final:$("final-panel"),form:$("guess-form"),story:$("story-text"),round:$("round-number"),roundKind:$("round-kind"),progress:$("progress-bar"),roundProgress:document.querySelector(".progress-track"),score:$("current-score"),levelLabel:$("round-level"),result:$("round-result"),announcement:$("game-announcement"),finalAverage:$("final-average"),finalCopy:$("final-copy"),companionPortrait:$("drawing"),companionName:$("companion-name"),companionPhrase:$("companion-phrase"),companionSource:$("companion-source"),breakdown:$("score-breakdown"),closingQuote:$("final-closing-quote")};
 
     function t(key, vars) {
         let value = translations.en[key] || key;
@@ -43,6 +46,30 @@
     function getFilters() { return { kind:modeKind(), level:els.level.value, nationality:els.nationality.value, genre:els.genre.value, classicsOnly:els.classics.checked }; }
     function loadRecentStories() { try { const value=JSON.parse(localStorage.getItem(RECENT_STORIES_KEY) || "[]"); return Array.isArray(value) ? value.filter(id => typeof id === "string").slice(-64) : []; } catch (_) { return []; } }
     function saveRecentStories(ids) { const used=[...new Set(ids)]; const usedSet=new Set(used); state.recentIds=[...state.recentIds.filter(id => !usedSet.has(id)),...used].slice(-64); try { localStorage.setItem(RECENT_STORIES_KEY,JSON.stringify(state.recentIds)); } catch (_) {} }
+    function clearSavedGame() { state.savedGame=null; try { localStorage.removeItem(RESUME_KEY); } catch (_) {} }
+    function readSavedGame() {
+        try { const raw=localStorage.getItem(RESUME_KEY); return {exists:raw!==null,value:raw===null?null:JSON.parse(raw)}; }
+        catch (_) { return {exists:true,value:null}; }
+    }
+    function currentAnswers() { return { author:$("answer-author").value,nationality:$("answer-nationality").value,sex:$("answer-sex").value,birthDecade:$("answer-birthDecade").value }; }
+    function saveGame() {
+        if (!state.currentGame.length) return;
+        if (!state.submitted && !state.finalShown) state.answersByRound[state.roundIndex]=currentAnswers();
+        const payload={version:1,currentGameIds:state.currentGame.map(story => story.id),roundIndex:state.roundIndex,
+            filters:{kind:modeKind(),level:state.currentLevel,nationality:els.nationality.value,genre:els.genre.value,classicsOnly:els.classics.checked},
+            optionSets:state.optionSets,answersByRound:state.answersByRound,submittedByRound:state.submittedByRound,
+            quoteIds:state.roundCompanions.map(item => item?.quoteId || null),finalQuoteId:state.finalCompanion?.quoteId || null,
+            finalShown:state.finalShown,updatedAt:Date.now()};
+        state.savedGame=payload;
+        try { localStorage.setItem(RESUME_KEY,JSON.stringify(payload)); } catch (_) {}
+    }
+    function applySavedFilters(filters) {
+        els.kind.value=filters.kind; els.level.value=filters.level; renderFilterOptions();
+        els.nationality.value=Array.from(els.nationality.options).some(option => option.value===filters.nationality)?filters.nationality:"all";
+        els.genre.value=Array.from(els.genre.options).some(option => option.value===filters.genre)?filters.genre:"all";
+        els.classics.checked=filters.classicsOnly; refreshModeCopy(); updateMatching();
+    }
+    function offerSavedGame(snapshot) { state.savedGame=snapshot; applySavedFilters(snapshot.filters); els.start.hidden=true; els.resumePanel.hidden=false; }
     function chooseCompanion(score) { const tier=Number(score)>8?"borges":Number(score)>=6?"woolf":"kafka"; const companion=Core.getScoreCompanion(score,Math.random,state.lastQuoteIds[tier]?[state.lastQuoteIds[tier]]:[]); state.lastQuoteIds[tier]=companion.quoteId; return companion; }
     function imagePath(filename) { if (!filename) return ""; return /^(https?:)?\//.test(filename) || filename.includes("/") ? filename : "static/imgs/" + filename; }
     function storyUrl(story) { return (story.kind === "poem" ? "poems-info.html?poem=" : "stories-info.html?story=") + encodeURIComponent(story.id); }
@@ -121,8 +148,18 @@
     }
     function resetFilters() { els.kind.value="both"; els.level.value="easy"; els.nationality.value="all"; els.genre.value="all"; els.classics.checked=false; renderFilterOptions(); updateMatching(); refreshModeCopy(); }
     async function loadJson(url) { const response = await fetch(url); if (!response.ok) throw new Error(response.status + " " + url); return response.json(); }
+    function tryAutoStart() {
+        if (!autoStartPending || state.savedGame || !state.catalog || els.start.disabled) return;
+        autoStartPending=false;
+        window.requestAnimationFrame(startGame);
+    }
     async function loadCatalog() {
-        try { state.catalog=Core.normalizeCatalog(await loadJson("static/literaryGuesserCatalog.json")); renderFilterOptions(); updateMatching(); }
+        try {
+            state.catalog=Core.normalizeCatalog(await loadJson("static/literaryGuesserCatalog.json")); renderFilterOptions(); updateMatching();
+            const stored=readSavedGame(), snapshot=Resume.validate(stored.value,state.catalog);
+            if (snapshot) offerSavedGame(snapshot);
+            else { if (stored.exists) clearSavedGame(); tryAutoStart(); }
+        }
         catch (_) { state.catalog=null; els.empty.hidden=false; els.empty.textContent=t("unavailable") + " "; const retry=document.createElement("button"); retry.type="button"; retry.className="text-button"; retry.textContent=t("retry"); retry.addEventListener("click",loadCatalog); els.empty.appendChild(retry); els.start.disabled=true; announce(t("unavailable")); }
     }
     function paragraphs(text, kind = "story") {
@@ -143,7 +180,7 @@
             const folder = story.kind === "poem" ? "Poemas_english" : "Cuentos_english";
             const data=await loadJson("static/" + folder + "/" + encodeURIComponent(story.id) + ".json");
             if (token !== state.loadToken || state.currentStory?.id !== story.id) return;
-            state.currentText=String(data.text || ""); paragraphs(state.currentText, story.kind); state.storyReady=true; $("submit-guess").disabled=false;
+            state.currentText=String(data.text || ""); paragraphs(state.currentText, story.kind); state.storyReady=true; $("submit-guess").disabled=state.submitted;
         } catch (_) {
             if (token !== state.loadToken || state.currentStory?.id !== story.id) return;
             paragraphs(t("storyError") + " ", story.kind); const retry=document.createElement("button"); retry.type="button"; retry.className="text-button"; retry.textContent=t("retry"); retry.addEventListener("click",() => loadStory(story)); els.story.appendChild(retry); announce(t("storyError"));
@@ -151,22 +188,33 @@
     }
     function authorLabels(stories) { return Object.fromEntries(stories.map(story => [story.author.id,story.author.name])); }
     function renderRound() {
-        const story=state.currentGame[state.roundIndex]; state.currentStory=story; state.currentAuthor=story.author; state.submitted=false;
+        const story=state.currentGame[state.roundIndex]; state.currentStory=story; state.currentAuthor=story.author; state.submitted=Boolean(state.submittedByRound[state.roundIndex]);
         els.round.textContent=String(state.roundIndex+1); els.score.textContent=String(Core.scoreGame(state.roundScores).total); els.progress.style.width=((state.roundIndex+1)/4*100) + "%"; els.roundProgress.setAttribute("aria-valuenow",String(state.roundIndex+1)); els.levelLabel.textContent=(state.roundIndex===3 ? t("hard") : t(state.currentLevel));
         els.roundKind.textContent=kindLabel(story.kind);
         $("round-title").textContent=story.kind === "poem" ? (state.lang === "en" ? "Who wrote this poem?" : "¿Quién escribió este poema?") : (state.lang === "en" ? "Who wrote this story?" : "¿Quién escribió este cuento?");
         els.result.hidden=true; els.result.replaceChildren(); els.form.hidden=false; els.form.querySelectorAll("select").forEach(select => { select.disabled=false; select.value=""; const field=select.closest(".guess-field"); field.classList.remove("is-correct","is-wrong"); field.querySelector(".field-feedback").textContent=""; }); $("submit-guess").disabled=false;
         const optionPool=Core.filterStories(state.catalog.stories,{kind:modeKind(),level:"hard",wordCap:Number.MAX_SAFE_INTEGER});
-        const options=Core.buildGuessOptions(optionPool,story.author,state.currentLevel);
+        const options=state.optionSets[state.roundIndex] || Core.buildGuessOptions(optionPool,story.author,state.currentLevel);
+        state.optionSets[state.roundIndex]=Object.fromEntries(Object.entries(options).map(([field,values]) => [field,values.map(String)]));
         populateSelect("answer-author",options.author,authorLabels(optionPool)); populateSelect("answer-nationality",options.nationality); populateSelect("answer-sex",options.sex,{male:t("male"),female:t("female")}); populateSelect("answer-birthDecade",options.birthDecade,Object.fromEntries(options.birthDecade.map(value => [value,Core.formatBirthDecade(value)])));
-        els.game.hidden=false; els.final.hidden=true; els.story.setAttribute("aria-busy","true"); loadStory(story).finally(() => els.story.setAttribute("aria-busy","false")); announce(t("round") + " " + (state.roundIndex+1) + " / 4"); window.requestAnimationFrame(() => $("round-title").focus());
+        const savedAnswers=state.answersByRound[state.roundIndex] || {};
+        Object.entries(savedAnswers).forEach(([field,value]) => { const select=$("answer-"+field); if (select && Array.from(select.options).some(option => option.value===String(value))) select.value=String(value); });
+        if (state.submitted) {
+            els.form.querySelectorAll("select").forEach(select => { select.disabled=true; });
+            $("submit-guess").disabled=true;
+            const score=state.roundScores[state.roundIndex];
+            if (score) ["author","nationality","sex","birthDecade"].forEach(field => feedbackFor(field,score.correct[field]));
+        }
+        els.game.hidden=false; els.final.hidden=true; els.story.setAttribute("aria-busy","true");
+        loadStory(story).finally(() => { els.story.setAttribute("aria-busy","false"); if (state.submitted) renderRoundResult(); });
+        saveGame(); announce(t("round") + " " + (state.roundIndex+1) + " / 4"); window.requestAnimationFrame(() => $("round-title").focus());
     }
     function startGame() {
         if (!state.catalog || !els.game.hidden || !els.final.hidden) return; const filters=getFilters(); state.currentLevel=filters.level;
         const selected=Core.selectGameStories(state.catalog.stories,{...filters,excludeIds:state.recentIds},Math.random).stories;
         if (!selected || selected.length<4) { updateMatching(); return; }
-        state.currentGame=selected; saveRecentStories(selected.map(story => story.id)); state.roundIndex=0; state.roundScores=[]; state.roundCompanions=[]; state.finalCompanion=null;
-        els.start.hidden=true; els.filters.hidden=true; els.game.hidden=false; els.final.hidden=true; document.querySelector(".game-panel").scrollIntoView({behavior:"smooth",block:"start"}); renderRound();
+        state.currentGame=selected; saveRecentStories(selected.map(story => story.id)); state.roundIndex=0; state.roundScores=[]; state.roundCompanions=[]; state.answersByRound=[]; state.submittedByRound=[]; state.optionSets=[]; state.finalCompanion=null; state.finalShown=false;
+        els.start.hidden=true; els.resumePanel.hidden=true; els.filters.hidden=true; els.game.hidden=false; els.final.hidden=true; document.querySelector(".game-panel").scrollIntoView({behavior:"smooth",block:"start"}); renderRound();
     }
     function answers() { return { author:$("answer-author").value,nationality:$("answer-nationality").value,sex:$("answer-sex").value,birthDecade:Number($("answer-birthDecade").value) }; }
     function expectedLabel(field) {
@@ -179,7 +227,7 @@
     function feedbackFor(field,correct) { const select=$("answer-" + field), wrapper=select.closest(".guess-field"); wrapper.classList.toggle("is-correct",correct); wrapper.classList.toggle("is-wrong",!correct); wrapper.querySelector(".field-feedback").textContent=(correct?t("correct"):t("incorrect")) + " · " + expectedLabel(field); }
     function renderTags(author) { const tags=author.weirdTags || []; if (!tags.length) return t("noTags"); const wrap=document.createElement("span"); tags.forEach(tag => { const chip=document.createElement("span"); chip.className="tag"; const label=tag.label || String(tag); if (tag.source) { const link=document.createElement("a"); link.href=tag.source; link.target="_blank"; link.rel="noreferrer"; link.textContent=label; chip.appendChild(link); } else chip.textContent=label; wrap.appendChild(chip); }); return wrap; }
     function renderRoundResult() {
-        const companionIndex=state.roundScores.length-1, score=state.roundScores[companionIndex], author=state.currentAuthor, companion=state.roundCompanions[companionIndex] || (state.roundCompanions[companionIndex]=chooseCompanion(score.points)); els.result.replaceChildren();
+        const companionIndex=state.roundIndex, score=state.roundScores[companionIndex], author=state.currentAuthor, companion=state.roundCompanions[companionIndex] || (state.roundCompanions[companionIndex]=chooseCompanion(score.points)); els.result.replaceChildren();
         const copy=document.createElement("div"); copy.className="result-copy"; const heading=document.createElement("h3"); heading.id="round-result-title"; heading.tabIndex=-1; heading.textContent=t("scoreRound") + ": " + score.points + "/10"; copy.appendChild(heading);
         const points=document.createElement("p"); points.className="result-points"; const pointNames={author:t("author"),nationality:t("nationalityAnswer"),sex:t("sex"),birthDecade:t("decade"),perfect:state.lang === "en" ? "Perfect" : "Perfecta"}; points.textContent=t("breakdown") + ": " + Object.entries(score.breakdown).filter(([,value]) => value).map(([field,value]) => (pointNames[field] || field) + " " + (value>0?"+":"") + value).join(" · "); copy.appendChild(points);
         const correct=document.createElement("p"); correct.textContent=t("authorCorrect") + ": " + author.name; copy.appendChild(correct);
@@ -189,21 +237,33 @@
         const tags=document.createElement("div"); tags.className="result-tags"; const tagsLabel=document.createElement("strong"); tagsLabel.textContent=t("curious") + ": "; tags.appendChild(tagsLabel); const tagsContent=renderTags(author); tags.appendChild(typeof tagsContent==="string" ? document.createTextNode(tagsContent) : tagsContent); facts.appendChild(tags); copy.appendChild(facts);
         const read=document.createElement("a"); read.href=storyUrl(state.currentStory); read.className="text-button"; read.target="_blank"; read.rel="noreferrer"; read.textContent=t("storyRead"); copy.appendChild(read);
         const companionWrap=document.createElement("div"); companionWrap.className="result-companion"; const img=document.createElement("img"); img.src=companion.image; img.alt=companion.name; img.onerror=() => { img.remove(); const fallback=document.createElement("span"); fallback.className="portrait-fallback"; fallback.textContent="✦"; companionWrap.prepend(fallback); }; companionWrap.appendChild(img); const quotation=document.createElement("div"); const phrase=document.createElement("blockquote"); phrase.className="quote-text"; phrase.textContent=localizedQuote(companion); quotation.append(phrase,renderCitation(companion)); companionWrap.appendChild(quotation); els.result.append(copy,companionWrap);
-        const next=document.createElement("button"); next.type="button"; next.className="ink-link"; next.textContent=state.roundIndex===3?t("finalButton"):t("nextRound"); next.addEventListener("click",() => state.roundIndex===3?showFinal():(state.roundIndex+=1,renderRound())); els.result.appendChild(next); els.result.hidden=false; els.score.textContent=String(Core.scoreGame(state.roundScores).total); announce(t("scoreRound") + ": " + score.points + " / 10"); window.requestAnimationFrame(() => heading.focus());
+        const next=document.createElement("button"); next.type="button"; next.className="ink-link"; next.textContent=state.roundIndex===3?t("finalButton"):t("nextRound"); next.addEventListener("click",() => { if (state.roundIndex===3) showFinal(); else { state.roundIndex+=1; saveGame(); renderRound(); } }); els.result.appendChild(next); els.result.hidden=false; els.score.textContent=String(Core.scoreGame(state.roundScores.filter(Boolean)).total); saveGame(); announce(t("scoreRound") + ": " + score.points + " / 10"); window.requestAnimationFrame(() => heading.focus());
     }
     function showFinal() {
-        els.game.hidden=true; els.final.hidden=false; state.finalShown=true; const result=Core.scoreGame(state.roundScores); state.finalCompanion=state.finalCompanion || chooseCompanion(result.average); updateFinalLanguage(); startFinalPortrait(state.finalCompanion); announce(t("finalTitle") + ": " + result.average + " / 10"); els.final.scrollIntoView({behavior:"smooth",block:"start"}); window.requestAnimationFrame(() => $("final-title").focus());
+        els.game.hidden=true; els.final.hidden=false; state.finalShown=true; const result=Core.scoreGame(state.roundScores.filter(Boolean)); state.finalCompanion=state.finalCompanion || chooseCompanion(result.average); updateFinalLanguage(); startFinalPortrait(state.finalCompanion); saveGame(); announce(t("finalTitle") + ": " + result.average + " / 10"); els.final.scrollIntoView({behavior:"smooth",block:"start"}); window.requestAnimationFrame(() => $("final-title").focus());
     }
     function updateFinalLanguage() { const result=Core.scoreGame(state.roundScores), companion=state.finalCompanion || chooseCompanion(result.average); state.finalCompanion=companion; els.finalAverage.textContent=String(result.average); els.finalCopy.textContent=t("finalCopy",{score:result.average}); els.companionName.textContent=companion.name; els.companionPhrase.textContent=localizedQuote(companion); els.companionSource.replaceChildren(renderCitation(companion)); els.companionPortrait.setAttribute("aria-label", (state.lang === "en" ? "Animated portrait of " : "Retrato animado de ") + companion.name); els.breakdown.replaceChildren(); state.roundScores.forEach((score,index) => { const p=document.createElement("p"); p.textContent=t("round") + " " + (index+1) + ": "; const strong=document.createElement("strong"); strong.textContent=score.points + "/10"; p.appendChild(strong); els.breakdown.appendChild(p); }); const total=document.createElement("p"); total.textContent=t("allScores",{total:result.total}); els.breakdown.appendChild(total); renderClosingQuote(); }
     function submitGuess(event) {
         event.preventDefault(); if (state.submitted || !state.storyReady) return; if (!els.form.reportValidity()) { announce(t("required")); return; } state.submitted=true;
-        const score=Core.scoreRound({author:$("answer-author").value,nationality:$("answer-nationality").value,sex:$("answer-sex").value,birthDecade:Number($("answer-birthDecade").value)},{id:state.currentAuthor.id,countries:state.currentAuthor.countries,sex:state.currentAuthor.sex,birthDecade:state.currentAuthor.birthDecade});
-        state.roundScores.push(score); state.roundCompanions.push(chooseCompanion(score.points)); ["author","nationality","sex","birthDecade"].forEach(field => feedbackFor(field,score.correct[field])); els.form.querySelectorAll("select").forEach(select => { select.disabled=true; }); $("submit-guess").disabled=true; renderRoundResult();
+        const answer=currentAnswers(); state.answersByRound[state.roundIndex]=answer; state.submittedByRound[state.roundIndex]=true;
+        const score=Core.scoreRound({author:answer.author,nationality:answer.nationality,sex:answer.sex,birthDecade:Number(answer.birthDecade)},{id:state.currentAuthor.id,countries:state.currentAuthor.countries,sex:state.currentAuthor.sex,birthDecade:state.currentAuthor.birthDecade});
+        state.roundScores[state.roundIndex]=score; state.roundCompanions[state.roundIndex]=chooseCompanion(score.points); ["author","nationality","sex","birthDecade"].forEach(field => feedbackFor(field,score.correct[field])); els.form.querySelectorAll("select").forEach(select => { select.disabled=true; }); $("submit-guess").disabled=true; saveGame(); renderRoundResult();
     }
-    function replay() { state.finalShown=false; state.portraitToken+=1; clearAuthorImage(); state.submitted=false; state.currentAuthor=null; state.currentStory=null; state.finalCompanion=null; els.final.hidden=true; els.game.hidden=true; els.filters.hidden=false; els.start.hidden=false; els.filters.scrollIntoView({behavior:"smooth",block:"start"}); renderFilterOptions(); updateMatching(); refreshModeCopy(); els.start.focus(); }
+    function restoreGame(snapshot) {
+        state.currentGame=snapshot.stories; state.roundIndex=snapshot.roundIndex; state.currentLevel=snapshot.filters.level;
+        state.optionSets=snapshot.optionSets; state.answersByRound=snapshot.answersByRound; state.submittedByRound=snapshot.submittedByRound;
+        state.roundScores=snapshot.roundScores; state.roundCompanions=snapshot.roundCompanions; state.finalCompanion=snapshot.finalCompanion; state.finalShown=snapshot.finalShown;
+        state.lastQuoteIds={}; [...state.roundCompanions,state.finalCompanion].filter(Boolean).forEach(companion => { state.lastQuoteIds[companion.tier]=companion.quoteId; });
+        applySavedFilters(snapshot.filters); els.resumePanel.hidden=true; els.start.hidden=true; els.filters.hidden=true;
+        if (snapshot.finalShown) { state.submitted=true; state.currentStory=state.currentGame[3]; state.currentAuthor=state.currentStory.author; showFinal(); }
+        else renderRound();
+    }
+    function newGame() { clearSavedGame(); els.resumePanel.hidden=true; els.start.hidden=false; startGame(); }
+    function replay() { clearSavedGame(); state.finalShown=false; state.portraitToken+=1; clearAuthorImage(); state.submitted=false; state.currentAuthor=null; state.currentStory=null; state.currentGame=[]; state.roundScores=[]; state.roundCompanions=[]; state.answersByRound=[]; state.submittedByRound=[]; state.optionSets=[]; state.finalCompanion=null; els.final.hidden=true; els.game.hidden=true; els.filters.hidden=false; els.resumePanel.hidden=true; els.start.hidden=false; els.filters.scrollIntoView({behavior:"smooth",block:"start"}); renderFilterOptions(); updateMatching(); refreshModeCopy(); els.start.focus(); }
 
     [els.kind,els.level,els.nationality,els.genre,els.classics].forEach(control => control.addEventListener("change",() => { if (control === els.kind) { renderFilterOptions(); refreshModeCopy(); } updateMatching(); }));
-    els.start.addEventListener("click",startGame); els.form.addEventListener("submit",submitGuess); $("replay-game").addEventListener("click",replay);
+    els.start.addEventListener("click",startGame); els.resume.addEventListener("click",() => restoreGame(state.savedGame)); els.newGame.addEventListener("click",newGame); els.form.addEventListener("submit",submitGuess); $("replay-game").addEventListener("click",replay);
+    els.form.querySelectorAll("select").forEach(select => select.addEventListener("change",saveGame));
     state.recentIds=loadRecentStories();
     applyLanguage(); loadCatalog();
 }());

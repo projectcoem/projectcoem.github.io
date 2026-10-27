@@ -27,11 +27,12 @@
     <a class="skip-link" href="#archive">Skip to the archive</a>
 
     <header class="site-header" aria-label="Main navigation">
-        <a class="wordmark" href="#home" aria-label="COEM, home">
+        <a class="wordmark" href="index.html#archive" aria-label="COEM, main menu">
             <img src="Coem.png" alt="" width="572" height="288">
         </a>
         <nav class="header-nav" aria-label="Quick links">
             <a href="#archive">Explore</a>
+            <a href="literary-guesser.html?play=1">Play Oracle</a>
             <a href="https://estevefact.github.io/">Spanish</a>
         </nav>
     </header>
@@ -61,13 +62,30 @@
                     <span class="sr-only">Coem</span>
                 </h1>
                 <p class="hero-copy">Classic stories, poems, and authors gathered in a map for reading, listening, and discovery.</p>
-                <a class="ink-link ink-link--light" href="#archive" data-write-link>Enter the archive</a>
+                <div class="hero-actions">
+                    <a class="action-button action-button--light" href="#archive">Enter the archive</a>
+                    <a class="action-button action-button--outline-light" href="literary-guesser.html?play=1">Play Literary Oracle</a>
+                </div>
             </div>
 
             <a class="scroll-note" href="#archive">
                 <span>Seven ways to explore</span>
                 <span aria-hidden="true">↓</span>
             </a>
+        </section>
+
+        <section class="oracle-promo" id="oracle" aria-labelledby="oracle-title">
+            <article class="oracle-card">
+                <div class="oracle-card-copy">
+                    <p class="section-number">A four-round reading game</p>
+                    <h2 id="oracle-title">Meet the Literary Oracle</h2>
+                    <p>Read four short, unsigned stories and poems. Guess each author, nationality, sex, and birth decade, then discover your literary companion.</p>
+                </div>
+                <div class="oracle-card-actions">
+                    <a class="action-button action-button--light" href="literary-guesser.html?play=1">Start game</a>
+                    <a class="oracle-filter-link" href="literary-guesser.html">Choose filters first</a>
+                </div>
+            </article>
         </section>
 
         <section class="archive" id="archive" aria-labelledby="archive-title">
@@ -93,7 +111,7 @@
                         <p class="route-kicker" id="route-kicker">Reading and listening</p>
                         <h3 id="route-title">Stories</h3>
                         <p id="route-description">Search thousands of classic stories, filter by country or genre, and hear available English narrations.</p>
-                        <a class="ink-link" id="route-link" href="stories-info.html" data-write-link>Explore stories</a>
+                        <a class="action-button route-action" id="route-link" href="stories-info.html">Explore stories</a>
                     </div>
 
                     <div class="route-controls" aria-label="Change route">

@@ -13,6 +13,7 @@ const authoredHtml = [
   "authorToAuthor3DSmall_english.html",
   "author_info_smaller.html",
   "author_info_smaller_stories.html",
+  "literary-guesser.html",
   "custom-icons.html",
   "static/particleDraw.html",
 ];
@@ -61,6 +62,52 @@ test("authored navigation keeps GitHub Pages-safe relative links", () => {
     }
   }
   assert.deepEqual(offenders, [], `root-relative JS navigation:\n${offenders.join("\n")}`);
+});
+
+test("public tools return to the main menu and expose Literary Oracle", () => {
+  for (const file of [
+    "index.html",
+    "stories-info.html",
+    "poems-info.html",
+    "authorToAuthor3D.html",
+    "authorToAuthor3DSmall.html",
+    "authorToAuthor3DSmall_english.html",
+    "author_info_smaller.html",
+    "author_info_smaller_stories.html",
+    "embeddings.html",
+    "literary-guesser.html",
+  ]) {
+    const html = fs.readFileSync(path.join(root, file), "utf8");
+    assert.match(html, /href=["']index\.html#archive["']/);
+  }
+  for (const file of [
+    "stories-info.html",
+    "poems-info.html",
+    "authorToAuthor3D.html",
+    "authorToAuthor3DSmall.html",
+    "authorToAuthor3DSmall_english.html",
+    "embeddings.html",
+  ]) {
+    const html = fs.readFileSync(path.join(root, file), "utf8");
+    assert.match(html, /literary-guesser\.html/);
+  }
+});
+
+test("homepage promotes the four-round Oracle before the archive", () => {
+  const html = fs.readFileSync(path.join(root, "index.html"), "utf8");
+  assert.match(html, /id="oracle"[\s\S]*Four short, unsigned stories and poems/i);
+  assert.match(html, /href="literary-guesser\.html\?play=1">Start game/);
+  assert.ok(html.indexOf('id="oracle"') < html.indexOf('id="archive"'));
+});
+
+test("authored navigation presents embeddings as the Literary map", () => {
+  const pages = ["stories-info.html", "poems-info.html", "authorToAuthor3D.html", "authorToAuthor3DSmall.html"];
+  pages.forEach(file => {
+    const html = fs.readFileSync(path.join(root, file), "utf8");
+    assert.match(html, />Literary map</, file);
+    assert.doesNotMatch(html, />Embeddings</, file);
+  });
+  assert.match(fs.readFileSync(path.join(root, "embeddings.html"), "utf8"), /<title>COEM Literary Map/);
 });
 
 test("public pages link to the updated Spanish edition", () => {

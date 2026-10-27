@@ -15,7 +15,7 @@
 <body class="guesser-page">
     <a class="skip-link" href="#game-main" data-i18n="skip">Go to game</a>
     <header class="site-header guesser-header" aria-label="Main navigation">
-        <a class="wordmark" href="index.html" aria-label="COEM, home"><img src="Coem.png" alt="" width="572" height="288"></a>
+        <a class="wordmark" href="index.html#archive" aria-label="COEM, main menu"><img src="Coem.png" alt="" width="572" height="288"></a>
         <nav class="header-nav" aria-label="Quick links">
             <a href="index.html#archive" data-i18n="backArchive">Back to archive</a>
         </nav>
@@ -27,6 +27,13 @@
             <h1 id="game-title" data-i18n="gameTitle">Literary Oracle</h1>
             <p class="guesser-intro" data-i18n="intro">Read a short text and guess its origins</p>
             <button type="button" class="ink-link guesser-start" id="start-game" disabled><span data-i18n="start">Start game</span><span class="action-arrow" aria-hidden="true">→</span></button>
+            <div class="guesser-resume" id="resume-game-panel" hidden aria-live="polite">
+                <p>Your saved game is ready.</p>
+                <div>
+                    <button type="button" class="ink-link" id="resume-game">Resume game <span class="action-arrow" aria-hidden="true">→</span></button>
+                    <button type="button" class="text-button" id="new-game">New game</button>
+                </div>
+            </div>
             <p class="guesser-note" data-i18n="note">Four short texts. Begin with the easiest and meet the final challenge.</p>
         </section>
 
@@ -84,6 +91,7 @@
     <footer class="site-footer"><a class="footer-mark" href="index.html#home" aria-label="COEM, back to home"><img src="Coem.png" alt="" width="572" height="288"></a><div class="footer-links"><a href="index.html#archive" data-i18n="archive">Archive</a><a href="mailto:theprojectcoem@gmail.com" data-i18n="contact">Contact</a></div></footer>
     <script src="static/particleDrawStories.js?v=14"></script>
     <script src="literary_guesser_core.js?v=4"></script>
+    <script src="literary_guesser_resume.js?v=1"></script>
     <script src="literary_guesser.js?v=5"></script>
 </body>
 </html>

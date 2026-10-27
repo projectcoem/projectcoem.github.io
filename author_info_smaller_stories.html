@@ -12,7 +12,26 @@
             display: flex;
             height: 100vh;
             margin: 0;
+            padding-top: 56px;
+            box-sizing: border-box;
         }
+
+        .detail-home-link {
+            position: fixed;
+            top: 8px;
+            left: 8px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 44px;
+            min-height: 44px;
+            padding: 3px;
+            border-radius: 6px;
+            background: #003153;
+        }
+
+        .detail-home-link img { display: block; width: 58px; height: auto; }
+        .detail-home-link:focus-visible { outline: 3px solid #003153; outline-offset: 3px; }
 
 
         .info-box h2 {
@@ -78,6 +97,7 @@
 </head>
 
 <body>
+    <a class="detail-home-link" href="index.html#archive" target="_top" aria-label="COEM, main menu"><img src="Coem.png" alt=""></a>
     <div class="info-box">
         <div class="info-item-author"> <span id="name">{{name}}</span></div>
         <div id="flex-container">

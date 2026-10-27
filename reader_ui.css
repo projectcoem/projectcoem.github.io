@@ -149,6 +149,20 @@ body {
   box-shadow: var(--reader-shadow);
 }
 
+.reader-discovery[hidden] { display: none; }
+
+.reader-discovery-actions {
+  width: min(900px, 100%);
+  margin: 0 auto 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.reader-discovery-toggle { display: none; }
+.reader-continue { background: transparent; color: var(--reader-action); box-shadow: none; }
+.reader-continue[hidden] { display: none; }
+
 .reader-discovery h2 { margin: 0 0 6px; color: var(--reader-text); }
 .reader-discovery > p { margin: 0 0 18px; color: var(--reader-muted); }
 
@@ -493,6 +507,10 @@ body {
   #appbar .center-section { display: none; }
   #container-stories, #container-poems { padding-top: 72px !important; }
   .reader-toolbar { justify-content: stretch; }
+  .reader-discovery-toggle { display: inline-flex; }
+  .reader-discovery-actions { position: sticky; top: 58px; z-index: 20; padding: 6px 0; background: var(--reader-bg); }
+  .reader-discovery-collapsed .reader-toolbar { gap: 5px; margin-bottom: 12px; }
+  .reader-discovery-collapsed .reader-toolbar .reader-button { min-height: 40px; padding: 7px 10px; font-size: 14px; }
   .reader-button, .reader-select { flex: 1 1 auto; }
   #search-container { grid-template-columns: 1fr !important; }
   #search-result-count { padding: 0; text-align: left; }

@@ -23,13 +23,14 @@
 </head>
 <body>
   <header id="appbar">
+    <a class="coem-home-link" href="index.html#archive" aria-label="COEM, main menu"><img src="Coem.png" alt=""></a>
     <strong>Poems</strong>
-    <a href="index.html" aria-label="Coem home"><img src="Coem.png" alt=""></a>
     <details class="site-menu">
       <summary>Main menu</summary>
       <nav aria-label="Main menu">
-        <a href="index.html">Home</a><a href="stories-info.html">Stories</a><a href="poems-info.html">Poems</a>
-        <a href="authorToAuthor3DSmall.html">Author map</a><a href="embeddings.html">Embeddings</a>
+        <a href="index.html#archive">Home</a><a href="stories-info.html">Stories</a><a href="poems-info.html">Poems</a>
+        <a href="literary-guesser.html">Literary Oracle</a>
+        <a href="authorToAuthor3DSmall.html">Author map</a><a href="embeddings.html">Literary map</a>
         <a href="https://estevefact.github.io/poems-info.html" data-spanish-counterpart>Spanish</a>
       </nav>
     </details>
@@ -37,7 +38,11 @@
 
   <main id="container-poems">
     <div class="reader-sr-only" id="reader-status" role="status" aria-live="polite"></div>
-    <section class="reader-discovery" aria-labelledby="discovery-title">
+    <div class="reader-discovery-actions">
+      <button class="reader-button reader-discovery-toggle" id="discovery-toggle" type="button" aria-controls="discovery-panel" aria-expanded="true">Hide search and filters</button>
+      <button class="reader-button reader-continue" id="continue-reading" type="button" hidden></button>
+    </div>
+    <section class="reader-discovery" id="discovery-panel" aria-labelledby="discovery-title">
       <h2 id="discovery-title">Search and discover poems</h2>
       <p>Enter any title, author, country, genre, or year. Filters can be combined.</p>
       <div id="search-container">
