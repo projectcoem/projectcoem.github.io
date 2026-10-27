@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 342,
+    "words": 57,
+    "reading_time_min": 0.285
+  },
+  "text": "Dad, yesterday it rained\n\nand today it rained a little while ago.\n\nEven so, it is warm.\n\nA good mushroom autumn should come.\n\n\nDad, the evening news will be on soon,\n\nand the sauna is ready.\n\n\nFather, come back to my dream.\n\nI will give you bread, cheese,\n\nberries.\n\nI will fetch water from the spring.\n\n\nDad, let me practice again.\n\nIt is strange to be so unfeeling.",
+  "translation": {
+    "source_sha256": "2918b8364d193e4529199df8e656d9f8b87c70aebb4c4f96f9259dbd08c2cda4",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Dad, Yesterday It Rained",
+    "editorial_note": "The translation keeps the domestic invitations to the dead father and the final self-accusation."
+  }
+}

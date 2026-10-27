@@ -1,0 +1,37 @@
+[
+  {
+    "id": "85a08515-9b67-45f4-8265-0335ec1be14f",
+    "source_sha256": "4abcc2846b9f48de7362b99038b66aef5268649d3f9e81869927d402f3f4f828",
+    "title": "Road to Paris",
+    "text": "In the morning\n        splendors of the sun,\nbound for Paris, crossing Spain,\nthe train stopped in\n        a strange little village\nthat embroiders a river with its slender poplars.\n\n\nThe flowered dawn fills the roads...\nand I say to the one who\n        accompanies me:\n—\"There, as shepherd or cane cutter,\nI would live gentle crystalline\n        days.\"\n\n\nBut a voice inside me murmurs:\nthe lake wants to be sea and the\n        sea to be spring;\nour life is nothing but a vain effort\nto find\n        happiness in what is unstable;\nif you lived there, surely\nfollowing the train would be\n        your dream!\n\n        Version by Miguel Rasch-Isla",
+    "editorial_note": "The translation follows Miguel Rasch-Isla's Spanish version and keeps the train-village contrast as restless desire."
+  },
+  {
+    "id": "2924477f-4366-40ec-909b-60cc691802c9",
+    "source_sha256": "f91ec60406a770fb1058dafab04fa44331c0ac3939f8cd2dc91d938f1eeabf1d",
+    "title": "True Love",
+    "text": "Road to Paris\nIn the morning\n        splendors of the sun,\nbound for Paris, crossing Spain,\nthe train stopped in\n        a strange little village\nthat embroiders a river with its slender poplars.\n\n\nThe flowered dawn fills the roads...\nand I say to the one who\n        accompanies me:\n—\"There, as shepherd or cane cutter,\nI would live gentle crystalline\n        days.\"\n\n\nBut a voice inside me murmurs:\nthe lake wants to be sea and the\n        sea to be spring;\nour life is nothing but a vain effort\nto find\n        happiness in what is unstable;\nif you lived there, surely\nfollowing the train would be\n        your dream!\n\n        Version by Miguel Rasch-Isla",
+    "editorial_note": "The catalog title is 'True Love,' but the body is 'Road to Paris'; the translation keeps that visible catalog inconsistency."
+  },
+  {
+    "id": "5481468f-bd8b-4544-9646-a6e1814bca2b",
+    "source_sha256": "5b801d76b4e5b7207726b8f35f2ffe4d7a0e2a2e2733ab9a69038dad49997920",
+    "title": "A Surprise",
+    "text": "Today I received your letter. I have read it\nwith astonishment, for you say you\n        are returning,\nand I still have not recovered from the surprise...\nIt has been so long since\n        I have lived without surprises!\n\n\n\"That at last you are coming to see me..., that so long\nwas the separation...\" I advise you,\ndo not come, you would suffer a bitter\ndisillusion: you would\n        find me old.\n\n\nAnd like an old man, now, I have called myself\nto quiet, and except\n        —always the past!—\nfor one or another memory that on my forehead\n\n\nputs some wrinkle of sadness,\nI cannot complain:\n        tranquilly\nI smoke my pipe and drink my beer.",
+    "editorial_note": "The translation regularizes an apparent OCR break in 'always the past' while keeping the old-age resignation."
+  },
+  {
+    "id": "787f2b3f-2d85-4fd0-9015-c15e676332fe",
+    "source_sha256": "5de1cdb3283355a62051db9ef144b80f32b3318c8bb9672cdd27693604888256",
+    "title": "That Time Your Memory Came",
+    "text": "A Surprise\n\n        Today I received your letter. I have read it\nwith astonishment, for you say you\n        are returning,\nand I still have not recovered from the surprise...\nIt has been so long since\n        I have lived without surprises!\n\n\n\"That at last you are coming to see me..., that so long\nwas the separation...\" I advise you,\ndo not come, you would suffer a bitter\ndisillusion: you would\n        find me old.\n\n\nAnd like an old man, now, I have called myself\nto quiet, and except\n        —always the past!—\nfor one or another memory that on my forehead\n\n\nputs some wrinkle of sadness,\nI cannot complain:\n        tranquilly\nI smoke my pipe and drink my beer.",
+    "editorial_note": "The catalog title differs from the body, which begins 'A Surprise'; this translation preserves the body text."
+  },
+  {
+    "id": "fd2f1ee8-a1cc-4766-b25e-320c94dff0f2",
+    "source_sha256": "ca42d0f77387afef1acedcd05ccafc09b60ee8451c1b877b2a2fe78e07101f7b",
+    "title": "Song in White and Pink",
+    "text": "White woman, pink woman.\n\n\nShe comes near me or goes far away.\nBy marvelous virtue,\nshe turns into a butterfly for me\nin a world of reflections.\n\n\nWhite woman, pink woman.\n\n\nShe comes near me or goes far away.\nCatching fire, she becomes divine\nin the mysterious moon\nof the country of mirrors.",
+    "editorial_note": "The translation keeps the repeated white/pink apparition and the mirror-world transformation."
+  }
+]

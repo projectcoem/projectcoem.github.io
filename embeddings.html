@@ -5,14 +5,14 @@
   <meta name="keywords" content="visualization,embeddings,machine learning,javascript">
 
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Coem Embedding Projector">
+  <meta property="og:title" content="COEM Literary Map">
   <meta property="og:description" content="Explore stories and poems in high-dimensional space.">
   <meta property="og:url" content="https://projectcoem.github.io/embeddings.html">
   <meta property="og:image"
     content="https://raw.githubusercontent.com/Estevefact/Estevefact.github.io/main/preview.png">
 
   <meta name="twitter:card" value="summary_large_image">
-  <meta name="twitter:title" content="Coem Embedding Projector">
+  <meta name="twitter:title" content="COEM Literary Map">
   <meta name="twitter:description" content="Explore stories and poems in high-dimensional space.">
   <meta name="twitter:url" content="https://projectcoem.github.io/embeddings.html">
   <meta name="twitter:image"
@@ -11985,6 +11985,7 @@ THE SOFTWARE.
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700">
+  <link rel="stylesheet" href="site_chrome.css?v=3">
   <link rel="stylesheet" href="coem_theme.css?v=3">
 
 
@@ -20617,9 +20618,12 @@ THE SOFTWARE.
 
       <div id="container">
         <div id="appbar">
+          <div class="center-section coem-home-slot">
+            <a class="coem-home-link" href="index.html#archive" aria-label="COEM, main menu"><img src="Coem.png" alt=""></a>
+          </div>
           <div class="flex-container">
             <div id="title" class="flex-item">
-              Literary Embedding Projector
+              Literary map
             </div>
             <div class="flex-item donate">
               <form id="form-cont" action="https://www.paypal.com/donate" method="post" target="_top">
@@ -20629,17 +20633,15 @@ THE SOFTWARE.
             </div>
           </div>
 
-          <div class="center-section">
-            <img src="Coem.png" alt="Logo">
-          </div>
           <div class="icons">
             
             <div class="dropdown-2 Stories-Authors-btn" id="dropdown-general">
               <button class="dropbtn-general" id="Stories-Authors-btn">Explore COEM</button>
               <nav class="dropdown-content-2" aria-label="Explore COEM">
-                <a href="index.html">Home</a>
+                <a href="index.html#archive">Home</a>
                 <a href="stories-info.html">Stories</a>
                 <a href="poems-info.html">Poems</a>
+                <a href="literary-guesser.html">Literary Oracle</a>
                 <a href="authorToAuthor3DSmall.html">Relationships</a>
                 <a href="authorToAuthor3D.html">All authors</a>
                 <a href="https://estevefact.github.io/">Spanish</a>
@@ -20675,7 +20677,7 @@ THE SOFTWARE.
 
 
 
-  <title>Coem Embedding Projector - visualizing high-dimensional literature</title>
+  <title>COEM Literary Map — Explore literature by similarity</title>
   <style include="vz-projector-styles"></style>
   <style>
     html {
@@ -20737,7 +20739,21 @@ THE SOFTWARE.
         overflow: hidden;
       }
 
-      vz-projector-app #appbar .center-section {
+      vz-projector-app #appbar .center-section.coem-home-slot {
+        display: flex !important;
+        margin-right: 4px;
+      }
+
+      vz-projector-app #appbar .coem-home-link img {
+        width: 48px !important;
+      }
+
+      vz-projector-app #appbar .flex-container {
+        width: 92px !important;
+      }
+
+      vz-projector-app #appbar .flex-container .donate,
+      vz-projector-app #appbar .icons > a {
         display: none !important;
       }
 

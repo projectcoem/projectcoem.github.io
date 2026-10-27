@@ -60,9 +60,9 @@
             action: 'View relationships', href: 'authorToAuthor3DSmall.html', image: 'static/imgs/cortazar.png', author: 'Julio Cortázar'
         },
         {
-            label: 'Embeddings', kicker: 'Text constellation', title: 'Embeddings',
+            label: 'Literary map', kicker: 'Text constellation', title: 'Literary map',
             description: 'Navigate stories and poems as points in a shared space, grouped by the closeness of their language.',
-            action: 'Open projector', href: 'embeddings.html', image: 'static/imgs/Borges.png', author: 'Jorge Luis Borges'
+            action: 'Explore literary map', href: 'embeddings.html', image: 'static/imgs/Borges.png', author: 'Jorge Luis Borges'
         },
         {
             label: 'Authors', kicker: 'Complete atlas', title: 'Authors',
@@ -74,6 +74,11 @@
             description: 'Describe the story you imagine and search for works in the archive that resemble it in Google Colab.',
             action: 'Describe a story', href: 'https://colab.research.google.com/drive/1z9y_NzBtdJrvlEC0siRCjEVZP7VuzMEX?usp=sharing',
             image: 'static/imgs/Kafka.png', author: 'Franz Kafka', external: true
+        },
+        {
+            label: 'Oracle', kicker: 'Reading game', title: 'Literary Oracle',
+            description: 'Choose stories, poems, or both as Coemas. Read short English texts and identify their author, nationality, sex, and birth decade.',
+            action: 'Play Literary Oracle', href: 'literary-guesser.html', image: 'static/imgs/Borges.png', author: 'Jorge Luis Borges'
         }
     ];
 
@@ -208,7 +213,7 @@
             link.removeAttribute('target');
             link.removeAttribute('rel');
         }
-        writeText(link, route.action, 100);
+        link.textContent = route.action;
         updateTabs(normalizedIndex);
 
         stage.classList.remove('is-entering');

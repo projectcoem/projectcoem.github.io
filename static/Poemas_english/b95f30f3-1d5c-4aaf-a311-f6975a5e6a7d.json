@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 322,
+    "words": 58,
+    "reading_time_min": 0.29
+  },
+  "text": "The evening is dying\n\nlike a humble hearth going out.\n\n\nThere, over the mountains,\n\nsome embers remain.\n\n\nAnd that broken tree on the white road\n\nmakes one weep with pity.\n\n\nTwo branches on the wounded trunk, and one\n\nwithered black leaf on each branch!\n\n\nAre you crying?... Among the golden poplars,\n\nfar away, the shadow of love awaits you.",
+  "translation": {
+    "source_sha256": "966971c0a6fd939787da32d30c9a4d795cd27b785d565ae9278a29e897258b36",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Field",
+    "editorial_note": "The translation keeps the dying-hearth sunset and the wounded tree before love's distant shadow."
+  }
+}

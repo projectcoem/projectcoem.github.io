@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 243,
+    "words": 40,
+    "reading_time_min": 0.2
+  },
+  "text": "I cannot speak; though I wanted to\n\nI cannot speak with joy.\n\nWhat am I to say? Not even\n\ncan I present a clean page.\n\nI cannot speak, only shadows would grow\n\nover the cursed grass.\n\nI must be silent, but I would give\n\nmy life.",
+  "translation": {
+    "source_sha256": "00c229d0f2162cd24eda3626511b5ae4ea146a5bc3797e4c4ad70139823c1379",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Silence",
+    "editorial_note": "The translation keeps the pressure between enforced silence and the offered life."
+  }
+}

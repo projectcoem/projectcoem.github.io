@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 218,
+    "words": 41,
+    "reading_time_min": 0.205
+  },
+  "text": "there is nothing to\n\ndiscuss\n\nthere is nothing to\n\nremember\n\nthere is nothing to\n\nforget\n\nit is sad\n\nand\n\nit is not\n\nsad\n\nit seems that the\n\nmost\n\nsensible\n\nthing a person can\n\ndo\n\nis\n\nsit\n\nwith a glass in\n\nhand",
+  "translation": {
+    "source_sha256": "f827735597f10c8948e69c861f8f3dc074d493df2d2a541921ffb00e4320d906",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "The Best of the Breed",
+    "editorial_note": "The translation keeps the stripped-down movement from negation to sitting with a drink."
+  }
+}

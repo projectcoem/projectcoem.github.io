@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 487,
+    "words": 82,
+    "reading_time_min": 0.41
+  },
+  "text": "I hear many courtiers say:\n\nthat office has three thousand reales,\n\nbut it is worth ten thousand, very exact-\n\nGod help me, and they flog Gypsies!\n\n\nThose are vulgar petty thieves\n\nwho steal a cloak, some swaddling clothes,\n\na donkey, a mule, and their funds;\n\nthey do not amount to six Segovian quarters.\n\n\nYou inspect the mountains; it is a chimera,\n\nfor thieves are not hermits,\n\nnor do they seek their career in thickets.\n\n\nLet justice make inquiries here,\n\nand it will see that the Court is a burrow\n\nwhere they are nested in heaps.",
+  "translation": {
+    "source_sha256": "b533b71c011ade6b46ba3b2406bef322d41b5a9cb8c695f3d864c6badb7024ec",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Court Thieves",
+    "editorial_note": "The translation preserves the historical slur in context while keeping the poem's attack on elite theft."
+  }
+}

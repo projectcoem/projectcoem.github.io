@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 333,
+    "words": 61,
+    "reading_time_min": 0.305
+  },
+  "text": "What is the best thing in the world?\n\nJune roses pearled by May dew;\n\nThe sweet south wind saying there will be no rain;\n\nTruth, with friends stripped of cruelty;\n\nBeauty, not made vain until its pride is spent;\n\nLove, when we are loved again.\n\nWhat is the best thing in the world?\n\nSomething outside it, I think.",
+  "translation": {
+    "source_sha256": "f547980aae72326b41dbf6d748fc0e9db1dab1895529a78fe3849ce76f8b982f",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "The Best Thing in the World",
+    "editorial_note": "The translation keeps the list of worldly goods and the final turn beyond the world."
+  }
+}

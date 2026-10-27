@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 128,
+    "words": 22,
+    "reading_time_min": 0.11
+  },
+  "text": "Love is the most elastic human dimension.\n\nIt is like the vagina:\n\nit adapts to large and small.\n\n\nNature does not disappoint.",
+  "translation": {
+    "source_sha256": "be780a736ad62b7eb46ae97c7b8c2aef31ea49d46f8107f94e15dd2ccdcd0368",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Love Is the Most Elastic Human Dimension",
+    "editorial_note": "The translation preserves Kilpi's frank analogy and clipped conclusion."
+  }
+}

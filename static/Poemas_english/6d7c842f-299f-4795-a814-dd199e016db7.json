@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 370,
+    "words": 72,
+    "reading_time_min": 0.36
+  },
+  "text": "Suddenly in the night an alarm\n\nsiren sounds, long, long,\n\nthe mournful howl of the siren\n\nof fire or of the white ambulance of death,\n\nlike the cry of the Cegua in the night,\n\ncoming closer and closer over the streets\n\nand the houses and rising, rising, and falling\n\nand growing, growing, falling and moving away\n\ngrowing and falling.\n\nIt is not fire or death:\n\nIt is Somoza passing.",
+  "translation": {
+    "source_sha256": "ad17c9f9e9b59c9d635aff55a90dc26ab6068b988fa1ced599b70124c4f365f9",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Suddenly in the Night a Siren Sounds",
+    "editorial_note": "The translation preserves the siren's physical movement through the city before naming Somoza as the threat."
+  }
+}

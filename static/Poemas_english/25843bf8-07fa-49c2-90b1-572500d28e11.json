@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 521,
+    "words": 110,
+    "reading_time_min": 0.55
+  },
+  "text": "You give me your bread kneaded in your hand,\n\nyou give me your bread baked on your hearth,\n\nyou give me your bread ground on your stone,\n\nyou give me your bread pounded in your mortar.\n\n\nYou give me your hut wrapped in your palm,\n\nyou give me your bed sunk in your corner,\n\nyou give me your sip, squeezed from your thirst,\n\nyou give me your clothes, sweated in your sweat.\n\n\nYou give me, oh Juan, your beggar's give-me,\n\nyou give me, oh Juan, your poor man's take,\n\nyour clear faith, your dark shelterlessness,\n\nand I give you, for what by giving I hope,\n\nthe dark waiting with which I follow you\n\nand the clear heart with which I love you.",
+  "translation": {
+    "source_sha256": "07e27d0e5d966f25a171e7be4027f5478d2f00df153c477a435fae325b98c896",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Sonnet of the Poor Rhyme",
+    "editorial_note": "The translation keeps the humble gift-catalog and the deliberately plain poor-rhyme diction."
+  }
+}

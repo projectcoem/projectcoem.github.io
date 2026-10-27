@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 253,
+    "words": 53,
+    "reading_time_min": 0.265
+  },
+  "text": "today\n\nI met a genius on the train\n\nabout six years old;\n\nhe sat beside me and,\n\nas the train\n\nran along the coast,\n\nwe came to the ocean.\n\nthe boy looked at me and said:\n\n\"the sea isn't pretty at all.\"\n\n\nit was the first time\n\nI realized\n\nthat.",
+  "translation": {
+    "source_sha256": "d62925a6e4f9ea9fd807a2537a3bd98ccecbceaa261c87063384aef713284ec8",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "I Met a Genius",
+    "editorial_note": "The translation preserves the child's deflating statement and the speaker's sudden agreement."
+  }
+}

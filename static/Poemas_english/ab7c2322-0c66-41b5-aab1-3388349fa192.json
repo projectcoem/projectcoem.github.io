@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 468,
+    "words": 77,
+    "reading_time_min": 0.385
+  },
+  "text": "Over the fields and over the streets,\n\nsilent and light,\n\nturning in outline, the snow\n\nfalls.\n\n\nIn a thousand motionless forms,\n\non roofs and on roads,\n\non posts and in gardens,\n\nit sleeps.\n\n\nIts white skirt dances,\n\ngraceful in the wide sky,\n\nthen settles on the earth,\n\ntired.\n\n\nAll around is peace,\n\nshut in deep oblivion;\n\nindifferent, the world\n\nis silent.\n\n\nBut in the immense calm\n\nthe heart returns to memories\n\nand thinks\n\nof a quiet love.",
+  "translation": {
+    "source_sha256": "c3b5a1d9dc6cf480a96600b7df2479a9e108dd6f67a25d18c580909f44f5c878",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Snowfall",
+    "editorial_note": "The short final verbs are preserved to keep the falling, sleeping, and silencing motion."
+  }
+}

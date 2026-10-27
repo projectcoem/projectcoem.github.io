@@ -1,0 +1,37 @@
+[
+  {
+    "id": "ee8f9825-3d08-46de-9914-b2a3c22eba73",
+    "source_sha256": "ca1213979d61946055e4e3694ed7d5688ed71b1aa3464292d2e96677b4d2fcde",
+    "title": "Watercolor",
+    "text": "The golden shacks fenced with thistles;\n\npigs in the streets;\n\na cartwheel\n\nbeside a shack, a latrine in the yard,\n\na girl filling her jar,\n\nand Momotombo\n\nblue, behind the cheerful underwear hanging up\n\nyellow, white, pink.",
+    "editorial_note": "The translation keeps the watercolor-like inventory of rural detail with Momotombo behind the laundry."
+  },
+  {
+    "id": "937b9b08-4f27-4138-8985-06dfc7469cd6",
+    "source_sha256": "38e25353894df138fe43c2c28f649bd6af03e26c50e308751412b7c3e2d33319",
+    "title": "In Losing You, You and I Have Lost...",
+    "text": "In losing you, you and I have lost:\n\nI, because you were what I loved most,\n\nand you, because I was the one who loved you most.\n\n\nBut of the two of us, you lose more than I do:\n\nbecause I will be able to love others as I loved you,\n\nbut you will not be loved as I loved you.",
+    "editorial_note": "The translation follows the poem's measured argument about unequal loss after separation."
+  },
+  {
+    "id": "8bcdcdaa-48e9-4afe-b923-df9f8eee5406",
+    "source_sha256": "0e8fa12ac49aba0049d9a67ab59df4236e052f1aff5affdd8f74383a9dbc3646",
+    "title": "I Still Remember",
+    "text": "I still remember\n\nthat street\n\nof yellow lamps,\n\nwith that full\n\nmoon among the electric\n\nwires\n\n\nAnd that star\n\non the corner,\n\na distant radio,\n\nthe tower of La Merced\n\nthat struck those\n\neleven:\n\n\nAnd the golden light\n\nof your open\n\ndoor, on that street.",
+    "editorial_note": "The translation preserves the remembered street as a sequence of lamps, wires, bells, and the beloved's doorway."
+  },
+  {
+    "id": "c7be920d-de2c-4e72-bf09-c51a54fae77d",
+    "source_sha256": "9b112fff1f930a498cf03bb3ee3ee196978c6268d2b3341245deaf736d66774d",
+    "title": "Our Relationship",
+    "text": "Our relationship...\n\nThis symbiosis that we are.\n\nYou know what I was looking for:\n\nbeauty that does not grow fat,\n\nlove that does not become bourgeois.\n\nOn the other hand you:\n\nwanted to have love with someone\n\nfor what I was made.\n\nI did nothing to make you fall in love.\n\nMy renunciations\n\nare still dripping blood.",
+    "editorial_note": "The translation keeps the uneasy intimacy, anti-bourgeois desire, and the bleeding cost of renunciation."
+  },
+  {
+    "id": "45593afd-e87d-47d7-999c-924f8c26f1b7",
+    "source_sha256": "96752a421d5a36f0409471d3908f2a7e7e7e55c1f6568222084bfb525233f3da",
+    "title": "Time, I Hate You. Though Without You I Would Not Exist",
+    "text": "Time, I hate you. Though without you I would not exist.\n\nAnd by your passing I will die though by your passing I was born.\n\nLike Saint Francis Borgia I now want\n\nto love someone whom time does not touch\n\nand for us to rent a room where night does not pass\n\nnor the neon signs go out one by one.",
+    "editorial_note": "The translation keeps the paradox of hating time while owing birth to it, ending in a room outside night."
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 202,
+    "words": 34,
+    "reading_time_min": 0.17
+  },
+  "text": "The air does not reach me.\n\nPerhaps it is wandering lost\n\nthrough those corridors\n\nor is held incommunicado\n\nin some cell,\n\npunished\n\nfor wanting—like me—\n\nto walk everywhere:\n\nto go to the Soviet Union,\n\nfor example.",
+  "translation": {
+    "source_sha256": "feca9ac5ea591576502d0bda7447f4915c37fd9076bca20b71a6e15d3ed13a5c",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Cell",
+    "editorial_note": "The translation keeps the personified air punished for wanting freedom of movement."
+  }
+}

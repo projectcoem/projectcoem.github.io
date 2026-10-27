@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 329,
+    "words": 55,
+    "reading_time_min": 0.275
+  },
+  "text": "Peacefully flows the Quiet Don;\n\nto my house seeps the yellow moon.\n\nIt hops over the windowsill with its cap askew\n\nand stops in the shadow, that yellow moon.\n\nThis woman is sick to the marrow,\n\nthis woman is completely alone,\n\nwith her husband dead, and her son distant\n\nin prison. Pray for me. Pray.",
+  "translation": {
+    "source_sha256": "5444c1183d7cedbdcdedad4e9e5aa69eeca82e06077988677620f8855726fdca",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Peacefully Flows the Quiet Don",
+    "editorial_note": "The translation keeps the moon's strange entrance and the plain plea from isolation."
+  }
+}

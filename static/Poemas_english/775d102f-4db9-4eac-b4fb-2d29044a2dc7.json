@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 303,
+    "words": 51,
+    "reading_time_min": 0.255
+  },
+  "text": "Where did glory go, the feeling\n\nthat loved truth, the clear day,\n\nthe white cloud, the beautiful thought\n\nfull of faith, radiant with joy?\n\n\nAmong the shadow of dark branches\n\nI see the corner of the solitary bed;\n\nthere still remains the trace of impure memory,\n\nas though wrapping what the shroud gives.",
+  "translation": {
+    "source_sha256": "80b72fbe3931011e23ea608e541043db444a7b7b82efe43374da5c82eba41608",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Where Did Glory Go, the Feeling",
+    "editorial_note": "The translation keeps the fragment's mournful question and the dark-bed image despite the source's difficult final phrase."
+  }
+}

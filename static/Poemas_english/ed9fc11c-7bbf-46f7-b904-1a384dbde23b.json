@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 537,
+    "words": 91,
+    "reading_time_min": 0.455
+  },
+  "text": "My chest was growing cold, helpless,\n\nbut my steps were light.\n\nI put on my right hand\n\nthe glove from my left hand.\n\n\nIt seemed to me there were many steps,\n\nalthough I knew there were only three!\n\nAn autumn murmur among the maples\n\nasked me: \"Die with me!\n\n\nListen: a painful,\n\nfickle and wicked fate has deceived me!\"\n\nI answered it: \"My dear:\n\nme too. I will die with you!\"\n\n\nThis is the song of the last meeting.\n\nI cast a glance at the gloomy house.\n\nOnly in the bedroom did the candles burn\n\nwith an indifferent and withered flame.",
+  "translation": {
+    "source_sha256": "def5a326ba813cbdfbcbf769d7603e0a76aab98650c91bc884847afc7f37cd3e",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "The Song of the Last Meeting",
+    "editorial_note": "The translation keeps the glove mistake, autumn murmur, and indifferent candlelight of the last meeting."
+  }
+}

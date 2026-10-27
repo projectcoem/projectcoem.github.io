@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 110,
+    "words": 18,
+    "reading_time_min": 0.09
+  },
+  "text": "Midnight.\n\nBlack song.\n\nAnd my only star is singing!...\n\n\nLet them break that clock\n\nand leave me alone with her!",
+  "translation": {
+    "source_sha256": "681c5a47b4297d5eb45fa6bda56883e4de073ae69dc9a9459afa0beab2886344",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Midnight",
+    "editorial_note": "The translation keeps the lyric as a midnight wish to stop time and remain with the singing star."
+  }
+}

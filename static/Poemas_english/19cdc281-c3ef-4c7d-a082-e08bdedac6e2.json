@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 456,
+    "words": 87,
+    "reading_time_min": 0.435
+  },
+  "text": "Syria\n\n\nThey said\n        in Antiquity that poetry\nis a stairway to God. Perhaps it is not\n        so\nwhen you read me now. But I knew it the day\nthat through you I found\n        my voice again, dissolved\nin a flock of clouds and unruly\ngoats, which from a crag were stripping the leaves\nfrom the plum tree and\n        the cattail, and the thinned faces\nof the moon and sun were melting;\nthe engine was broken and an arrow\nof blood on a rock\n        marked\nthe road to Aleppo.",
+  "translation": {
+    "source_sha256": "058511787d306c0f1c66b512d957ee11a6d13798e32cc5fb5d0a94022abb7346",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Letter to Bobi",
+    "editorial_note": "This catalog entry is titled 'Letter to Bobi' but its body begins with 'Syria'; the translation preserves that visible structure."
+  }
+}

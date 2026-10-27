@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 387,
+    "words": 68,
+    "reading_time_min": 0.34
+  },
+  "text": "A lily swings in the valley\n\nso pure and so graceful\n\nas April's candid morning.\n\nThe hummingbird that tenderly loves her,\n\njealous of her modesty and beauty,\n\ndoes not dare to sip in her corolla\n\nthe delicious nectar;\n\nhe is deprived of nourishment\n\nso that she may live lush and candid,\n\nand he would die content\n\nenjoying the perfumes of her breath:\n\nenchanting Elena,\n\nI am the hummingbird, you the lily.",
+  "translation": {
+    "source_sha256": "f2a867fb9ab5dc314fefdac3a247c308e29024688c266d8a78e536e76c82fb47",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "To Elena",
+    "editorial_note": "The translation keeps the courtly flower-and-hummingbird conceit explicit."
+  }
+}

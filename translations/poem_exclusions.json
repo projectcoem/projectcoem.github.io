@@ -63,5 +63,455 @@
     "id": "1bcc0649-4f19-43ba-86d4-4a52d9a4ff98",
     "status": "source_mismatch",
     "reason": "Catalog title says Medialuz, but the stored body is He soñado una fuga...."
+  },
+  {
+    "id": "c1f1c210-5e99-46cb-9d2a-0c75448b164b",
+    "status": "source_mismatch",
+    "reason": "Catalog title says A unos ojos, but the stored body is Una extraña certeza."
+  },
+  {
+    "id": "b92d4977-bea2-44b2-bd8d-8a03f7699eac",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Anatomía de la melancolía, but the stored body is Una extraña certeza."
+  },
+  {
+    "id": "b2751b42-534e-44c1-8be5-140bfb30b1bf",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Bajo las luces rojas, but the stored body is Una extraña certeza."
+  },
+  {
+    "id": "3c79968e-4267-4c17-b18d-984f74a55874",
+    "status": "source_mismatch",
+    "reason": "Catalog title says El café con espejos, but the stored body is Una extraña certeza."
+  },
+  {
+    "id": "6217c46f-854e-4469-8a52-ffb712932756",
+    "status": "source_mismatch",
+    "reason": "Catalog title says El extraño, but the stored body is Una extraña certeza."
+  },
+  {
+    "id": "498981ae-db22-4589-ba33-3e09068b2e19",
+    "status": "source_mismatch",
+    "reason": "Catalog title says En la mañana del mundo, but the stored body is Una extraña certeza."
+  },
+  {
+    "id": "8b01cebf-45a1-40ad-a893-fab236fddd0e",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Inmensidad de la noche, but the stored body is Una extraña certeza."
+  },
+  {
+    "id": "6cfbc43b-831c-4198-8062-ac5898e18e3b",
+    "status": "source_mismatch",
+    "reason": "Catalog title says La sombra, but the stored body is Una extraña certeza."
+  },
+  {
+    "id": "6a37dc08-473e-4ae1-a171-3d55eed0dad4",
+    "status": "source_mismatch",
+    "reason": "Catalog title says La visita del arcángel, but the stored body is Una extraña certeza."
+  },
+  {
+    "id": "6c350633-ff79-4bfd-8ab6-e69ca084188d",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Las formas del engaño, but the stored body is Una extraña certeza."
+  },
+  {
+    "id": "92cbc687-292d-4539-b739-8bc1726702af",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Los rostros de la noche, but the stored body is Una extraña certeza."
+  },
+  {
+    "id": "f952a9a4-f007-4eb7-9a31-f27479aa8156",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Magia de la noche, but the stored body is Una extraña certeza."
+  },
+  {
+    "id": "0ef8f024-88de-4580-8a6a-beacd3fd7a26",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Mágico vivir, but the stored body is Una extraña certeza."
+  },
+  {
+    "id": "75a03bde-6a4f-4c99-8fca-2057925397c8",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Noche del sentido, but the stored body is Una extraña certeza."
+  },
+  {
+    "id": "71348957-be6e-4a77-96cb-079e809b1bd0",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Oficio de la costumbre, but the stored body is Una extraña certeza."
+  },
+  {
+    "id": "8819b737-406d-440d-a3e4-8f8b0100a105",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Pájaro de fuego, but the stored body is Una extraña certeza."
+  },
+  {
+    "id": "86e91ecd-0b37-4d0a-bb7c-2477a3d0a944",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Trasmundo, but the stored body is Una extraña certeza."
+  },
+  {
+    "id": "48ba5e92-a9af-48e6-a114-8d99b1fcfef8",
+    "status": "source_mismatch",
+    "reason": "Catalog title says ¡Oh acuérdate de mí!, but the stored body is Acuérdate de ti."
+  },
+  {
+    "id": "09fc2b7e-1d7d-43cc-8140-51190cd60ec3",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Tú que has gastado todo..., but the stored body is Acuérdate de ti."
+  },
+  {
+    "id": "8ac5bd65-56c1-4512-a9fb-dd910ef0edfb",
+    "status": "source_mismatch",
+    "reason": "Catalog title is empty, but the stored body is Safo."
+  },
+  {
+    "id": "0d2be398-c7ad-49eb-9b58-7908930f768a",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Amazona como lírica, but the stored body is Safo."
+  },
+  {
+    "id": "fc357fc9-33ea-4aeb-b408-cfff776661a3",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Andrómeda, but the stored body is Safo."
+  },
+  {
+    "id": "fa0facfd-8fe3-4332-894f-ffa0312d7e41",
+    "status": "source_mismatch",
+    "reason": "Catalog title says C'ámara oscura, but the stored body is Safo."
+  },
+  {
+    "id": "34274157-7620-4a48-9058-e26271076639",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Canción de amor, but the stored body is Safo."
+  },
+  {
+    "id": "e9779c59-392e-4487-b79e-c59018fd631f",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Cuando la idea del yo se aleja, but the stored body is Safo."
+  },
+  {
+    "id": "a500a3d0-772c-40a0-8aa6-c450bb9b4e08",
+    "status": "source_mismatch",
+    "reason": "Catalog title says El compañero de los pájaros, but the stored body is Safo."
+  },
+  {
+    "id": "0dcb4d3e-e568-4728-8741-3c714ad3d6bd",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Elegía en vida, but the stored body is Safo."
+  },
+  {
+    "id": "3124a4c9-7f8d-4fa7-a268-f2543b44648f",
+    "status": "source_mismatch",
+    "reason": "Catalog title says En la agonía romántica, but the stored body is Safo."
+  },
+  {
+    "id": "90792060-4192-45b0-a805-c40d367c06bb",
+    "status": "source_mismatch",
+    "reason": "Catalog title says La sombra, but the stored body is Safo."
+  },
+  {
+    "id": "b619665a-c752-41a7-85ed-b16173ccce36",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Lírica, but the stored body is Safo."
+  },
+  {
+    "id": "646ddd92-718a-47da-85fa-8ec27eb07511",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Oficio de amor, but the stored body is Safo."
+  },
+  {
+    "id": "9a0f61f8-7340-488e-bdad-eeed26efe680",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Oír uno su propia sombra, but the stored body is Safo."
+  },
+  {
+    "id": "bd1c42b7-6c65-4f0f-880d-e2d9c11d3177",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Paráfrasis, but the stored body is Safo."
+  },
+  {
+    "id": "55996c21-2c7e-435a-918c-5fde70590f88",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Pascal, but the stored body is Safo."
+  },
+  {
+    "id": "7ff1b280-085d-44e6-985e-254da97b296f",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Pero sólo son pensamientos, but the stored body is Safo."
+  },
+  {
+    "id": "ea3f03e5-dc9d-4eae-ba0a-5afed30cbe63",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Poema con un poema, but the stored body is Safo."
+  },
+  {
+    "id": "12c7f84a-5490-47c7-9964-3bb5be6d1ffb",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Primavera de Sufies, but the stored body is Safo."
+  },
+  {
+    "id": "b2b0c435-3bdd-4634-90c7-1c563b1b588b",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Puertas adentro, but the stored body is Safo."
+  },
+  {
+    "id": "c79b51db-3fb8-4c4b-90a3-25b5990eab25",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Que tu mirada vaya..., but the stored body is Safo."
+  },
+  {
+    "id": "4735c55a-a251-4b68-90fc-07ee2da8fd82",
+    "status": "source_mismatch",
+    "reason": "Catalog title says A ti, but the stored body is Tu zapato."
+  },
+  {
+    "id": "2284aee7-1276-48bb-8449-bb3c1f464059",
+    "status": "source_mismatch",
+    "reason": "Catalog title says A una amazona, but the stored body is Tu zapato."
+  },
+  {
+    "id": "b7490c16-a470-4ed1-bc14-661efe84f833",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Ana, but the stored body is Tu zapato."
+  },
+  {
+    "id": "ac188926-934e-46c9-90cc-e6900ee5b905",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Campo de caza, but the stored body is Tu zapato."
+  },
+  {
+    "id": "e639310f-7f97-4568-acc1-3688baf33d42",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Cena, but the stored body is Tu zapato."
+  },
+  {
+    "id": "59fcf5eb-c7dc-418e-8bc3-44f45c137959",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Cita, but the stored body is Tu zapato."
+  },
+  {
+    "id": "3d71ed75-a575-4a9a-9baa-11ac89c4539a",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Dos mujeres, but the stored body is Tu zapato."
+  },
+  {
+    "id": "79560c02-ed59-48c1-8be1-5813feb15fb7",
+    "status": "source_mismatch",
+    "reason": "Catalog title says El alba inútil, but the stored body is Tu zapato."
+  },
+  {
+    "id": "3939d83f-e6cc-499e-b79f-efee63f0a101",
+    "status": "source_mismatch",
+    "reason": "Catalog title says El beso, but the stored body is Tu zapato."
+  },
+  {
+    "id": "e7225f11-6ff1-470d-ac19-ee1c1d77a426",
+    "status": "source_mismatch",
+    "reason": "Catalog title says El retorno, but the stored body is Tu zapato."
+  },
+  {
+    "id": "e76357d0-2ea4-4687-bf64-8c5d19571595",
+    "status": "source_mismatch",
+    "reason": "Catalog title says El rito, but the stored body is Tu zapato."
+  },
+  {
+    "id": "15de610f-d0b6-4425-ad6a-87393e9fe838",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Ella, but the stored body is Tu zapato."
+  },
+  {
+    "id": "c8dcb32d-70d1-48f4-80ab-9093b2fd664a",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Éramos tres los caballeros, but the stored body is Tu zapato."
+  },
+  {
+    "id": "159e18bf-9f8e-40fe-b463-137071dd7261",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Es un dulce presagio de combate..., but the stored body is Tu zapato."
+  },
+  {
+    "id": "24f2409a-d5d7-4c08-ac44-a375a2263dd6",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Esa mujer, but the stored body is Tu zapato."
+  },
+  {
+    "id": "41112785-ecfe-42f4-bec6-1bf7d4cde710",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Estuvo ella tan cerca, su cuerpo junto al mío...., but the stored body is Tu zapato."
+  },
+  {
+    "id": "1ad46b2c-15ef-44fb-9281-0f8f63778c57",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Fémina, but the stored body is Tu zapato."
+  },
+  {
+    "id": "5c2bf1fa-d616-4f19-abf4-c293a9dd4671",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Joyel, but the stored body is Tu zapato."
+  },
+  {
+    "id": "0cef5c4d-aa87-4bdf-b493-a9205cdcfd31",
+    "status": "source_mismatch",
+    "reason": "Catalog title says La cita II, but the stored body is Tu zapato."
+  },
+  {
+    "id": "db7973b9-d404-45ad-8ea5-db44069a528c",
+    "status": "source_mismatch",
+    "reason": "Catalog title says La iniciada, but the stored body is Tu zapato."
+  },
+  {
+    "id": "00c4d852-d0d7-434b-9f97-8cdd534de0c1",
+    "status": "source_mismatch",
+    "reason": "Catalog title says La niña de las naranjas, but the stored body is Tu zapato."
+  },
+  {
+    "id": "5494429e-1a88-4367-b524-cced1e5b111b",
+    "status": "source_mismatch",
+    "reason": "Catalog title says La voz apenas, but the stored body is Tu zapato."
+  },
+  {
+    "id": "2a201ea6-0700-4251-a787-4092d7553150",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Las copas, but the stored body is Tu zapato."
+  },
+  {
+    "id": "149237e0-ab57-4975-8d50-980749960df7",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Las manos, but the stored body is Tu zapato."
+  },
+  {
+    "id": "88ebfd05-c793-486e-822a-ecae8853e5bb",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Lelia, but the stored body is Tu zapato."
+  },
+  {
+    "id": "f0ffb002-4bfe-4c46-9890-8c72421d9dff",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Madrigales, but the stored body is Tu zapato."
+  },
+  {
+    "id": "ffba720c-0a2b-4c1f-a72b-c39230312464",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Maitines, but the stored body is Tu zapato."
+  },
+  {
+    "id": "afdb4593-1c53-410c-bb5d-e21b981dad13",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Nocturno, but the stored body is Tu zapato."
+  },
+  {
+    "id": "33f038a9-3aa4-45c0-9a4e-6ac08ea278d5",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Ofrenda, but the stored body is Tu zapato."
+  },
+  {
+    "id": "02cccabc-6ae0-42e2-b0e8-f9113bddd9be",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Pasión tardía, but the stored body is Tu zapato."
+  },
+  {
+    "id": "f6bb2247-223f-4004-83ad-17069f3dd831",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Perennidad, but the stored body is Tu zapato."
+  },
+  {
+    "id": "6ca8fda4-43e8-4e25-a7c1-d542f4125a3a",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Preludio, but the stored body is Tu zapato."
+  },
+  {
+    "id": "a3684a77-3454-466a-8644-0295cbe7568b",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Querella, but the stored body is Tu zapato."
+  },
+  {
+    "id": "8e1078dc-3050-448d-b5d3-d398e1dbe50d",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Renunciamiento, but the stored body is Tu zapato."
+  },
+  {
+    "id": "0d6817ed-f5ad-454c-bade-d48d944706d9",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Romance de la niña inocente, but the stored body is Tu zapato."
+  },
+  {
+    "id": "187b8568-6833-4eee-b0fd-7ddbcbca40b0",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Romance del estío, but the stored body is Tu zapato."
+  },
+  {
+    "id": "41028338-f808-4d9c-be1c-d1dd2258228a",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Rouge, but the stored body is Tu zapato."
+  },
+  {
+    "id": "4affcb17-8d45-42f4-8c07-45e424878887",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Se evaporó su nombre..., but the stored body is Tu zapato."
+  },
+  {
+    "id": "2b4fa31d-652b-4972-bc65-d22955eb310b",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Se extasiaban tus ojos en la espera..., but the stored body is Tu zapato."
+  },
+  {
+    "id": "d226ab8f-629b-49e8-861a-310fd6ce1780",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Soneto al amor I, but the stored body is Tu zapato."
+  },
+  {
+    "id": "3e750d78-289b-4520-b1c3-f7a0c41ba548",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Soneto al amor II, but the stored body is Tu zapato."
+  },
+  {
+    "id": "e7d8d313-e227-428d-a39e-4000a30d91e6",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Soneto al amor III, but the stored body is Tu zapato."
+  },
+  {
+    "id": "d1f9f7ee-d8ca-4a70-b2f1-5413c69d50ed",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Souvenir, but the stored body is Tu zapato."
+  },
+  {
+    "id": "bc40566a-0dc7-4429-b1f7-f0b0ec770e56",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Tu pie, but the stored body is Tu zapato."
+  },
+  {
+    "id": "481f12e2-bfd4-438a-848f-7bf70a293ec0",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Alguien que despierta, but the stored body is La mujer transparente."
+  },
+  {
+    "id": "05c64349-5c8e-4419-9bf3-6d05090c8bd0",
+    "status": "source_mismatch",
+    "reason": "Catalog title says En voz baja, but the stored body is La mujer transparente."
+  },
+  {
+    "id": "a1373284-f5b8-4011-a80f-b8afc821093e",
+    "status": "source_mismatch",
+    "reason": "Catalog title says He encontrado el secreto de tus ojos, but the stored body is La mujer transparente."
+  },
+  {
+    "id": "ea6a4308-a524-4cdf-b198-2d97f765bee0",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Horizonte líquido, but the stored body is La mujer transparente."
+  },
+  {
+    "id": "36019a2e-5693-4edb-af20-3e0e29ecdf71",
+    "status": "source_mismatch",
+    "reason": "Catalog title says La casa, but the stored body is La mujer transparente."
+  },
+  {
+    "id": "8e9304af-9513-4775-bf83-61d74a15980f",
+    "status": "source_mismatch",
+    "reason": "Catalog title says La certidumbre de existir, but the stored body is La mujer transparente."
+  },
+  {
+    "id": "918b1376-339d-40fa-ba34-9f09ebd02330",
+    "status": "source_mismatch",
+    "reason": "Catalog title says La fiesta de las arañas, but the stored body is La mujer transparente."
   }
 ]

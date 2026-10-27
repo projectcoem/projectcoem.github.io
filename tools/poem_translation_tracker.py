@@ -118,7 +118,9 @@ def sync():
         if poem["id"] not in completed_ids:
             continue
         translated = dict(poem)
-        translated["story_name"] = completed[poem["id"]]["translation"]["title"]
+        translated["story_name"] = completed[poem["id"]][
+            "translation"
+        ]["title"]
         poems.append(translated)
     author_ids = {poem["author_uuid"] for poem in poems}
     authors = [
@@ -263,9 +265,13 @@ def import_aliases(alias_path):
         reviewed = completed.get(reviewed_id)
         reviewed_source = sources.get(reviewed_id)
         if not source or not reviewed or not reviewed_source:
-            raise SystemExit(f"{target_id}: alias or reviewed source is missing")
+            raise SystemExit(
+                f"{target_id}: alias or reviewed source is missing"
+            )
         if source["hash"] != reviewed_source["hash"]:
-            raise SystemExit(f"{target_id}: alias body differs from reviewed translation")
+            raise SystemExit(
+                f"{target_id}: alias body differs from reviewed translation"
+            )
         output = json.loads(json.dumps(reviewed))
         output["metadata"] = source["source"].get("metadata", {})
         output["translation"]["title"] = alias["title"]

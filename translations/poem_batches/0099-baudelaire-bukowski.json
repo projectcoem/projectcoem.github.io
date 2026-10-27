@@ -1,0 +1,37 @@
+[
+  {
+    "id": "d7e80fd9-fd67-42cc-bfa8-5108c67d3e88",
+    "source_sha256": "c23117ecb8f30e94a4fea65c831aa6196445346b1349374934c7f7fcf28b1baf",
+    "title": "The Dog and the Flask",
+    "text": "\"My pretty dog, good dog, dear mutt, come here and breathe an excellent perfume, bought at the best perfumery in the city.\"\n\n\nAnd the dog, wagging his tail, a sign, I believe, that in those paltry beings corresponds to laughter and a smile, comes closer and curiously puts his wet nose to the uncorked flask; then, drawing back with sudden fear, barks at me as if reproaching me.\n\n\n\"Ah, miserable cur! If I had offered you a heap of excrement you would have sniffed it with delight, perhaps devouring it. Thus you, unworthy companion of my sad life, resemble the public, to whom one must never offer delicate perfumes that exasperate it, but carefully chosen garbage.\"",
+    "editorial_note": "The translation preserves Baudelaire's prose satire: the dog rejects perfume just as the public rejects delicate art."
+  },
+  {
+    "id": "90727031-677f-489d-8e46-87a6607901c7",
+    "source_sha256": "d91afbff1c7c8958bfa40be5f607153b38a5f08640b73d5841cc437532cd97c9",
+    "title": "Art",
+    "text": "When the\n\nspirit\n\nfades\n\nform\n\nappears.",
+    "editorial_note": "The translation keeps the stark lineation and aphoristic compression of the source."
+  },
+  {
+    "id": "244ed1e5-dc13-4cf5-a3c1-ea44026d4839",
+    "source_sha256": "62ce17e520f6efba69291615ae06606ff267ab8ec8ea1c9bc4bec2ee1af2a17e",
+    "title": "Dog",
+    "text": "a single dog\n\nwalking alone on a hot\n\nsummer\n\nsidewalk\n\nseems to have the power\n\nof ten thousand gods\n\n\nwhy is that?",
+    "editorial_note": "The translation preserves Bukowski's plain observation and final unadorned question."
+  },
+  {
+    "id": "4a8e2490-f9c6-45d3-ade8-f9610d93b1ce",
+    "source_sha256": "98d72fc9b02f3b3b34bd38a49c1a89834c468f1b7408f38718f8e22d134b594f",
+    "title": "Cause and Effect",
+    "text": "The best often die by\n\ntheir own hand\n\njust to escape,\n\nand those left behind\n\ncan never understand\n\nwhy anyone\n\nwould want\n\nto escape\n\nfrom\n\nthem.",
+    "editorial_note": "The translation keeps the short descending line breaks and the bitter final turn toward those left behind."
+  },
+  {
+    "id": "ff944dfe-bed1-45c2-b6fb-7ab4cce18fc3",
+    "source_sha256": "96ddfa557ba53f5d07f9955598f5e4ee387b04c93b2b2da693153248ebf210c0",
+    "title": "There Are Worse Things Than...",
+    "text": "there are worse things than\n\nbeing alone\n\nbut it often takes decades\n\nto realize it\n\nand more often\n\nwhen this happens\n\nit is too late\n\nand there is nothing worse\n\nthan\n\na too late",
+    "editorial_note": "The translation preserves the poem's conversational bluntness and the final noun-like 'too late.'"
+  }
+]

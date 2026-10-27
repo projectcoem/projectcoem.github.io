@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 576,
+    "words": 97,
+    "reading_time_min": 0.485
+  },
+  "text": "\"Whom do you love best, enigmatic man, tell me, your father, your mother, your sister, or your brother?\"\n\n\n\"I have neither father, nor mother, nor sister, nor brother.\"\n\n\n\"Your friends?\"\n\n\n\"You use a word whose meaning, to this day, I have not come to know.\"\n\n\n\"Your homeland?\"\n\n\n\"I do not know in what latitude it is situated.\"\n\n\n\"Beauty?\"\n\n\n\"Gladly would I love her, since she is goddess and immortal.\"\n\n\n\"Gold?\"\n\n\n\"I abhor it as you abhor God.\"\n\n\n\"Then whom do you love, extraordinary stranger?\"\n\n\n\"I love the clouds... the clouds that pass... over there... the marvelous clouds!\"",
+  "translation": {
+    "source_sha256": "3c7d35f9adc827ade938855a2ca3a83a416cc51e41ff2dfa36afdbad6a22b9fa",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "The Stranger",
+    "editorial_note": "The translation preserves the catechism-like dialogue and the stranger's final devotion to passing clouds."
+  }
+}

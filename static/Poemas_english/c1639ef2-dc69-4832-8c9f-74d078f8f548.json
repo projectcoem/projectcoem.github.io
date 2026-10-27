@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 131,
+    "words": 23,
+    "reading_time_min": 0.115
+  },
+  "text": "Calm sleeps in the harbor\n\nbeneath its lacquer quilt,\n\nwhile the moon in the sky\n\ndrives in its golden anchors.\n\n\nHeart,\n\nrow!",
+  "translation": {
+    "source_sha256": "d20640a4908ade831c44e6d9512e04fb111238ab818e409e41899eb64d56c72e",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Calm Sleeps in the Harbor...",
+    "editorial_note": "The translation keeps the compact nautical image and the sudden command to the heart."
+  }
+}

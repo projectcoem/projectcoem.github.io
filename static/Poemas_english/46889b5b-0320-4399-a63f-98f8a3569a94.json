@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 428,
+    "words": 74,
+    "reading_time_min": 0.37
+  },
+  "text": "I had died for Beauty;\n\nsilence and solitude enclosed me,\n\nwhen they laid near my grave\n\nsomeone who died for Truth.\n\n\nIn the gentle colloquy we began,\n\nneighbors in the gloomy estate,\n\nhe told me and I understood: We are brothers;\n\nBeauty and Truth are one.\n\n\nAnd so, beneath the night, behind the stone,\n\nour transparent brotherhood conversed\n\nuntil ivy covered our faces\n\nand eternity erased our names.",
+  "translation": {
+    "source_sha256": "b95ae0f681cf4dc3b8671557697556f42d97b3f6d233acf85f827eb3446862a1",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Colloquy",
+    "editorial_note": "The translation follows the Spanish Dickinson version and keeps the grave-dialogue between Beauty and Truth."
+  }
+}

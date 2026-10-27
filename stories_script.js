@@ -9,6 +9,8 @@ const SPANISH_STORY_URL = "https://estevefact.github.io/stories-info.html";
 let storySearchItems = [];
 let storySearchIndex = [];
 let activeNarrationHighlighter = null;
+let discoveryController = null;
+let readingPositionTracker = null;
 const SEARCH_SUGGESTION_LIMIT = 30;
 
 async function fetchJSON(path) {
@@ -233,6 +235,7 @@ function updateBookmarkButton() {
 async function loadStory(storyId, options = {}) {
   const story = storyCatalog[storyId];
   if (!story) return;
+  readingPositionTracker?.suspend();
   activeNarrationHighlighter?.destroy();
   activeNarrationHighlighter = null;
   const requestId = ++activeStoryLoad;
@@ -257,13 +260,17 @@ async function loadStory(storyId, options = {}) {
     renderRelatedAuthors(story.author);
     renderRecommendations(storyId);
     setAudio(storyId, data.text || "", requestId, document.getElementById("popup-audio"));
-    ReaderFeatures.updateURL("story", storyId, story.title);
+    ReaderFeatures.updateURL("story", storyId, story.title, options.historyMode ?? "push");
     if (options.record !== false) ReaderFeatures.recordHistory("story", model);
     renderLibrary();
     updateBookmarkButton();
+    updateContinueReading();
     document.getElementById("reader-status").textContent =
       `Loaded ${story.title}, by ${story.author.id}.`;
-    if (options.scroll !== false) {
+    discoveryController?.setCollapsed(options.collapse !== false);
+    const restored = options.restore !== false && readingPositionTracker?.restore(storyId);
+    if (!restored) readingPositionTracker?.resume();
+    if (!restored && options.scroll !== false) {
       requestAnimationFrame(() => {
         ReaderFeatures.navigateToReadingStart(document.getElementById("cuentoTitle"));
       });
@@ -272,6 +279,7 @@ async function loadStory(storyId, options = {}) {
     if (requestId !== activeStoryLoad) return;
     textContainer.textContent = "This story could not be loaded.";
     console.error(error);
+    readingPositionTracker?.resume();
   } finally {
     if (requestId === activeStoryLoad) {
       document.getElementById("container-cuento").setAttribute("aria-busy", "false");
@@ -323,6 +331,19 @@ function setupSearch() {
 
 function setupControls() {
   ReaderFeatures.applyPreferences();
+  discoveryController = ReaderFeatures.createDiscoveryController({
+    panel: document.getElementById("discovery-panel"),
+    toggle: document.getElementById("discovery-toggle"),
+    readingTarget: document.getElementById("cuentoTitle")
+  });
+  readingPositionTracker = ReaderFeatures.createReadingPositionTracker(
+    "story", () => currentStory?.id,
+    { getAnchor: () => document.getElementById("cuentoText") }
+  );
+  const continueButton = document.getElementById("continue-reading");
+  continueButton.addEventListener("click", () => {
+    if (continueButton.dataset.id) loadStory(continueButton.dataset.id);
+  });
   document.getElementById("theme-toggle").addEventListener("click", () => {
     const current = ReaderFeatures.getPreferences().theme;
     ReaderFeatures.setTheme(current === "dark" ? "light" : "dark");
@@ -349,6 +370,17 @@ function setupControls() {
   });
 }
 
+function updateContinueReading() {
+  const saved = ReaderFeatures.getLatestReadingPosition("story", currentStory?.id);
+  const story = saved && storyCatalog[saved.id];
+  const button = document.getElementById("continue-reading");
+  button.hidden = !story || story.id === currentStory?.id;
+  if (story && !button.hidden) {
+    button.dataset.id = story.id;
+    button.textContent = `Continue reading “${story.title}”`;
+  }
+}
+
 async function initializeStories() {
   try {
     gData = await fetchJSON("static/storyReaderCatalog.json");
@@ -361,7 +393,13 @@ async function initializeStories() {
     const requested = ReaderFeatures.getItemFromURL("story");
     const initialId = StoriesCore.chooseInitialStoryId(requested, storyCatalog);
     updateSpanishCounterpart(initialId);
-    if (initialId) await loadStory(initialId, { scroll: false });
+    if (initialId) await loadStory(initialId, {
+      scroll: false,
+      restore: Boolean(requested),
+      collapse: Boolean(requested),
+      historyMode: "replace"
+    });
+    updateContinueReading();
     loadCoemPortraitAnimator(() => {
       const story = currentStory && storyCatalog[currentStory.id];
       if (story) resetAuthorImage(story.author.image);
@@ -389,5 +427,12 @@ async function initializeStories() {
     console.error(error);
   }
 }
+
+window.addEventListener("popstate", () => {
+  const requested = ReaderFeatures.getItemFromURL("story");
+  if (requested && storyCatalog[requested] && requested !== currentStory?.id) {
+    loadStory(requested, { historyMode: false, collapse: true });
+  }
+});
 
 initializeStories();

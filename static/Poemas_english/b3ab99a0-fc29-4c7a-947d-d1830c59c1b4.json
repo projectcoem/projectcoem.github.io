@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 254,
+    "words": 45,
+    "reading_time_min": 0.225
+  },
+  "text": "let us say you won the race\n\nand that the prize\n\nwas another race,\n\nthat you did not drink the wine of victory\n\nbut your own salt,\n\nthat you never heard cheers\n\nbut dogs barking,\n\nand that your shadow,\n\nyour own shadow,\n\nwas your only\n\nand disloyal competitor.",
+  "translation": {
+    "source_sha256": "97a2c9e685f295c20e4f7409089e58c39067335a16bb2929b540e9d14c5743ff",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Curriculum Vitae",
+    "editorial_note": "The translation keeps the mock-biographical structure and the self as disloyal rival."
+  }
+}

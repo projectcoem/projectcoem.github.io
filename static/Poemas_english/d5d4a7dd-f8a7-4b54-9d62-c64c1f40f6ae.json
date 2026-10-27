@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 225,
+    "words": 34,
+    "reading_time_min": 0.17
+  },
+  "text": "Our poems cannot\n\nbe published yet\n\n\nThey circulate from hand to hand\n\nin manuscript\n\n\nOr copied on mimeograph\n\nbut one day\n\n\nthe name will be forgotten\n\nof the dictator against whom\n\nthey were written,\n\n\nAnd they will go on being read.",
+  "translation": {
+    "source_sha256": "0802d0510e444663aa839d45f793f191f7185f4a966a4c233c1e14b7cefdd062",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Our Poems Cannot",
+    "editorial_note": "The translation preserves the contrast between clandestine circulation and the poems' longer life beyond the dictator."
+  }
+}

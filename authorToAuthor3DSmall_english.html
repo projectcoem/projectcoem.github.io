@@ -691,27 +691,30 @@
       }
     }
   </style>
+  <link rel="stylesheet" href="site_chrome.css?v=3">
 </head>
 
 <body>
   <div id="appbar">
+    <div class="center-section coem-home-slot">
+      <a class="coem-home-link" href="index.html#archive" aria-label="COEM, main menu"><img src="Coem.png" alt="" /></a>
+    </div>
     <div id="title-1">
       Authors relationships
       <button id="toggle-popup-btn" onclick="togglePopup();" title="Toggle Popup">
         See Author
       </button>
     </div>
-    <div class="center-section">
-      <img src="Coem.png" alt="Coem" />
-    </div>
     <div class="dropdown-2 Stories-Authors-btn" id="dropdown-general">
       <button class="dropbtn-general" id="Stories-Authors-btn"> Explore Coem </button>
       <div class="dropdown-content-2">
+        <span data-filter="home" onclick="window.location.href='index.html#archive'">Main menu</span>
+        <span data-filter="oracle" onclick="window.location.href='literary-guesser.html'">Literary Oracle</span>
         <span 
         data-filter="stories-authors" onclick="window.location.href='authorToAuthor3D.html'">See all authors
         </span>
         <span 
-        data-filter="stories-embeddings" onclick="window.location.href='embeddings.html'" > Explore embeddings
+        data-filter="stories-embeddings" onclick="window.location.href='embeddings.html'" > Explore literary map
         </span>
         <span 
         data-filter="Poems" onclick="window.location.href='poems-info.html'" > Explore Poems

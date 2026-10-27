@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 724,
+    "words": 105,
+    "reading_time_min": 0.525
+  },
+  "text": "Seven Lives\n\nTo Mrs. María A. S. de Fontán\n\n\nI have seven lives, I have seven lives.\n\nSeven lives of gold;\n\nlovely and florid.\n\nHead cut off, head replaced:\n\nMy tree-spirit\n\nsprouts again in the siesta.\n\n\nPurple dragon of flowering claws,\n\nseven lives I have, I have seven\n\nlives.\n\nGiants and dwarfs: cut off my heads,\n\nthey will grow stubborn as\n\nthe weeds.\n\n\nI have seven lives, I have seven lives,\n\nseven lives of gold lovely and\n\nflorid\n\n\nthat irons tire and swords notch,\n\nyet one day they will be forever\n\nfelled.\n\n\nThe prince I await will dry\n\nthe seven flowering heads. Without\n\nabracadabras,\n\nthe winged dragon will lose its lives\n\nbeneath the slender edge of\n\nsweet words.",
+  "translation": {
+    "source_sha256": "4c428e206f802175f0b2623ffb94d968e526ece323e8dd9686929b3b0675118f",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Love",
+    "editorial_note": "The catalog title says Love, but the embedded source is Seven Lives, so the internal heading is preserved."
+  }
+}

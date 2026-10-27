@@ -4,6 +4,18 @@ const fs = require("node:fs");
 const path = require("node:path");
 const ReaderFeatures = require("../reader_features.js");
 
+test("reading positions are bounded and malformed indexes fail safely", () => {
+  const type = `position-${Date.now()}`;
+  ReaderFeatures.storageSet("coem:reader-position:v1:index", { old: "shape" });
+  assert.equal(ReaderFeatures.getLatestReadingPosition(type), null);
+  ReaderFeatures.saveReadingPosition(type, "a", 125, 2);
+  ReaderFeatures.saveReadingPosition(type, "b", 250, 2);
+  ReaderFeatures.saveReadingPosition(type, "c", 375, 2);
+  assert.equal(ReaderFeatures.getReadingPosition(type, "a"), null);
+  assert.equal(ReaderFeatures.getLatestReadingPosition(type, "c").id, "b");
+  assert.equal(ReaderFeatures.getReadingPosition(type, "c").scrollTop, 375);
+});
+
 test("bookmarks toggle on and off without duplicating an item", () => {
   const type = `test-${Date.now()}`;
   const item = { id: "one", title: "Uno", author: "Autora" };

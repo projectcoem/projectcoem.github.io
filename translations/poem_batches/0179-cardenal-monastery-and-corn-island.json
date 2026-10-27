@@ -1,0 +1,37 @@
+[
+  {
+    "id": "683e9d95-ca28-41d7-b56e-98c4c1fac84b",
+    "source_sha256": "22afb75fa8daddb11c29670e961d57f76bee0c32673105996f96bde274d63283",
+    "title": "Behind the Monastery",
+    "text": "Behind the monastery, beside the road,\n\nthere is a cemetery of worn-out things,\n\nwhere rusty iron lies, pieces\n\nof crockery, broken pipes, twisted wires,\n\nempty cigarette packs, sawdust\n\nand zinc, aged plastic, broken tires,\n\nwaiting like us for the resurrection.",
+    "editorial_note": "The translation keeps the discard pile as a cemetery of objects waiting for resurrection."
+  },
+  {
+    "id": "3c7b2919-5168-4958-a876-6c66be4e6a58",
+    "source_sha256": "ff83577dc705fbdce38e0ae8ee3a0233783564b6a7275922c9b27776bfdf0651",
+    "title": "Epigram",
+    "text": "In losing you, you and I have lost:\n        I, because you were what I loved most,\n        and you, because I was the one who loved you most.\n\n\n        But of the two of us, you lose more than I do:\n        because I will be able to love others as I loved you,\n        but you will not be loved as I loved you.",
+    "editorial_note": "This source preserves the indented epigram form while matching the already translated argument about unequal loss."
+  },
+  {
+    "id": "3f9c3a4d-783f-432f-acae-5cd0106d235a",
+    "source_sha256": "01eb884958c45206ec2e57f4e92a2707e3dda5395184194762d6122ec38e1459",
+    "title": "Corn Island",
+    "text": "The water of South\n\nWest Bay is bluer\n\nthan the sky\n\n\nbut your eyes are\n\nbluer than\n\nSouth West Bay\n\n\nAnd in the caves of\n\n(...)\n\nMay rains\n\nhave already arrived,\n\n\nthe red malinches\n\nhave bloomed again\n\n\nAnd the road to\n\nDiriá is cheerful\n\nfull of puddles;\n\n\nbut you are no longer\n\nwith me",
+    "editorial_note": "The translation preserves the Caribbean place names, the ellipsis, and the final absence after the rains return."
+  },
+  {
+    "id": "2fa1fd8f-bd6c-40ce-8c0c-478e514eb910",
+    "source_sha256": "8aa274f500dd72658109499e24ddc14d005107fe82ec6ccadb62fb124b0d31ca",
+    "title": "I Who Have Had the Bad Luck",
+    "text": "I who have had the bad luck\n\nthat God fell in love with me.\n\nI have been left out of the erotic game.\n\nOthers in those games will laugh at me.\n\nWhen my love in Granada\n\nwas unlimited, were you jealous?\n\nMy sexual desires have been and are\n\nonly analogies of my love for you.\n\nI think my sexual desires please you.",
+    "editorial_note": "The translation keeps the poem's frank erotic theology and its address to God as beloved."
+  },
+  {
+    "id": "83dd53fe-79ff-4757-9b2a-5632ffff50c0",
+    "source_sha256": "9a1c07eb50d60cdc8b777dc9e2c470373ce0eb8c0e217c21727d343f4e19ee9e",
+    "title": "Song",
+    "text": "My long hair!\n\nMy long hair!\n\n\nYou wanted your\n\ngirl with\n\nlong hair\n\n\nI have it below\n\nmy shoulders\n\n\nDo you think this corner\n\nof the guava seller\n\n\nwhere you found me\n\nwith terror and with joy\n\n\n(although you only showed\n\npaleness and silence)\n\n\nwill be erased by\n\nLos Angeles,\n\nles Champs—Elysees?",
+    "editorial_note": "The translation keeps the remembered street corner against glamorous later geographies."
+  }
+]

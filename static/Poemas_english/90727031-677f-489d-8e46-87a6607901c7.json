@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 56,
+    "words": 8,
+    "reading_time_min": 0.04
+  },
+  "text": "When the\n\nspirit\n\nfades\n\nform\n\nappears.",
+  "translation": {
+    "source_sha256": "d91afbff1c7c8958bfa40be5f607153b38a5f08640b73d5841cc437532cd97c9",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Art",
+    "editorial_note": "The translation keeps the stark lineation and aphoristic compression of the source."
+  }
+}

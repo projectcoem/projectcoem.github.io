@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 580,
+    "words": 100,
+    "reading_time_min": 0.5
+  },
+  "text": "The wind blows hard tonight\n\nAnd it is a cold wind\n\nAnd I think of the boys\n\nOn the street.\n\nI hope some of them have\n\nA bottle of red wine.\n\n\nWhen you are on the street\n\nThat is when you realize that\n\nEverything\n\nHas an owner\n\nAnd that there are locks on\n\nEverything.\n\nThis is how democracy works:\n\nYou take what you can,\n\nTry to keep it\n\nAnd add something\n\nIf possible.\n\n\nThis is also how\n\nDictatorship works\n\nOnly one enslaves\n\nAnd the other destroys its\n\nDisinherited.\n\n\nWe simply forget\n\nOur own.\n\n\nIn any case\n\nIt is a wind\n\nHard\n\nAnd cold.",
+  "translation": {
+    "source_sha256": "a9a8d9ee351f6c831c240f3864bb8047be02ad56544cdf4da72a0362b9d6c072",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "The Wind Blows Hard Tonight...",
+    "editorial_note": "The translation keeps the street-level comparison of democracy, dictatorship, ownership, and forgetting the dispossessed."
+  }
+}

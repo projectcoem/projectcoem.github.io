@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 58,
+    "words": 10,
+    "reading_time_min": 0.05
+  },
+  "text": "In every grain of sand there is a mountain's collapse.",
+  "translation": {
+    "source_sha256": "f9db98b0225eee4c7558d5467ac072d4f150516b53eb31e69d22b451e75dbd66",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "In Every Grain of Sand...",
+    "editorial_note": "The translation keeps the aphorism's compression from mountain to grain."
+  }
+}

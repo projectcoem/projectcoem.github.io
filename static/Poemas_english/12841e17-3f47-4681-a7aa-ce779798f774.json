@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 155,
+    "words": 25,
+    "reading_time_min": 0.125
+  },
+  "text": "When\n\nwe embrace\n\nwe go\n\nto another world\n\nwhere\n\nwe embrace\n\nand march\n\ntoward an afterworld\n\nwhere\n\nwe embrace\n\nand where perhaps we only\n\nembrace.",
+  "translation": {
+    "source_sha256": "b0fca62b876b9b3cf547644d71bb67403330a461b1e1bf6c045441f770cd8608",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "When...",
+    "editorial_note": "The translation keeps the poem's repeated embrace as a movement into another world and beyond it."
+  }
+}

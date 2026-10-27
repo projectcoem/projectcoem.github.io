@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 237,
+    "words": 43,
+    "reading_time_min": 0.215
+  },
+  "text": "I have returned by the grassless path.\n\nI go to the river in search of my shadow.\n\nWhat solitude sealed by cold moon.\n\nWhat solitude of water without red sirens.\n\nWhat solitude of acid pines, wandering...\n\nI go to gather up my eyes\n\nabandoned on the shore.",
+  "translation": {
+    "source_sha256": "81fe54b9e167df5d1b5d8b2516cb15ab1624f69dc1509aa41a12149691997e4d",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Absence of the Lover",
+    "editorial_note": "The translation keeps the moon-sealed solitude and the abandoned eyes on the riverbank."
+  }
+}

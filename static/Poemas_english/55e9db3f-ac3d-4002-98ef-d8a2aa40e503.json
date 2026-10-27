@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 220,
+    "words": 38,
+    "reading_time_min": 0.19
+  },
+  "text": "I do not want the curved pipe,\n\nnor your embroidered handkerchief,\n\nnor the roses on Sundays,\n\nnor the little basket with fish.\n\n\nAnd I will leave this port\n\nfor another distant port\n\nso that you cannot say:\n\nThe fisherwoman is my lover!",
+  "translation": {
+    "source_sha256": "85736eb56651284a95ca8e00001d1f3a3d3286cd4a2e7c8fb6a85bb9fe1fa07c",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "The Fisherwoman",
+    "editorial_note": "The translation keeps the fisherwoman's refusal as a clean escape from being claimed."
+  }
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "2439d4d6-ca72-40b2-80ca-86ba545dc7e3",
+    "source_sha256": "f2c03be86757586b3715a46fef3afbf8242bf9222f2f003fc62ea32baa74a613",
+    "title": "Automobile",
+    "text": "Automobile\n\nA cantata of horns.\n\nGlowworm down the shadowed street.\n\nShining eyes beneath the cold night.\n\nCity reptile sliding swiftly by.",
+    "editorial_note": "The translation keeps Méndez's urban-machine imagery: horn music, glowworm, eyes, and reptile."
+  },
+  {
+    "id": "e7eea1cd-ba02-43fe-981b-6092a31d43c4",
+    "source_sha256": "b81f00a82aa407b3f774c8e8a91bd0d749fcfc842a4095d251135c8dad1e0d90",
+    "title": "Alameda",
+    "text": "Alameda:\n\nkeep safe\n\nmy first seven years.\n\n\nAnd the seven\n\nthat followed.\n\n\nAnd the luminous carousel\n\nof my first loves.\n\n\nAlameda;\n\nfor one day I will return\n\nto gather the finest\n\nor dreams? of my childhood.",
+    "editorial_note": "The translation keeps Alameda as a remembered place holding childhood, first loves, and uncertain dreams."
+  },
+  {
+    "id": "55e9db3f-ac3d-4002-98ef-d8a2aa40e503",
+    "source_sha256": "85736eb56651284a95ca8e00001d1f3a3d3286cd4a2e7c8fb6a85bb9fe1fa07c",
+    "title": "The Fisherwoman",
+    "text": "I do not want the curved pipe,\n\nnor your embroidered handkerchief,\n\nnor the roses on Sundays,\n\nnor the little basket with fish.\n\n\nAnd I will leave this port\n\nfor another distant port\n\nso that you cannot say:\n\nThe fisherwoman is my lover!",
+    "editorial_note": "The translation keeps the fisherwoman's refusal as a clean escape from being claimed."
+  },
+  {
+    "id": "562e41e8-5cbc-41c3-a357-6486e0c4359c",
+    "source_sha256": "46b5d2c7e964cfb0c4cac222f679f24dc1eb14adcf2e7f8ca1e403630877c961",
+    "title": "Ghosts of Ice and Shadow",
+    "text": "Ghosts of ice and shadow,\n\nanimated and soulless,\n\nsurround me everywhere,\n\nwherever I may go.\n\n\nThey surround me and pursue me,\n\nbut they never make me cower,\n\nbecause against the ice they set before me,\n\nI set fire or flame.\n\n\nWith them I am in mourning,\n\nin mourning that does not end.",
+    "editorial_note": "The translation preserves the duel between ice-shadow ghosts and the speaker's answering flame."
+  },
+  {
+    "id": "c680b12d-6774-44e6-827c-e61736992763",
+    "source_sha256": "748343232341099e127a60a081e056d192e6bd2d6c0122ef7da1d3b411871937",
+    "title": "Madrigal",
+    "text": "Come to me, for you come wounded,\n\nfor on this bed of dreams\n\nyou can rest with me.\n\n\nCome, for it is already midnight,\n\nand there is no clock of oblivion\n\nto pour its chimes\n\ninto my aching breast.\n\n\nI was waiting for your return.\n\nFrom an angle of my life\n\na voiceless voice announced it to me.",
+    "editorial_note": "The translation keeps the madrigal as a nocturnal invitation to a wounded beloved."
+  }
+]

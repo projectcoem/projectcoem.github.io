@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 661,
+    "words": 114,
+    "reading_time_min": 0.57
+  },
+  "text": "She writes\n\ncontinually\n\nlike a long sprayer\n\nspraying\n\nthe air,\n\nand argues\n\ncontinually;\n\nthere is nothing\n\nI can say\n\nthat is not really\n\nsomething else,\n\nthen,\n\nI stop talking;\n\nand finally\n\nshe argues with herself\n\noutside the door\n\nsaying\n\nsomething like\n\nI am not trying to\n\nimpress myself\n\nthrough you.\n\n\nbut I know\n\nshe will be\n\nback, they always\n\ncome back.\n\n\nand\n\nat 5 p.m.\n\nshe was knocking at the door.\n\nI let her in\n\n\nI won't stay long, she said,\n\nif you don't want me to.\n\nit's all right, I said,\n\nI'm going to take a\n\nbath.\n\n\nshe went to the kitchen and\n\nstarted on the\n\ndishes.\n\n\nlike being married,\n\nyou accept\n\neverything\n\nas if it had\n\nbeen that way.",
+  "translation": {
+    "source_sha256": "bcbdba3e20b7692edb00420569c9e194f6f5739511a5544a2a850ebd80c16488",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "She Writes...",
+    "editorial_note": "The translation keeps the domestic loop of argument, return, dishes, and resignation."
+  }
+}

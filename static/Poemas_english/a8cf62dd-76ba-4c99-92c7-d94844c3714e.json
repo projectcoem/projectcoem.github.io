@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 183,
+    "words": 28,
+    "reading_time_min": 0.14
+  },
+  "text": "I contemplate\n\nthe cold mountain,\n\nthe slow peace,\n\nthe summit...\n\n\nYet I would return\n\nto walk\n\nthe same road,\n\nto love the same land\n\ndeep and dispossessed,\n\npassionately\n\nthe same uncertainty.",
+  "translation": {
+    "source_sha256": "3ac69192cec7319e66eea08f650f7be58ec5eb01c62eac15f50e72466cdfe071",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "I Contemplate",
+    "editorial_note": "The translation keeps the quiet turn from contemplation back into uncertainty."
+  }
+}

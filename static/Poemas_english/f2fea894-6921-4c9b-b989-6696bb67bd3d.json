@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 108,
+    "words": 19,
+    "reading_time_min": 0.095
+  },
+  "text": "Someone said that \"laughter\n\nis the great burier.\"\n\nSomething is being buried in me\n\nbecause I laugh at every hour.",
+  "translation": {
+    "source_sha256": "daad0fc4068457bea8d677357be78e4d2de7c81b3ce36ed1fb93d4b51d8b4b34",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Someone Said That Laughter...",
+    "editorial_note": "The translation keeps Méndez's compact paradox of laughter as a sign of hidden burial."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 129,
+    "words": 22,
+    "reading_time_min": 0.11
+  },
+  "text": "Seek your\n\n        hard bed, O body\n\n        of silver.\n\n        In one hand roses and in the other\n\n        sour fruits.\n\nFrom\n\n        \"\" 1964 - 1968",
+  "translation": {
+    "source_sha256": "3bc33a2759f6f12d8538c527a1f7cb84182ec471a2663718c55bd42e646a1cf7",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Stony Ground",
+    "editorial_note": "The translation keeps the sparse layout and preserves the source's empty quotation in the collection note."
+  }
+}

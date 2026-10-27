@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 486,
+    "words": 89,
+    "reading_time_min": 0.445
+  },
+  "text": "A Rodrigón always at odds\n\nwith the fawning crowd of pages;\n\na poor steward who oils himself,\n\nand a damned accountant who brags;\n\n\nA lady whom idleness adorns,\n\nand others always dressed to the nines in white;\n\na wrinkled, beetle-browed duenna\n\nwho fills the assembly with gossip;\n\n\nA conjurer who quarrels, steals, and lies,\n\na cook from this same dough,\n\na great insolent rabble of liveries;\n\n\nMuch envy, flattery without measure,\n\nand the great lord who serves only\n\nas witness to the vice of his house.",
+  "translation": {
+    "source_sha256": "c1b96a325269cae26ccde3543381d5973a9b4cfe689fd480e0cdf8e96ba2d823",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "The House of a Grandee",
+    "editorial_note": "The translation keeps the household inventory as a satirical anatomy of aristocratic vice."
+  }
+}

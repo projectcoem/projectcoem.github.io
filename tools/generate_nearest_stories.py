@@ -41,7 +41,18 @@ def main():
         metadata = list(csv.DictReader(handle, delimiter="\t"))
 
     row_to_story = {}
-    story_metadata = {}
+    existing_metadata_path = ROOT / "static/storyReaderMetadata.json"
+    story_metadata = (
+        json.loads(existing_metadata_path.read_text())
+        if existing_metadata_path.exists()
+        else {}
+    )
+
+    def set_reading_time(story_id, value):
+        entry = dict(story_metadata.get(story_id, {}))
+        if "readingTime" not in entry:
+            entry["readingTime"] = float(value)
+        story_metadata[story_id] = entry
     used = set()
     for row_number, row in enumerate(metadata):
         candidates = [
@@ -62,9 +73,7 @@ def main():
         ]
         story_id = (matching or candidates)[0][0]
         row_to_story[row_number] = story_id
-        story_metadata[story_id] = {
-            "readingTime": float(row["Reading time (min)"] or 0),
-        }
+        set_reading_time(story_id, float(row["Reading time (min)"] or 0))
         used.add(story_id)
 
     tensors = np.loadtxt(
@@ -128,14 +137,14 @@ def main():
             )
             if story_file.exists():
                 story_data = json.loads(story_file.read_text())
-                story_metadata[story_id] = {
-                    "readingTime": float(
+                set_reading_time(
+                    story_id,
+                    float(
                         story_data.get("metadata", {}).get(
-                            "reading_time_min",
-                            0,
+                            "reading_time_min", 0
                         )
-                    )
-                }
+                    ),
+                )
 
     output = ROOT / "static/storyEmbeddingNeighbors.json"
     serialized = json.dumps(

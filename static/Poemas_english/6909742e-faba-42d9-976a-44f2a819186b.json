@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 142,
+    "words": 26,
+    "reading_time_min": 0.13
+  },
+  "text": "Take off your hat\n\nif you have one\n\ntake off the hair\n\nthat abandons you\n\ntake off your skin\n\nyour guts your eyes\n\nand put on a soul\n\nif you find one.",
+  "translation": {
+    "source_sha256": "93358aa2d13fe1a72912977d14727e6a612d40910fa76873a9a325eac5f81109",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Take Off Your Hat...",
+    "editorial_note": "The translation keeps Varela's stripping imperative and the stark final condition."
+  }
+}

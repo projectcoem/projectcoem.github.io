@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 193,
+    "words": 40,
+    "reading_time_min": 0.2
+  },
+  "text": "And still I dare to love\n\nthe sound of light in a dead hour,\n\nthe color of time on an abandoned wall.\n\n\nIn my gaze I have lost everything.\n\nIt is so far to ask. So near to know there is nothing.",
+  "translation": {
+    "source_sha256": "ed12fc3f15a353945c0a72515e0d93678ae758ff19ab5e5e9a8a38116242d255",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Beggar Voice",
+    "editorial_note": "The final sentence preserves the original's stark opposition between asking and knowing absence."
+  }
+}

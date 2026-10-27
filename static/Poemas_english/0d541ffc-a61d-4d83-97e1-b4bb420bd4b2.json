@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 170,
+    "words": 27,
+    "reading_time_min": 0.135
+  },
+  "text": "The song you asked me for,\n\nI composed it and here it is;\n\nsing it low and sadly:\n\nshe sleeps (forever); the song will lull her.\n\n\nSing it low and sadly,\n\nsing it...",
+  "translation": {
+    "source_sha256": "dc707e5603f197591e867a47da215b2fe2a4aa63cf8ca2cf0f50754627855cd7",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "The Song You Asked Me For...",
+    "editorial_note": "This related version preserves the same brief song while retaining its catalog title."
+  }
+}

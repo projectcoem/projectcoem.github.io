@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 496,
+    "words": 85,
+    "reading_time_min": 0.425
+  },
+  "text": "The child dearest to Venus went out\n\nto his accustomed gentle conquest,\n\nand, delayed in returning to his dwelling,\n\nhis beautiful mother took him for lost.\n\n\nShe goes out, runs, asks after Cupid,\n\nimpatient, anxious, frightened,\n\ncolor withered, hair disheveled;\n\nin Cyprus she sought him, in Paphos and Cnidus.\n\n\nShe seeks him among the nymphs she venerates\n\nas most beautiful, in forest, river, meadow;\n\nshe seeks him among the nymphs the sea breeds.\n\n\nShe touched the bank of Father Tormes,\n\nand found him here, hanging from the snowy\n\nneck of most beautiful María.",
+  "translation": {
+    "source_sha256": "1598bfb92e9f0d5df1358f457ca12ad3d7680687ef2f4515ca8c56a6728323d3",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Lost Love",
+    "editorial_note": "The translation keeps the playful mythological search for Cupid ending at María's neck by the Tormes."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 466,
+    "words": 87,
+    "reading_time_min": 0.435
+  },
+  "text": "Canoe upriver,\n\ncanoe downriver.\n\nThe rich man lives off the poor\n\nand the poor man off his work.\n\n\nThe fisherman fishes\n\nwhat he cannot\n\nand keeps checking\n\nthe longlines.\n\n\nCanoe upriver,\n\ncanoe downriver,\n\nhe starves\n\nwith his work.\n\n\nThe fisherman fishes\n\nwhat he does not want:\n\nhis misery of children\n\ndying on him.\n\n\nCanoe upriver,\n\ncanoe downriver.\n\nThe rich man lives off the poor\n\nand the poor man off his work.\n\n\nAnd here a period must be put:\n\nthe woman suffers it\n\nfor all of them together.",
+  "translation": {
+    "source_sha256": "f84f76a17bc10f4ef196a4a2b5f5318875ed31e4c63d1db2354c9bfd37283e7d",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Canoe",
+    "editorial_note": "The translation keeps the river-song refrain and the economic critique of fishing labor and family suffering."
+  }
+}

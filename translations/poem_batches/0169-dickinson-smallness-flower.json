@@ -1,0 +1,37 @@
+[
+  {
+    "id": "8971ff2a-cb69-43b0-924f-b89d59778930",
+    "source_sha256": "40cd155c19a6d24249a7eb7fbbe259d75cdb52b2449bfce97801fa6eb39e09ce",
+    "title": "Smallness",
+    "text": "Our weeping is such a small thing;\n\nsighs are such a small thing...\n\nAnd yet, for such small things,\n\nyou and we die.",
+    "editorial_note": "The translation keeps the Spanish version's stark contrast between tiny gestures and mortal consequence."
+  },
+  {
+    "id": "5437bf9a-8428-4ec9-b2b3-f69725f9fabd",
+    "source_sha256": "46f752e9b3db98a6af21eaee40271ee1050344a5d2b6f3019b82d8761c662b47",
+    "title": "Foreboding",
+    "text": "it is that long shadow\n\nthat little by little advances over\n\n        the grass\n\nwhen the sun abandons its empires...\n\n\nit is the faint whisper\n\nthat runs through the fearful grass\n\n        to tell it that night is coming.",
+    "editorial_note": "The source credits Carlos López Narváez's Spanish version; the translation keeps the shadow and grass-whisper structure."
+  },
+  {
+    "id": "6987527a-3f98-439c-b7cf-6a79e3eb40db",
+    "source_sha256": "82613163adbf226710fcc0e90b1561ec087bbe5f21c2090feb7c039fd6c370f1",
+    "title": "Certainty",
+    "text": "I have never seen a wasteland,\n\nand the sea I never came to see,\n\nbut I have seen the eyes of the heather,\n\nand I know what the waves must be.\n\n\nI have never spoken with God,\n\nnor visited Him in Heaven,\n\nbut I am sure where I am traveling,\n\nas if the route had been given to me.",
+    "editorial_note": "The translation follows the Spanish version's confidence in unseen landscape and destination."
+  },
+  {
+    "id": "c9191e4f-c6f8-4857-9bfb-9ed7f2e0dd59",
+    "source_sha256": "0f64fab4f180a7f3f9393f246e1a014839faeed9cd222f6f1a6074e849db462d",
+    "title": "It Is Good to Dream. To Wake Is Better...",
+    "text": "It is good to dream. To wake is better\n\nif one wakes in the morning.\n\nIf we wake at midnight,\n\nit is better to dream of dawn.\n\n\nSweeter the imagined robin\n\nthat never gladdened the tree\n\nthan to face the solidity of a dawn\n\nthat leads to no day at all.",
+    "editorial_note": "The translation keeps the waking/dreaming paradox and the imagined robin against a dayless dawn."
+  },
+  {
+    "id": "3ff5bbe0-d218-4160-94c8-9c37c70731f1",
+    "source_sha256": "a08f5ad02ed54b725ebf951cea9de18dc1ba683b08a074a933b2071a20388b0a",
+    "title": "In My Flower I Have Hidden...",
+    "text": "In my flower I have hidden\n\nso that, if you carried me on your breast,\n\nwithout suspecting it, I too would be there...\n\nAnd only the angels will know the rest.\n\n\nIn my flower I have hidden\n\nso that, when I slip from your vase,\n\nyou, without knowing it, may feel\n\nalmost the loneliness I have left you.",
+    "editorial_note": "The translation keeps the flower as secret presence and later absence."
+  }
+]

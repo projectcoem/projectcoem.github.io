@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 163,
+    "words": 29,
+    "reading_time_min": 0.145
+  },
+  "text": "Lost in the fog,\n\nthe hummingbird and its lover.\n\nTwo stones hurled\n\nby desire\n\nmeet in the air.\n\nThe broom is alive,\n\nburning in the fog, inhabited.",
+  "translation": {
+    "source_sha256": "d1a509c6510ea20205ddd52bb9a53fa2395e6e1a1938c239aad35b4fb383060d",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Weddings",
+    "editorial_note": "The translation preserves the brief collision of desire and the living broom burning in fog."
+  }
+}

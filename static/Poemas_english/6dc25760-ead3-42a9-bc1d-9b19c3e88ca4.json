@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 511,
+    "words": 91,
+    "reading_time_min": 0.455
+  },
+  "text": "In Costa Rica\n\nthe oxcart drivers sing\n\n\nThey walk with\n\nmandolins on the roads\n\n\nAnd the carts\n\nare painted like macaws,\n\n\nAnd the oxen go\n\nwith colored ribbons\n\n\nAnd little bells\n\nand flowers on their horns.\n\n\nWhen it is the coffee\n\nharvest in Costa Rica,\n\n\nAnd the carts go\n\nloaded with coffee.\n\n\nAnd there are bands\n\nin the town squares,\n\n\nAnd in San José\n\nthe balconies and windows\n\nare full of girls and flowers\n\n\nAnd the girls\n\ncircle around in the park.\n\n\nAnd the president\n\nwalks on foot\n\nin San José.",
+  "translation": {
+    "source_sha256": "c7a54734e564fb953938d6fce12042a9f51d7c262e1873b7830804fa91b244e7",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "In Costa Rica",
+    "editorial_note": "The translation keeps the civic contrast of a singing, walkable Costa Rica with a president on foot."
+  }
+}

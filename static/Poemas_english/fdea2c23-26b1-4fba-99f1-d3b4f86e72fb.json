@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 516,
+    "words": 103,
+    "reading_time_min": 0.515
+  },
+  "text": "Everything is well: the green in the meadow,\n\nthe air with its diamond whistle,\n\nand in the air the drawing branch,\n\nand upward through the light the palm tree.\n\n\nEverything is well: the forehead that waits for me,\n\nthe blue with its walking sky,\n\nthe damp red in the loving mouth,\n\nand the homeland's wind in the flag.\n\n\nWell that the infant should be among dreams,\n\nthat January should be blue and that I should sing.\n\nWell the rose on its clear palfrey.\n\n\nIt is well that one should live and die.\n\nThe Sun, the Moon, the whole creation,\n\nexcept my heart, everything is well.",
+  "translation": {
+    "source_sha256": "96376098295ad388365542a139f7da0ec93995a055963b024d95cad7f2243f6a",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Sonnet with One Exception",
+    "editorial_note": "The translation keeps the poem's orderly inventory of goodness until the final exception of the heart."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 180,
+    "words": 31,
+    "reading_time_min": 0.155
+  },
+  "text": "The fever of my arms has already completed a day's march\n\nand the lions of my poetic spirit are still standing:\n\nmuscles alert for new claw-strokes\n\nand lungs firm for new roars.",
+  "translation": {
+    "source_sha256": "2c8a1fe21a0cf0cb89e1746d5fd2544d0f4f585d915bbefd8d420ca1f10a25a7",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "First Station",
+    "editorial_note": "The translation keeps the brief stanza's muscular image of poetic force still ready after labor."
+  }
+}

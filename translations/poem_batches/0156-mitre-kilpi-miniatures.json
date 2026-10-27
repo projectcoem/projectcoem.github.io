@@ -1,0 +1,37 @@
+[
+  {
+    "id": "be40a35e-0451-42db-92b0-b2a3d87e0952",
+    "source_sha256": "672ab1ae284095e73810c45a0c632e42cd80818a76ae481d94ded35f1a041054",
+    "title": "Sonata",
+    "text": "Eyes that discover\n\n        the voice of things.\n\n\n\n        Ears that hear\n\n        the passing of roses.\n\n\n\n        Smell that fuses everything\n\n        into a single aroma.\n\n\n\n        Tongue that longs for\n\n        the taste of another.\n\n\n\n        Body the absence\n\n        suffered by the four\n\n\n\n        senses that carry it.\n\n        Body that barely enjoys.\n\n\n\n        It lacks touch.\n\n        It has too much memory.",
+    "editorial_note": "The translation keeps Mitre's sequence of senses and the final imbalance between missing touch and excess memory."
+  },
+  {
+    "id": "9bfd872e-3f79-4667-ba32-a21bc9ca691b",
+    "source_sha256": "442641d65b54e346df545014e9683e03ba748965d1651407fb1ecf88c64317c3",
+    "title": "Sonata",
+    "text": "Sonata\n\n\n\n        Eyes that discover\n\n        the voice of things.\n\n\n\n        Ears that hear\n\n        the passing of roses.\n\n\n\n        Smell that fuses everything\n\n        into a single aroma.\n\n\n\n        Tongue that longs for\n\n        the taste of another.\n\n\n\n        Body the absence\n\n        suffered by the four\n\n\n\n        senses that carry it.\n\n        Body that barely enjoys.\n\n\n\n        It lacks touch.\n\n        It has too much memory.",
+    "editorial_note": "The source catalog title differs, but the body is 'Sonata'; this version preserves the visible heading."
+  },
+  {
+    "id": "a5da7a0a-691f-48c0-9c17-48a44c02922e",
+    "source_sha256": "61318464fff4e179b16796a0ce56f06c1f5d57588ab476dabcd513656ff29580",
+    "title": "It Is Better That We Met Now",
+    "text": "It is better that we met now.\n\nIf we had met earlier\n\nwe would already be separated.",
+    "editorial_note": "The translation keeps Kilpi's plain, aphoristic compression."
+  },
+  {
+    "id": "f74f4555-c28e-43e1-836e-9f229c819572",
+    "source_sha256": "75d3e6784758285d51903fcb60b53356b41fea7065702f836df5dd9aa766d7dd",
+    "title": "Now I Wash Last Summer's Semen Off Me...",
+    "text": "Now I wash last summer's semen off me.\n\nLittle, but still\n\nit is a pity.\n\nNot everything suited me,\n\nand the winter is long.",
+    "editorial_note": "The translation keeps the poem's stark bodily image and dry turn toward winter."
+  },
+  {
+    "id": "885b37e5-e3c8-4bdb-b2a7-a4c2784b67ea",
+    "source_sha256": "be780a736ad62b7eb46ae97c7b8c2aef31ea49d46f8107f94e15dd2ccdcd0368",
+    "title": "Love Is the Most Elastic Human Dimension",
+    "text": "Love is the most elastic human dimension.\n\nIt is like the vagina:\n\nit adapts to large and small.\n\n\nNature does not disappoint.",
+    "editorial_note": "The translation preserves Kilpi's frank analogy and clipped conclusion."
+  }
+]

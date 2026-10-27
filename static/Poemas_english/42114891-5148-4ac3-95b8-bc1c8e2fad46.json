@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 189,
+    "words": 35,
+    "reading_time_min": 0.175
+  },
+  "text": "The absent ones blow and the night is dense. The night has the color of the dead man's eyelids.\n\n\nAll night I make the night. All night I write. Word by word I write the night.",
+  "translation": {
+    "source_sha256": "751d38443088a8b45090ee85eab5e05ccf402c3bcf2b081ba602ef0afeaa26b0",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Deaf Lantern",
+    "editorial_note": "The translation keeps Pizarnik's incantatory repetition of night as both action and substance."
+  }
+}

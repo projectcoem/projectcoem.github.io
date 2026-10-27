@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 502,
+    "words": 95,
+    "reading_time_min": 0.475
+  },
+  "text": "I was placed in a poor cradle,\n\nbadly swaddled in coarse baize,\n\nfrom which I came out robust and well tempered,\n\nmy rustic hide much toughened.\n\n\nTo nature I have owed\n\nmore than the lord, the rich man, and the magnate,\n\nfor she made him delicate and restless,\n\nand me, with ease, well sturdy.\n\n\nHe covers himself in silk, which does not warm;\n\nI resist inclemency with wool;\n\nhe is frightened and fatigued by eating,\n\n\nwhile I am happy if I flatter my conscience,\n\nfor I fill my belly at every hour,\n\ntrusting that there is God and providence.",
+  "translation": {
+    "source_sha256": "f33ced0aaad9030dad295fda871456e3a88fa857657ba77436e05618a5b5e3c1",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Roguish Life",
+    "editorial_note": "The translation keeps the poem's rustic self-defense against aristocratic delicacy."
+  }
+}

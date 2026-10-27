@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 180,
+    "words": 30,
+    "reading_time_min": 0.15
+  },
+  "text": "Some shots\n\nwere heard last night\n\n\nThey were heard\n\nfrom the cemetery side.\n\n\nNobody knows\n\nwhom they killed,\n\nor whether they killed them.\n\nNobody knows anything.\n\n\nSome shots were heard\n\nlast night.\n\n\nThat is all.",
+  "translation": {
+    "source_sha256": "7f051b237ec44e8b23cc1d895cfc459ef3b43fcbf34225ff42345b68261053a4",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "They Were Heard",
+    "editorial_note": "The translation keeps the poem's report-like restraint and the uncertainty around the killing."
+  }
+}

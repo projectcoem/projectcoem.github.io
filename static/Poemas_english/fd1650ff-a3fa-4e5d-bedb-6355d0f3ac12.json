@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 572,
+    "words": 100,
+    "reading_time_min": 0.5
+  },
+  "text": "The little jackets flame, glittering,\n\nthe light over the clothes trembles and slips,\n\nand the banderillas feign pyrotechnics\n\nand the crimson gala capes feign dawns.\n\n\nThe sun burns in the panels of the parasols,\n\nthe bugle exhales its howl of death,\n\nand the matador, before charros and mantillas,\n\noffers and dedicates the beast that bellows.\n\nMeanwhile a little lady, all nervous,\n\ncovers with her hands her beautiful face\n\n\nframed by silk and gold ringlets,\n\nand half-opens her slight fingers like a fan,\n\nto see behind that grille, without fear,\n\nhow the noble blood of the bull springs forth.",
+  "translation": {
+    "source_sha256": "b06cf90452df769cdfc0b5937a6b2e359b949cad9b111a59f71eb3bf25924e59",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "The Little Jackets Flame, Glittering...",
+    "editorial_note": "This first-line version preserves the same bullfight tableau and fan-like viewing gesture."
+  }
+}

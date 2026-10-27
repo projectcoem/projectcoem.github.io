@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 576,
+    "words": 101,
+    "reading_time_min": 0.505
+  },
+  "text": "Soft mist over the hill;\n\ntomorrow there will be no storm.\n\nNo; the day has grown tired of weeping,\n\nhas already spent its store of silent sadness.\n\n\nOh, I have returned to the days of my childhood,\n\nI am a child again;\n\nand beneath the paternal roof that shelters me,\n\nbeside the old entrance door,\n\n\nI watch this cloudy evening fall\n\nafter a rainy day.\n\nBlue mists, sweet summer mists,\n\ndim the mountains far away.\n\n\nMoisture soaks the tall green grass,\n\nthick as tears in the morning;\n\nand breaths of fragrance pass as in dreams,\n\nrecalling other times.",
+  "translation": {
+    "source_sha256": "0e8c568e3cd47050fd3642c49bd22c0a86fc15c9ad88b2e7d5c4d88f6f14c673",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Soft Mist over the Hill",
+    "editorial_note": "The translation keeps the misty return to childhood and the rain-soaked sensory memory."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 148,
+    "words": 28,
+    "reading_time_min": 0.14
+  },
+  "text": "And if someday the air comes good\n\nand everything lights up,\n\nnothing can be hoped for.\n\n\nThe heart itself refuses flight.\n\npain weighs more than joy.",
+  "translation": {
+    "source_sha256": "f40d7923e041f4c17723b35372565249ff0c52b25cc8c946f42053896a0c20b4",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "And If Someday",
+    "editorial_note": "The translation keeps the poem's blunt refusal of consolation."
+  }
+}

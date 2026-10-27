@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 186,
+    "words": 36,
+    "reading_time_min": 0.18
+  },
+  "text": "Each word a leaf\n\nIn the right place.\n\n\nA flower now and then\n\nOn the open branch.\n\n\nA bird seemed\n\nStanding and near.\n\n\nBut no: for the verse went and came\n\nThrough the universe.",
+  "translation": {
+    "source_sha256": "10fbb1a1efb2528a7de173c229399144c3eb3a6cdc901f1292ecd69572399536",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Each Word a Leaf",
+    "editorial_note": "The translation keeps Meireles's compact craft image: word, leaf, flower, bird, and verse moving through the universe."
+  }
+}

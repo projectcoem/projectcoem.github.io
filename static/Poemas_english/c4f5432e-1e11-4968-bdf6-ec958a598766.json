@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 230,
+    "words": 40,
+    "reading_time_min": 0.2
+  },
+  "text": "He opens his mouth,\n\nit is red inside.\n\nShe opens her eyes,\n\nher cornea is white\n\nlike the moon.\n\n\nIt stays still,\n\nthe cornea moon,\n\nbarely illuminating\n\nthe well-beloved gum.\n\n\nInside,\n\nwith silence,\n\nwith mouth closed,\n\nin the dark,\n\nboth dwell.",
+  "translation": {
+    "source_sha256": "29afef1abf6679ad9c77d7c6124adc2a0555aabe1adfb1767bb9d0f2256cd711",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Dialogue",
+    "editorial_note": "The translation keeps the bodily close-up and the silent interior where both figures dwell."
+  }
+}

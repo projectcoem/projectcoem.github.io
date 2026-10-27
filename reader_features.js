@@ -19,6 +19,55 @@
     try { localStorage.setItem(key, JSON.stringify(value)); } catch { /* private mode */ }
   }
 
+  function storageRemove(key) {
+    delete memory[key];
+    try { localStorage.removeItem(key); } catch { /* private mode */ }
+  }
+
+  const READING_POSITION_INDEX = "coem:reader-position:v1:index";
+
+  function readingPositionKey(type, id) {
+    return `coem:reader-position:v1:${type}:${id}`;
+  }
+
+  function saveReadingPosition(type, id, scrollTop, max = 100) {
+    if (!type || !id || !Number.isFinite(Number(scrollTop))) return null;
+    const entry = {
+      type: String(type), id: String(id),
+      scrollTop: Math.max(0, Math.round(Number(scrollTop))), updatedAt: Date.now()
+    };
+    const key = readingPositionKey(entry.type, entry.id);
+    storageSet(key, entry);
+    const storedIndex = storageGet(READING_POSITION_INDEX, []);
+    const index = (Array.isArray(storedIndex) ? storedIndex : [])
+      .filter(item => item && item.key !== key && typeof item.key === "string");
+    index.unshift({ key, updatedAt: entry.updatedAt });
+    index.slice(Math.max(1, max)).forEach(item => storageRemove(item.key));
+    storageSet(READING_POSITION_INDEX, index.slice(0, Math.max(1, max)));
+    return entry;
+  }
+
+  function getReadingPosition(type, id) {
+    const entry = storageGet(readingPositionKey(type, id), null);
+    if (!entry || entry.type !== type || entry.id !== id ||
+        !Number.isFinite(Number(entry.scrollTop)) || Number(entry.scrollTop) < 0 ||
+        Number(entry.scrollTop) > 100000000 || !Number.isFinite(Number(entry.updatedAt))) return null;
+    return { ...entry, scrollTop: Number(entry.scrollTop) };
+  }
+
+  function getLatestReadingPosition(type, excludeId = null) {
+    const storedIndex = storageGet(READING_POSITION_INDEX, []);
+    const index = Array.isArray(storedIndex) ? storedIndex : [];
+    for (const item of index) {
+      if (!item || typeof item.key !== "string") continue;
+      const entry = storageGet(item.key, null);
+      if (entry?.type === type && entry.id !== excludeId && entry.id &&
+          Number.isFinite(Number(entry.scrollTop)) && Number(entry.scrollTop) > 0 &&
+          Number(entry.scrollTop) <= 100000000 && Number.isFinite(Number(entry.updatedAt))) return entry;
+    }
+    return null;
+  }
+
   function recordHistory(type, item, max = 30) {
     const key = `coem:${type}:history`;
     const history = storageGet(key, []).filter(entry => entry.id !== item.id);
@@ -53,11 +102,89 @@
     return new URL(location.href).searchParams.get(type);
   }
 
-  function updateURL(type, id, title) {
+  function updateURL(type, id, title, mode = "replace") {
     const url = new URL(location.href);
     url.searchParams.set(type, id);
-    history.replaceState({ type, id }, "", url);
+    if (mode === "push") history.pushState({ type, id }, "", url);
+    else if (mode === "replace") history.replaceState({ type, id }, "", url);
     document.title = `${title} · Coem`;
+  }
+
+  function createDiscoveryController({ panel, toggle, readingTarget, mobileQuery = "(max-width: 680px)" }) {
+    if (!panel || !toggle) return null;
+    const media = typeof matchMedia === "function" ? matchMedia(mobileQuery) : { matches: false };
+    let collapsed = false;
+    function render() {
+      const shouldHide = collapsed && media.matches;
+      panel.hidden = shouldHide;
+      toggle.setAttribute("aria-expanded", String(!shouldHide));
+      toggle.textContent = shouldHide ? "Search and filters" : "Hide search and filters";
+      document.documentElement.classList.toggle("reader-discovery-collapsed", shouldHide);
+    }
+    function setCollapsed(value, { focusReading = false } = {}) {
+      collapsed = Boolean(value);
+      render();
+      if (collapsed && focusReading && media.matches) {
+        requestAnimationFrame(() => navigateToReadingStart(readingTarget, "smooth"));
+      }
+    }
+    toggle.addEventListener("click", () => {
+      setCollapsed(!collapsed);
+      if (!collapsed) panel.querySelector("input, select, button")?.focus();
+    });
+    if (typeof media.addEventListener === "function") media.addEventListener("change", render);
+    render();
+    return { setCollapsed, isCollapsed: () => collapsed && media.matches };
+  }
+
+  function createReadingPositionTracker(type, getId, { delay = 250, getAnchor = () => null } = {}) {
+    let timer = null;
+    let restoring = false;
+    let suspended = false;
+    let restoreToken = 0;
+    function save() {
+      if (timer) clearTimeout(timer);
+      timer = null;
+      if (restoring || suspended) return;
+      const id = getId();
+      const anchor = getAnchor();
+      if (!id || !anchor) return;
+      const pageTop = window.scrollY || document.documentElement.scrollTop || 0;
+      const anchorTop = pageTop + anchor.getBoundingClientRect().top;
+      const offset = Math.max(0, Math.min(anchor.scrollHeight, pageTop - anchorTop));
+      saveReadingPosition(type, id, offset);
+    }
+    function onScroll() {
+      if (timer) clearTimeout(timer);
+      timer = setTimeout(save, delay);
+    }
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("pagehide", save);
+    return { save, suspend() {
+      save();
+      suspended = true;
+      restoring = false;
+      restoreToken += 1;
+    }, resume() {
+      suspended = false;
+    }, restore(id) {
+      const position = getReadingPosition(type, id);
+      if (!position) { suspended = false; return false; }
+      const token = ++restoreToken;
+      restoring = true;
+      suspended = false;
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        if (token !== restoreToken || getId() !== id) return;
+        const anchor = getAnchor();
+        if (anchor) {
+          const pageTop = window.scrollY || document.documentElement.scrollTop || 0;
+          const anchorTop = pageTop + anchor.getBoundingClientRect().top;
+          window.scrollTo({ top: anchorTop + position.scrollTop, behavior: "auto" });
+        }
+        setTimeout(() => { if (token === restoreToken) restoring = false; }, 100);
+      }));
+      return true;
+    } };
   }
 
   function getPreferences() {
@@ -205,10 +332,12 @@
   }
 
   return {
-    storageGet, storageSet, recordHistory, toggleBookmark, isBookmarked, getLibrary,
+    storageGet, storageSet, storageRemove, recordHistory, toggleBookmark, isBookmarked, getLibrary,
+    readingPositionKey, saveReadingPosition, getReadingPosition, getLatestReadingPosition,
     getItemFromURL, updateURL, getPreferences, applyPreferences, setTheme,
     changeFontSize, shareCurrent, formatTime, normalizeText, matchesFilters,
     filterItems, buildFilterIndex, filterIndexedItems, randomItem,
-    navigateToReadingStart, toast, englishMetadata
+    navigateToReadingStart, createDiscoveryController, createReadingPositionTracker,
+    toast, englishMetadata
   };
 });

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 303,
+    "words": 59,
+    "reading_time_min": 0.295
+  },
+  "text": "In losing you, you and I have lost:\n        I, because you were what I loved most,\n        and you, because I was the one who loved you most.\n\n\n        But of the two of us, you lose more than I do:\n        because I will be able to love others as I loved you,\n        but you will not be loved as I loved you.",
+  "translation": {
+    "source_sha256": "ff83577dc705fbdce38e0ae8ee3a0233783564b6a7275922c9b27776bfdf0651",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Epigram",
+    "editorial_note": "This source preserves the indented epigram form while matching the already translated argument about unequal loss."
+  }
+}

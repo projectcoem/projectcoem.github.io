@@ -19,6 +19,50 @@ html, body, button, input, select, textarea, summary {
 
 #appbar button, #appbar a, #appbar summary { font-family: var(--coem-font) !important; }
 
+.coem-home-link {
+  box-sizing: border-box;
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 4px;
+  border-radius: 6px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.coem-home-link img,
+#appbar .coem-home-link img {
+  display: block;
+  width: 64px !important;
+  max-width: none !important;
+  height: auto;
+}
+
+.coem-home-link:hover { background: rgba(255,255,255,.14); }
+
+.coem-home-link:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+
+#appbar > .coem-home-link { order: -1; }
+
+#appbar .coem-home-slot {
+  position: static !important;
+  left: auto !important;
+  display: flex !important;
+  flex: 0 0 auto;
+  order: -1;
+  margin-right: 12px;
+  transform: none !important;
+}
+
+.author-map-page #appbar #title-1 { margin-right: auto; }
+.author-map-page .detail-home-link { display: none; }
+
 #filter-button, .dropbtn {
   border: 1px solid var(--coem-header) !important;
   background: var(--coem-header) !important;
@@ -110,9 +154,9 @@ html, body, button, input, select, textarea, summary {
     transform: none;
   }
 
-  .author-map-page .center-section {
-    display: none;
-  }
+  .author-map-page .center-section { display: flex; }
+
+  .author-map-page #appbar .coem-home-link img { width: 50px !important; }
 
   .author-map-page #toggle-popup-btn {
     min-width: 76px;

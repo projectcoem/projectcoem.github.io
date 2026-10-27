@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 228,
+    "words": 41,
+    "reading_time_min": 0.205
+  },
+  "text": "It seemed to me that the flames of your eyes\n\nwould fly with me until dawn.\n\nI could not understand the color\n\nof your strange eyes.\n\nEverything around was pulsing.\n\nI never knew whether you were my enemy or my friend,\n\nor whether now it was winter or summer.",
+  "translation": {
+    "source_sha256": "5fdfd194077b5cad9a04371088cefdceee89cbc97983317f62b8e04cc4e044e8",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Fragment",
+    "editorial_note": "The translation preserves the fragment's disorientation around eyes, allegiance, and season."
+  }
+}

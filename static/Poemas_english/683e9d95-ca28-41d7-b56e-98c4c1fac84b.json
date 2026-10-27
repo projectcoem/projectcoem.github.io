@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 303,
+    "words": 41,
+    "reading_time_min": 0.205
+  },
+  "text": "Behind the monastery, beside the road,\n\nthere is a cemetery of worn-out things,\n\nwhere rusty iron lies, pieces\n\nof crockery, broken pipes, twisted wires,\n\nempty cigarette packs, sawdust\n\nand zinc, aged plastic, broken tires,\n\nwaiting like us for the resurrection.",
+  "translation": {
+    "source_sha256": "22afb75fa8daddb11c29670e961d57f76bee0c32673105996f96bde274d63283",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Behind the Monastery",
+    "editorial_note": "The translation keeps the discard pile as a cemetery of objects waiting for resurrection."
+  }
+}

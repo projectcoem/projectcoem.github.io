@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 153,
+    "words": 25,
+    "reading_time_min": 0.125
+  },
+  "text": "My tender kitten\n\nmy tender kitten!\n\n\nhow they make\n\nmy tender kitten tremble\n\n\nmy caresses on her face\n\nand her neck\n\n\nAnd your murders\n\nand tortures!",
+  "translation": {
+    "source_sha256": "ce361f4d88a20aac95ae53d92b249064af55b552a83cb2cde2ce1395eda250d4",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "My Tender Kitten...",
+    "editorial_note": "The translation keeps the abrupt collision between private tenderness and public violence."
+  }
+}

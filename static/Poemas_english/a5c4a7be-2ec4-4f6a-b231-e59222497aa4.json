@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 251,
+    "words": 44,
+    "reading_time_min": 0.22
+  },
+  "text": "But still he could see you, an echo\n\nthat would fall groping\n\nwith the antenna of words, back\n\nof separation.\n\n\nHis softly resigned face,\n\nthe lamp that would burn;\n\nbut suddenly there rises\n\ninside me a flame\n\nin which you whisper with pain. No. Never.",
+  "translation": {
+    "source_sha256": "b0cca0e0c0b45f3595e4010a8e6d55c1e7eb1d5a3facd4f594610472859c4c68",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Words of Paul Celan",
+    "editorial_note": "The translation keeps the Celan-like broken image of words as antenna and separation as a back."
+  }
+}

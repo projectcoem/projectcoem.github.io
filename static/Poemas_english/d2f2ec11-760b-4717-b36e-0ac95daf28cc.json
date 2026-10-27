@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 409,
+    "words": 79,
+    "reading_time_min": 0.395
+  },
+  "text": "If I have lost life, time, everything\n\nI threw, like a ring, into the water,\n\nif I have lost my voice in the thicket,\n\nthe word remains to me.\n\n\nIf I have suffered thirst, hunger, everything\n\nthat was mine and turned out to be nothing,\n\nif I have reaped the shadows in silence,\n\nthe word remains to me.\n\n\nIf I opened my lips to see the pure\n\nand terrible face of my homeland,\n\nif I opened my lips until I tore them,\n\nthe word remains to me.",
+  "translation": {
+    "source_sha256": "e5a4a6e873aead2734bcaf2a7db7cff85652e711e8a3628ce0ff75f1100d0fd2",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "In the Beginning",
+    "editorial_note": "The translation preserves the repeated claim that after every loss, the word remains."
+  }
+}

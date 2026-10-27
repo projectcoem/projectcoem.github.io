@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const SPANISH_POEM_URL = "https://estevefact.github.io/poems-info.html";
   let poemSearchItems = [];
   let poemSearchIndex = [];
+  let discoveryController = null;
+  let readingPositionTracker = null;
   const SEARCH_SUGGESTION_LIMIT = 30;
 
   async function fetchJSON(path) {
@@ -185,6 +187,7 @@ document.addEventListener("DOMContentLoaded", () => {
   async function loadPoem(poemId, options = {}) {
     const poem = poemCatalog[poemId];
     if (!poem) return;
+    readingPositionTracker?.suspend();
     const requestId = ++activePoemLoad;
     const text = document.getElementById("poemText");
     document.getElementById("container-poem").setAttribute("aria-busy", "true");
@@ -203,13 +206,17 @@ document.addEventListener("DOMContentLoaded", () => {
       renderMoreByAuthor(poem);
       renderRelatedAuthors(author);
       renderRecommendations(poemId);
-      ReaderFeatures.updateURL("poem", poemId, poem.story_name);
+      ReaderFeatures.updateURL("poem", poemId, poem.story_name, options.historyMode ?? "push");
       if (options.record !== false) ReaderFeatures.recordHistory("poem", model);
       renderLibrary();
       updateBookmarkButton();
+      updateContinueReading();
       document.getElementById("reader-status").textContent =
         `Loaded ${poem.story_name}, by ${model.author}.`;
-      if (options.scroll !== false) {
+      discoveryController?.setCollapsed(options.collapse !== false);
+      const restored = options.restore !== false && readingPositionTracker?.restore(poemId);
+      if (!restored) readingPositionTracker?.resume();
+      if (!restored && options.scroll !== false) {
         requestAnimationFrame(() => {
           ReaderFeatures.navigateToReadingStart(document.getElementById("poemTitle"));
         });
@@ -218,6 +225,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (requestId !== activePoemLoad) return;
       text.textContent = "This poem could not be loaded.";
       console.error(error);
+      readingPositionTracker?.resume();
     } finally {
       if (requestId === activePoemLoad) {
         document.getElementById("container-poem").setAttribute("aria-busy", "false");
@@ -269,6 +277,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function setupControls() {
     ReaderFeatures.applyPreferences();
+    discoveryController = ReaderFeatures.createDiscoveryController({
+      panel: document.getElementById("discovery-panel"),
+      toggle: document.getElementById("discovery-toggle"),
+      readingTarget: document.getElementById("poemTitle")
+    });
+    readingPositionTracker = ReaderFeatures.createReadingPositionTracker(
+      "poem", () => currentPoem?.id,
+      { getAnchor: () => document.getElementById("poemText") }
+    );
+    const continueButton = document.getElementById("continue-reading");
+    continueButton.addEventListener("click", () => {
+      if (continueButton.dataset.id) loadPoem(continueButton.dataset.id);
+    });
     document.getElementById("theme-toggle").addEventListener("click", () => {
       const current = ReaderFeatures.getPreferences().theme;
       ReaderFeatures.setTheme(current === "dark" ? "light" : "dark");
@@ -293,6 +314,17 @@ document.addEventListener("DOMContentLoaded", () => {
       if (item) loadPoem(item.id);
       else ReaderFeatures.toast("No poems match those filters");
     });
+  }
+
+  function updateContinueReading() {
+    const saved = ReaderFeatures.getLatestReadingPosition("poem", currentPoem?.id);
+    const poem = saved && poemCatalog[saved.id];
+    const button = document.getElementById("continue-reading");
+    button.hidden = !poem || poem.id === currentPoem?.id;
+    if (poem && !button.hidden) {
+      button.dataset.id = poem.id;
+      button.textContent = `Continue reading “${poem.story_name}”`;
+    }
   }
 
   function setDiscoveryReady(ready) {
@@ -338,6 +370,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setupSearch();
     setDiscoveryReady(true);
     refreshCurrentPoemFeatures();
+    updateContinueReading();
   }
 
   async function initialize() {
@@ -352,7 +385,9 @@ document.addEventListener("DOMContentLoaded", () => {
         hydrateCatalog(startupPool);
         const initialId = StoriesCore.chooseInitialStoryId(null, poemCatalog);
         updateSpanishCounterpart(initialId);
-        if (initialId) await loadPoem(initialId, { scroll: false });
+        if (initialId) await loadPoem(initialId, {
+          scroll: false, restore: false, collapse: false, historyMode: "replace"
+        });
         fullDataPromise = fetchJSON("static/poems_english.json");
       } else {
         fullDataPromise = fetchJSON("static/poems_english.json");
@@ -362,7 +397,12 @@ document.addEventListener("DOMContentLoaded", () => {
           ? requested
           : StoriesCore.chooseInitialStoryId(null, poemCatalog);
         updateSpanishCounterpart(initialId);
-        if (initialId) await loadPoem(initialId, { scroll: false });
+        if (initialId) await loadPoem(initialId, {
+          scroll: false,
+          restore: initialId === requested,
+          collapse: initialId === requested,
+          historyMode: "replace"
+        });
       }
       loadCoemPortraitAnimator(() => {
         const poem = currentPoem && poemCatalog[currentPoem.id];
@@ -379,6 +419,13 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error(error);
     }
   }
+
+  window.addEventListener("popstate", () => {
+    const requested = ReaderFeatures.getItemFromURL("poem");
+    if (requested && poemCatalog[requested] && requested !== currentPoem?.id) {
+      loadPoem(requested, { historyMode: false, collapse: true });
+    }
+  });
 
   initialize();
 });

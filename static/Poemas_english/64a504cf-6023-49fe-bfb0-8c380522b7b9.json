@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 520,
+    "words": 86,
+    "reading_time_min": 0.43
+  },
+  "text": "Full of fright, a poor little chieftain\n\nwas reading in the official gazette\n\nhow there is no place left that does not submit\n\nto the invincible power of Castile.\n\n\nOf insurgents not even a seed remains;\n\nthe bayonet disemboweled them all,\n\nand the fatal catalog is completed\n\nby his own name in italic type.\n\n\nOf how he was beaten, captured, and killed,\n\nand how they minced him to pieces,\n\nhe reread the story two and three times;\n\n\nso much that, at last, taking it for true,\n\nthe poor little fellow exclaimed contritely:\n\n\"So it is like that? Well, may God rest my soul.\"",
+  "translation": {
+    "source_sha256": "dc9dcb6ad6dc8ceda9e8590c56d92d64b9c31d8d82d28802bd61e7d9123bb783",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "God Rest My Soul",
+    "editorial_note": "The translation keeps Bello's satirical punch line as the frightened reader accepts his printed death."
+  }
+}

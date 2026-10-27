@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 409,
+    "words": 68,
+    "reading_time_min": 0.34
+  },
+  "text": "Letrilla\n\n\nTell me, shepherd lads,\n\nwhat power can there be\n\nin Lesbia's eyes,\n\nthat they hurt me so?\n\nSince first I saw them\n\nI do not know rest;\n\nI lost my repose,\n\nI cannot keep still.\n\nSurely they must hold\n\nsome hidden fire,\n\nfor when they look at me,\n\nI feel myself burn.\n\nYet this fire gives\n\nno discomfort,\n\nbut only...\n\nI cannot explain it.\n\nTell me, shepherd lads,\n\nwhat power can there be\n\nin Lesbia's eyes,\n\nthat they hurt me so?",
+  "translation": {
+    "source_sha256": "06055e2f0726085d26bab11f083b10db2886335190ac505908fd44b578154cde",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "To Lucianela",
+    "editorial_note": "The translation regularizes the broken catalog lineation while keeping the letrilla's refrain and pastoral address."
+  }
+}
