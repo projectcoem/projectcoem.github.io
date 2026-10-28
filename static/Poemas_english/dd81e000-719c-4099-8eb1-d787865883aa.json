@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 825,
+    "words": 143,
+    "reading_time_min": 0.715
+  },
+  "text": "Sometimes, in dreams, my spirit pretends\n\nscenes from distant lives:\n\nI was\n\nan Egyptian satrap with a sphinx-like face,\n\nwearing a golden miter, and I lived in Memphis.\n\n\nOnce dead, my soul continued its erratic flight,\n\nwearing in Jerusalem, and unfaithful to Osiris,\n\nthe two-horned miter and the hieratic ephod\n\nof the great priest of the God of Israel.\n\n\nThen I raised my prayers with the druid\n\nand in sacred forest Velleda loved me.\n\nI was a Merovingian king with a flowering beard;\n\nan iron crown encircled my brow.\n\n\nLater, troubadour of noble feudal lords,\n\nI sang their deeds, their feats of honor,\n\nI ate at their table, and at a thousand bacchanals\n\nfelt myself drunk with wine and love.\n\nAnd yesterday, an austere, elusive prior,\n\n\nI brought my trembling lips to the Eucharistic God:\n\ntherefore I preserve pious traces,\n\nand seek retreat, following the sages,\n\nand suffer immense nostalgias for faith.",
+  "translation": {
+    "source_sha256": "247464a1d42c4288df9306f1b8d19ba7fcb0707ec8af479df3a1a3e1b1280bb7",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Sometimes, in Dreams, My Spirit Pretends...",
+    "editorial_note": "The source punctuation is compressed in “Y ayer, prior esquivo y austero los labios / al Dios eucarístico, temblando acerqué”; the translation reads it as the speaker, an austere and elusive prior, bringing trembling lips to the Eucharistic God."
+  }
+}

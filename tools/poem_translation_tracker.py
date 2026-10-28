@@ -25,6 +25,11 @@ def source_hash(text):
     return hashlib.sha256(compact_text(text).encode("utf-8")).hexdigest()
 
 
+def selection_key(text):
+    """Collapse whitespace only when deciding whether text needs translation."""
+    return " ".join(text.split())
+
+
 def load_catalog():
     return json.loads(CATALOG_PATH.read_text())
 
@@ -35,6 +40,16 @@ def load_exclusions():
     return {
         entry["id"]: entry
         for entry in json.loads(EXCLUSIONS_PATH.read_text())
+    }
+
+
+def corrupt_source_keys(exclusions, sources):
+    """Return normalized bodies that are unsafe through every duplicate id."""
+    return {
+        selection_key(sources[poem_id]["text"])
+        for poem_id, exclusion in exclusions.items()
+        if exclusion.get("status") == "source_corrupt"
+        and poem_id in sources
     }
 
 
@@ -175,16 +190,21 @@ def next_batch(limit, author, max_chars):
     catalog, sources, hashes, completed, errors = build_state()
     if errors:
         raise SystemExit("\n".join(errors))
-    completed_hashes = {
-        sources[poem_id]["hash"] for poem_id in completed
+    completed_keys = {
+        selection_key(sources[poem_id]["text"])
+        for poem_id in completed
     }
     exclusions = load_exclusions()
+    blocked_keys = corrupt_source_keys(exclusions, sources)
     candidates = []
     for poem in catalog["poems"]:
         record = sources.get(poem["id"])
         if not record or poem["id"] in completed or poem["id"] in exclusions:
             continue
-        if record["hash"] in completed_hashes:
+        key = selection_key(record["text"])
+        if key in completed_keys:
+            continue
+        if key in blocked_keys:
             continue
         if author and poem.get("author_name") != author:
             continue
@@ -197,11 +217,12 @@ def next_batch(limit, author, max_chars):
         record["poem"].get("story_name", ""),
     ))
     batch = []
-    seen_hashes = set()
+    seen_keys = set()
     for record in candidates:
-        if record["hash"] in seen_hashes:
+        key = selection_key(record["text"])
+        if key in seen_keys:
             continue
-        seen_hashes.add(record["hash"])
+        seen_keys.add(key)
         poem = record["poem"]
         batch.append({
             "id": poem["id"],

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 773,
+    "words": 144,
+    "reading_time_min": 0.72
+  },
+  "text": "There is so much love in my soul that no room remains\nnot even the narrowest corner for hate.\nWhere do you want me to put the resentments\nthat your vilenesses might engender?\n\n\nI am not impassive: I feel everything,\nI suffer everything… But like the child\nwhom they make cry, as soon as he sees\na toy before his eyes\nhe consoles himself, smiles,\nand stretches his eager hands\ntoward it without remembering the pain,\nso I, before the divine panorama\nof my idea, before the ineffable\nof my infinite love,\nfeel neither the evil pinprick\nnor the cruel sharp\nirony, nor hear the sarcastic\nlaughter. I forget everything,\nbecause I am only heart, only eyes\nnothing more, to lean from the window\nand watch the ineffable Dream pass,\ndressed in violet,\nand with all the light of morning\nin his divine eyes, in the quiet\nclarity of the fountain…",
+  "translation": {
+    "source_sha256": "59c97642367c79ffa5bfdb3c4847964601e3a5705f032d01c6cdaeb5b26f9cec",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "So Much Love",
+    "editorial_note": "The translation preserves the child-and-toy comparison and the violet-clad Dream at the fountain. The source compresses “todo…Pero” without a following space; the English restores the sentence spacing."
+  }
+}

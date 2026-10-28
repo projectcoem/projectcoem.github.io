@@ -1,0 +1,41 @@
+# English poem translation progress
+
+`static/poemTranslationProgress.json` is the canonical machine-readable state.
+This ledger records reviewed batches so the editorial sequence remains easy to
+resume.
+
+The reviewed baseline through batch `0189` is 1,334 poems. Batch `0190` is a
+reserved draft in the original checkout and remains unchanged.
+
+| Batch | Status | Authors | Reviewed | Running total |
+| --- | --- | --- | ---: | ---: |
+| `0191-pizarnik-tapia-storni.json` | Reviewed | Alfonsina Storni (4), Alejandra Pizarnik (3), Alejandro Tapia y Rivera (8) | 15 | 1,349 |
+| `0192-tapia-storni.json` | Reviewed | Alejandro Tapia y Rivera (1), Alfonsina Storni (14) | 15 | 1,364 |
+| `0193-tapia-storni-reyes-espino.json` | Reviewed | Alejandro Tapia y Rivera (1), Alfonsina Storni (1), Alfonso Reyes (8), Alfredo Espino (9), Amado Nervo (1) | 20 | 1,384 |
+| `0194-amado-nervo.json` | Reviewed | Amado Nervo (20) | 20 | 1,404 |
+
+The four Ada Negri records skipped before batch 0191 have corrupt Spanish
+source bodies. Their IDs and reasons are recorded in `poem_exclusions.json`.
+The batch selector also skips duplicate IDs with the same corrupt body hash.
+Selection collapses whitespace so formatting-only variants are not translated
+again. Progress counts and translation provenance continue to use the exact
+source SHA-256; punctuation and wording changes remain distinct texts.
+
+## Continue the translation sequence
+
+```bash
+python3 tools/poem_translation_tracker.py status
+python3 tools/poem_translation_tracker.py next --limit 40 > /tmp/coem-poems-next.json
+python3 tools/poem_translation_tracker.py import-batch \
+  translations/poem_batches/0193-tapia-storni-reyes-espino.json
+python3 tools/poem_translation_tracker.py import-batch \
+  translations/poem_batches/0194-amado-nervo.json
+node tools/generate_english_poem_neighbors.cjs
+python3 tools/generate_literary_guesser_data.py
+node --test
+```
+
+Every reviewed manifest keeps the stable poem ID, source SHA-256, translated
+title and text, and an editorial note. Import only after checking the source
+hash, line and stanza coverage, English wording, and any documented repair to
+the stored source.
