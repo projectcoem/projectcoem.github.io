@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 811,
+    "words": 133,
+    "reading_time_min": 0.665
+  },
+  "text": "“The last night we spent together,\n\nasked:\n\n—How many stars are there in the sky?\n\n—Three hundred and fifty thousand.\n\n—Bet you can't.\n\n—Bet I can.\n\n\n—Be quiet. Tonight\n\nI do not want you asking such things.\n\nTonight, if you want to ask\n\nhow many stars there are in the sky,\n\nor anything else,\n\nask something like: Do you love me?\n\nAre you cold? Who says they are hungry?\n\n\nTonight, ask something that can be\n\nanswered in the wordless world.\n\nQuestion with all your blood\n\nsomething in which all the world's life\n\nis asking,\n\nsomething like: Who is crying?\n\nIs anything needed?\n\n\nAnd you will see how everything is needed,\n\nand you will know how many stars there are in the sky\n\nwhen you know that the sky has a single star\n\nfor each moment,\n\nbecause if one is lost,\n\nthe light of the Universe will take one step into shadow.”",
+  "translation": {
+    "source_sha256": "15b9a636a3c7526a56bf3f4af1b9c3586c4bfa5f84be6ded856dff85f72efb16",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "How Many Stars Are in the Sky?",
+    "editorial_note": "The source begins with a stray closing quotation mark and ends with an opening one; the English repairs the enclosing punctuation while documenting the source anomaly."
+  }
+}

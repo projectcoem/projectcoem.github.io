@@ -533,5 +533,35 @@
     "id": "cd951df6-9a53-4657-991d-f7207ad7cc70",
     "status": "source_corrupt",
     "reason": "The stored Spanish body has severe semantic corruption, including “sospechoso de Novantatré” and “su cama está en el jardín de infantes. Noche,” plus unstable pronouns."
+  },
+  {
+    "id": "379a4ea3-f442-4505-8f7b-82229fbd93e3",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Aislamiento, but the stored body starts with the heading Tristeza and reproduces that neighboring poem."
+  },
+  {
+    "id": "82c1a0f9-a6f3-4c18-9c9f-9e2d332d8745",
+    "status": "source_mismatch",
+    "reason": "Catalog title says A la mirada de las divinidades, but the stored body starts with the heading Un hombre y una mujer absolutamente blancos and reproduces that neighboring poem."
+  },
+  {
+    "id": "1c31f127-d279-4cd7-b153-fe2229c43de9",
+    "status": "source_mismatch",
+    "reason": "Catalog title says A Moisés, but the stored body starts with the heading A la nave and reproduces that neighboring poem."
+  },
+  {
+    "id": "a79a4314-826d-44a2-9a58-bdb292169c83",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Deseo de verano, but the stored body starts with the heading Una piedra, memoria and reproduces that neighboring poem."
+  },
+  {
+    "id": "f284e2d5-2915-41fb-be06-9dd4987999f1",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Las tradiciones, but the stored body starts with the heading Una ventana al mundo and reproduces that neighboring poem."
+  },
+  {
+    "id": "2ba7ceda-0e38-48e1-b84a-92e50aa46d67",
+    "status": "source_mismatch",
+    "reason": "Catalog title says A una gota de rocío, but the stored body starts with the heading Una ventana al mundo and reproduces that neighboring poem."
   }
 ]

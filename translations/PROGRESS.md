@@ -13,9 +13,13 @@ reserved draft in the original checkout and remains unchanged.
 | `0192-tapia-storni.json` | Reviewed | Alejandro Tapia y Rivera (1), Alfonsina Storni (14) | 15 | 1,364 |
 | `0193-tapia-storni-reyes-espino.json` | Reviewed | Alejandro Tapia y Rivera (1), Alfonsina Storni (1), Alfonso Reyes (8), Alfredo Espino (9), Amado Nervo (1) | 20 | 1,384 |
 | `0194-amado-nervo.json` | Reviewed | Amado Nervo (20) | 20 | 1,404 |
+| `0195-ginsberg-lamartine-nervo-breton.json` | Reviewed | Allen Ginsberg (3), Alphonse de Lamartine (1), Amado Nervo (11), André Breton (3), Andrés Sánchez Robayna (1), Andrés Trapiello (1) | 20 | 1,424 |
+| `0196-breton-bello-blanco.json` | Reviewed | André Breton (7), Andrés Bello (2), Andrés Eloy Blanco (10) | 19 | 1,443 |
 
 The four Ada Negri records skipped before batch 0191 have corrupt Spanish
-source bodies. Their IDs and reasons are recorded in `poem_exclusions.json`.
+source bodies. Six additional records through batch 0196 have title/body
+mismatches and are also excluded. Their IDs and reasons are recorded in
+`poem_exclusions.json`.
 The batch selector also skips duplicate IDs with the same corrupt body hash.
 Selection collapses whitespace so formatting-only variants are not translated
 again. Progress counts and translation provenance continue to use the exact
@@ -27,9 +31,7 @@ source SHA-256; punctuation and wording changes remain distinct texts.
 python3 tools/poem_translation_tracker.py status
 python3 tools/poem_translation_tracker.py next --limit 40 > /tmp/coem-poems-next.json
 python3 tools/poem_translation_tracker.py import-batch \
-  translations/poem_batches/0193-tapia-storni-reyes-espino.json
-python3 tools/poem_translation_tracker.py import-batch \
-  translations/poem_batches/0194-amado-nervo.json
+  translations/poem_batches/NNNN-reviewed-batch.json
 node tools/generate_english_poem_neighbors.cjs
 python3 tools/generate_literary_guesser_data.py
 node --test
