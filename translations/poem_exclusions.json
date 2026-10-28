@@ -513,5 +513,25 @@
     "id": "918b1376-339d-40fa-ba34-9f09ebd02330",
     "status": "source_mismatch",
     "reason": "Catalog title says La fiesta de las arañas, but the stored body is La mujer transparente."
+  },
+  {
+    "id": "26929b16-9e70-40bd-8575-36a106e7d1cc",
+    "status": "source_corrupt",
+    "reason": "The stored Spanish body has broken machine-like clauses including “Mira los bares” and “de tribuna lacerar,” so it cannot support a reliable translation of Negri’s poem."
+  },
+  {
+    "id": "e90ff0fe-99ef-4260-b084-4a9f47bc051c",
+    "status": "source_corrupt",
+    "reason": "The stored Spanish body has pervasive syntax and reference corruption, including “se reúne a un piadoso” and incoherent shifts of person and gender, so the poem cannot be translated reliably."
+  },
+  {
+    "id": "24314579-22ca-4d56-8bef-476addc0659a",
+    "status": "source_corrupt",
+    "reason": "The stored Spanish body contains untranslated or damaged Italian fragments (“tòcco,” “cadesser”) and broken syntax, so its wording cannot be recovered reliably."
+  },
+  {
+    "id": "cd951df6-9a53-4657-991d-f7207ad7cc70",
+    "status": "source_corrupt",
+    "reason": "The stored Spanish body has severe semantic corruption, including “sospechoso de Novantatré” and “su cama está en el jardín de infantes. Noche,” plus unstable pronouns."
   }
 ]
