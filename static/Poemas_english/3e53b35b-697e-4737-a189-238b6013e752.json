@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 780,
+    "words": 145,
+    "reading_time_min": 0.725
+  },
+  "text": "I remember an afternoon of solitude and tedium,\noh, an afternoon like so many! My soul was,\nbeneath the monotonous blue, a broad, smooth river\nthat did not even have a poor reed bed on its bank.\n\nOh charmless world, sentimental poverty\nthat erases the mysterious quicksilver of the glass!\nOh loveless soul that the Universe copies\nwith an irrevocable universal yawn!\n\nThe poet wished to remember alone\nthe well-loved waves, the light of the hair\nthat he called blonde waves in his rhymes.\nHe read… The letter kills: he did not remember them…\n\nAnd one day—as so many—while breathing in one day\nthe fragrances of a rose opening on the rosebush,\nthe light of the hair burst forth like a flame\nthat in his madrigals he called blonde waves;\nit burst forth because they had had the same fragrance…\nAnd he went away in silence to weep alone.",
+  "translation": {
+    "source_sha256": "f877c4f6979bf0541994d8aa0e632d3944b275185995dacde192fe45484db21b",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Elegy of a Madrigal",
+    "editorial_note": "The translation preserves the poem's self-correcting memory, the biblical echo in \"The letter kills,\" the repeated \"one day,\" and the return of fragrance as the trigger for remembered hair."
+  }
+}

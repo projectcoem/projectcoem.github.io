@@ -563,5 +563,45 @@
     "id": "2ba7ceda-0e38-48e1-b84a-92e50aa46d67",
     "status": "source_mismatch",
     "reason": "Catalog title says A una gota de rocío, but the stored body starts with the heading Una ventana al mundo and reproduces that neighboring poem."
+  },
+  {
+    "id": "8ca4b073-be04-4e62-a679-5229ee2bca6a",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Amor apergaminado, but the stored body begins with the heading Un hombre y una mujer absolutamente blancos and reproduces that poem."
+  },
+  {
+    "id": "93a5c104-74db-4425-924e-0a02346803d6",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Alocución a la poesía, but the stored body begins with the heading A la nave and reproduces that poem."
+  },
+  {
+    "id": "83d40d2a-dc09-4d18-a203-25d165af758d",
+    "status": "source_mismatch",
+    "reason": "Catalog title says El durmiente que oyó la más difusa música, but the stored body begins with the heading Una piedra, memoria and reproduces that poem."
+  },
+  {
+    "id": "44e64965-6e14-4f14-8015-e6158a5c30ca",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Los triunfos, but the stored body begins with the heading Una ventana al mundo and reproduces that poem."
+  },
+  {
+    "id": "a3966c89-7845-4bf8-9927-bdedd4a04622",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Adonde tú por aire claro vas..., but the stored body begins with the heading Una ventana al mundo and reproduces that poem."
+  },
+  {
+    "id": "52838f23-ec9e-436b-8c31-cd78abc90b19",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Amor fati, but the stored body begins with the heading Un segundo and reproduces that poem."
+  },
+  {
+    "id": "2b899888-b0a2-4d63-9565-c20d08d4ab38",
+    "status": "source_mismatch",
+    "reason": "Catalog title says A ti, siempre alegría, but the stored body begins with the heading Siesta en el mirador and reproduces that poem."
+  },
+  {
+    "id": "3c14b003-951a-44f4-b465-7843dcce21db",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Aquí en estas riberas..., but the stored body begins with the heading Novalis and reproduces that poem."
   }
 ]

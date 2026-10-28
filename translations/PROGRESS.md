@@ -15,15 +15,23 @@ reserved draft in the original checkout and remains unchanged.
 | `0194-amado-nervo.json` | Reviewed | Amado Nervo (20) | 20 | 1,404 |
 | `0195-ginsberg-lamartine-nervo-breton.json` | Reviewed | Allen Ginsberg (3), Alphonse de Lamartine (1), Amado Nervo (11), André Breton (3), Andrés Sánchez Robayna (1), Andrés Trapiello (1) | 20 | 1,424 |
 | `0196-breton-bello-blanco.json` | Reviewed | André Breton (7), Andrés Bello (2), Andrés Eloy Blanco (10) | 19 | 1,443 |
+| `0197-poliziano-akhmatova-cabrera.json` | Reviewed | Angelo Poliziano (1), Anna Ajmátova (7), Antonio Cabrera (1) | 9 | 1,452 |
+| `0198-carvajal-colinas-machado.json` | Reviewed | Antonio Carvajal (1), Antonio Colinas (1), Antonio Machado (6) | 8 | 1,460 |
 
 The four Ada Negri records skipped before batch 0191 have corrupt Spanish
 source bodies. Six additional records through batch 0196 have title/body
 mismatches and are also excluded. Their IDs and reasons are recorded in
-`poem_exclusions.json`.
+`poem_exclusions.json`; eight further confirmed neighboring-poem mismatches
+from batches 0197–0198 bring the exclusion total to 121.
 The batch selector also skips duplicate IDs with the same corrupt body hash.
 Selection collapses whitespace so formatting-only variants are not translated
 again. Progress counts and translation provenance continue to use the exact
 source SHA-256; punctuation and wording changes remain distinct texts.
+
+The reviewed sequence is paused after batch 0198 until the primary usage
+window resets at `2026-10-29T02:46:42Z` (`2026-10-28 21:46:42` America/Bogota).
+After the reset, recheck actual usage and continue from batch 0199; this is a
+scheduling checkpoint, with no pending editorial work in the reviewed batches.
 
 ## Continue the translation sequence
 
