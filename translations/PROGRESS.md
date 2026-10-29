@@ -19,20 +19,21 @@ reserved draft in the original checkout and remains unchanged.
 | `0198-carvajal-colinas-machado.json` | Reviewed | Antonio Carvajal (1), Antonio Colinas (1), Antonio Machado (6) | 8 | 1,460 |
 | `0199-machado-rimbaud.json` | Reviewed | Antonio Machado (4), Arthur Rimbaud (11) | 15 | 1,475 |
 | `0200-rimbaud-march-brecht.json` | Reviewed | Arthur Rimbaud (4), Ausiàs March (6), Bertolt Brecht (3) | 13 | 1,488 |
+| `0201-brecht-varela.json` | Reviewed | Bertolt Brecht (3), Blanca Varela (6) | 9 | 1,497 |
 
 The four Ada Negri records skipped before batch 0191 have corrupt Spanish
 source bodies. Six additional records through batch 0196 have title/body
 mismatches and are also excluded. Their IDs and reasons are recorded in
 `poem_exclusions.json`; eight further confirmed neighboring-poem mismatches
-from batches 0197–0198 and twelve records from batches 0199–0200 bring the
-exclusion total to 133.
+from batches 0197–0198, twelve records from batches 0199–0200, and six records
+from batch 0201 bring the exclusion total to 139.
 The batch selector also skips duplicate IDs with the same corrupt body hash.
 Selection collapses whitespace so formatting-only variants are not translated
 again. Progress counts and translation provenance continue to use the exact
 source SHA-256; punctuation and wording changes remain distinct texts.
 
-The reviewed sequence is complete through batch 0200. Batch 0201 is next;
-there is no pending editorial work in the reviewed batches.
+The reviewed sequence is complete through batch 0201. Batch 0202 is next; there
+is no pending editorial work in the reviewed batches.
 
 ## Continue the translation sequence
 

@@ -663,5 +663,35 @@
     "id": "3b672455-cf11-4815-8ba5-de6cee8ce018",
     "status": "source_corrupt",
     "reason": "The stored Spanish text is truncated in the last stanza: the comparison ending “igual que si una malvarrosa” has no continuation before the separate final sentence. Needs source repair before translation."
+  },
+  {
+    "id": "e27a25d0-d32f-40bd-9db5-a2026a2ed5b9",
+    "status": "source_mismatch",
+    "reason": "Catalog title says La oración por todos, but the stored body is headed A la nave. The title and body identify different poems; needs source repair before translation."
+  },
+  {
+    "id": "81925434-3786-4b57-b0b1-518b183537f8",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Al final de la tarde..., but the stored body is headed Una ventana al mundo. The title and body identify different poems; needs source repair before translation."
+  },
+  {
+    "id": "db5c8e4c-7aa8-40bf-8924-2f71c5ddb2a5",
+    "status": "source_mismatch",
+    "reason": "Catalog title says ¡La hemos vuelto a hallar!..., but the stored body is headed Sol y carne. The title and body identify different poems; needs source repair before translation."
+  },
+  {
+    "id": "dd565105-70d1-42d6-b13f-aea80eecef9a",
+    "status": "source_mismatch",
+    "reason": "Catalog title says La infanticida Marie Farrar, but the stored body is headed Recuerdo de Marie A. The title and body identify different poems; needs source repair before translation."
+  },
+  {
+    "id": "dfe25bf7-ee65-448b-bbdc-ce857f790c86",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Dama de blanco, but the stored body is headed El poema es mi cuerpo. The title and body identify different poems; needs source repair before translation."
+  },
+  {
+    "id": "1dccc2a2-e38b-40b7-a63d-29572d21faf2",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Lección de amor, but the stored body is headed Recuerdo de Marie A. and is byte-identical to the separately cataloged Recuerdo de Marie A. source; the title and body identify different poems and the duplicate should not be translated under this title."
   }
 ]
