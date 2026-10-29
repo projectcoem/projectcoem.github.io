@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 1269,
+    "words": 223,
+    "reading_time_min": 1.115
+  },
+  "text": "In these fields of my own land\nand a stranger in the fields of my country\n—I had a homeland where the Duero runs\namong gray crags,\nand ghosts of ancient holm-oak groves,\nthere in Castile, mystical and warlike,\nCastile the gentle, humble and bold,\nCastile of disdain and strength—,\nin these fields of my Andalusia,\noh land where I was born! I would like to sing.\nI have memories of my childhood, I have\nimages of light and palm trees,\nand in a glory of gold,\nof far-off bell towers with storks,\nof cities with streets without women\nbeneath an indigo sky, deserted squares\nwhere blazing orange trees grow\nwith their round, crimson fruits;\nand in a shadowy orchard, the lemon tree\nwith dusty branches\nand pale yellow lemons,\nwhich the clear water of the fountain reflects,\na scent of tuberoses and carnations\nand a strong smell of basil and spearmint;\nimages of gray olive groves\nbeneath a scorching sun that stuns and blinds,\nand blue, scattered mountain ranges\nwith the afterglows of an immense afternoon;\nbut the thread that memory ties\nto the heart is missing, the anchor at its bank,\nor these memories have no soul. They bear\nin their motley garments\nthe sign of being the remnants of memory,\nthe brute burden memory carries.\nOne day they will return, anointed with light from the depths,\nthe virginal bodies to the old shore.",
+  "translation": {
+    "source_sha256": "e8374ee97de012ece2ad3a904d035a2fdca4b4fb9e18a8f30bef0e7a07a0eec4",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "In These Fields of My Own Land...",
+    "editorial_note": "Translated from the supplied Spanish rendering. The source opens with the syntactically unusual pair ‘En estos campos... / y extranjero...’; that ambiguity and the source lineation are retained. The split OCR form ‘d-el fondo’ is rendered as ‘from the depths,’ and minor punctuation spacing was normalized."
+  }
+}

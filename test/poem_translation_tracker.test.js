@@ -32,6 +32,21 @@ test('next batch deduplicates whitespace without merging changed wording', () =>
       ['mismatch-sibling', 'Valid sibling', 'valid  sibling body'],
       ['completed', 'Completed', 'already\nreviewed'],
       ['completed-alias', 'Completed alias', 'already   reviewed'],
+      [
+        'completed-title-prefix',
+        'Completed title prefix duplicate',
+        'Completed\nalready\nreviewed',
+      ],
+      [
+        'completed-title-prefix-changed',
+        'Changed title prefix body',
+        'Completed\nalready\nreviewedd',
+      ],
+      [
+        'completed-unknown-heading',
+        'Unknown heading body',
+        'Unknown heading\nalready\nreviewed',
+      ],
       ['batch-a', 'Batch A', 'batch\nvariant'],
       ['batch-b', 'Batch B', 'batch   variant'],
       ['punctuation-a', 'Punctuation A', 'eligible phrase.'],
@@ -94,6 +109,18 @@ test('next batch deduplicates whitespace without merging changed wording', () =>
     const ids = batch.map((entry) => entry.id);
     assert.equal(batch.some((entry) => entry.id === 'corrupt-alias'), false);
     assert.equal(batch.some((entry) => entry.id === 'completed-alias'), false);
+    assert.equal(
+      batch.some((entry) => entry.id === 'completed-title-prefix'),
+      false,
+    );
+    assert.equal(
+      batch.some((entry) => entry.id === 'completed-title-prefix-changed'),
+      true,
+    );
+    assert.equal(
+      batch.some((entry) => entry.id === 'completed-unknown-heading'),
+      true,
+    );
     assert.equal(ids.includes('mismatch-sibling'), true);
     assert.equal(
       ids.filter((id) => id === 'batch-a' || id === 'batch-b').length,

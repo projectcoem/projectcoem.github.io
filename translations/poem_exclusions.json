@@ -603,5 +603,65 @@
     "id": "3c14b003-951a-44f4-b465-7843dcce21db",
     "status": "source_mismatch",
     "reason": "Catalog title says Aquí en estas riberas..., but the stored body begins with the heading Novalis and reproduces that poem."
+  },
+  {
+    "id": "a1ac667e-801c-4552-a3be-26537088f085",
+    "status": "source_mismatch",
+    "reason": "Catalog title says El lago, but the stored body reproduces Tristeza, identified by its heading or identical neighboring body."
+  },
+  {
+    "id": "01592eab-c321-40c0-89be-f274ad2fe048",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Cartero cheval, but the stored body reproduces Un hombre y una mujer absolutamente blancos, identified by its heading or identical neighboring body."
+  },
+  {
+    "id": "f92cc96f-9a05-4ee3-9e08-10a5c38d1f33",
+    "status": "source_mismatch",
+    "reason": "Catalog title says El anauco, but the stored body reproduces A la nave, identified by its heading or identical neighboring body."
+  },
+  {
+    "id": "d742b624-aa3a-48d4-92c1-dcb33bf9ce32",
+    "status": "source_mismatch",
+    "reason": "Catalog title says El libro, tras la duna I, but the stored body reproduces Una piedra, memoria, identified by its heading or identical neighboring body."
+  },
+  {
+    "id": "67ee6207-90ca-494d-b223-5a578e125289",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Me asomo todas las tardes..., but the stored body reproduces Una ventana al mundo, identified by its heading or identical neighboring body."
+  },
+  {
+    "id": "04a76505-8108-4612-8444-5dc71c30bf9e",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Adoro las ciudades que son viejas..., but the stored body reproduces Una ventana al mundo, identified by its heading or identical neighboring body."
+  },
+  {
+    "id": "447208d7-b275-4e24-a1c9-98b7fd1f5005",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Esta paz anodina, but the stored body reproduces Un segundo, identified by its heading or identical neighboring body."
+  },
+  {
+    "id": "f7bbfda8-c663-472e-91d2-527b25579155",
+    "status": "source_mismatch",
+    "reason": "Catalog title says A veces el amor tiene caricias frías, but the stored body reproduces Siesta en el mirador, identified by its heading or identical neighboring body."
+  },
+  {
+    "id": "7b0d2eb9-a9c0-4703-bd36-9398ad192d5f",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Canto X, but the stored body reproduces Novalis, identified by its heading or identical neighboring body."
+  },
+  {
+    "id": "3e73538c-4bf1-42bc-8148-d4b48abfae46",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Sueño para el invierno (otra versión), but the stored body reproduces Sol y carne, identified by its heading or identical neighboring body."
+  },
+  {
+    "id": "2690c9b1-20f6-4f44-abf3-7082326ea830",
+    "status": "source_mismatch",
+    "reason": "Catalog title says La brisa, but the stored body reproduces Sol y carne, identified by its heading or identical neighboring body."
+  },
+  {
+    "id": "3b672455-cf11-4815-8ba5-de6cee8ce018",
+    "status": "source_corrupt",
+    "reason": "The stored Spanish text is truncated in the last stanza: the comparison ending “igual que si una malvarrosa” has no continuation before the separate final sentence. Needs source repair before translation."
   }
 ]

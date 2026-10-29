@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 1643,
+    "words": 241,
+    "reading_time_min": 1.205
+  },
+  "text": "This man from the provincial casino\n        who saw Carancha take the charge one day,\n        has a withered complexion, hair gone gray,\n        eyes veiled in melancholy;\n        beneath the gray mustache, lips of weariness,\n        and a sad expression that is not sadness,\n        but something more and less: the emptiness\n        of the world in the hollow of his head.\n\n\n        He still wears purple velvet,\n        a jacket and trousers tapered to his shoes,\n        and a caramel-colored Cordoban hat,\n        polished and turned.\n        Three times he inherited; three times at monte\n        he lost his fortune; twice he was widowed.\n\n\n        He comes alive only before forbidden chance,\n        reclining over the green baize,\n        or when recalling a bullfighter's afternoon,\n        a gambler's luck, or when someone recounts\n        the exploit of a gallant bandit,\n        or the bloody feat of a tough.\n\n\n        He yawns out banal political\n        insults at the reactionary government,\n        and predicts that the liberals will come,\n        as the stork returns to the belfry.\n\n\n        A bit of a farmer, he waits for the sky\n        and fears the sky; sometimes he sighs,\n        thinking of his olive grove, and looks at the sky\n        with an anxious eye when the rain is late.\n\n\n        Everything else, taciturn, hypochondriacal,\n        prisoner in the Arcadia of the present,\n        bores him; only tobacco smoke\n        simulates a few shadows on his brow.\n\n\n        This man is neither of yesterday nor tomorrow,\n        but of never; from the Hispanic stock\n        he is neither the ripe nor the rotten fruit,\n        but a barren fruit\n        of that Spain which passed and never was,\n        that Spain whose head is gray today.",
+  "translation": {
+    "source_sha256": "e91f7c7d4c3ebf96ee4076c0fe58b648734f6d81ce4ce960776824d187aaacfb",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Of the Ephemeral Past",
+    "editorial_note": "Translated from the supplied Spanish rendering. The source's indented verse layout and stanza breaks are retained; ‘Carancha’ and ‘monte’ are preserved as bullfighting and gambling references. ‘Abotinado’ is rendered as trousers tapered to the shoes, and ‘un poco labrador’ as ‘a bit of a farmer’ to restore the idioms."
+  }
+}

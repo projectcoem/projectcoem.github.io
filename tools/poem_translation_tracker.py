@@ -194,6 +194,13 @@ def next_batch(limit, author, max_chars):
         selection_key(sources[poem_id]["text"])
         for poem_id in completed
     }
+    completed_title_prefixed_keys = {
+        selection_key(
+            f"{sources[poem_id]['poem'].get('story_name', '')}\n"
+            f"{sources[poem_id]['text']}"
+        )
+        for poem_id in completed
+    }
     exclusions = load_exclusions()
     blocked_keys = corrupt_source_keys(exclusions, sources)
     candidates = []
@@ -203,6 +210,8 @@ def next_batch(limit, author, max_chars):
             continue
         key = selection_key(record["text"])
         if key in completed_keys:
+            continue
+        if key in completed_title_prefixed_keys:
             continue
         if key in blocked_keys:
             continue
