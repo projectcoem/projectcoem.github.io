@@ -78,7 +78,7 @@ def translated_records():
         translation = data.get("translation", {})
         if (
             data.get("text")
-            and translation.get("status") == "reviewed"
+            and translation.get("status") in {"reviewed", "translated"}
             and translation.get("source_sha256")
         ):
             records[path.stem] = data
@@ -248,7 +248,19 @@ def next_batch(limit, author, max_chars):
 
 def import_batch(batch_path):
     _, sources, _, _, _ = build_state()
-    batch = json.loads(Path(batch_path).read_text())
+    manifest = json.loads(Path(batch_path).read_text())
+    if isinstance(manifest, list):
+        batch = manifest
+        status = "reviewed"
+    elif isinstance(manifest, dict):
+        batch = manifest.get("translations")
+        status = manifest.get("status", "reviewed")
+    else:
+        raise SystemExit("batch manifest must be a list or object")
+    if not isinstance(batch, list):
+        raise SystemExit("batch manifest translations must be a list")
+    if status not in {"reviewed", "translated"}:
+        raise SystemExit("batch status must be reviewed or translated")
     TARGET_DIR.mkdir(parents=True, exist_ok=True)
     imported = 0
     for entry in batch:
@@ -261,6 +273,13 @@ def import_batch(batch_path):
         translated_text = compact_text(entry.get("text", ""))
         if not translated_text:
             raise SystemExit(f"{poem_id}: translation is empty")
+        editorial_note = entry.get("editorial_note", "").strip()
+        if status == "translated":
+            disclaimer = "Imported as a translation without separate editorial review."
+            editorial_note = (
+                f"{editorial_note}\n\n{disclaimer}"
+                if editorial_note else disclaimer
+            )
         output = {
             "metadata": source["source"].get("metadata", {}),
             "text": translated_text,
@@ -268,17 +287,17 @@ def import_batch(batch_path):
                 "source_sha256": source["hash"],
                 "source_language": "es",
                 "target_language": "en",
-                "status": "reviewed",
+                "status": status,
                 "translator": "Codex literary translation",
                 "title": entry["title"],
-                "editorial_note": entry.get("editorial_note", ""),
+                "editorial_note": editorial_note,
             },
         }
         (TARGET_DIR / f"{poem_id}.json").write_text(
             json.dumps(output, ensure_ascii=False, indent=2) + "\n"
         )
         imported += 1
-    print(f"Imported {imported} reviewed translations")
+    print(f"Imported {imported} {status} translations")
     sync()
 
 

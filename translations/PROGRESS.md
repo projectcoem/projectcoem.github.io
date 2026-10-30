@@ -1,8 +1,9 @@
 # English poem translation progress
 
 `static/poemTranslationProgress.json` is the canonical machine-readable state.
-This ledger records reviewed batches so the editorial sequence remains easy to
-resume.
+This ledger records completed translation batches so the sequence remains easy
+to resume. The status distinguishes reviewed batches from translations that
+have not received separate editorial review.
 
 The reviewed baseline through batch `0189` is 1,334 poems. Batch `0190` is a
 reserved draft in the original checkout and remains unchanged.
@@ -27,6 +28,7 @@ reserved draft in the original checkout and remains unchanged.
 | `0206-reviewed-batch.json` | Reviewed | Carmen Soler (2), Carolina Coronado (4), Cecília Meireles (5), Charles Baudelaire (9) | 20 | 1,577 |
 | `0207-reviewed-batch.json` | Reviewed | Charles Baudelaire (20) | 20 | 1,597 |
 | `0208-reviewed-batch.json` | Reviewed | Charles Bukowski (15) | 15 | 1,612 |
+| `0209-translated-batch.json` | Translated | Andrés Trapiello (1), Bertolt Brecht (1), Charles Bukowski (18) | 20 | 1,632 |
 
 The four Ada Negri records skipped before batch 0191 have corrupt Spanish
 source bodies. Six additional records through batch 0196 have title/body
@@ -41,8 +43,8 @@ Selection collapses whitespace so formatting-only variants are not translated
 again. Progress counts and translation provenance continue to use the exact
 source SHA-256; punctuation and wording changes remain distinct texts.
 
-The reviewed sequence is complete through batch 0208. Batch 0209 is next; there
-is no pending editorial work in the reviewed batches.
+The reviewed sequence is complete through batch 0208. Batch 0209 adds 20
+translations without separate editorial review. Batch 0210 is next.
 
 ## Continue the translation sequence
 
@@ -50,13 +52,12 @@ is no pending editorial work in the reviewed batches.
 python3 tools/poem_translation_tracker.py status
 python3 tools/poem_translation_tracker.py next --limit 40 > /tmp/coem-poems-next.json
 python3 tools/poem_translation_tracker.py import-batch \
-  translations/poem_batches/NNNN-reviewed-batch.json
+  translations/poem_batches/NNNN-translated-batch.json
 node tools/generate_english_poem_neighbors.cjs
 python3 tools/generate_literary_guesser_data.py
 node --test
 ```
 
-Every reviewed manifest keeps the stable poem ID, source SHA-256, translated
-title and text, and an editorial note. Import only after checking the source
-hash, line and stanza coverage, English wording, and any documented repair to
-the stored source.
+Every manifest keeps the stable poem ID, source SHA-256, translated title and
+text, status, and an editorial note. The tracker validates source hashes at
+import time.

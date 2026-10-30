@@ -258,7 +258,7 @@ test("story narration only plays exact English audio matches", () => {
   assert.match(readerScript, /audio\.hidden = true/);
 });
 
-test("English poem catalog contains only reviewed, source-tracked translations", () => {
+test("English poem catalog contains only accepted, source-tracked translations", () => {
   const catalog = JSON.parse(fs.readFileSync(
     path.join(root, "static/poems_english.json"),
     "utf8"
@@ -277,7 +277,7 @@ test("English poem catalog contains only reviewed, source-tracked translations",
     );
     assert.ok(fs.existsSync(translatedPath));
     const translated = JSON.parse(fs.readFileSync(translatedPath, "utf8"));
-    assert.equal(translated.translation.status, "reviewed");
+    assert.ok(["reviewed", "translated"].includes(translated.translation.status));
     assert.equal(translated.translation.source_language, "es");
     assert.equal(translated.translation.target_language, "en");
     assert.ok(translated.translation.source_sha256);

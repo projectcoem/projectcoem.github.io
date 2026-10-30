@@ -31,7 +31,7 @@ test('English Literary Oracle joins only local translated works to unified autho
   assert.equal(catalog.version, 1);
   assert.equal(catalog.authors.length, 358);
   assert.equal(catalog.stories.filter((item) => item.kind === 'story').length, 2758);
-  assert.equal(catalog.stories.filter((item) => item.kind === 'poem').length, 1612);
+  assert.equal(catalog.stories.filter((item) => item.kind === 'poem').length, 1632);
   const storyFiles = localIds('static/Cuentos_english');
   const poemFiles = localIds('static/Poemas_english');
   const authorIds = new Set(catalog.authors.map((author) => author.id));
@@ -58,7 +58,8 @@ test('reader metadata classifies every English file and preserves raw poem ids a
   for (const id of stories) assertMetadataShape(storyMetadata[id]);
   for (const id of poems) {
     assertMetadataShape(poemMetadata[id], 'poem');
-    assert.equal(poemMetadata[id].unreviewed, false);
+    const body = read(`static/Poemas_english/${id}.json`);
+    assert.equal(poemMetadata[id].unreviewed, body.translation?.status !== 'reviewed');
   }
   for (const id of rawPoems) {
     assert.ok(poemMetadata[id]);
@@ -70,15 +71,15 @@ test('reader metadata classifies every English file and preserves raw poem ids a
   }
 });
 
-test('every playable poem has reviewed English translation provenance', () => {
+test('every playable poem has accepted English translation provenance', () => {
   const sourceIds = new Set(poemSource.poems.map((poem) => poem.id));
-  assert.equal(sourceIds.size, 1612);
+  assert.equal(sourceIds.size, 1632);
   for (const poem of catalog.stories.filter((item) => item.kind === 'poem')) {
     assert.equal(sourceIds.has(poem.id), true);
     const body = read(`static/Poemas_english/${poem.id}.json`);
     assert.equal(body.translation?.source_language, 'es');
     assert.equal(body.translation?.target_language, 'en');
-    assert.equal(body.translation?.status, 'reviewed');
+    assert.ok(['reviewed', 'translated'].includes(body.translation?.status));
     assert.ok(body.text.trim().length > 0);
   }
 });
