@@ -753,5 +753,30 @@
     "id": "f6756c0e-6a96-4b8f-ad11-48282f92f44e",
     "status": "source_mismatch",
     "reason": "Catalog title is Cuán delicada luz es la del joven, but the stored body is headed Suma transida and reproduces Encerrarte en palabras; a neighboring duplicate with the same source hash was already excluded as this mismatch."
+  },
+  {
+    "id": "48e60db3-a141-4ea5-9264-5fb4fed59007",
+    "status": "source_mismatch",
+    "reason": "Catalog title says El río, but the stored body is explicitly headed Una ventana al mundo and duplicates neighboring records for that poem; the title and body identify different poems."
+  },
+  {
+    "id": "269f8200-ad39-4dbd-bbb1-6e00ab0f1fc0",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Preguntas, but the stored body is explicitly headed Recuerdo de Marie A. and duplicates neighboring records for that poem; the title and body identify different poems."
+  },
+  {
+    "id": "749230f8-9764-4b53-95d4-3193d7e0c78d",
+    "status": "source_corrupt",
+    "reason": "The stored body is a malformed composite: a complete poem beginning Llegarás un día... with its translator credit is followed by a separator and a second fragment matching the catalog title Sueños en el crepúsculo. It cannot be translated as one poem faithfully."
+  },
+  {
+    "id": "8217f43a-2023-48d6-8896-822f0e5a5f26",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Hay dolores fluidos, del color de la sangre..., but the stored body is explicitly headed Suma transida and duplicates neighboring records for that poem; the title and body identify different poems."
+  },
+  {
+    "id": "07db855e-3feb-4bbc-8665-9cd341edf05f",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Alma de animales muertos, but the stored body is explicitly headed Después del rastro and is duplicated under a neighboring catalog record titled Después del rastro...."
   }
 ]
