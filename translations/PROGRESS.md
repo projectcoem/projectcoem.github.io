@@ -29,6 +29,7 @@ reserved draft in the original checkout and remains unchanged.
 | `0207-reviewed-batch.json` | Reviewed | Charles Baudelaire (20) | 20 | 1,597 |
 | `0208-reviewed-batch.json` | Reviewed | Charles Bukowski (15) | 15 | 1,612 |
 | `0209-translated-batch.json` | Translated | Andrés Trapiello (1), Bertolt Brecht (1), Charles Bukowski (18) | 20 | 1,632 |
+| `0210-translated-batch.json` | Translated | Charles Bukowski (12), Charlotte Brontë (2), Christina Rossetti (5), Cintio Vitier (1) | 20 | 1,652 |
 
 The four Ada Negri records skipped before batch 0191 have corrupt Spanish
 source bodies. Six additional records through batch 0196 have title/body
@@ -43,8 +44,8 @@ Selection collapses whitespace so formatting-only variants are not translated
 again. Progress counts and translation provenance continue to use the exact
 source SHA-256; punctuation and wording changes remain distinct texts.
 
-The reviewed sequence is complete through batch 0208. Batch 0209 adds 20
-translations without separate editorial review. Batch 0210 is next.
+The reviewed sequence is complete through batch 0208. Batches 0209–0210 add 40
+translations without separate editorial review. Batch 0211 is next.
 
 ## Continue the translation sequence
 
