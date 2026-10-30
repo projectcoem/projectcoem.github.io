@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 749,
+    "words": 120,
+    "reading_time_min": 0.6
+  },
+  "text": "Calm yourself, my grief, and make your anguish serene.\n\nYou longed for night. It is descending. Here it is.\nA dark atmosphere covers Paris, bringing\npeace to some and sorrow to many others.\nWhile the crowd that yields to Pleasure,\nits relentless executioner, roams the streets\nhunting remorse beneath the wakeful feast,\nyou, grief, come to me. Give me your hand as you see\nhow it is possible to escape the already dead years\nin their old garments upon heaven’s balcony.\nDisillusionments now rise, as from the sea,\nwhen the sun beneath an arch dies in the distance.\nNow, like a shroud descending from the east.\nObserve, my grief: the immense night advances.",
+  "translation": {
+    "source_sha256": "251c87c95412fa4446ac20e46c8a873e45d5b1dc7374b5f976f07d0dfef8d47f",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Recollection",
+    "editorial_note": "Translated from the supplied Spanish version credited in the source to José Emilio Pacheco. The catalog title is blank; the English title is translated transparently from the explicit body heading ‘Recogimiento.’ A malformed soft-hyphen sequence is silently normalized."
+  }
+}

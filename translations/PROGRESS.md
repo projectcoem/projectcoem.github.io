@@ -23,6 +23,9 @@ reserved draft in the original checkout and remains unchanged.
 | `0202-reviewed-batch.json` | Reviewed | Blanca Varela (1), Blas de Otero (2), Carl Sandburg (1), Carlos Barral (6), Carlos Castro Saavedra (1), Carlos Pellicer (3) | 14 | 1,511 |
 | `0203-pellicer-conde.json` | Reviewed | Carlos Pellicer (14), Carmen Conde (1) | 15 | 1,526 |
 | `0204-conde.json` | Reviewed | Carmen Conde (15) | 15 | 1,541 |
+| `0205-reviewed-batch.json` | Reviewed | Carlos Marzal (1), Carmen Conde (11), Carmen Soler (4) | 16 | 1,557 |
+| `0206-reviewed-batch.json` | Reviewed | Carmen Soler (2), Carolina Coronado (4), Cecília Meireles (5), Charles Baudelaire (9) | 20 | 1,577 |
+| `0207-reviewed-batch.json` | Reviewed | Charles Baudelaire (20) | 20 | 1,597 |
 
 The four Ada Negri records skipped before batch 0191 have corrupt Spanish
 source bodies. Six additional records through batch 0196 have title/body
@@ -30,13 +33,13 @@ mismatches and are also excluded. Their IDs and reasons are recorded in
 `poem_exclusions.json`; eight further confirmed neighboring-poem mismatches
 from batches 0197–0198, twelve records from batches 0199–0200, six records
 from batch 0201, six records from batch 0202, and one record each from batches
-0203–0204 bring the exclusion total to 147.
+0203–0204, and four records from batch 0205 bring the exclusion total to 151.
 The batch selector also skips duplicate IDs with the same corrupt body hash.
 Selection collapses whitespace so formatting-only variants are not translated
 again. Progress counts and translation provenance continue to use the exact
 source SHA-256; punctuation and wording changes remain distinct texts.
 
-The reviewed sequence is complete through batch 0204. Batch 0205 is next; there
+The reviewed sequence is complete through batch 0207. Batch 0208 is next; there
 is no pending editorial work in the reviewed batches.
 
 ## Continue the translation sequence

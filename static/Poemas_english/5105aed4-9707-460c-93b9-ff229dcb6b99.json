@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 1151,
+    "words": 207,
+    "reading_time_min": 1.035
+  },
+  "text": "Angel filled with joy, do you know anguish,\nguilt, shame, weariness, sobs,\nand the vague terrors of those dreadful nights\nthat crush the heart like crumpled paper?\nAngel filled with joy, do you know anguish?\n\nAngel filled with goodness, do you know hatred,\ntears of gall and clenched fists,\nwhen vengeance raises its infernal voice\nand sets itself up as captain of our faculties?\nAngel filled with goodness, do you know hatred?\n\nAngel filled with health, do you know Fever,\nwhich, along the wall of the milky hospital,\nwalks with weary steps like the exiles,\nseeking the scant sun and moving its lips?\nAngel filled with health, do you know Fever?\n\nAngel filled with beauty, do you know wrinkles,\nand fear of growing old, and that hateful torment\nof reading the secret horror of sacrifice\nin eyes from which our own once drank?\nAngel filled with beauty, do you know wrinkles?\n\nAngel filled with happiness, light, and joy!\nDying David would have asked for healing\nfrom the emanations of your bewitching body;\nbut from you, angel, I implore only prayers,\nangel filled with happiness, light, and joy!",
+  "translation": {
+    "source_sha256": "bb2d31b84e064536f129e69dd3672fb9cf8e05c7d646c62d3325b11bb2f5146f",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Reversibility",
+    "editorial_note": "Translated from the supplied Spanish version of Baudelaire. A stray source glyph following ‘David’ is treated as typographic noise."
+  }
+}

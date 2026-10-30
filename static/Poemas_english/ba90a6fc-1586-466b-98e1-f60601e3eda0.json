@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 1281,
+    "words": 216,
+    "reading_time_min": 1.08
+  },
+  "text": "Reveille sounded in every barracks,\nand the morning wind put out the lamps.\n\nIt was the hour when swarms of evil dreams\nsmother adolescents on their pillows;\nwhen, like a throbbing, bloodshot eye,\nthe lamp makes a red stain upon the day,\nand the soul, beneath the weight of the sleeping body,\nimitates the struggles of daylight and lamp.\nLike a tearful face wiped by the breeze,\na tremor of fleeting things fills the air,\nand men tire of writing and of love.\n\nHere and there the houses begin to smoke;\nthe women of pleasure, eyelids livid,\nlie open-mouthed in broken sleep;\nthe poor women, dragging their cold, thin breasts,\nblow upon the embers and their fingers.\nIt is the hour when, wrapped in grime and cold,\nwomen in labor feel their pains increase;\nlike a broken sob amid the welling blood,\nthe cockcrow tears the dark air;\nan ocean of mist bathes the buildings,\nand the dying, inside the hospitals,\nbreathe their last between uneven hiccups.\nThe libertines return, shattered by their work.\n\nShivering dawn, dressed in green and rose,\nadvanced slowly over the deserted Seine,\nand somber Paris, rubbing its eyes,\ngrasped its tools, an old laborer.",
+  "translation": {
+    "source_sha256": "f8465a45842340e11d266bd309bf4e5042f0517db39efb9e7e13ae2b3ce3b113",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Morning Twilight",
+    "editorial_note": "Translated from the supplied Spanish version of Baudelaire. The dawn sequence and its parallel scenes of exhaustion, labor, birth, and death are preserved."
+  }
+}

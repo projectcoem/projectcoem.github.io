@@ -733,5 +733,25 @@
     "id": "51e7e72d-a01f-49b4-8cd3-697a38049522",
     "status": "source_corrupt",
     "reason": "The stored source loses an entire line and part of the next in the final stanza. Reliable editions read ‘ya tan cerca o tan lejos, que no pueda / por tan lejos o cerca reprimirse / y apoderarse en luz de un orbe lágrima’; the stored text collapses this to ‘ya tan cerca o tan lejos o cerca reprimirse / y apoderarse en la luz de un orbe lágrima.’ A faithful translation would require reconstructing words absent from the catalog source."
+  },
+  {
+    "id": "8cb42756-9afb-42df-8efa-e6e36a79d6c5",
+    "status": "source_mismatch",
+    "reason": "Catalog title is El amor de las cosas, but the stored body is headed Una ventana al mundo; the same body was already identified as a mismatch in a neighboring duplicate record."
+  },
+  {
+    "id": "025c7b99-5f3b-4b72-9d72-fd1804d2794e",
+    "status": "source_mismatch",
+    "reason": "Catalog title is Pero en la fría noche, but the stored body is headed Recuerdo de Marie A.; the same body was already identified as a mismatch in a neighboring duplicate record."
+  },
+  {
+    "id": "f50d2374-ab80-494f-9bdd-986cf3dc3cae",
+    "status": "source_mismatch",
+    "reason": "Catalog title is Primer linchamiento, but the stored body is a malformed composite of Muchacha de ensueño and a second untitled lyrical fragment, with no lynching; neighboring records identify the complete source poem."
+  },
+  {
+    "id": "f6756c0e-6a96-4b8f-ad11-48282f92f44e",
+    "status": "source_mismatch",
+    "reason": "Catalog title is Cuán delicada luz es la del joven, but the stored body is headed Suma transida and reproduces Encerrarte en palabras; a neighboring duplicate with the same source hash was already excluded as this mismatch."
   }
 ]
