@@ -693,5 +693,45 @@
     "id": "1dccc2a2-e38b-40b7-a63d-29572d21faf2",
     "status": "source_mismatch",
     "reason": "Catalog title says Lección de amor, but the stored body is headed Recuerdo de Marie A. and is byte-identical to the separately cataloged Recuerdo de Marie A. source; the title and body identify different poems and the duplicate should not be translated under this title."
+  },
+  {
+    "id": "8e61de1d-e9b9-4d02-aa84-11b4758d24f3",
+    "status": "source_mismatch",
+    "reason": "Catalog title says E. D, but the stored body is headed Una ventana al mundo; the title and body identify different poems."
+  },
+  {
+    "id": "9a8c31d4-724d-4e5d-9060-638139d8179e",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Loa del estudio, but the stored body is headed Recuerdo de Marie A.; the title and body identify different poems."
+  },
+  {
+    "id": "903155fb-295e-424a-b95f-9ecebd58d95d",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Otros poemas:, but the stored body is a malformed composite beginning with Muchacha de ensueño and a second untitled fragment; the neighboring complete record carries the matching body."
+  },
+  {
+    "id": "e3a9f68a-a8ac-4727-845c-fcb23fe11386",
+    "status": "source_mismatch",
+    "reason": "Catalog title says A un muerto, but the stored body is headed Muchacha de ensueño and duplicates the neighboring Carl Sandburg record."
+  },
+  {
+    "id": "624511dc-dcf6-44ca-bb9f-99c969cd8897",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Amistad, but the stored body is headed Vengo y voy a tu vientre and duplicates that neighboring record."
+  },
+  {
+    "id": "7ae2b418-0de0-42fe-8903-16f88957be23",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Decrepitud, but the stored body is headed Un mar de lágrimas; the title and body identify different poems."
+  },
+  {
+    "id": "86afe9fd-8289-4aa2-9b85-715ce05bda80",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Aunque te diga no, empéñate en sí..., but the stored body begins with Suma transida and reproduces Encerrarte en palabras..., already selected under another catalog ID."
+  },
+  {
+    "id": "51e7e72d-a01f-49b4-8cd3-697a38049522",
+    "status": "source_corrupt",
+    "reason": "The stored source loses an entire line and part of the next in the final stanza. Reliable editions read ‘ya tan cerca o tan lejos, que no pueda / por tan lejos o cerca reprimirse / y apoderarse en luz de un orbe lágrima’; the stored text collapses this to ‘ya tan cerca o tan lejos o cerca reprimirse / y apoderarse en la luz de un orbe lágrima.’ A faithful translation would require reconstructing words absent from the catalog source."
   }
 ]
