@@ -33,6 +33,7 @@ reserved draft in the original checkout and remains unchanged.
 | `0211-translated-batch.json` | Translated | Claudio Rodríguez, Claudio Rodríguez Fer, Concha Méndez, Concha Urquiza | 40 | 1,692 |
 | `0212-translated-batch.json` | Translated | César Vallejo, Concha Urquiza | 40 | 1,732 |
 | `0213-translated-batch.json` | Translated | César Vallejo | 40 | 1,772 |
+| `0214-translated-batch.json` | Translated | Dylan Thomas | 40 | 1,812 |
 
 The four Ada Negri records skipped before batch 0191 have corrupt Spanish
 source bodies. Six additional records through batch 0196 have title/body
@@ -48,7 +49,8 @@ again. Progress counts and translation provenance continue to use the exact
 source SHA-256; punctuation and wording changes remain distinct texts.
 
 The reviewed sequence is complete through batch 0208. Batches 0209–0211 add 80
-translations without separate editorial review. Batch 0213 is next.
+translations without separate editorial review. Batches 0212–0214 add 120
+translations without separate editorial review. Batch 0215 is next.
 
 ## Continue the translation sequence
 
