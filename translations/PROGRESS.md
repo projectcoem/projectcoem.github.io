@@ -32,6 +32,7 @@ reserved draft in the original checkout and remains unchanged.
 | `0210-translated-batch.json` | Translated | Charles Bukowski (12), Charlotte Brontë (2), Christina Rossetti (5), Cintio Vitier (1) | 20 | 1,652 |
 | `0211-translated-batch.json` | Translated | Claudio Rodríguez, Claudio Rodríguez Fer, Concha Méndez, Concha Urquiza | 40 | 1,692 |
 | `0212-translated-batch.json` | Translated | César Vallejo, Concha Urquiza | 40 | 1,732 |
+| `0213-translated-batch.json` | Translated | César Vallejo | 40 | 1,772 |
 
 The four Ada Negri records skipped before batch 0191 have corrupt Spanish
 source bodies. Six additional records through batch 0196 have title/body
