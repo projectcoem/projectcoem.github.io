@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 143,
+    "words": 24,
+    "reading_time_min": 0.12
+  },
+  "text": "Each song\n\nis a remanso\n\nof the love.\n\n\nEach lucero,\n\na remanso\n\nof the time.\n\nA nudo\n\nof the time.\n\n\nAnd each suspiro\n\na remanso\n\nof the cry.",
+  "translation": {
+    "source_sha256": "ff54a306b440ea2cc7de38b0afd2b97d6ece6c451d1a15eec7da3749e08175a6",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Each song",
+    "editorial_note": "Imported as a translation without separate editorial review."
+  }
+}
