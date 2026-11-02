@@ -38,6 +38,10 @@ reserved draft in the original checkout and remains unchanged.
 | `0216-translated-batch.json` | Translated | Ernesto Cardenal and mixed authors | 40 | 1,892 |
 | `0217-translated-batch.json` | Translated | Mixed authors | 40 | 1,932 |
 | `0218-translated-batch.json` | Translated | Ezra Pound, Fadwa Tuqan, Federico García Lorca | 40 | 1,972 |
+| `0219-translated-batch.json` | Translated | Mixed authors | 40 | 2,012 |
+| `0220-translated-batch.json` | Translated | Mixed authors | 40 | 2,052 |
+| `0221-translated-batch.json` | Translated | Mixed authors | 40 | 2,092 |
+| `0222-translated-batch.json` | Translated | Fernando Pessoa, Fernando de Herrera, Fernando de Rojas, Filippo Tommaso Marinetti | 40 | 2,132 |
 
 The four Ada Negri records skipped before batch 0191 have corrupt Spanish
 source bodies. Six additional records through batch 0196 have title/body
@@ -55,7 +59,8 @@ source SHA-256; punctuation and wording changes remain distinct texts.
 The reviewed sequence is complete through batch 0208. Batches 0209–0211 add 80
 translations without separate editorial review. Batches 0212–0216 add 200
 translations without separate editorial review. Batches 0217–0218 add 80
-translations without separate editorial review. Batch 0219 is next.
+translations without separate editorial review. Batches 0219–0222 add 160
+translations without separate editorial review. Batch 0223 is next.
 
 ## Continue the translation sequence
 
