@@ -1,0 +1,16 @@
+{
+  "metadata": {
+    "length": 149,
+    "words": 30,
+    "reading_time_min": 0.15
+  },
+  "text": "Pero no, es abstracta, es un pájaro\nDe sonidos en el aire del encumbrado aire,\nY su alma canta sin molestar\nPorque el canto es lo que la hace cantar.",
+  "translation": {
+    "source_sha256": "9c566a394872f5e29e7e9256eeafddb37cc60f2842204ffd840269c644a14e97",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Cosechadora"
+  }
+}

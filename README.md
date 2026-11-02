@@ -205,7 +205,7 @@ browser-tests/                 Full Chromium interaction tests
 
 ## Contributing
 
-Pull requests are welcome, especially for metadata corrections, accessibility improvements, translation review, and additional tests. After changing catalogs or tensors, regenerate the affected indexes and run both test suites. Translation continuation is currently queued from batch 0219.
+Pull requests are welcome, especially for metadata corrections, accessibility improvements, translation review, and additional tests. After changing catalogs or tensors, regenerate the affected indexes and run both test suites. Translation continuation is currently queued from batch 0221.
 
 The relationship visualization was created with contributions from [@AgustinVallejo](https://github.com/AgustinVallejo).
 
