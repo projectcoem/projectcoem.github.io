@@ -177,6 +177,8 @@ spend translation context on the same poem twice. Corrupt title/body pairings
 are recorded in `translations/poem_exclusions.json` for source repair instead
 of being silently mistranslated.
 
+Translation continuation is currently queued from batch 0225.
+
 ## Project structure
 
 ```text
