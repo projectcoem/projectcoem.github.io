@@ -177,7 +177,7 @@ spend translation context on the same poem twice. Corrupt title/body pairings
 are recorded in `translations/poem_exclusions.json` for source repair instead
 of being silently mistranslated.
 
-Translation continuation is currently queued from batch 0225.
+Translation continuation is currently queued from batch 0226.
 
 ## Project structure
 
@@ -207,7 +207,7 @@ browser-tests/                 Full Chromium interaction tests
 
 ## Contributing
 
-Pull requests are welcome, especially for metadata corrections, accessibility improvements, translation review, and additional tests. After changing catalogs or tensors, regenerate the affected indexes and run both test suites. Translation continuation is currently queued from batch 0224.
+Pull requests are welcome, especially for metadata corrections, accessibility improvements, translation review, and additional tests. After changing catalogs or tensors, regenerate the affected indexes and run both test suites. Translation continuation is currently queued from batch 0226.
 
 The relationship visualization was created with contributions from [@AgustinVallejo](https://github.com/AgustinVallejo).
 

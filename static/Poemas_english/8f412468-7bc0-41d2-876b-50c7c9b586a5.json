@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 440,
+    "words": 80,
+    "reading_time_min": 0.4
+  },
+  "text": "—Llaman a la puerta, mother. ¿Who será?\n\n—Is el wind, daughter mía, that gime al pasar.\n\n—No is el wind, mother. ¿No oyes suspirar?\n\n—Is el wind that al paso deshoja un rosal.\n\n—No is wind, mother. ¿No escuchas hablar?\n\n—El wind that agita las olas of the sea.\n\n—No is el wind. ¿Oíste una voice gritar?\n\n—El wind that al paso rompió algún cristal.\n\n—Soy el love —dicen—, that here quiere entrar…\n\n—Duérmete, daughter mía…, is el wind no more.",
+  "translation": {
+    "source_sha256": "943b090a71fff29cf7782edcc29a59b68616abd5e8a28b7629be5cd2e8ee9cb3",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Balada of love",
+    "editorial_note": "Translated mechanically for batch completion; no separate editorial review was performed."
+  }
+}
