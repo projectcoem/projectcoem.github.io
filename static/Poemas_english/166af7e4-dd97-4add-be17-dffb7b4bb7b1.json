@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 710,
+    "words": 128,
+    "reading_time_min": 0.64
+  },
+  "text": "If the leaf-fall's disasters make you pensive\nthat whirl and crackle along the broad boulevard;\nif the north winds hint at you some vague anguish\nand indistinct nostalgias and desires to weep;\n\n\nif the luminous throbbing of the stars chills you;\nif, incurably sad, you watch the Seine slide by,\nand the reflection of scarlet lamps upon the river\nseems to you the wake of some tragic vessel\nwhere they carry the drowned from the Morgue to be buried;\n\n\nPoor little one! Come with me: leave the barren bridges now.\nThere is a soul on these nights hostile to consumptives,\nand a vampire disguised in a uniform who seeks sick women,\nwho courts those who cough and who, should you fall asleep,\nwill suck with a filthy trunk at your ivory nipples.",
+  "translation": {
+    "source_sha256": "8483efc05c5b926113f3e9d6bf4e758ba763e84cb8ca529b2f4dfe1aef072b79",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Wanderer",
+    "editorial_note": "Source body duplicates the title-variant record “If the Leaf-Fall's Disasters Find You Thoughtful...” and is retained here under its supplied title."
+  }
+}

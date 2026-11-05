@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 144,
+    "words": 24,
+    "reading_time_min": 0.12
+  },
+  "text": "Reúno estas words for cuatro personas,\nalguien más puede cazarlas to the vuelo,\nO mundo, it siento for ti,\nno conoces a esas cuatro personas.",
+  "translation": {
+    "source_sha256": "784dbb4a8759070a0da11fa0e8c20399379f7b696e72e0f405d10c35777ecd90",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Cause",
+    "editorial_note": "Translated from the supplied local source.\n\nImported as a translation without separate editorial review."
+  }
+}

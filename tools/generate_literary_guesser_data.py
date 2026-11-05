@@ -937,6 +937,7 @@ def main():
             text,
             word_count(text),
             data.get("metadata", {}).get("reading_time_min"),
+            data.get("translation", {}).get("status"),
         )
 
     # Conflicting author labels for identical text cannot form a fair quiz.
@@ -960,9 +961,9 @@ def main():
         text_info = poem_texts.get(poem_id)
         existing_item = dict(poem_metadata.get(poem_id, {}))
         if text_info:
-            text, words, file_time = text_info
+            text, words, file_time, translation_status = text_info
         else:
-            text, words, file_time = "", 0, None
+            text, words, file_time, translation_status = "", 0, None, None
         try:
             source_time = float(poem.get("reading_time") or 0)
         except (TypeError, ValueError):
@@ -1010,7 +1011,7 @@ def main():
                 else "unreviewed"
             ),
             "unmapped": not (known_author and text_info),
-            "unreviewed": False,
+            "unreviewed": translation_status != "reviewed",
             "quizEligible": bool(known_author and text_info and words >= 4),
             "title": poem.get("story_name") or "",
             "authorId": author_id,
@@ -1049,7 +1050,7 @@ def main():
     # Preserve metadata for local poem files that are not in the compact poem
     # source list, while making their attribution state explicit.
     poem_source_ids = set(poems_by_id)
-    for poem_id, (text, words, file_time) in poem_texts.items():
+    for poem_id, (text, words, file_time, _) in poem_texts.items():
         if poem_id in poem_source_ids:
             continue
         old = dict(poem_metadata.get(poem_id, {}))

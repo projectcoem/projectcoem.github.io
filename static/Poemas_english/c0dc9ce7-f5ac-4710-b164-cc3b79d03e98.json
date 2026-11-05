@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 1828,
+    "words": 319,
+    "reading_time_min": 1.595
+  },
+  "text": "Toledo is an ecclesiastical city.\n\nFor a single night of the year,\n\nits household vines\n\ngive a clear wine.\n\n\nA little wine that reddens the palate\n\nof the eponymous marzipan,\n\nand very gently prepares one\n\nto receive into the soul the canonical aroma\n\nof black grapes in brandy.\n\n\nFor the Church\n\nallows gluttony:\n\nfor every craving there is a license;\n\nfor every sweet, a papal bull.\n\n\nAnd candid sugar drips\n\nthrough the transparency of the Cathedral;\n\nand in her arms the Virgin cradles\n\nthe little edible god,\n\npink and salmon;\n\nand oh, what famous slices of the Alcázar,\n\nif, being granite, they were nougat!\n\n\nFor the Church allows gluttony;\n\nand I know a nun who is all sugar.\n\nAnd who keeps heaven addicted\n\nto honey spun through her hair,\n\nand knows how to make walnut electuaries,\n\nand others of bitter-root carrots,\n\nand citron, codonate, and rosetta,\n\nand Alexandrian cumin sweet,\n\nand so many other things I could not finish.\n\n\nBut that confectioner—where was he—\n\nwho made the holy mysteries\n\nin sugar, almond, and cinnamon?\n\nPentecost and the Trinity,\n\nCorpus and the Ascension,\n\nand a Jesus almost true\n\nwith a little almond in his heart.\n\n\nBut art has its rules,\n\nand each figure its share.\n\nAnd there was also a Lucifer\n\nwith a sour, elongated face,\n\nand he put in his heart\n\nan unusual bitter almond.\n\n\nTerror of mothers: hidden death\n\nin the sweets!\n\nSeasoning by the handful,\n\nwith the verdigris of kitchens!\n\n\nI know well that art has its rules,\n\nand each figure gets its share.\n\nBut to sugar-coat bitter almonds,\n\neven if they are the heart's?\n\nUnneeded charities,\n\nI swear they are.\n\n\nTo disguise a Lucifer cunningly,\n\nso that he is mistaken for a Savior?\n\nUnneeded charities,\n\nI swear they are.\n\n\nOh, good maker!\n\nThere is better art:\n\ndo not sell me rancor in syrup,\n\nif I am to find gall\n\nin the heart.",
+  "translation": {
+    "source_sha256": "e462226dd9bd5e554527d3bc2821cd02894c8be29249e8a6d6914eb68b8ef19f",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "The Bad Confectioner",
+    "editorial_note": "The source contains the marked phrase “aroma Canonical”; it is retained as “canonical aroma” rather than silently normalized. Rare confection names are transliterated or rendered descriptively."
+  }
+}

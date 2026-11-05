@@ -513,5 +513,270 @@
     "id": "918b1376-339d-40fa-ba34-9f09ebd02330",
     "status": "source_mismatch",
     "reason": "Catalog title says La fiesta de las arañas, but the stored body is La mujer transparente."
+  },
+  {
+    "id": "26929b16-9e70-40bd-8575-36a106e7d1cc",
+    "status": "source_corrupt",
+    "reason": "The stored Spanish body has broken machine-like clauses including “Mira los bares” and “de tribuna lacerar,” so it cannot support a reliable translation of Negri’s poem."
+  },
+  {
+    "id": "e90ff0fe-99ef-4260-b084-4a9f47bc051c",
+    "status": "source_corrupt",
+    "reason": "The stored Spanish body has pervasive syntax and reference corruption, including “se reúne a un piadoso” and incoherent shifts of person and gender, so the poem cannot be translated reliably."
+  },
+  {
+    "id": "24314579-22ca-4d56-8bef-476addc0659a",
+    "status": "source_corrupt",
+    "reason": "The stored Spanish body contains untranslated or damaged Italian fragments (“tòcco,” “cadesser”) and broken syntax, so its wording cannot be recovered reliably."
+  },
+  {
+    "id": "cd951df6-9a53-4657-991d-f7207ad7cc70",
+    "status": "source_corrupt",
+    "reason": "The stored Spanish body has severe semantic corruption, including “sospechoso de Novantatré” and “su cama está en el jardín de infantes. Noche,” plus unstable pronouns."
+  },
+  {
+    "id": "379a4ea3-f442-4505-8f7b-82229fbd93e3",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Aislamiento, but the stored body starts with the heading Tristeza and reproduces that neighboring poem."
+  },
+  {
+    "id": "82c1a0f9-a6f3-4c18-9c9f-9e2d332d8745",
+    "status": "source_mismatch",
+    "reason": "Catalog title says A la mirada de las divinidades, but the stored body starts with the heading Un hombre y una mujer absolutamente blancos and reproduces that neighboring poem."
+  },
+  {
+    "id": "1c31f127-d279-4cd7-b153-fe2229c43de9",
+    "status": "source_mismatch",
+    "reason": "Catalog title says A Moisés, but the stored body starts with the heading A la nave and reproduces that neighboring poem."
+  },
+  {
+    "id": "a79a4314-826d-44a2-9a58-bdb292169c83",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Deseo de verano, but the stored body starts with the heading Una piedra, memoria and reproduces that neighboring poem."
+  },
+  {
+    "id": "f284e2d5-2915-41fb-be06-9dd4987999f1",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Las tradiciones, but the stored body starts with the heading Una ventana al mundo and reproduces that neighboring poem."
+  },
+  {
+    "id": "2ba7ceda-0e38-48e1-b84a-92e50aa46d67",
+    "status": "source_mismatch",
+    "reason": "Catalog title says A una gota de rocío, but the stored body starts with the heading Una ventana al mundo and reproduces that neighboring poem."
+  },
+  {
+    "id": "8ca4b073-be04-4e62-a679-5229ee2bca6a",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Amor apergaminado, but the stored body begins with the heading Un hombre y una mujer absolutamente blancos and reproduces that poem."
+  },
+  {
+    "id": "93a5c104-74db-4425-924e-0a02346803d6",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Alocución a la poesía, but the stored body begins with the heading A la nave and reproduces that poem."
+  },
+  {
+    "id": "83d40d2a-dc09-4d18-a203-25d165af758d",
+    "status": "source_mismatch",
+    "reason": "Catalog title says El durmiente que oyó la más difusa música, but the stored body begins with the heading Una piedra, memoria and reproduces that poem."
+  },
+  {
+    "id": "44e64965-6e14-4f14-8015-e6158a5c30ca",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Los triunfos, but the stored body begins with the heading Una ventana al mundo and reproduces that poem."
+  },
+  {
+    "id": "a3966c89-7845-4bf8-9927-bdedd4a04622",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Adonde tú por aire claro vas..., but the stored body begins with the heading Una ventana al mundo and reproduces that poem."
+  },
+  {
+    "id": "52838f23-ec9e-436b-8c31-cd78abc90b19",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Amor fati, but the stored body begins with the heading Un segundo and reproduces that poem."
+  },
+  {
+    "id": "2b899888-b0a2-4d63-9565-c20d08d4ab38",
+    "status": "source_mismatch",
+    "reason": "Catalog title says A ti, siempre alegría, but the stored body begins with the heading Siesta en el mirador and reproduces that poem."
+  },
+  {
+    "id": "3c14b003-951a-44f4-b465-7843dcce21db",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Aquí en estas riberas..., but the stored body begins with the heading Novalis and reproduces that poem."
+  },
+  {
+    "id": "a1ac667e-801c-4552-a3be-26537088f085",
+    "status": "source_mismatch",
+    "reason": "Catalog title says El lago, but the stored body reproduces Tristeza, identified by its heading or identical neighboring body."
+  },
+  {
+    "id": "01592eab-c321-40c0-89be-f274ad2fe048",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Cartero cheval, but the stored body reproduces Un hombre y una mujer absolutamente blancos, identified by its heading or identical neighboring body."
+  },
+  {
+    "id": "f92cc96f-9a05-4ee3-9e08-10a5c38d1f33",
+    "status": "source_mismatch",
+    "reason": "Catalog title says El anauco, but the stored body reproduces A la nave, identified by its heading or identical neighboring body."
+  },
+  {
+    "id": "d742b624-aa3a-48d4-92c1-dcb33bf9ce32",
+    "status": "source_mismatch",
+    "reason": "Catalog title says El libro, tras la duna I, but the stored body reproduces Una piedra, memoria, identified by its heading or identical neighboring body."
+  },
+  {
+    "id": "67ee6207-90ca-494d-b223-5a578e125289",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Me asomo todas las tardes..., but the stored body reproduces Una ventana al mundo, identified by its heading or identical neighboring body."
+  },
+  {
+    "id": "04a76505-8108-4612-8444-5dc71c30bf9e",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Adoro las ciudades que son viejas..., but the stored body reproduces Una ventana al mundo, identified by its heading or identical neighboring body."
+  },
+  {
+    "id": "447208d7-b275-4e24-a1c9-98b7fd1f5005",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Esta paz anodina, but the stored body reproduces Un segundo, identified by its heading or identical neighboring body."
+  },
+  {
+    "id": "f7bbfda8-c663-472e-91d2-527b25579155",
+    "status": "source_mismatch",
+    "reason": "Catalog title says A veces el amor tiene caricias frías, but the stored body reproduces Siesta en el mirador, identified by its heading or identical neighboring body."
+  },
+  {
+    "id": "7b0d2eb9-a9c0-4703-bd36-9398ad192d5f",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Canto X, but the stored body reproduces Novalis, identified by its heading or identical neighboring body."
+  },
+  {
+    "id": "3e73538c-4bf1-42bc-8148-d4b48abfae46",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Sueño para el invierno (otra versión), but the stored body reproduces Sol y carne, identified by its heading or identical neighboring body."
+  },
+  {
+    "id": "2690c9b1-20f6-4f44-abf3-7082326ea830",
+    "status": "source_mismatch",
+    "reason": "Catalog title says La brisa, but the stored body reproduces Sol y carne, identified by its heading or identical neighboring body."
+  },
+  {
+    "id": "3b672455-cf11-4815-8ba5-de6cee8ce018",
+    "status": "source_corrupt",
+    "reason": "The stored Spanish text is truncated in the last stanza: the comparison ending “igual que si una malvarrosa” has no continuation before the separate final sentence. Needs source repair before translation."
+  },
+  {
+    "id": "e27a25d0-d32f-40bd-9db5-a2026a2ed5b9",
+    "status": "source_mismatch",
+    "reason": "Catalog title says La oración por todos, but the stored body is headed A la nave. The title and body identify different poems; needs source repair before translation."
+  },
+  {
+    "id": "81925434-3786-4b57-b0b1-518b183537f8",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Al final de la tarde..., but the stored body is headed Una ventana al mundo. The title and body identify different poems; needs source repair before translation."
+  },
+  {
+    "id": "db5c8e4c-7aa8-40bf-8924-2f71c5ddb2a5",
+    "status": "source_mismatch",
+    "reason": "Catalog title says ¡La hemos vuelto a hallar!..., but the stored body is headed Sol y carne. The title and body identify different poems; needs source repair before translation."
+  },
+  {
+    "id": "dd565105-70d1-42d6-b13f-aea80eecef9a",
+    "status": "source_mismatch",
+    "reason": "Catalog title says La infanticida Marie Farrar, but the stored body is headed Recuerdo de Marie A. The title and body identify different poems; needs source repair before translation."
+  },
+  {
+    "id": "dfe25bf7-ee65-448b-bbdc-ce857f790c86",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Dama de blanco, but the stored body is headed El poema es mi cuerpo. The title and body identify different poems; needs source repair before translation."
+  },
+  {
+    "id": "1dccc2a2-e38b-40b7-a63d-29572d21faf2",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Lección de amor, but the stored body is headed Recuerdo de Marie A. and is byte-identical to the separately cataloged Recuerdo de Marie A. source; the title and body identify different poems and the duplicate should not be translated under this title."
+  },
+  {
+    "id": "8e61de1d-e9b9-4d02-aa84-11b4758d24f3",
+    "status": "source_mismatch",
+    "reason": "Catalog title says E. D, but the stored body is headed Una ventana al mundo; the title and body identify different poems."
+  },
+  {
+    "id": "9a8c31d4-724d-4e5d-9060-638139d8179e",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Loa del estudio, but the stored body is headed Recuerdo de Marie A.; the title and body identify different poems."
+  },
+  {
+    "id": "903155fb-295e-424a-b95f-9ecebd58d95d",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Otros poemas:, but the stored body is a malformed composite beginning with Muchacha de ensueño and a second untitled fragment; the neighboring complete record carries the matching body."
+  },
+  {
+    "id": "e3a9f68a-a8ac-4727-845c-fcb23fe11386",
+    "status": "source_mismatch",
+    "reason": "Catalog title says A un muerto, but the stored body is headed Muchacha de ensueño and duplicates the neighboring Carl Sandburg record."
+  },
+  {
+    "id": "624511dc-dcf6-44ca-bb9f-99c969cd8897",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Amistad, but the stored body is headed Vengo y voy a tu vientre and duplicates that neighboring record."
+  },
+  {
+    "id": "7ae2b418-0de0-42fe-8903-16f88957be23",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Decrepitud, but the stored body is headed Un mar de lágrimas; the title and body identify different poems."
+  },
+  {
+    "id": "86afe9fd-8289-4aa2-9b85-715ce05bda80",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Aunque te diga no, empéñate en sí..., but the stored body begins with Suma transida and reproduces Encerrarte en palabras..., already selected under another catalog ID."
+  },
+  {
+    "id": "51e7e72d-a01f-49b4-8cd3-697a38049522",
+    "status": "source_corrupt",
+    "reason": "The stored source loses an entire line and part of the next in the final stanza. Reliable editions read ‘ya tan cerca o tan lejos, que no pueda / por tan lejos o cerca reprimirse / y apoderarse en luz de un orbe lágrima’; the stored text collapses this to ‘ya tan cerca o tan lejos o cerca reprimirse / y apoderarse en la luz de un orbe lágrima.’ A faithful translation would require reconstructing words absent from the catalog source."
+  },
+  {
+    "id": "8cb42756-9afb-42df-8efa-e6e36a79d6c5",
+    "status": "source_mismatch",
+    "reason": "Catalog title is El amor de las cosas, but the stored body is headed Una ventana al mundo; the same body was already identified as a mismatch in a neighboring duplicate record."
+  },
+  {
+    "id": "025c7b99-5f3b-4b72-9d72-fd1804d2794e",
+    "status": "source_mismatch",
+    "reason": "Catalog title is Pero en la fría noche, but the stored body is headed Recuerdo de Marie A.; the same body was already identified as a mismatch in a neighboring duplicate record."
+  },
+  {
+    "id": "f50d2374-ab80-494f-9bdd-986cf3dc3cae",
+    "status": "source_mismatch",
+    "reason": "Catalog title is Primer linchamiento, but the stored body is a malformed composite of Muchacha de ensueño and a second untitled lyrical fragment, with no lynching; neighboring records identify the complete source poem."
+  },
+  {
+    "id": "f6756c0e-6a96-4b8f-ad11-48282f92f44e",
+    "status": "source_mismatch",
+    "reason": "Catalog title is Cuán delicada luz es la del joven, but the stored body is headed Suma transida and reproduces Encerrarte en palabras; a neighboring duplicate with the same source hash was already excluded as this mismatch."
+  },
+  {
+    "id": "48e60db3-a141-4ea5-9264-5fb4fed59007",
+    "status": "source_mismatch",
+    "reason": "Catalog title says El río, but the stored body is explicitly headed Una ventana al mundo and duplicates neighboring records for that poem; the title and body identify different poems."
+  },
+  {
+    "id": "269f8200-ad39-4dbd-bbb1-6e00ab0f1fc0",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Preguntas, but the stored body is explicitly headed Recuerdo de Marie A. and duplicates neighboring records for that poem; the title and body identify different poems."
+  },
+  {
+    "id": "749230f8-9764-4b53-95d4-3193d7e0c78d",
+    "status": "source_corrupt",
+    "reason": "The stored body is a malformed composite: a complete poem beginning Llegarás un día... with its translator credit is followed by a separator and a second fragment matching the catalog title Sueños en el crepúsculo. It cannot be translated as one poem faithfully."
+  },
+  {
+    "id": "8217f43a-2023-48d6-8896-822f0e5a5f26",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Hay dolores fluidos, del color de la sangre..., but the stored body is explicitly headed Suma transida and duplicates neighboring records for that poem; the title and body identify different poems."
+  },
+  {
+    "id": "07db855e-3feb-4bbc-8665-9cd341edf05f",
+    "status": "source_mismatch",
+    "reason": "Catalog title says Alma de animales muertos, but the stored body is explicitly headed Después del rastro and is duplicated under a neighboring catalog record titled Después del rastro...."
   }
 ]

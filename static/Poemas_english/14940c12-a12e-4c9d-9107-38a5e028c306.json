@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 123,
+    "words": 23,
+    "reading_time_min": 0.115
+  },
+  "text": "¿Quién soy I for condenarte, O Dives,\nI that estoy so amargado\nfor the pobreza\nas it estás tú for the inútil riqueza?",
+  "translation": {
+    "source_sha256": "4b4c169789c4c2b66399985a0472e6f9251215f9d1a959de13c1c1bf912d786a",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "To Dives",
+    "editorial_note": "Translated from the supplied local source.\n\nImported as a translation without separate editorial review."
+  }
+}

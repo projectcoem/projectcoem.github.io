@@ -1,0 +1,16 @@
+{
+  "metadata": {
+    "length": 325,
+    "words": 63,
+    "reading_time_min": 0.32
+  },
+  "text": "El poeta es un fingidor.\nFinge tan completamente\nQue hasta finge que es dolor\nEl dolor que de veras siente.\n\n\nY quienes leen lo que escribe,\nSienten, en el dolor leído,\nNo los dos que el poeta vive\nSino aquél que no han tenido.\n\n\nY así va por su camino,\nDistrayendo a la razón,\nEse tren sin real destino\nQue se llama corazón.",
+  "translation": {
+    "source_sha256": "d8305d2b2682c8e4521caa052ad09b81b156a4234ba8e7d5fb5372558a414f6a",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Autopsicografía"
+  }
+}

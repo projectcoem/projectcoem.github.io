@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 777,
+    "words": 133,
+    "reading_time_min": 0.665
+  },
+  "text": "Oh Night, how long since I have seen you so abundant\nin stars and in fireflies, so drunk with perfumes.\nAfter so many years I know you\nin your blue fires, in your forests of chestnut and pine.\nI know you in the fury of the barking dogs\nand in the damp strawberries\nthat spring from the darkness.\nI suspect you brimming with waterfalls and grapevines.\n\nHow long I have been silent, how much time I have lost,\nhow long I have dreamed, looking with eyes\nwashed with tears, as now, at your beauty.\nMy Night, do not cross this planet in vain.\n\nStop, spheres, and let the music grow fierce.\nNight, sweetest Night,\nsince I must still return\nto the world of men, let a star fall,\ndriving a burning harpoon between my sad eyes,\nor let me reign in you like a moon.",
+  "translation": {
+    "source_sha256": "1c9481f540847d8140fa7afbdbd0eca9a5f9c060de60b9af7f9d4b21a6a594d5",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Novalis",
+    "editorial_note": "The translation preserves Colinas's direct apostrophe to Night, the sensory catalogue of fires, forests, strawberries, and vines, and the final alternatives of wound or lunar sovereignty. Source tabs that visibly split single verse lines were folded; stanza breaks were retained."
+  }
+}

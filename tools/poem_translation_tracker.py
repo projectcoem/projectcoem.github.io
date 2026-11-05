@@ -25,6 +25,11 @@ def source_hash(text):
     return hashlib.sha256(compact_text(text).encode("utf-8")).hexdigest()
 
 
+def selection_key(text):
+    """Collapse whitespace only when deciding whether text needs translation."""
+    return " ".join(text.split())
+
+
 def load_catalog():
     return json.loads(CATALOG_PATH.read_text())
 
@@ -35,6 +40,16 @@ def load_exclusions():
     return {
         entry["id"]: entry
         for entry in json.loads(EXCLUSIONS_PATH.read_text())
+    }
+
+
+def corrupt_source_keys(exclusions, sources):
+    """Return normalized bodies that are unsafe through every duplicate id."""
+    return {
+        selection_key(sources[poem_id]["text"])
+        for poem_id, exclusion in exclusions.items()
+        if exclusion.get("status") == "source_corrupt"
+        and poem_id in sources
     }
 
 
@@ -63,7 +78,7 @@ def translated_records():
         translation = data.get("translation", {})
         if (
             data.get("text")
-            and translation.get("status") == "reviewed"
+            and translation.get("status") in {"reviewed", "translated"}
             and translation.get("source_sha256")
         ):
             records[path.stem] = data
@@ -175,16 +190,30 @@ def next_batch(limit, author, max_chars):
     catalog, sources, hashes, completed, errors = build_state()
     if errors:
         raise SystemExit("\n".join(errors))
-    completed_hashes = {
-        sources[poem_id]["hash"] for poem_id in completed
+    completed_keys = {
+        selection_key(sources[poem_id]["text"])
+        for poem_id in completed
+    }
+    completed_title_prefixed_keys = {
+        selection_key(
+            f"{sources[poem_id]['poem'].get('story_name', '')}\n"
+            f"{sources[poem_id]['text']}"
+        )
+        for poem_id in completed
     }
     exclusions = load_exclusions()
+    blocked_keys = corrupt_source_keys(exclusions, sources)
     candidates = []
     for poem in catalog["poems"]:
         record = sources.get(poem["id"])
         if not record or poem["id"] in completed or poem["id"] in exclusions:
             continue
-        if record["hash"] in completed_hashes:
+        key = selection_key(record["text"])
+        if key in completed_keys:
+            continue
+        if key in completed_title_prefixed_keys:
+            continue
+        if key in blocked_keys:
             continue
         if author and poem.get("author_name") != author:
             continue
@@ -197,11 +226,12 @@ def next_batch(limit, author, max_chars):
         record["poem"].get("story_name", ""),
     ))
     batch = []
-    seen_hashes = set()
+    seen_keys = set()
     for record in candidates:
-        if record["hash"] in seen_hashes:
+        key = selection_key(record["text"])
+        if key in seen_keys:
             continue
-        seen_hashes.add(record["hash"])
+        seen_keys.add(key)
         poem = record["poem"]
         batch.append({
             "id": poem["id"],
@@ -218,7 +248,19 @@ def next_batch(limit, author, max_chars):
 
 def import_batch(batch_path):
     _, sources, _, _, _ = build_state()
-    batch = json.loads(Path(batch_path).read_text())
+    manifest = json.loads(Path(batch_path).read_text())
+    if isinstance(manifest, list):
+        batch = manifest
+        status = "reviewed"
+    elif isinstance(manifest, dict):
+        batch = manifest.get("translations")
+        status = manifest.get("status", "reviewed")
+    else:
+        raise SystemExit("batch manifest must be a list or object")
+    if not isinstance(batch, list):
+        raise SystemExit("batch manifest translations must be a list")
+    if status not in {"reviewed", "translated"}:
+        raise SystemExit("batch status must be reviewed or translated")
     TARGET_DIR.mkdir(parents=True, exist_ok=True)
     imported = 0
     for entry in batch:
@@ -231,6 +273,13 @@ def import_batch(batch_path):
         translated_text = compact_text(entry.get("text", ""))
         if not translated_text:
             raise SystemExit(f"{poem_id}: translation is empty")
+        editorial_note = entry.get("editorial_note", "").strip()
+        if status == "translated":
+            disclaimer = "Imported as a translation without separate editorial review."
+            editorial_note = (
+                f"{editorial_note}\n\n{disclaimer}"
+                if editorial_note else disclaimer
+            )
         output = {
             "metadata": source["source"].get("metadata", {}),
             "text": translated_text,
@@ -238,17 +287,17 @@ def import_batch(batch_path):
                 "source_sha256": source["hash"],
                 "source_language": "es",
                 "target_language": "en",
-                "status": "reviewed",
+                "status": status,
                 "translator": "Codex literary translation",
                 "title": entry["title"],
-                "editorial_note": entry.get("editorial_note", ""),
+                "editorial_note": editorial_note,
             },
         }
         (TARGET_DIR / f"{poem_id}.json").write_text(
             json.dumps(output, ensure_ascii=False, indent=2) + "\n"
         )
         imported += 1
-    print(f"Imported {imported} reviewed translations")
+    print(f"Imported {imported} {status} translations")
     sync()
 
 

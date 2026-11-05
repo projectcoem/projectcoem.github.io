@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 107,
+    "words": 21,
+    "reading_time_min": 0.105
+  },
+  "text": "O, abanico of seda blanca,\npálido as the escarcha in a tallo of hierba,\na ti also te dejan of lado.",
+  "translation": {
+    "source_sha256": "b93d6901e4a1d2e2c378abe9de477c5b01a2bda1568f594d32e0e15d9f96c560",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Fan for his Majesty the Empress",
+    "editorial_note": "Translated from the supplied local source.\n\nImported as a translation without separate editorial review."
+  }
+}

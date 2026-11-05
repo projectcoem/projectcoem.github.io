@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 865,
+    "words": 155,
+    "reading_time_min": 0.775
+  },
+  "text": "drunk Alice yesterday\n\ngave me\n\na jar of fig jam\n\nand today she\n\nwhistles\n\nfor her cat\n\nbut\n\nhe will not\n\ncome—\n\nhe is with the horses\n\nin a\n\ntub of beer\n\nor\n\nin room 21\n\nof the\n\nCrown Hill\n\nHotel\n\nor he is in the\n\nCracker\n\nCitizens National\n\nBank\n\nor\n\narrived in\n\nNew York at\n\n5:30 p.m.\n\nwith a paper suitcase\n\nand\n\n7 dollars.\n\nnear Alice\n\nin her yard\n\na paper goose\n\nwalks\n\nupside down\n\nin a cardboard box that says:\n\nCalifornia\n\nOranges.\n\nthe drunk Alice whistles.\n\nnot well not well.\n\nwork slowly.\n\neveryone tries hard\n\nbut the\n\ngods.\n\nAlice goes in for a\n\ndrink, comes\n\nout,\n\nwhistles again\n\nall the way to a\n\npark bench in\n\nEl Paso—\n\nand her love comes\n\nrunning from the\n\ntrees\n\neyes shining like a\n\ncolor film\n\nand not waiting\n\nuntil\n\nMonday\n\nwe go in\n\ntogether.",
+  "translation": {
+    "source_sha256": "a5e978f903906bf306c4f9178f0dcdbf47641b5c9d769fac81aef44adb4b0f06",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Drunk Alice Yesterday...",
+    "editorial_note": "Translated from the supplied Spanish version attributed to Charles Bukowski. The supplied opening phrase functions as a title, and its trailing ellipsis has been retained. The duplicated Spanish ‘vendrá / venir-’ is normalized by context as ‘will not / come—.’"
+  }
+}

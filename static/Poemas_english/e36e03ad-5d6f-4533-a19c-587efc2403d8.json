@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 857,
+    "words": 144,
+    "reading_time_min": 0.72
+  },
+  "text": "Lord, when the meadows are cold\nand when in the beaten-down villages\nthe very slow Angelus has fallen silent,\nover the field stripped of its flowers\nlet the delightful crows fall from the sky,\nso dear.\n\n\nStrange host of cries of justice,\nthe north wind has entered your nests!\nOn the banks of yellow rivers,\nby the path of the old calvaries,\nand at the bottom of the pit and the grave,\ndisperse yourselves, unite.\n\n\nBy the thousands, over the fields of France,\nwhere our dead of old sleep,\nturn and turn, in winter,\nso that the traveler, passing, will remember.\nBe heralds of duty, O our\nblack funeral birds!\n\n\nSaints of heaven, atop the oak,\nmast lost in the enchanted night,\nleave the spring warbler\nfor him who in the forest binds,\nbeneath the grass that bars escape,\nthe disastrous defeat.",
+  "translation": {
+    "source_sha256": "33a7f98fec718cfa88e42a4099bbe3ae7015d82a90a3c8bf6e354dc52111c35d",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "The Crows",
+    "editorial_note": "Translated from the supplied Spanish rendering, rather than from Rimbaud's French original. The address to the crows, imperative movement, and stanza structure are preserved; the source's doubled exclamation was regularized."
+  }
+}

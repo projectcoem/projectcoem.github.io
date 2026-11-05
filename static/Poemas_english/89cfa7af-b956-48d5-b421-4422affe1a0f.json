@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 1306,
+    "words": 233,
+    "reading_time_min": 1.165
+  },
+  "text": "My cradle stood beside the library,\na somber Babel where novel, science, fable—\neverything, Greek dust or Latin ash—\nmingled. I was tall as a folio.\nTwo voices spoke to me. One, insidious and firm:\n“The Earth is a cake brimming with sweetness;\nI can—and your pleasure will never end!—\nforge you an appetite of equal vastness.”\nAnd the other: “Come! O come travel through dreams,\nfar from the possible and the known.”\nAnd this one sang like wind across the sands,\na phantom risen from no one knows where,\ncaressing the ear even as it frightens it.\nI answered you: “Yes! Sweet voice!” From that moment\ndates what may be called my wound\nand my fate. Behind the panels\nof immense existence, in the blackest abyss,\nI see distinctly the strangest worlds,\nand, an ecstatic victim of my clairvoyance,\nI drag after me snakes that bite my heels.\n\nAnd since that moment, like the prophets,\nwith immense tenderness I love the sea and desert;\nI smile at funerals and sob at feasts,\nand find a pleasant savor in the sourest wine;\nfacts sometimes seem lies to me,\nand looking at the sky I fall into deep pits.\nBut the voice consoles me, saying: “The dreams\nof madmen are more beautiful than those of the wise.”",
+  "translation": {
+    "source_sha256": "af0193fdf70d897bd64cf03382f35d4442996edec4fe72fd44f655cf9b604403",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "The Voice",
+    "editorial_note": "Translated from the supplied Spanish version of Baudelaire. The source’s minor ‘de que parte’ typo is read in context as ‘de qué parte.’"
+  }
+}

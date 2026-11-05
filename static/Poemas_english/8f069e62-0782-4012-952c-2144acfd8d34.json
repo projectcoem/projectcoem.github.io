@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 784,
+    "words": 133,
+    "reading_time_min": 0.665
+  },
+  "text": "La aurora de Nueva York tiene\n\ncuatro columnas de cieno\n\ny un huracán de negras palomas\n\nque chapotean las aguas podridas.\n\n\nLa aurora de Nueva York gime\n\npor las inmensas escaleras\n\nbuscando entre las aristas\n\nnardos de angustia dibujada.\n\n\nLa aurora llega y nadie la recibe en su boca\n\nporque allí no hay mañana ni esperanza posible.\n\nA veces las monedas en enjambres furiosos\n\ntaladran y devoran abandonados niños.\n\n\nLos primeros que salen comprenden con sus huesos\n\nque no habrá paraíso ni amores deshojados;\n\nsaben que van al cieno de números y leyes,\n\na los juegos sin arte, a sudores sin fruto.\n\n\nLa luz es sepultada por cadenas y ruidos\n\nen impúdico reto de ciencia sin raíces.\n\nPor los barrios hay gentes que vacilan insomnes\n\ncomo recién salidas de un naufragio de sangre.",
+  "translation": {
+    "source_sha256": "d74af1dc356165af169b138f729ee4645359750fa8c83c799bf3d41a80f1d20b",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "La aurora",
+    "editorial_note": "Imported as a translation without separate editorial review."
+  }
+}

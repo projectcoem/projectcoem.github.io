@@ -1,0 +1,16 @@
+{
+  "metadata": {
+    "length": 156,
+    "words": 25,
+    "reading_time_min": 0.12
+  },
+  "text": "Amor es lo esencial.\n\nSexo, mero accidente.\n\nPuede ser igual\n\nO diferente.\n\nEl hombre no es un animal:\n\nEs carne inteligente,\n\nAunque algunas veces enferma.",
+  "translation": {
+    "source_sha256": "487140a25d2064e3f2eff2125d481a30eb7ec530716001ac0e0ad2c1e76b904c",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Amor es lo esencial"
+  }
+}

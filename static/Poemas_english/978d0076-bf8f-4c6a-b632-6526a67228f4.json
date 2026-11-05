@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 222,
+    "words": 34,
+    "reading_time_min": 0.17
+  },
+  "text": "when considero cuidadosamente the curiosos hábitos of the perros\nEstoy obligado a concluir\nthat the man is a animal superior.\nwhen considero the curiosos hábitos of the man,\nLe confieso, my friend, that me sorprendo.",
+  "translation": {
+    "source_sha256": "05dd961e8e757b2b71d41308504702666acc26eb40f822db791807b140fcb243",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Meditatio",
+    "editorial_note": "Translated from the supplied local source.\n\nImported as a translation without separate editorial review."
+  }
+}

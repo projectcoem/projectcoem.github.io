@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 722,
+    "words": 128,
+    "reading_time_min": 0.64
+  },
+  "text": "1\n\n\nWhat can I do? They have destroyed you,\n\nWhat a cruel encounter, this parting!\n\nHere there was a fountain, there were alleys,\n\nfarther off the park grew green…\n\nThe dawn, rosier than dawn itself,\n\nwas that April. The smell of damp earth,\n\nof a first kiss…\n\n\n2\n\n\nThe leaves of this willow died in the last century,\n\nto shine a hundred times fresher in the form of verse.\n\nThe roses changed into purple wild-rose gardens,\n\nbut the school hymns still spring forth undaunted.\n\nHalf a century passed! Divine fortune favored me,\n\nand in violent days I forgot the flow of years.\n\nI no longer go there! But on the bank of death's river,\n\nI shall carry my trembling gardens of Tsarskoye Selo.",
+  "translation": {
+    "source_sha256": "45406cf16f7a85c85136f1953777d431dad0d680dd64da3a5c8659f58faabfe4",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "To the City of Pushkin",
+    "editorial_note": "Translated from the supplied Spanish rendering rather than directly from the Russian original; the numbered sections, remembered landscape, and Tsarskoye Selo reference are retained."
+  }
+}
