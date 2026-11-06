@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 213,
+    "words": 34,
+    "reading_time_min": 0.17
+  },
+  "text": "in aqueste burial\n\nHumilde, pobre and mezquino,\n\nYace envuelto in gold fino\n\na man rich miserly.\n\n\nMurió with cien mil dolores\n\nwithout poderlo remediar,\n\nTan alone por no gastar\n\nNi aun gasta malos humores.",
+  "translation": {
+    "source_sha256": "d329a1740910f24d1b66316145f23ff584dd82432c426fe384f36b2baed7da5b",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "A a miserly",
+    "editorial_note": "Translated mechanically for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

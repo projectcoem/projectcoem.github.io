@@ -44,6 +44,7 @@ reserved draft in the original checkout and remains unchanged.
 | `0222-translated-batch.json` | Translated | Fernando Pessoa, Fernando de Herrera, Fernando de Rojas, Filippo Tommaso Marinetti | 40 | 2,132 |
 | `0223-translated-batch.json` | Translated | Filippo Tommaso Marinetti, Fina García Marruz, Francisco Brines, Francisco Gálvez, Francisco Hernández | 40 | 2,172 |
 | `0225-translated-batch.json` | Translated | Francisco Sosa Escalante, Francisco Villaespesa | 40 | 2,252 |
+| `0226-translated-batch.json` | Translated | Mixed authors | 37 | 2,289 |
 | `0224-translated-batch.json` | Translated | Mixed authors | 40 | 2,212 |
 
 The four Ada Negri records skipped before batch 0191 have corrupt Spanish
@@ -63,7 +64,7 @@ The reviewed sequence is complete through batch 0208. Batches 0209–0211 add 80
 translations without separate editorial review. Batches 0212–0216 add 200
 translations without separate editorial review. Batches 0217–0218 add 80
 translations without separate editorial review. Batches 0219–0222 add 160
-translations without separate editorial review. Batches 0223–0225 are complete; batch 0226 is next.
+translations without separate editorial review. Batches 0223–0226 add 157 translations without separate editorial review; batch 0227 is next.
 
 ## Continue the translation sequence
 

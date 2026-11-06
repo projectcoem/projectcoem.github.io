@@ -1,0 +1,17 @@
+[
+  {
+    "id": "ca914d49-cca7-47f2-9e22-729ec27b158f",
+    "status": "source_corrupt",
+    "reason": "Stored source is a malformed composite or duplicate fragment and cannot be translated faithfully without reconstruction."
+  },
+  {
+    "id": "6711244c-e57b-493f-a288-673d4ef70f36",
+    "status": "source_corrupt",
+    "reason": "Stored source is a malformed composite or duplicate fragment and cannot be translated faithfully without reconstruction."
+  },
+  {
+    "id": "4340e7f8-0977-4087-90c8-9d9c00bc1903",
+    "status": "source_corrupt",
+    "reason": "Stored source is a malformed composite or duplicate fragment and cannot be translated faithfully without reconstruction."
+  }
+]
