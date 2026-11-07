@@ -7,7 +7,7 @@
         { name: 'Emily Dickinson', image: 'static/imgs/Dickinson.png' },
         { name: 'Franz Kafka', image: 'static/imgs/Kafka.png' },
         { name: 'Federico García Lorca', image: 'static/imgs/Lorca.png' },
-        { name: 'Gabriel García Márquez', image: 'static/imgs/gabo.png' },
+        { name: 'Gabriel García Márquez', image: 'static/imgs/Marquez.png' },
         { name: 'Fernando Pessoa', image: 'static/imgs/Pessoa.png' },
         { name: 'Alejandra Pizarnik', image: 'static/imgs/Pizarnik.png' },
         { name: 'Edgar Allan Poe', image: 'static/imgs/poe.png' },
@@ -67,7 +67,7 @@
         {
             label: 'Authors', kicker: 'Complete atlas', title: 'Authors',
             description: 'Explore the larger map of writers, their countries, and the connections spanning the COEM archive.',
-            action: 'Explore authors', href: 'authorToAuthor3D.html', image: 'static/imgs/gabo.png', author: 'Gabriel García Márquez'
+            action: 'Explore authors', href: 'authorToAuthor3D.html', image: 'static/imgs/Marquez.png', author: 'Gabriel García Márquez'
         },
         {
             label: 'Describe', kicker: 'Experimental search', title: 'Describe',
