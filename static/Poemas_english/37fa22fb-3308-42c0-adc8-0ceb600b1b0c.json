@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 516,
+    "words": 83,
+    "reading_time_min": 0.415
+  },
+  "text": "Do you see this corpulent giant\nwalking with pride and gravity?\nInside he is rags and kindling,\nand a porter serves as his foundation.\n\n\nHe lives and moves through that man's soul,\nand bends his greatness wherever he wishes;\nbut whoever examines his rigid appearance\ndespises his shape and ornament.\n\n\nSuch are the apparent grandeurs\nof the tyrants' vain illusion,\nfantastic, towering dross.\n\n\nDo you see them blazing in purple, their hands\nin diamonds and assorted stones?\nWithin they are filth, earth and worms.",
+  "translation": {
+    "source_sha256": "4589a8e8162a33cbe62ef8d384e2dba966198ccba268fdeb7570f6b6d5040da7",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "¿Miras este gigante corpulento",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

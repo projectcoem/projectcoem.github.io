@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 512,
+    "words": 81,
+    "reading_time_min": 0.405
+  },
+  "text": "Hair once grew here, where now I bare a skull;\na baldness not only clean but noble;\nmy head has turned into a buttock:\nit calls for breeches rather than a hat.\n\n\nIf, Calvin as I am, I were a Luther,\nnothing could save me from the fire;\nnor bladder nor melon bulges so much\nwhen set beneath the August sun.\n\n\nThose in Madrid who scratch another's hair\nwant to convert me to wigs,\nplucking all the other skulls.\n\n\nI always condemn the requiem of a lock;\nlet their pates wear shells:\nlet my itch slide over bald thunder.",
+  "translation": {
+    "source_sha256": "d4100aa56c5f1e8bce10d96e5e5bfd78a73570bf5046e35d8a63360442f1705e",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Calvo que no quiere encabellarse",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

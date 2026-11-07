@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 511,
+    "words": 88,
+    "reading_time_min": 0.44
+  },
+  "text": "When dawn invites me to deeper sleep,\nthe watchful pilot Palinurus\nsometimes breaks nature's refuge,\ntruce from evil, strength of life.\n\n\nWhat armed fury, or what legion clothed\nin fear, or dark cloak of night,\nleaves the secure squadron weaponless,\nwith me awake and my reason asleep?\n\n\nCertain enemy thoughts,\ncorsairs born upon love's sea,\nhave assaulted my sleeping vessel.\n\n\nThe soul calls the senses to arms;\nbut since love finds them drowsy,\nevery shadow is an armed enemy.",
+  "translation": {
+    "source_sha256": "3b7689e8af3233381a9f987d5ea4c53da0d89d44e1c8c2c676bd3e8c29554c23",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Cuando a más sueño el alba me convida...",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}
