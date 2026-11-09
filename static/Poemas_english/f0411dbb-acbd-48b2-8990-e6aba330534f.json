@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 519,
+    "words": 91,
+    "reading_time_min": 0.455
+  },
+  "text": "You seek Rome in Rome, O pilgrim, and in Rome itself you do not find her: the walls she displayed are a corpse, and the Aventine her own tomb.\n\n\nWhere the Palatine ruled, it lies; medals filed down by time show more the ravage of the ages' battles than Latin glory.\n\n\nOnly the Tiber remains; if its current once watered the city, now it mourns her as a grave with a doleful sound.\n\n\nO Rome, in your greatness and beauty, all that was firm has fled; only the fleeting remains and endures.",
+  "translation": {
+    "source_sha256": "ebfef35714dfc0cf99e9146cfeb510f2b91e34257d00c4237cbcb6658893ddf1",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "To Rome, Buried in Its Ruins",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

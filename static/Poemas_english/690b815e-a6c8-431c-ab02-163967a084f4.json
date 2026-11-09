@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 524,
+    "words": 87,
+    "reading_time_min": 0.435
+  },
+  "text": "A kitchen maid stood thigh-deep in the river one January, washing cloths with such spirit and vigor that she led a thousand fools by the nose.\n\n\nA cheerful count asked her gracefully, “Are you cold?” The maid replied, “My lord, I always carry a brazier with me.”\n\n\nThe clever count, strutting like a peacock, asked her to light a candle he carried.\n\n\nThe maid raised her skirts to her backside and told him, “Then let your lordship blow this firebrand.”",
+  "translation": {
+    "source_sha256": "ec590dd79bbd7f4ec70f570a83a98d70b74786b7d7e560e680063245cf8dd3c8",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "A Kitchen Maid Stood One January",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}
