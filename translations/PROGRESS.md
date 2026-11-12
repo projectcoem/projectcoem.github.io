@@ -47,6 +47,7 @@ reserved draft in the original checkout and remains unchanged.
 | `0226-translated-batch.json` | Translated | Mixed authors | 37 | 2,289 |
 | `0227-translated-batch.json` | Translated | Francisco de Quevedo | 40 | 2,329 |
 | `0228-translated-batch.json` | Translated | Mixed authors | 40 | 2,369 |
+| `0229-translated-batch.json` | Translated | Francisco de Quevedo | 40 | 2,409 |
 | `0224-translated-batch.json` | Translated | Mixed authors | 40 | 2,212 |
 
 The four Ada Negri records skipped before batch 0191 have corrupt Spanish
@@ -66,7 +67,7 @@ The reviewed sequence is complete through batch 0208. Batches 0209–0211 add 80
 translations without separate editorial review. Batches 0212–0216 add 200
 translations without separate editorial review. Batches 0217–0218 add 80
 translations without separate editorial review. Batches 0219–0222 add 160
-translations without separate editorial review. Batches 0223–0228 add 237 translations without separate editorial review; batch 0229 is next.
+translations without separate editorial review. Batches 0223–0229 add 277 translations without separate editorial review; batch 0230 is next.
 
 ## Continue the translation sequence
 
