@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 509,
+    "words": 86,
+    "reading_time_min": 0.43
+  },
+  "text": "If memory recalls diverse things,\n\nand present and past together\n\nrelieve it and trouble it,\n\nand pain and glory border there,\n\n\nand if created things, intelligible,\n\ngrant equal victory to understanding;\n\nand our free will is given\n\nmany fleeting choices:\n\n\nLove, which is not merely a power,\n\nbut the suffered omnipotence\n\nof all that lives and feels on earth:\n\n\nwhy could its burning light not strike\n\none life with two fires,\n\nkindled in two different stars?",
+  "translation": {
+    "source_sha256": "486409883bb790a9f6673fed9833e30adda3083d05d3864349b31c0b99aff194",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Si de cosas diversas la memoria",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

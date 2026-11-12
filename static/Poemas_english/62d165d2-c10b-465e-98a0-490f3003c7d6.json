@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 512,
+    "words": 90,
+    "reading_time_min": 0.45
+  },
+  "text": "A girl who was disabled\nsaid, “How can I dance?”\nWe told her to set\nher heart dancing…\n\n\nThen the stream said,\n“How could I sing?”\nWe told it to set\nits heart singing…\n\n\nThe poor dead thistle said,\n“How could I dance?”\nWe told it, “Set your heart\nto flying on the wind…”\n\n\nGod spoke from on high:\n“How do I come down from blue?”\nWe told Him to come down\nand dance for us in the light.\n\n\nThe whole valley is dancing\nin a circle beneath the sun,\nand for anyone who will not join,\nthe heart becomes earth, earth.",
+  "translation": {
+    "source_sha256": "2ec419050ce79b08c111d3c127922c17455a4d435c6520c947ea752414d03d64",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Those Who Do Not Dance",
+    "editorial_note": "Translated directly from the supplied Spanish source; no separate editorial review occurred.\n\nImported as a translation without separate editorial review."
+  }
+}

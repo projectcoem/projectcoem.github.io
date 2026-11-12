@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 1148,
+    "words": 197,
+    "reading_time_min": 0.985
+  },
+  "text": "There is no worry except when hungry; no service except an enemy's; no savor except a hay bale; no vigilance except a sleeping man's; no mercy except treason's; no safety except cowards'; no loyalty except the reformed man's; none wiser than the lover.\n\nNo begetting except in baths; no good fame except a shamed man's; no laughter except after a blow; no prestige except after denying debts; no true love except flattery; no good meeting except with wretches; no true report except a lie; none wiser than the lover.\n\nNo rest like living worried; no greater honor than saying bah; no vainglory except counterfeiters'; no health except a bloated man's; no high daring except cowardice; no reason except rage's; no sweetness except in a dazed woman; none wiser than the lover.\n\nWould you hear the truth? No game except in sickness; no true word except in tragedy; no coward except the chivalrous; no horrible sound except melody; none wiser than the lover.",
+  "translation": {
+    "source_sha256": "bd7318a8321a347bad9f63357b02504e2f72931134183046725615784b2579e0",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Ballad of Counter-Truths",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

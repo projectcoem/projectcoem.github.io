@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 1510,
+    "words": 284,
+    "reading_time_min": 1.42
+  },
+  "text": "The goat scratches until hurt; the pitcher goes to the well until it breaks; iron heats until red; it is struck until split; a man is worth as much as he is prized; he goes so far he is forgotten; becomes so bad he is despised; Christmas is invoked until it comes.\n\nOne speaks until contradicting himself; good fame is worth as much as favor gained; one promises until retracting; pleads until the thing is won; it is loved more the more it is sought; sought until found; more frequent the less desired; Christmas is invoked until it comes.\n\nThe dog is loved until fed; the song travels until learned; fruit is kept until rotten; a place besieged until conquered; delay ruins the venture; haste brings harm; one squeezes until the prize falls; Christmas is invoked until it comes.\n\nOne jokes until no laughter comes; spends until shirtless; gives so freely all is spent; taking is worth as much as promise; God is loved until church is followed; one gives until borrowing is needed; wind turns until north wind; Christmas is invoked until it comes.\n\nPrince, a fool lives until cured, goes until returning, is beaten until changing his mind, Christmas is invoked until it comes.",
+  "translation": {
+    "source_sha256": "cdead0f0720ab306a42a810b70ba1a9a6e2cc983be8c87ac5d6ac900a7c4ba5b",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Ballad of Proverbs",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

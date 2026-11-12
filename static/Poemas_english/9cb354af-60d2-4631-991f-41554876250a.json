@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 529,
+    "words": 94,
+    "reading_time_min": 0.47
+  },
+  "text": "Petrarch celebrated his fair Laura with genius and lofty style, and made his care eternal to the world, and the rare beauty he saw in her.\n\n\nMany live envious of her, for so high a good and fortunate state, against which time can do nothing, deserves great envy.\n\n\nI alone would wish to leave you, gallant, beautiful Silvia, to whom I gave my heart in sacrifice, the same good fortune.\n\n\nFor this soul, happy in adoring you, can render only this service: that neither time nor death offend you.",
+  "translation": {
+    "source_sha256": "9908ebcb3997fb150461c3752b778ed9a3d9e0abef70baacec40aae6b14dea1c",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Petrarch Celebrated His Fair Laura",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

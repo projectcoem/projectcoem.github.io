@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 512,
+    "words": 99,
+    "reading_time_min": 0.495
+  },
+  "text": "“Ah, life!”... Does no one answer me?\nWhere are the bygone years I lived?\nFortune has bitten my times;\nthe Hours conceal my madness.\n\n\nWithout my knowing how or where,\nhealth and age have fled!\nLife is lacking, what was lived remains,\nand there is no calamity that does not surround me.\n\n\nYesterday is gone; tomorrow has not arrived;\ntoday is leaving without pausing a moment:\nI am a was, a will be, and a weary is.\n\n\nIn today and tomorrow and yesterday, together,\nI join swaddling clothes and shroud, and remain\npresent successions of a dead man.",
+  "translation": {
+    "source_sha256": "090d7676ae675755e80afb2921962d8ad27da2968e928e40e76246f9993ade80",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "\"¡Ah de la vida!\"... ¿Nadie me responde?",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

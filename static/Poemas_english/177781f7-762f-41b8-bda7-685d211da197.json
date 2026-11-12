@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 513,
+    "words": 90,
+    "reading_time_min": 0.45
+  },
+  "text": "I will grease my works with bacon\nso you will not bite them, little Góngora,\ndog of the wits of Castile,\nlearned in taunts, like a highway rogue;\n\n\nBarely a man, an unworthy priest,\nwho learned the primer without the cross;\nbuffoon of Córdoba and Seville,\nand at Court a jester in sacred guise.\n\n\nWhy do you censure the Greek tongue\nwhen you are only a rabbi of the Jewish one,\na fact even your nose does not deny?\n\n\nWrite no more verses, for my life's sake;\nthough this habit of scribes clings to you,\nfor you have the rebelliousness of an executioner.",
+  "translation": {
+    "source_sha256": "23428b7be2efb571807cc83215384ab47a7d4b38fe92f4b76cb2e97a7523f9ed",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Soneto de Luis de Góngora",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

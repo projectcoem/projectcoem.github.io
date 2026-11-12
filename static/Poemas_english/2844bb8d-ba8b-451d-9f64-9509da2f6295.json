@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 513,
+    "words": 85,
+    "reading_time_min": 0.425
+  },
+  "text": "He made forests sail, and the wind\nrespected the hemp within their sails,\nwhen courteously it measured its breath\nto the movement required.\n\n\nDefeat extended his victory\nalong the banks the Danube washes;\nburning Africa fell, the false religion\ngroaned enslaved in a bloody end.\n\n\nRome saw, in the disorder of his people,\nvalor that, if not merciful, was ardent,\nand from afar he calmed Spain's uproar:\n\n\nHe drove back Suleiman, terror of Hungary,\nand to make his retreat more valiant,\non his last day he withdrew into himself.",
+  "translation": {
+    "source_sha256": "ac9a9d02b9f5e64c973916f182ddf5ef23cd27f342dc5d5d2ccb7a0d8a317803",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Las selvas hizo navegar, y el viento",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

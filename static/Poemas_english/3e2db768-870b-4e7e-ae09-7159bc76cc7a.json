@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 633,
+    "words": 98,
+    "reading_time_min": 0.49
+  },
+  "text": "Now, Laura, your window rests in sleep, though another age kept it awake, and the attentive threshold of your door no longer hears a lover's mad complaint;\n\nfor near night, after the morning of your childhood comes a frozen evening, spring withered, light dead, voice deserted, brow gray:\n\nhang your mirror as an offering to Venus, where you see and mourn what you were in what you are; once sighed for, today you sigh.\n\nThus what neither others nor you wish to see, neither eyes nor your anger shall see, while you live old age and die to childhood.",
+  "translation": {
+    "source_sha256": "2da3af71c00a3f2d883877a7b2a9da0aae0cdf75e58e00839bbc6245620afb62",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Now, Laura, Your Window Rests",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

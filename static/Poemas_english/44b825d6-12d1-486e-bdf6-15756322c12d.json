@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 530,
+    "words": 101,
+    "reading_time_min": 0.505
+  },
+  "text": "This fountain speaks, but I do not understand its language; I know it speaks of love and boasts of seeing me burn for Flori against its will.\n\n\nI understand my weeping, by which it grows, for it proclaims my grief; my tears crown the meadow; the crystal goes laughing away with them.\n\n\nMy heart owes little to my eyes, for they give water to water and deny it to the fire consuming me.\n\n\nIf they do not see because weeping blinds them, let them hear what they cannot see: they leave me burning and drown the water itself.",
+  "translation": {
+    "source_sha256": "f91cdec9a30b7bb53b876061588d63fce2430fb3d265d669b7abd2bcb3a716e4",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "This Fountain Speaks to Me, but I Do Not Understand",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

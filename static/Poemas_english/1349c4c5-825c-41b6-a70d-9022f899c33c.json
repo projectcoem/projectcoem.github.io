@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 507,
+    "words": 83,
+    "reading_time_min": 0.415
+  },
+  "text": "Boreas troubles the sea with blue\n\nand foaming tumults; the calm sea's plain\n\nis disfigured, shattered\n\ninto formidable masses.\n\n\nIt threatens the indulgence of the shore,\n\nwhich gently sets it a hard prison;\n\nthe sunlight darkens and falters,\n\nfearful of its assaults.\n\n\nThe sailor yields himself to the storm;\n\nthe sail gives way to the Thracian winds;\n\nthe yard groans, and the passenger groans.\n\n\nSo I, shipwrecked lover and pilgrim,\n\ndying for Lisi in a storm of love,\n\nfollow the mad fury of a lofty fate.",
+  "translation": {
+    "source_sha256": "a349b4c4e6211290171f834e4e032b9f190aa901294d2d0baf951587c2dcd4de",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Molesta el ponto Bóreas con tumultos...",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

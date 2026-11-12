@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 267,
+    "words": 45,
+    "reading_time_min": 0.225
+  },
+  "text": "In my backpack\na little thyme stem\ntwo coins\na blunt pencil\ncrumpled notes\ncookie crumbs\na green clothespin\nthe business card of a Japanese Germanist\na small toothless comb\nDalí's ants on a sheet of music.",
+  "translation": {
+    "source_sha256": "fbaa26a63b783f740a2f71e89af83cdc97347158af4429f34e308b648bfbbd32",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "In My Backpack...",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}
