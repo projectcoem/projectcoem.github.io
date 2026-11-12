@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 517,
+    "words": 89,
+    "reading_time_min": 0.445
+  },
+  "text": "This divided image of life,\na shining clock or numbered light,\nwhich describes it as easily as a rose,\ninterrupted by a breath, a moment's calm;\n\n\nthis flame, fading before the sun,\nseems more a butterfly than a flame;\nthis fatal sphere, so severe,\neach moment of it a murderer:\n\n\nit is, Fabio, a double lesson. Do not resist\ndisillusion with your fragile fate:\ntime and beauty have their limits.\n\n\nThe ordered motion of the spheres\nis a sundial, and warns the sun\nthat what lasts longest is mortal too.",
+  "translation": {
+    "source_sha256": "a56f91b8103dabccb4fc3b57ce409f2cce6f1f61d8d674bb6403f3032a0b4085",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "This Divided Image of Life",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

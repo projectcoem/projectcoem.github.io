@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 531,
+    "words": 86,
+    "reading_time_min": 0.43
+  },
+  "text": "Seeing the early loss of Charles,\nwho now adds to the stars,\nSpain laments before a mindful goddess\nwho dwells proudly in an immortal temple.\n\n\nDivine in knowledge and human in answer,\nshe nourishes Spain not with comfort alone,\nbut in glorious rapture presents her\nto Charles, who makes her complaint vain.\n\n\nHer complaints are overcome and satisfied;\nher tears now spring from joy,\nas she beholds a Christian Gothic army.\n\n\nShe sees Charles among beautiful forms,\nadded to his noble ancestors;\nshe departs joyful, consoling her great brother.",
+  "translation": {
+    "source_sha256": "0e5463dca8a561e7e5736743d6d4a6327e16423b863c9bbc70ad1213e8623841",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Seeing Spain's Early Loss",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}
