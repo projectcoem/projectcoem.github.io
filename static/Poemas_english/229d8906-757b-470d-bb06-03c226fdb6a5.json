@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 317,
+    "words": 60,
+    "reading_time_min": 0.3
+  },
+  "text": "Returning from harsh prison where I nearly left my life, fortune in its unreason still rages at me, hates me, and does not forget. Its sting could be satisfied with so many wounds upon my return.\n\nIf in its unreason it wants nothing less than seeing me lifeless, may God grant my heart shelter in His heaven upon my return!",
+  "translation": {
+    "source_sha256": "fdb2d3ec3b153c70e81875199e7ed2b1ecd4a251b412e0b93bdc925466d8acb4",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Song",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

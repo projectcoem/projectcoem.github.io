@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 869,
+    "words": 150,
+    "reading_time_min": 0.75
+  },
+  "text": "Where is Callixtus the Third, pope for four years, the last of that name to die? And gracious Charles of Bourbon, Arthur, Duke of Brittany, Alfonso reigning in Aragon, and triumphant Charles the Seventh? But where is bold Charlemagne?\n\nAnd Scotland's king, said to have one cheek blood-red from forehead to below his lips? And the valiant king of Spain whose name I have forgotten? And the famous king of Cyprus? But where is bold Charlemagne?\n\nI forgo speaking of vanished glories: the world is only a vain dream. None triumphs over death; palaces do not stop it. One question still: that Bohemian king, Ladislaus—where is he, where his grandfather? But where is bold Charlemagne?\n\nWhere the count dauphin of Auvergne? Where clever, good Bernard? Where the late John the First? But where is bold Charlemagne?",
+  "translation": {
+    "source_sha256": "7064fd71b719cb741a83cfa6bebe9317d9f7b0b57e0d7eefc0072f4a35b4ef69",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Ballad of the Lords of Former Times",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 563,
+    "words": 100,
+    "reading_time_min": 0.5
+  },
+  "text": "From fifteen to twenty she is a girl; a fine lass from twenty to twenty-five, and by the reckoning a gracious woman from twenty-five to thirty. Happy he who enjoys her at such an age!\n\nFrom thirty to thirty-five she brings no joy; but may be eaten with salt and pepper; yet from thirty-five to forty she is already on the eve of disgrace.\n\nAt forty-five she is a learned scold, speaks through her nose, begs and toys with words; and once fifty is reached, she turns holy,\n\nand at fifty-five sets up her shrine. Girl, lass, woman, crone, enchantress, witch and holy woman—the devil carries her off.",
+  "translation": {
+    "source_sha256": "27ba36ca7cfa20c58a5c4d3a4cf5768dc79531d584e94bcecde88aa91ccf226a",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "On the Ages of Women",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

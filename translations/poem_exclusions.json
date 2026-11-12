@@ -793,5 +793,10 @@
     "id": "4340e7f8-0977-4087-90c8-9d9c00bc1903",
     "status": "source_corrupt",
     "reason": "Stored source is a malformed composite or duplicate fragment and cannot be translated faithfully without reconstruction."
+  },
+  {
+    "id": "0763f4f0-9fb0-4d5b-a37b-43e638693d97",
+    "status": "source_corrupt",
+    "reason": "Malformed source combines multiple poems under an empty title."
   }
 ]

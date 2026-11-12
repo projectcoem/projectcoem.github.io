@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 823,
+    "words": 148,
+    "reading_time_min": 0.74
+  },
+  "text": "Consider, fair Glover, once my pupil, and Blanche the Shoemaker, that you must learn to live. Take left and right—God sent each passing man—for an old woman is discarded like a coin no longer current.\n\nAnd you, lovely Sausage Seller whose dancing banishes sleep, and Guillemette the Tapestry Maker: satisfy the master's whims! Soon this time will be far away, you will be ugly as owls, of no use even to old priests, like a coin no longer current.\n\nYou, Jeannette the Hatmaker: let no love detain you; you, Catherine the Pursemaker: scorn no man who comes; though, remembering myself, I sometimes smile and urge them on, I know no one will take me, like a coin no longer current.\n\nKnow, girls, that if I burst into such sad, abundant tears, it is because I find no one to seek me, like a coin no longer current.",
+  "translation": {
+    "source_sha256": "defa9ebab1e601371fa0a102a09519d798ce0a55eb9427630ca14757e86de90f",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Ballad of the Fair Armorer to the Young Courtesans",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}
