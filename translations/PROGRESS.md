@@ -68,7 +68,7 @@ The reviewed sequence is complete through batch 0208. Batches 0209–0211 add 80
 translations without separate editorial review. Batches 0212–0216 add 200
 translations without separate editorial review. Batches 0217–0218 add 80
 translations without separate editorial review. Batches 0219–0222 add 160
-translations without separate editorial review. Batches 0223–0230 add 316 translations without separate editorial review. Batches 0231–0233 add 120 translations without separate editorial review; batch 0234 is next.
+translations without separate editorial review. Batches 0223–0230 add 316 translations without separate editorial review. Batches 0231–0234 add 160 translations without separate editorial review; batch 0235 is next.
 
 ## Continue the translation sequence
 
