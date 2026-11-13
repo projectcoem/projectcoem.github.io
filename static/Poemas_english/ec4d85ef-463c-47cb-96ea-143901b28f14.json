@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 114,
+    "words": 23,
+    "reading_time_min": 0.115
+  },
+  "text": "The waltz weeps in my buttonhole\n\nSilence\n\nSleep has settled on my shoulder\nand trembles just like her hair",
+  "translation": {
+    "source_sha256": "366cca3cfb76aa436c9245a58cc8cbd3f20a21324363e961bfc44ab876951aa6",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Fan",
+    "editorial_note": "Translated directly from the supplied Spanish source; no separate editorial review occurred.\n\nImported as a translation without separate editorial review."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 512,
+    "words": 84,
+    "reading_time_min": 0.42
+  },
+  "text": "When blind and fallen spirits\npursue the light and hope in vain;\nwhen their sovereign flight is struck down,\nlike a wounded condor in the sky;\n\nwhen they seek refuge in forgetting,\nonly to be refused by its cold hand;\nwhen ennui builds its barren nest\nin the poor human heart;\n\nwhen pain, stealing our calm,\noffers our fierce longings nothing\nbut shadowed, desperate hours—\n\nah, immortality, dream of the soul\nthat yearns for the infinite! If you existed,\nwhat barbarous torment you would be!",
+  "translation": {
+    "source_sha256": "ba42d23834dd3afe64b3e4f888af7f72ff77da7925df09c428a68d8fdebe7938",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Sonnet",
+    "editorial_note": "Translated directly from the supplied Spanish source; no separate editorial review occurred.\n\nImported as a translation without separate editorial review."
+  }
+}

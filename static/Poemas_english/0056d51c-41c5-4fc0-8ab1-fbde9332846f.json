@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 640,
+    "words": 99,
+    "reading_time_min": 0.495
+  },
+  "text": "When I pause to contemplate my state\nand see the steps that led me here,\nI find that, though I lost my way,\nI might have reached a worse disaster.\n\nBut once I forget that path,\nI cannot tell how I came to such grief;\nI know I am undone, and feel most keenly\nmy care dying along with me.\n\nI shall be ended, having artlessly\nsurrendered to one who can destroy me\nif she chooses—and know how to love it;\n\nsince my own will can kill me,\nwhat will hers, so little on my side,\nbe able to do, if not just that?",
+  "translation": {
+    "source_sha256": "68beb0ab2fc553b35660c5344ad8934430209ebaf2d5268be31f8d2b8ab95caa",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "When I stop to contemplate my state",
+    "editorial_note": "Translated directly from the supplied Spanish source; no separate editorial review occurred.\n\nImported as a translation without separate editorial review."
+  }
+}
