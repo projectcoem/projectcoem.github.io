@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 388,
+    "words": 69,
+    "reading_time_min": 0.345
+  },
+  "text": "Crazy old Carnival\nsold his mattress\nto buy bread and wine,\nspaghetti and sausage.\n\nLike a glutton he ate\na mountain of fried cakes;\nhis belly grew so big\nit looked like a balance scale.\nHe drank and drank, and his face\nturned red.\nHis belly burst;\nhe ate, ate, and would not stop.\n\nShrove Tuesday ends Carnival,\nand they hold his funeral,\nfor from dust he was born\nand to dust he will return.",
+  "translation": {
+    "source_sha256": "419b09d50894b15c9b4184ca84e1ff5ed95c81f0ad3e7ab7bde186334da8d5c7",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Crazy Old Carnival",
+    "editorial_note": "Translated directly from the supplied Spanish source; no separate editorial review occurred.\n\nImported as a translation without separate editorial review."
+  }
+}
