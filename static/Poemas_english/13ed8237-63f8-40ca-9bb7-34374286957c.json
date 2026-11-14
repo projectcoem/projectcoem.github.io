@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 1115,
+    "words": 183,
+    "reading_time_min": 0.915
+  },
+  "text": "Free translation of Victor Hugo\n\nAlone at the foot of the tower, where the thunderous voice\nof your fatal lord resounds in terror,\nwhose sinister shadow seems at moments\nto mark the stone of the silent threshold;\n\nready to see your husband turn murderer,\npale, your neck bowed to the ground,\nvanquished and chained, you offer yourself to fate,\nbeautiful, sorrowful Poland, its unhappy victim.\n\nIn place of your children, I see your pure hands\nclasp the holy crucifix fervently.\nThe Bashkirs have stained your royal garments\nand stamped them with their sandals as they passed!\n\nAt intervals words of menace reach you,\nand the sound of heavy footsteps is heard;\na saber flashes there, and an iron shackle binds you\nto the wall down which your painful tears run.\n\nUnfortunate Poland! I see you lift\nyour wasted arms and bowed brow,\nand turn your tearful, sunken, clouded eyes\ntoward France with a timid gaze.\n\nA most sorrowful cry escapes your breast:\n“O France, my sister!” I hear you repeat.\nAnxiously you search the road with your eyes,\nand wait, alas, and wait... and see no one come!",
+  "translation": {
+    "source_sha256": "f940bce0b86a298d752030bc244f3e2b1400cc5017137f338a888d950be64667",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Poland",
+    "editorial_note": "Direct translation; no separate editorial review was conducted.\n\nImported as a translation without separate editorial review."
+  }
+}
