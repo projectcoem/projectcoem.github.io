@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 322,
+    "words": 51,
+    "reading_time_min": 0.255
+  },
+  "text": "What do I see on this table: tigers, Borges, scissors, butterflies\nthat never flew, bones\nthat never moved this hand, empty\nveins, unfathomable tabletop?\n\nI see blindness, I see a spectacle\nof madness, things speaking by themselves\njust to speak, to rush\ntoward the narrowness of this kind\nof kiss that draws them near; I see your face.",
+  "translation": {
+    "source_sha256": "eedb8c85b0e3edb383f594f61ae6007aef7c4956ce5b30c2e29aaf604d7492a5",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Aleph",
+    "editorial_note": "Direct translation; no separate editorial review was conducted.\n\nImported as a translation without separate editorial review."
+  }
+}
