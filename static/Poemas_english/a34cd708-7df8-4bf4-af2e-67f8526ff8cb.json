@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 301,
+    "words": 52,
+    "reading_time_min": 0.26
+  },
+  "text": "I write without a model,\nwhatever comes out;\nI write from memory,\nall at once;\nI write about myself,\nabout people,\nlike a tragic game of solitaire\nwithout cards.\n\nI shuffle colors,\nloves,\ncity people,\nviolent words,\nand instead of giving myself over to hatred\nor taking to the street,\nI write whatever comes out.",
+  "translation": {
+    "source_sha256": "40cb4d4831030a7656b668ec5a94c6b3bb4c356d6ccf9f47561107f0db6d2f7e",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "I Write",
+    "editorial_note": "Direct translation; no separate editorial review was conducted.\n\nImported as a translation without separate editorial review."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 203,
+    "words": 33,
+    "reading_time_min": 0.165
+  },
+  "text": "Sailor without land,\nshipwrecked man without sails,\norphan without a harbor,\nship without a helm.\n\nSurrounded by water and thirsty,\nsurrounded by fish and hungry,\nsurrounded by waves and no greetings,\nsurrounded by dollars and naked.",
+  "translation": {
+    "source_sha256": "f6d5bc7ce29de45e6ca263c5f90deb5d04e20abe7f9970adb5d34b56ec63f34c",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Sailor Without Land...",
+    "editorial_note": "Direct translation; no separate editorial review was conducted.\n\nImported as a translation without separate editorial review."
+  }
+}

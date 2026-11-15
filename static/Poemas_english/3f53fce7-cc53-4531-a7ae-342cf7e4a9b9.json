@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 227,
+    "words": 43,
+    "reading_time_min": 0.215
+  },
+  "text": "In poems\nI must make you do or feel what I feel,\nsee what I see,\nhear what I hear,\nlove what I love.\n\nI am strong, you know that,\nbut sometimes I crack\nand furious, terrified verses\ncome out of me.",
+  "translation": {
+    "source_sha256": "c63b38c16a6326723f68b246409ff6472578a944dd266d1e81857de160ba2a26",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "In Poems...",
+    "editorial_note": "Direct translation; no separate editorial review was conducted.\n\nImported as a translation without separate editorial review."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 216,
+    "words": 37,
+    "reading_time_min": 0.185
+  },
+  "text": "The dictator's statue\ncommitted suicide.\n\nThe statue lived in the center of the pond.\nOne windy night\nthe statue threw itself into the water.\nThe dictator's statue\ndrowned.\n\nOnly the seagulls missed it.",
+  "translation": {
+    "source_sha256": "30a4438ab267c61885a844f7957a7b0fd50c934d44ed0981617b0b9dbe2e9665",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "The Dictator's Statue Committed Suicide",
+    "editorial_note": "Direct translation; no separate editorial review was conducted.\n\nImported as a translation without separate editorial review."
+  }
+}
