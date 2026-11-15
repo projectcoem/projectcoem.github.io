@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 406,
+    "words": 77,
+    "reading_time_min": 0.385
+  },
+  "text": "I am tall;\nduring the war\nI weighed only forty kilos.\n\nI have been on the edge of tuberculosis,\non the edge of prison,\non the edge of friendship,\non the edge of art,\non the edge of suicide,\non the edge of mercy,\non the edge of envy,\non the edge of fame,\non the edge of love,\non the edge of the beach,\nand little by little I grew sleepy,\nand here I am, sleeping on the edge,\non the edge of waking.",
+  "translation": {
+    "source_sha256": "57f6db20c2672e8b888959e4cce93a25343cc59c19f24a605db00328b3660af8",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "On the Edge",
+    "editorial_note": "Direct translation; no separate editorial review was conducted.\n\nImported as a translation without separate editorial review."
+  }
+}

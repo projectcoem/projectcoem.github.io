@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 412,
+    "words": 63,
+    "reading_time_min": 0.315
+  },
+  "text": "Cock-a-doodle-doo,\nhere I am,\nsaid the rooster\nHummingbird.\n\nThe rooster Hummingbird\nhad red feathers,\nand his suit\nwas lovely plumage.\n\nCock-a-doodle-doo.\nGet up, farmer,\nfor the sun\nis on its way.\n\nCock-a-doodle-doo.\n\nGet up, plowman,\nwake with joy,\nfor day is coming.\n\nCock-a-doodle-doo.\n\nChildren of the village,\nwake up with a cheer;\nthey are waiting for you at school.\nThe village needs no clock:\nthe rooster alarm clock will do.",
+  "translation": {
+    "source_sha256": "68d8c05926205868c560a294233dd1517a3b88278201bfd1496c2aac1498eb5b",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "The Rooster Alarm Clock",
+    "editorial_note": "Direct translation; no separate editorial review was conducted.\n\nImported as a translation without separate editorial review."
+  }
+}
