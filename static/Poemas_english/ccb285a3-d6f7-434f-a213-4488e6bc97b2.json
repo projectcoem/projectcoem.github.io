@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 221,
+    "words": 41,
+    "reading_time_min": 0.205
+  },
+  "text": "Prisoner without a horizon\n\nI hear the noises of the street\n\nAnd see only a hostile sky\n\nAnd the white wall of my prison\n\n\nEvening flees through my cell\n\nA sweet lamp burns\n\nWe are alone in my cell\n\nBeautiful light, beloved reason",
+  "translation": {
+    "source_sha256": "658d4bd92131b5d374a183c2eb31a7c967faba827fe694d51cf023956c037aa7",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Prisoner Without a Horizon",
+    "editorial_note": "Translated directly from the supplied Spanish text; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

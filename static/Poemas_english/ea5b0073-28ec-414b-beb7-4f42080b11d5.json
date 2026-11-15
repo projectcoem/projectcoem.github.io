@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 126,
+    "words": 26,
+    "reading_time_min": 0.13
+  },
+  "text": "North and South\n\nZenith, Nadir\n\nAnd the great cries of the East\n\nThe Ocean swells in the West\n\nThe Tower toward the Wheel\n\nSets out",
+  "translation": {
+    "source_sha256": "2a016976f235c9ef068eb53da798e5bc71fe22d28579f0660bc232d0c3677287",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "North and South",
+    "editorial_note": "Translated directly from the supplied Spanish text; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

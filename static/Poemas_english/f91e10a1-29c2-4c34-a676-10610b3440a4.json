@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 151,
+    "words": 25,
+    "reading_time_min": 0.125
+  },
+  "text": "The hours pass slowly\n\nLike a funeral procession\n\nYou will weep for the hour in which you weep\n\nWhich too will flee swiftly\n\nAs all the hours pass",
+  "translation": {
+    "source_sha256": "0f89e2632b3abcb6e65dabba5962612148bcaa26499ca4a8ecf6d3f9c2545654",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "The Hours Pass Slowly",
+    "editorial_note": "Translated directly from the supplied Spanish text; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}
