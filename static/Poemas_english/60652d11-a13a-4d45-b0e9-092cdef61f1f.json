@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 260,
+    "words": 45,
+    "reading_time_min": 0.225
+  },
+  "text": "When we turn back to recall\nthe fleeting hours of the past,\na tear trembles on her dark lashes,\nready to slip away.\n\nAnd at last it slips and falls like a drop\nof dew, as she thinks\nthat, as today we sigh for yesterday,\ntomorrow we both will sigh for today.",
+  "translation": {
+    "source_sha256": "27d7cbd272dffe94fd9e93d2a0ffab621a5dae7de1951a6a1afb1725d7e76847",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Rhyme LIV: When We Recall the Fleeting Hours",
+    "editorial_note": "Direct translation; no separate editorial review was conducted.\n\nImported as a translation without separate editorial review."
+  }
+}
