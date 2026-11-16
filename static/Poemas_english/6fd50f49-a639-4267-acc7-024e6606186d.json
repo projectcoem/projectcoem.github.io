@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 200,
+    "words": 35,
+    "reading_time_min": 0.175
+  },
+  "text": "We are born in a flash of lightning,\nand its glow still lingers when we die:\nso brief is life!\n\nThe glory and love we run after\nare shadows of a dream we chase:\nto wake is to die!",
+  "translation": {
+    "source_sha256": "70cd3353121c9743043d253eb91d6a23d90fa21972881c83b374e0abe3845f77",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Rhyme LXIX: We Are Born in a Flash of Lightning",
+    "editorial_note": "Direct translation; no separate editorial review was conducted.\n\nImported as a translation without separate editorial review."
+  }
+}

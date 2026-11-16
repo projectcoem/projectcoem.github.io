@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 250,
+    "words": 50,
+    "reading_time_min": 0.25
+  },
+  "text": "Life is a dream,\nbut a fevered dream lasting only an instant;\nwhen one wakes from it,\none sees that all is vanity and smoke...\n\nIf only it were a dream\nvery long and very deep,\na dream that lasted until death!\nI would dream of my love and yours.",
+  "translation": {
+    "source_sha256": "b8eca07f684532fcbb8d78c48abdc5097a0ad8a79006ab7bf4613cc80824de81",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Rhyme XC: Life Is a Dream",
+    "editorial_note": "Direct translation; no separate editorial review was conducted.\n\nImported as a translation without separate editorial review."
+  }
+}
