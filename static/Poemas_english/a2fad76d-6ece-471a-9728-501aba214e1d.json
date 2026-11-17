@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 127,
+    "words": 23,
+    "reading_time_min": 0.115
+  },
+  "text": "How does that rose you have pinned\nbeside your heart survive?\nNever before have I seen on earth\na flower upon a volcano.",
+  "translation": {
+    "source_sha256": "1e4339b2793d5d5cc534160f1e567f6889df5eef05b4740e37ea23a069e828db",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Rhyme XXII: How Does That Rose Live...?",
+    "editorial_note": "Direct translation; no separate editorial review was conducted.\n\nImported as a translation without separate editorial review."
+  }
+}

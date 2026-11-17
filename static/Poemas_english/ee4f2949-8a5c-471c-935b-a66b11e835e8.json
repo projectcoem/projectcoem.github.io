@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 531,
+    "words": 96,
+    "reading_time_min": 0.48
+  },
+  "text": "Stranger, he does not lie here; sternly absent\nis the man whose most learned experience\nleft even Apollo, who gave him knowledge,\nfirst only in time.\n\n\nSo that death's rule might endure,\nincompatible now with his presence,\nhe departed; the sentence would not have been fulfilled\nhad he not sided with his own steel.\n\n\nNot in human health, which deceives time,\nbut in life that time could not end,\nhe could halt his enlightened thought.\n\n\nLet us mourn, then, envious of his passing,\nfor he first fashioned what would leave us\nwithout health for all, and life for himself.",
+  "translation": {
+    "source_sha256": "89679055268f9a250de67243b47463e2e78cac934db0de76a5f6a84bb3f3fb66",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Stranger, He Does Not Lie Here, Sternly Absent",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

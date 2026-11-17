@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 510,
+    "words": 82,
+    "reading_time_min": 0.41
+  },
+  "text": "This honorable misery, great lord,\n\nthe golden soul of human ambition;\n\nthis illustrious, well-regarded poverty,\n\nsweet fatigue and precious unrest;\n\n\nthis metal of fearful color,\n\nwhose strength dares everything,\n\nI return to you, for an envied lofty gift\n\nmakes the happiest fortune ill.\n\n\nReceive it, Nero, for in learned history\n\nreceiving it will count for more than giving it,\n\nand my return will bring me greater safety:\n\n\nfor they will judge, and it will bring you more glory,\n\nthat you gave gold to one who knew how to scorn it,\n\nto show that he knew how to deserve it.",
+  "translation": {
+    "source_sha256": "97d9d612c0c327e00e467223124915787470707df00b37e4237223906d9b881a",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Esta miseria gran señor, honrosa",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

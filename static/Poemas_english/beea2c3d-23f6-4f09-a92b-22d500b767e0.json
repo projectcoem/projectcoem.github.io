@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 1095,
+    "words": 184,
+    "reading_time_min": 0.92
+  },
+  "text": "The clouds quickly gather,\nthe forest oaks roar;\na maiden sits\nbeside the green bank.\nThe waves break in fury;\nshe sighs in the darkening night,\nand laments with eyelids drowned in tears:\n\n\nMy heart is dead within me,\nthe world is empty;\ndesire has abandoned me,\nevery hope is destroyed.\nI have tasted the fullness of happiness,\nI have lived, I have loved;\ntake now this sacred child\ninto your tender keeping.\n\n\nYour grief is vain,\nin vain your tears fall;\nfor the dead in their beds\nnever remember their dreams.\nEven if something could soothe your sorrow,\npour sweet balm through your veins,\nnow that love and its pleasures no longer bind you,\ncry out your desire, and find comfort in silence!\n\n\nThough my grief be in vain,\nthough my tears fall in vain;\nthough the dead can remember\nnothing of their dreams;\nno balm is sweet to an abandoned heart,\nwhen love and its pleasures no longer bind us;\nonly misery and lonely torment remain.\n\n\n\n\n“Des Mädchens Klage”",
+  "translation": {
+    "source_sha256": "65b8389547e2bb15ae2c8d452a5058f933daa76ed0f1ea5fb10f8fa7b5076b59",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "The Maiden's Lament",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

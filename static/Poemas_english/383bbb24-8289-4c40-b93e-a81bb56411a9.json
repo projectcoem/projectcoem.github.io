@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 521,
+    "words": 87,
+    "reading_time_min": 0.435
+  },
+  "text": "I begged you, Lisi, to enjoy your blooming age\nbefore this frozen age arrived;\nyou scorned my warning, and surrendered,\nI see you regret the harm too late.\n\n\nIn old age, which comes unrecognized,\nyou feel two losses: in the years gone by\nyou did not enjoy beauty, disillusioned,\nand now you do not enjoy the form you sought.\n\n\nWhen remedy was possible, your ambition\ndid not recognize the harm; now you know\nno remedy for harm discovered too late.\n\n\nYet, remembering the old deception,\nI shall watch you, enjoying these hours,\nnot what I want, but what I once wanted.",
+  "translation": {
+    "source_sha256": "057f75258ff33ef49103df5d2699ae2cc8ddfc8e3623c59fe04292984c5f54c5",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "I Beg You, Lisi, That You Enjoy Your Blooming Age",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

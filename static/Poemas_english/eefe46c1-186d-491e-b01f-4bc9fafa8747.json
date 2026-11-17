@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 188,
+    "words": 33,
+    "reading_time_min": 0.165
+  },
+  "text": "Raise your building. Plant a tree.\n\nFight if you are young. And make love—ah, always!\n\nBut do not forget at last to build with your triumphs\n\nwhat you need most: a tomb, a refuge.",
+  "translation": {
+    "source_sha256": "355fe4334154f52e68cdffb36bd700cfbbd10d376a9dfebec31ea5fcb7f8afa1",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Mortal Counsel",
+    "editorial_note": "Translated directly from the supplied Spanish source; no separate editorial review occurred.\n\nImported as a translation without separate editorial review."
+  }
+}

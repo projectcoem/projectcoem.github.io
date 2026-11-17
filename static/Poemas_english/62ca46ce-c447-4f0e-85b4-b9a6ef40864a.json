@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 512,
+    "words": 83,
+    "reading_time_min": 0.415
+  },
+  "text": "You curl the rich waves of King Midas,\nLisi, precious in touch and just as greedy;\ncarnations burn in their bright circle,\nblazing blood, splendid wounds.\n\n\nBurning mines joined to a garden\nare a miracle of love, a rare wonder,\nwhen Hybla colors Parian marble\nand sees flowers kindled in its hardness.\n\n\nThose that on your noble head\nare bloody beauty and an affront\nto the rich, victorious mane,\n\n\ngive the cloister of pearls upon your lip\nan eloquent ruby, lovely purple,\nnow a ringing carnation, now wise coral.",
+  "translation": {
+    "source_sha256": "efa0dfbaef28395e033e7b06378e9548cbeb3b6c7c6bf9da59ec39e467674311",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "A Lisi, que su cabello rubio tenía sembrados claveles por el cuello",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

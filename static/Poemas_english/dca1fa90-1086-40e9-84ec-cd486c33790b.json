@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 521,
+    "words": 91,
+    "reading_time_min": 0.455
+  },
+  "text": "That color of rose and lily, that delightful, sweet, honest gaze, that lovely white upright neck, and ruby mouth filled with pearls;\n\n\nthe alabaster hand that binds the one most set against love and banishes and estranges the freest, most tyrannical resolve from souls;\n\n\nthat rich and lovely spring, whose flowers of grace and beauty angry time cannot offend:\n\n\nthese cause me to live and die, and are the beginning, end, and relief of my care, my rest, and my happiness.",
+  "translation": {
+    "source_sha256": "35b1c9e431b126d147dfc45bcb94d07feb5a4dc0779ef9f239d798ddb33483f1",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "That Color of Rose and Lily...",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

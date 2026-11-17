@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 79,
+    "words": 17,
+    "reading_time_min": 0.085
+  },
+  "text": "The woman poet married the man poet,\nand instead of having a child,\nthey had a sonnet.",
+  "translation": {
+    "source_sha256": "8198a90e70549d80b0cb1da6e580ddfe204c6b486c2df31337a19183a356272d",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "The Woman Poet",
+    "editorial_note": "Direct translation; no separate editorial review was conducted.\n\nImported as a translation without separate editorial review."
+  }
+}

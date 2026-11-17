@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 515,
+    "words": 87,
+    "reading_time_min": 0.435
+  },
+  "text": "Gold billows stormily in strands;\nmoisture runs pearl by pearl;\ngrief joined the Tagus to the Nile,\nthe latter swollen, the former precious.\n\n\nSuch hair and such a lovely face\nattend Fili in her sorrowful style,\nwhen for Batilo's absence\none pours riches, the other tears.\n\n\nAn amorous turtledove heard her groan\nin musical lament and a withered, hoarse voice,\nstaining the wind with her complaint.\n\n\nShe said: “If you imitate my constant grief,\nyou are sweet flattery to my song;\nif you rival it, your suffering is not enough.”",
+  "translation": {
+    "source_sha256": "c837c3c78c60c5d27c2a9647b1a104b94d75e7d241020c644e21db0930a2a875",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "A Fili, que suelto el cabello lloraba ausencias de su pastor",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

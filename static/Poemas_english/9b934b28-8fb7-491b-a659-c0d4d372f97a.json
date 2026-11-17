@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 247,
+    "words": 42,
+    "reading_time_min": 0.21
+  },
+  "text": "Because his name is Manuel\nand Machado his surname,\nin his verse Death and Life\nplay a level game.\n\nWho wins? A draw. And he,\nApollo's banderillero,\nknew, sang, and stands alone:\nthat poet, forged of old,\nwhose surname is Machado,\nand whose name was Manolo.",
+  "translation": {
+    "source_sha256": "655dbf0c4fbf1f2e3bf45a64908eed4ce5b6a16231ab796f03a14b5c11456564",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "To Manuel Machado",
+    "editorial_note": "Translated directly from the supplied Spanish source; no separate editorial review occurred.\n\nImported as a translation without separate editorial review."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 513,
+    "words": 88,
+    "reading_time_min": 0.44
+  },
+  "text": "That clock, which a sovereign hand\nsealed as a sign, though it was a gift,\nand made the benefit more binding than law,\nsparing the clamor of a bell;\n\n\nthat chain which, in no vain workmanship,\nhalts Time in his revolving task,\nreducing him to eternal sacrifice\n(due pomp for one who rose beyond the human):\n\n\nit is a great honor, a shining atom,\nof Leonor's ingenious sun,\nwhich spreads to Spain from Hungary,\n\n\nthat but one life was allotted to you,\nshort, Fabio, beside so weighty a favor,\nand grants you time in which to be grateful.",
+  "translation": {
+    "source_sha256": "ddf9a07cf128311ec9b7efcb7ef417d4ea70fb0ab99b38ec906b0f63fa73aa44",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "That Clock a Sovereign Hand",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

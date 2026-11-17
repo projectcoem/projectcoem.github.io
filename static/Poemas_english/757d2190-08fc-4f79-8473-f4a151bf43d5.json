@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 1556,
+    "words": 210,
+    "reading_time_min": 1.05
+  },
+  "text": "Tell me in what land, tell me where to find Flora, Roman beauty; where Archipiada hides from light and Thaïs, her cousin; Echo, condemned afar to repeat water's song and mountain's noise, so beautiful when fate wished; but where have last year's snows gone?\n\nTell where wise Héloïse is, for whom learned Abelard was castrated and then cloistered at famous Saint-Denis, paying thus for reckless passion. Where too is the queen who had Buridan, her lover, thrown into the Seine in a sack? But where have last year's snows gone?\n\nQueen Blanche, white as fleur-de-lis, who sang with false siren voice; Bertha Big-Foot, Beatrice, Alice, Haremburg who ruled all Maine, and Lorraine's good, brave Joan, burned at Rouen by the outlaw Englishman—Sovereign Virgin, where are they kept? But where have last year's snows gone?\n\nPrince, search neither year nor week for the hidden place they escaped without my refrain singing in your ear: “But where have last year's snows gone?”",
+  "translation": {
+    "source_sha256": "3ac798b0006e464f928b61161a54e97781fee6b553a18b5c63fb1abe585080d8",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Ballad of the Ladies of Former Times",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

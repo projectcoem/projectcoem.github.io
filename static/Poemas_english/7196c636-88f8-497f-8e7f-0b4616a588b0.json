@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 511,
+    "words": 90,
+    "reading_time_min": 0.45
+  },
+  "text": "What else is truth but poverty\nin this fragile, frivolous life?\nThe two assaults upon human life,\nfrom the cradle on, are honor and wealth.\n\n\nTime, which neither returns nor stumbles,\nunwinds it in fleeing hours;\nand fortune, always tyrannical in mistaken longing,\nwearies its weakness.\n\n\nLife itself lives a silent, distracted death;\nhealth is a war fought\nagainst its own nourishment.\n\n\nHow gravely the heedless man errs,\nfearing that life will fall to earth,\nand not seeing that by living it has fallen there!",
+  "translation": {
+    "source_sha256": "a2d0533dec4556253e0d4b6fb978ebb5552a3e1a84fc84d9e4c19308742359e4",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "¿Qué otra cosa es verdad, sino pobreza",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

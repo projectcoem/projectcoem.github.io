@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 116,
+    "words": 20,
+    "reading_time_min": 0.1
+  },
+  "text": "There will be a green silence,\nall made of unraveled guitars.\n\nThe guitar is a well\nwith wind instead of water.",
+  "translation": {
+    "source_sha256": "006ef094afc84f37a422a57dcbc62be4fe56e1f512af3d6704061e2bf779e438",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Guitar",
+    "editorial_note": "Translated directly from the supplied Spanish source; no separate editorial review occurred.\n\nImported as a translation without separate editorial review."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 513,
+    "words": 99,
+    "reading_time_min": 0.495
+  },
+  "text": "Her husband's conjugal love\nreveals his presence within her breast;\nby day she weaves upon the intricate cloth\nthe very thing she has unwoven at night.\n\n\nSelf-interest and oblivion assail her,\nand she shields herself with faith and hope,\nuntil the wind striking stern and sail\nlets the sea restore her husband.\n\n\nUlysses arrives and enjoys his beloved,\nwho, to enjoy him for one day, gave twenty years\nto the very hope of a dead man.\n\n\nBut I know a furious wild beast\nwho would weave twenty thousand years for my harm,\nand my harm at last is never seeing me for an instant.",
+  "translation": {
+    "source_sha256": "1aad0418feb006c030286089081de8529e4ef5bda3255e0d30d242ed97f00ea9",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "El amor conyugal de su marido...",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

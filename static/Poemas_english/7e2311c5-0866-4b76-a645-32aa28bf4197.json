@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 128,
+    "words": 23,
+    "reading_time_min": 0.115
+  },
+  "text": "“What is poetry?” you ask, fixing\nyour blue eyes upon mine.\n“What is poetry?” And you ask me?\nPoetry... is you.",
+  "translation": {
+    "source_sha256": "f08496350bab0f61c6b731d159fa7f43be852be739132a819ac91eb6edd9262a",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Rhyme XXI: What Is Poetry?",
+    "editorial_note": "Direct translation; no separate editorial review was conducted.\n\nImported as a translation without separate editorial review."
+  }
+}

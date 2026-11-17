@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 510,
+    "words": 93,
+    "reading_time_min": 0.465
+  },
+  "text": "Do you not see the pyramidal, restless flame\n\nburning uneasily in this candle,\n\nand how a tiny breath spills it\n\ninto a corpse of light, into blind smoke?\n\n\nDo you not see the loud and lively fire\n\nburn voraciously through branch after branch,\n\nwhich, once powerful, the breath inflames,\n\nthough it killed the spark at once?\n\n\nSo a small, newborn love, Alexi,\n\ndies with little resistance,\n\nand absence and oblivion extinguish it;\n\n\nbut if its sickness grows within the veins,\n\nit conquers with what once could conquer it,\n\nand turns violence into nourishment.",
+  "translation": {
+    "source_sha256": "396a85978b84f81145270fd74fc8de0b4755b11dece166281e9f3e22bfff5d13",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Con el ejemplo del fuego, enseña a Alexi cómo se ha de resistir al amor",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

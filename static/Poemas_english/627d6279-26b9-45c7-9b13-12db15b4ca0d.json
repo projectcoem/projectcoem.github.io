@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 294,
+    "words": 57,
+    "reading_time_min": 0.285
+  },
+  "text": "The softly sighing breeze kisses\nthe gentle waves it playfully curls;\nthe sun kisses the cloud in the west\nand colors it purple and gold;\nthe flame slips around the burning log\nto kiss another flame,\nand even the willow, bending under its weight,\nreturns a kiss to the river that kisses it.",
+  "translation": {
+    "source_sha256": "0fe53ffa01a61d9de8189b3ea23c6f5ed8e78a03407fed6b538628d7e8194519",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Rhyme IX: The Softly Sighing Breeze Kisses",
+    "editorial_note": "Direct translation; no separate editorial review was conducted.\n\nImported as a translation without separate editorial review."
+  }
+}

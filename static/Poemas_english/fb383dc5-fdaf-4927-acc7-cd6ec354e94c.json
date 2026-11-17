@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 82,
+    "words": 15,
+    "reading_time_min": 0.075
+  },
+  "text": "Tray\n\nNothing more\n\nLay the head\ndown on the bedside table\n\nAnd sleep with the sleep of Holofernes",
+  "translation": {
+    "source_sha256": "02215ce2d62c810e9f153e34565f5406fb53e494267f4641553facf7972115a2",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Tray",
+    "editorial_note": "Translated directly from the supplied Spanish source; no separate editorial review occurred.\n\nImported as a translation without separate editorial review."
+  }
+}

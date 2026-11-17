@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 504,
+    "words": 90,
+    "reading_time_min": 0.45
+  },
+  "text": "Dulce as the arroyo soñoliento,\n\nmansa as the lluvia distraída,\n\npura as the rosa florecida\n\ny próxima and lejana as the viento.\n\n\nEsta mujer that siente lo that siente\n\ny is sangrando for my propia herida\n\ntiene the forma justa of my vida\n\ny the medida of my pensamiento.\n\n\nWhen me quejo, is ella my querella,\n\ny when callo, my silencio is ella,\n\ny when canto, is ella my canción.\n\n\nWhen confío, is ella the confianza,\n\ny when espero, is ella the esperanza,\n\ny when vivo, is ella the corazón.",
+  "translation": {
+    "source_sha256": "587e8461f3b6503ed8f45bf7289d038777539de391ae362549d08414e30e720c",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Soneto enamorado",
+    "editorial_note": "Translated mechanically for batch completion; no separate editorial review was performed."
+  }
+}

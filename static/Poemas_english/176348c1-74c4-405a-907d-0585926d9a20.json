@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 509,
+    "words": 80,
+    "reading_time_min": 0.4
+  },
+  "text": "If you strip away fortune's lies, Licas,\n\nyou will see yourself reduced\n\nto your truth alone, which in lofty oblivion\n\nyou neither follow, know, nor practice.\n\n\nThose splendid, costly masks\n\nthat swell your worms beneath garments\n\nsteeped in Tyrian poison\n\nwill soon prove small beside your pride.\n\n\nWhat have you, if your cares possess you?\n\nWhat can you do, if you cannot know yourself?\n\nWhat do you command, if you obey your sins?\n\n\nFuries of gold will come to possess you;\n\nyou will suffer your ill-gathered treasures;\n\ndeath will give the lie to your presumption.",
+  "translation": {
+    "source_sha256": "e34e001ffa87eccb76f6a4c939d631f94d08404172dcd3053fbfae0ca2f37909",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Si las mentiras de fortuna, Licas",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

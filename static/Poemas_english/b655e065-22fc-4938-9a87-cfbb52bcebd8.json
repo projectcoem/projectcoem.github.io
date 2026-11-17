@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 499,
+    "words": 94,
+    "reading_time_min": 0.47
+  },
+  "text": "The name of mine that I have lost,\n\nwhere does it live, where does it thrive?\n\nA childhood name, a drop of milk,\n\na myrtle branch so light.\n\n\nHad it not carried me, I would have gone gladly,\n\nor carried my adolescence;\n\nand with it I no longer walk\n\nthrough fields and meadows.\n\n\nIt knows no weeping of mine,\n\nnor has my brine burned it;\n\nit has not seen my hair turn white,\n\nnor my mouth grow weary,\n\nand it does not speak to me when it finds me.\n\n\nBut they tell me it walks\n\nthrough the ravines of my mountain,\n\nquietly, evening after evening,\n\nwithout my body, my soul made over.",
+  "translation": {
+    "source_sha256": "d1bef8a5af330b8450c45e66626da97cc931d87b73fdb2a078b96028f496e949",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Ballad of My Name",
+    "editorial_note": "Translated directly from the supplied Spanish source; no separate editorial review occurred.\n\nImported as a translation without separate editorial review."
+  }
+}

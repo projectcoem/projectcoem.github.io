@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 117,
+    "words": 21,
+    "reading_time_min": 0.105
+  },
+  "text": "I am going to buy a whip\n\nOf yellow pigskin\n\nIf I cannot find one\n\nI will take my coachman’s whip",
+  "translation": {
+    "source_sha256": "9d87927aff7a7b58c3cac722678df73024576fc883fcb0d545106e34db48acec",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "I Am Going to Buy a Whip",
+    "editorial_note": "Translated directly from the supplied Spanish text; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

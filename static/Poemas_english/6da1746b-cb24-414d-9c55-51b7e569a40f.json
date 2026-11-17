@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 516,
+    "words": 88,
+    "reading_time_min": 0.44
+  },
+  "text": "The roses you do not cut complain to you,\nLisi, of those you choose as better;\nthose you tread remain beneath the rest,\npreserving the mark your foot leaves.\n\n\nYou make a lovely deception for the bees\nthat eagerly court your flowers;\nyour colors summon their greed:\nyou mock their instinct and celebrate their error.\n\n\nThough your nature will not take pity on me,\nlet your eternal springtime\nhave mercy on the lovely swarm.\n\n\nIt will be fortunate, and I happy,\nif it could make wax from your breast\nand honey from your miraculous face.",
+  "translation": {
+    "source_sha256": "91e6dbb5dbbddadaa0054343831bbc1930257bdadc8f32dcba5c7459e88bc2ee",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Las rosas que no cortas te dan quejas",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

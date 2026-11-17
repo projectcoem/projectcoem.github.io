@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 521,
+    "words": 95,
+    "reading_time_min": 0.475
+  },
+  "text": "Seneca, answering your prepared argument suddenly today gives glory to your teaching, which has formed my tongue to speak eloquently against you.\n\n\nEven what you have received from my hand is unworthy of what I owe you; for what I owe myself, it has only begun to reward you sparingly.\n\n\nAt the cost of my fame you want men to praise your modesty and restraint and accuse my greedy dropsy.\n\n\nEnjoy the reward due my teaching, then, so that your returning it today and my refusing it may praise us both.",
+  "translation": {
+    "source_sha256": "c3ae4557681b3b232ac5eee3ddc3c1f6866ac2977d4a3cd0d0b74407364197fb",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Seneca",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

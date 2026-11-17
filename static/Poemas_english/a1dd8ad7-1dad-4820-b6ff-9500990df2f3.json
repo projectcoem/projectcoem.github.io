@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 279,
+    "words": 49,
+    "reading_time_min": 0.245
+  },
+  "text": "Like the breeze that cools the blood\nabove the dark battlefield,\nbearing perfumes and harmonies\nthrough the wandering silence of night,\n\nsymbol of sorrow and tenderness\nin the English bard's dreadful drama,\nsweet Ophelia, her reason lost,\npasses by gathering flowers and singing.",
+  "translation": {
+    "source_sha256": "c76974eba14a977eefd08494038d5f4a27530c54ee6ec4d4948cc3e62caea13f",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Rhyme VI: Like the Breeze That Cools the Blood",
+    "editorial_note": "Direct translation; no separate editorial review was conducted.\n\nImported as a translation without separate editorial review."
+  }
+}

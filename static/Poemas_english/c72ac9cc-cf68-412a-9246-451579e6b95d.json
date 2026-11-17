@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 156,
+    "words": 29,
+    "reading_time_min": 0.145
+  },
+  "text": "I picked this sprig of heather\n\nAutumn has died, remember\n\nWe shall meet no more upon the earth\n\nScent of time, sprig of heather\n\nAnd remember I am waiting for you",
+  "translation": {
+    "source_sha256": "1cead2af5c0fa6a111a1ad09bafad6832b62e8f82710539885aec0ee7d1d063d",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Farewell",
+    "editorial_note": "Translated directly from the supplied Spanish text; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

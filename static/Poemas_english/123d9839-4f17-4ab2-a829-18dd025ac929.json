@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 111,
+    "words": 22,
+    "reading_time_min": 0.11
+  },
+  "text": "Well said, Schlosser: one loves\nwhat is one's own; and if one has none,\none desires it. The rich soul\nloves; the poor one desires.",
+  "translation": {
+    "source_sha256": "79e6e4acbdb1e1a6e86e0ccbf15dd97a9abec82ac6c45a6288a8a5fd4ddd2d8c",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Love and Appetite",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

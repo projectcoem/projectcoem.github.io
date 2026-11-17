@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 318,
+    "words": 61,
+    "reading_time_min": 0.305
+  },
+  "text": "Death, I appeal against your rigor: you took my beloved from me, yet were not sated, and robbed me of all ardor, leaving me here without strength. My living did you no harm, Death!\n\nWe were two and a single heart; if she died, I too must die, or perhaps live without life, like a phantom in imagination. Death!",
+  "translation": {
+    "source_sha256": "0bd6beb654d02801e5c80b44a2ec63adcb4e7d6f58854076a1f9cfe6f06dd333",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Lay or Rondel of Death",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

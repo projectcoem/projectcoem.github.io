@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "sourcePoems": 22734,
-  "completedPoems": 2132,
-  "remainingPoems": 20602,
+  "completedPoems": 2928,
+  "remainingPoems": 19806,
   "uniqueSourceTexts": 10045,
-  "completedUniqueSourceTexts": 2054,
-  "remainingUniqueSourceTexts": 7991,
-  "excludedPoems": 156,
+  "completedUniqueSourceTexts": 2850,
+  "remainingUniqueSourceTexts": 7195,
+  "excludedPoems": 160,
   "catalog": "static/poems_english.json",
   "startupCatalog": "static/poemEnglishStartupPool.json",
   "translationDirectory": "static/Poemas_english"

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 528,
+    "words": 85,
+    "reading_time_min": 0.425
+  },
+  "text": "You, king of rivers, generous Tagus, who stole motion and warmth from the alabaster body you bathed, graceful, gallant, beautiful;\n\n\nwhether a natural musician among the shells you raised, or offering him the victorious branch from your native valley;\n\n\nor, your currents freed from ice, giving him a mirror, I ask only that when he sees his image in you,\n\n\nyou show my tears beside his beauty, by which you grow rich: let his eyes at least behold them.",
+  "translation": {
+    "source_sha256": "d3078a037373037a312b33f6e6f96d8df007f23c5031ca4f1986afd5f3610802",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "The Same",
+    "editorial_note": "Translated directly for batch completion; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

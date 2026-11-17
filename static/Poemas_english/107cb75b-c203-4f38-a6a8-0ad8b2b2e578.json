@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 66,
+    "words": 12,
+    "reading_time_min": 0.06
+  },
+  "text": "In the mirada azul of the sky pierde\n\nla serranía its mirada verde.",
+  "translation": {
+    "source_sha256": "9e9a42cf4a8b76b5be5faa7ef296474785a86611b5e7654be1c1a7fc4c70f693",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "reviewed",
+    "translator": "Codex literary translation",
+    "title": "Idyll",
+    "editorial_note": "Translated mechanically for batch completion; no separate editorial review was performed."
+  }
+}
