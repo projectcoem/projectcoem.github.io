@@ -194,7 +194,7 @@ test("reader pages expose same-item Spanish counterparts", () => {
 
 test("homepage tagline is English text instead of the old Spanish bitmap", () => {
   const html = fs.readFileSync(path.join(root, "index.html"), "utf8");
-  assert.match(html, /Sketching the map of universal literature/);
+  assert.match(html, /Sketching the map of classical literature/);
   assert.doesNotMatch(html, /coem_description\.png/);
 });
 

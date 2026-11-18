@@ -26,7 +26,7 @@ def source_hash(text):
 
 
 def selection_key(text):
-    """Collapse whitespace only when deciding whether text needs translation."""
+    """Collapse whitespace only to decide whether text needs translation."""
     return " ".join(text.split())
 
 
@@ -275,7 +275,9 @@ def import_batch(batch_path):
             raise SystemExit(f"{poem_id}: translation is empty")
         editorial_note = entry.get("editorial_note", "").strip()
         if status == "translated":
-            disclaimer = "Imported as a translation without separate editorial review."
+            disclaimer = (
+                "Imported as a translation without separate editorial review."
+            )
             editorial_note = (
                 f"{editorial_note}\n\n{disclaimer}"
                 if editorial_note else disclaimer
