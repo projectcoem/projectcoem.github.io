@@ -82,13 +82,13 @@ async function assertReadableCompactList(page, selector, label) {
       const archive = document.querySelector("#archive");
       return Boolean(oracle.compareDocumentPosition(archive) & Node.DOCUMENT_POSITION_FOLLOWING);
     }), true);
-    await page.evaluate(() => sessionStorage.setItem("coem:hero-portrait-offset", "15"));
+    await page.evaluate(() => sessionStorage.setItem("coem:hero-portrait-offset", "20"));
     await page.reload();
     const firstPortraitNames = await page.locator("[data-hero-portrait] figcaption").allTextContents();
     assert.deepEqual(firstPortraitNames, ["Carl Sagan", "Emily Dickinson", "Franz Kafka"]);
     const carlPortrait = page.locator("[data-hero-portrait] img").first();
-    assert.match(await carlPortrait.getAttribute("src"), /static\/imgs\/Sagan\.png$/);
-    assert.equal(await carlPortrait.evaluate(image => image.naturalWidth), 1024);
+    await page.waitForFunction(() => document.querySelector("[data-hero-portrait] img").src.endsWith("Sagan-480.webp"));
+    assert.ok(await carlPortrait.evaluate(image => image.complete && image.naturalWidth > 0));
     await page.reload();
     const secondPortraitNames = await page.locator("[data-hero-portrait] figcaption").allTextContents();
     assert.notDeepEqual(secondPortraitNames, firstPortraitNames);
@@ -97,7 +97,7 @@ async function assertReadableCompactList(page, selector, label) {
     assert.equal(await page.getByRole("tab").count(), 7);
     await page.getByRole("tab", { name: /02 Poems/ }).click();
     assert.equal(await page.locator("#route-title").innerText(), "Poems");
-    assert.match(await page.locator("#route-image").getAttribute("src"), /Pizarnik\.png$/);
+    await page.waitForFunction(() => document.querySelector("#route-image").src.endsWith("Pizarnik-480.webp"));
     await page.getByRole("tab", { name: /02 Poems/ }).press("ArrowRight");
     assert.equal(await page.locator("#route-title").innerText(), "Relationships");
     assert.equal(await page.getByRole("tab", { name: /03 Relationships/ }).getAttribute("aria-selected"), "true");
@@ -118,18 +118,14 @@ async function assertReadableCompactList(page, selector, label) {
     await calligraphyTitle.scrollIntoViewIfNeeded();
     await page.waitForFunction(() => document.querySelector("#colophon-title")?.classList.contains("is-writing"));
     assert.equal(
-      (await calligraphyTitle.innerText()).replace(/\s+/g, " ").trim(),
-      "Sketching the map of universal literature."
+      await calligraphyTitle.getAttribute("aria-label"),
+      "Sketching the map of classical literature."
     );
     assert.equal(await calligraphyTitle.locator(".calligraphy-word").count(), 6);
-    const calligraphyAnimation = await calligraphyTitle.locator(".calligraphy-word").first().evaluate(element => ({
-      fontFamily: getComputedStyle(element.parentElement).fontFamily,
-      ink: getComputedStyle(element.querySelector(".calligraphy-ink")).animationName,
-      nib: getComputedStyle(element, "::after").animationName
-    }));
-    assert.match(calligraphyAnimation.fontFamily, /Allura/);
-    assert.equal(calligraphyAnimation.ink, "calligraphy-write");
-    assert.equal(calligraphyAnimation.nib, "calligraphy-nib");
+    assert.ok(await calligraphyTitle.locator(".calligraphy-stroke").count() > 40);
+    assert.equal(await calligraphyTitle.locator(".writing-quill").count(), 1);
+    await page.waitForFunction(() => document.querySelector("#colophon-title").classList.contains("is-written"));
+    assert.equal(await calligraphyTitle.locator(".writing-quill").count(), 0);
 
     await page.goto(`${base}/embeddings.html`, { waitUntil: "domcontentloaded" });
     assert.equal(
