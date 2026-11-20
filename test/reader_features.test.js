@@ -458,3 +458,18 @@ test("filter metadata and examples are presented in English", () => {
   assert.doesNotMatch(stories, /coincidencia/);
   assert.doesNotMatch(poems, /coincidencia/);
 });
+
+
+test("minimum and maximum reading times apply inclusively to search and surprise", () => {
+  const items = [
+    { id: "unknown", readingTime: 0 }, { id: "short", readingTime: 1.9 },
+    { id: "min", readingTime: 2 }, { id: "middle", readingTime: 3 },
+    { id: "max", readingTime: 4 }, { id: "long", readingTime: 4.1 }
+  ];
+  const filters = { minMinutes: "2", maxMinutes: "4" };
+  const expected = ["min", "middle", "max"];
+  assert.deepEqual(ReaderFeatures.filterItems(items, filters).map(item => item.id), expected);
+  assert.deepEqual(ReaderFeatures.filterIndexedItems(ReaderFeatures.buildFilterIndex(items), filters).map(item => item.id), expected);
+  assert.equal(ReaderFeatures.randomItem(items, filters, "min", () => 0).id, "middle");
+  assert.deepEqual(ReaderFeatures.filterItems(items, { minMinutes: "4", maxMinutes: "2" }), []);
+});

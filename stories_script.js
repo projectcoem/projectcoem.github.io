@@ -60,6 +60,7 @@ function activeFilters() {
     query: document.getElementById("author-search").value,
     country: document.getElementById("country-filter").value,
     genre: document.getElementById("genre-filter").value,
+    minMinutes: document.getElementById("min-time-filter").value,
     maxMinutes: document.getElementById("time-filter").value
   };
 }
@@ -108,6 +109,28 @@ function setAudioUnavailable(audio, message) {
     audio.load();
   }
   if (status) status.textContent = message;
+}
+
+// The operating system uses this metadata for lock-screen audio controls.
+function bindNarrationMetadata(audio, story, requestId) {
+  if (!("mediaSession" in navigator) || typeof MediaMetadata === "undefined") return;
+  audio.addEventListener("play", () => {
+    const fallback = new URL("static/imgs/Sagan.png", document.baseURI).href;
+    const filename = story.author.image;
+    const author = story.author.id || "";
+    const setArtwork = src => {
+      if (requestId !== activeStoryLoad || !audio.isConnected) return;
+      navigator.mediaSession.metadata = new MediaMetadata({
+        title: story.title, artist: author,
+        artwork: [{ src, type: /\.webp(?:$|[?#])/i.test(src) ? "image/webp" : "image/png" }]
+      });
+    };
+    setArtwork(fallback);
+    if (!filename || filename === "Sagan.png") return;
+    const portrait = new Image();
+    portrait.onload = () => setArtwork(portrait.src);
+    portrait.src = new URL(`static/imgs/${encodeURIComponent(filename)}`, document.baseURI).href;
+  });
 }
 
 async function setAudio(storyId, text, requestId, audio = document.getElementById("popup-audio")) {
@@ -256,6 +279,7 @@ async function loadStory(storyId, options = {}) {
     document.getElementById("cuentoTime").textContent = ReaderFeatures.formatTime(model.readingTime);
     textContainer.textContent = data.text || "This story has no text available.";
     renderAuthor(story.author, story.title);
+    bindNarrationMetadata(document.getElementById("popup-audio"), story, requestId);
     renderAuthorStories(story.author, storyId);
     renderRelatedAuthors(story.author);
     renderRecommendations(storyId);
@@ -291,12 +315,12 @@ function setupSearch() {
   const input = document.getElementById("author-search");
   const results = document.getElementById("autocomplete-container");
   const count = document.getElementById("search-result-count");
-  const filterControls = ["country-filter", "genre-filter", "time-filter"]
+  const filterControls = ["country-filter", "genre-filter", "min-time-filter", "time-filter"]
     .map(id => document.getElementById(id));
 
   const renderResults = () => {
     const filters = activeFilters();
-    const active = filters.query.trim() || filters.country || filters.genre || filters.maxMinutes;
+    const active = filters.query.trim() || filters.country || filters.genre || filters.minMinutes || filters.maxMinutes;
     results.replaceChildren();
     count.textContent = "";
     if (!active) return;
