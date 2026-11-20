@@ -82,7 +82,7 @@ async function assertReadableCompactList(page, selector, label) {
       const archive = document.querySelector("#archive");
       return Boolean(oracle.compareDocumentPosition(archive) & Node.DOCUMENT_POSITION_FOLLOWING);
     }), true);
-    await page.evaluate(() => sessionStorage.setItem("coem:hero-portrait-offset", "20"));
+    await page.evaluate(() => sessionStorage.setItem("coem:hero-portrait-offset", "32"));
     await page.reload();
     const firstPortraitNames = await page.locator("[data-hero-portrait] figcaption").allTextContents();
     assert.deepEqual(firstPortraitNames, ["Carl Sagan", "Emily Dickinson", "Franz Kafka"]);

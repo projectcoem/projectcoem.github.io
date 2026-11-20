@@ -58,7 +58,19 @@
         { name: 'Osamu Dazai', image: 'static/imgs/dazai.png' },
         { name: 'Oscar Wilde', image: 'static/imgs/Oscar.png' },
         { name: 'Charles Bukowski', image: 'static/imgs/bukowski.png' },
-        { name: 'Charles Dickens', image: 'static/imgs/Dickens.png' }
+        { name: 'Charles Dickens', image: 'static/imgs/Dickens.png' },
+        { name: 'Ernest Hemingway', image: 'static/imgs/Hemingway.png' },
+        { name: 'H. P. Lovecraft', image: 'static/imgs/Lovecraft.png' },
+        { name: 'Hermann Hesse', image: 'static/imgs/Hesse.png' },
+        { name: 'Rainer Maria Rilke', image: 'static/imgs/Rilke.png' },
+        { name: 'Charles Baudelaire', image: 'static/imgs/Baudelaire.png' },
+        { name: 'Gabriela Mistral', image: 'static/imgs/Mistral.png' },
+        { name: 'Clarice Lispector', image: 'static/imgs/Lispector.png' },
+        { name: 'Alejo Carpentier', image: 'static/imgs/Carpentier.png' },
+        { name: 'Carlos Fuentes', image: 'static/imgs/Fuentes.png' },
+        { name: 'Rosario Castellanos', image: 'static/imgs/Castellanos.png' },
+        { name: 'Alfonsina Storni', image: 'static/imgs/Storni.png' },
+        { name: 'Miguel Ángel Asturias', image: 'static/imgs/Asturias.png' }
     ];
 
     function rotateHeroPortraits() {

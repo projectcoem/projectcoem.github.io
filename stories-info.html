@@ -855,7 +855,7 @@
         }
     </style>
     <link rel="stylesheet" href="site_chrome.css?v=1">
-    <link rel="stylesheet" href="reader_ui.css?v=15">
+    <link rel="stylesheet" href="reader_ui.css?v=21">
     <link rel="stylesheet" href="coem_theme.css?v=4">
 </head>
 
@@ -895,6 +895,7 @@
             <div class="reader-filter-row" aria-label="Combinable story filters">
                 <label>Country<select class="reader-select" id="country-filter"><option value="">All</option></select></label>
                 <label>Genre<select class="reader-select" id="genre-filter"><option value="">All</option></select></label>
+                <label>Minimum length<select class="reader-select" id="min-time-filter"><option value="">Any</option><option value="1">1 minute</option><option value="2">2 minutes</option><option value="4">4 minutes</option><option value="6">6 minutes</option><option value="8">8 minutes</option><option value="10">10 minutes</option><option value="15">15 minutes</option><option value="20">20 minutes</option></select></label>
                 <label>Maximum length<select class="reader-select" id="time-filter">
                     <option value="">Any</option><option value="2">2 minutes</option><option value="4">4 minutes</option><option value="6">6 minutes</option><option value="8">8 minutes</option><option value="10">10 minutes</option><option value="15">15 minutes</option><option value="20">20 minutes</option>
                 </select></label>
@@ -915,6 +916,7 @@
             <h1 class="reader-heading" id="cuentoTitle">Loading story…</h1>
             <div class="reader-meta">Reading time: <span id="cuentoTime">…</span></div>
             <div class="flex-item info-text" id="cuentoText"></div>
+            <div class="reader-next"><button class="reader-button reader-next__button" id="next-unread" type="button">Another story <span aria-hidden="true">→</span></button><p id="next-unread-status" role="status" aria-live="polite"></p></div>
             <section class="reader-section" id="stories-authors-container">
                 <h3>Stories</h3>
                 <ul class="compact-list" id="stories-list"></ul>
@@ -935,11 +937,11 @@
         </div>
     </div>
     <script src="static/particleDrawStories.js?v=13"></script>
-    <script src="reader_features.js?v=12"></script>
+    <script src="reader_features.js?v=21"></script>
     <script src="stories_core.js?v=11"></script>
     <script src="audio_highlighter.js?v=1"></script>
     <script src="author_similarity.js?v=1"></script>
-    <script src="stories_script.js?v=13"></script>
+    <script src="stories_script.js?v=21"></script>
 </body>
 
 </html>

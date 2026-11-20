@@ -223,7 +223,7 @@
             "birth_year": "1890",
             "death_year": "1937",
             "genre": "Romanticismo",
-            "image": "Sagan.png",
+            "image": "Lovecraft.webp",
             "story_name": "Los gatos de Ulthar",
             "story_id": "05f16c68-4145-4c38-9044-424a23db9ed6",
             "linked_authors": 9
@@ -259,7 +259,7 @@
             "birth_year": "1920",
             "death_year": "1977",
             "genre": "Histórico",
-            "image": "Sagan.png",
+            "image": "Lispector.webp",
             "story_name": "El muerto en el mar de Urca",
             "story_id": "0039192c-6b8e-4ebf-a90d-5d3983200fb9",
             "linked_authors": 6
@@ -487,7 +487,7 @@
             "birth_year": "1877",
             "death_year": "1962",
             "genre": "Romanticismo",
-            "image": "Sagan.png",
+            "image": "Hesse.webp",
             "story_name": "La fábula de los ciegos",
             "story_id": "0635dcb9-ee50-4a46-83a0-ae9820453432",
             "linked_authors": 5
@@ -1243,7 +1243,7 @@
             "birth_year": "1899",
             "death_year": "1961",
             "genre": "Romanticismo",
-            "image": "Sagan.png",
+            "image": "Hemingway.webp",
             "story_name": "El viejo en el puente",
             "story_id": "1326ec82-7bad-4f26-a721-bdd11144bd5e",
             "linked_authors": 18
@@ -2179,7 +2179,7 @@
             "birth_year": "1904",
             "death_year": "1980",
             "genre": "Romanticismo",
-            "image": "Sagan.png",
+            "image": "Carpentier.webp",
             "story_name": "El entierro de Henri Christophe",
             "story_id": "553056d3-a1db-482e-baaf-f2f783e80f53",
             "linked_authors": 11
@@ -2311,7 +2311,7 @@
             "birth_year": "1899",
             "death_year": "1974",
             "genre": "Histórico",
-            "image": "Sagan.png",
+            "image": "Asturias.webp",
             "story_name": "Leyenda del volcán",
             "story_id": "71fe73aa-d68d-4150-8477-2f592ee8c656",
             "linked_authors": 17
@@ -2503,7 +2503,7 @@
             "birth_year": "1928",
             "death_year": "2012",
             "genre": "Unknown",
-            "image": "Sagan.png",
+            "image": "Fuentes.webp",
             "story_name": "La marcha del caracol",
             "story_id": "883878e4-b1bd-4173-8bdc-e872944aa761",
             "linked_authors": 27
