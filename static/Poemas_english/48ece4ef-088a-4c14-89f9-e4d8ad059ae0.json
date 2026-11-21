@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 646,
+    "words": 121,
+    "reading_time_min": 0.605
+  },
+  "text": "I am the Shadowy One, the widower, the unconsoled,\nPrince of Aquitaine, whose tower is gone;\nmy only star has died, and my starry lute\nbears within it Melancholy’s black sun.\n\nIn the night tomb, you who comforted me,\nrestore Pausilippo and the Italian sea,\nthat flower so dear to my desolate soul,\nand the vine where tendril twines with rose.\n\nAm I Amor or Phoebus? Lusignan or Byron?\nMy brow still reddens from the Queen’s kiss;\nI dreamed in the Grotto where the Siren swims…\n\nTwice victorious, I have crossed Acheron,\nsometimes playing on Orpheus’ lyre\nthe Saint’s sighs, at others the Fairy’s cries.",
+  "translation": {
+    "source_sha256": "094b51d9285f2e0fd9d8902d4a2ddfe929f3c821567cd7e34d99f92adae239af",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "The Disinherited",
+    "editorial_note": "Imported as a translation without separate editorial review."
+  }
+}

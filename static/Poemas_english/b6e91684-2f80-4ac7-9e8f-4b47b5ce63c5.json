@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 673,
+    "words": 110,
+    "reading_time_min": 0.55
+  },
+  "text": "Sometimes I pause upon the shore\nwhere sorrows pour their streams,\nand turbulent waters sigh and moan\nof secrets they dare not tell.\nFrom deep chasms in nameless valleys,\nfrom hills and plains no mortal knows,\nthe mystic tide and sullen surf\nsuggest, like cursed sorcerers,\na thousand terrors swollen with fear\nthat ages long forgotten once beheld.\n\nO salt winds that sadly sweep\nthe naked regions of the deep;\no pale wild waves, remembering\nthe chaos Earth has left behind;\none thing alone I ask of you:\nkeep your ancient knowledge hidden forever!",
+  "translation": {
+    "source_sha256": "37d343711d1d17f157dd49c4cdff83be72fd0577a5e6d5d4901b721778196cd9",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Oceanus",
+    "editorial_note": "Imported as a translation without separate editorial review."
+  }
+}

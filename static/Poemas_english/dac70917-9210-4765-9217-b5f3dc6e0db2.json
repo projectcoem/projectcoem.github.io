@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 722,
+    "words": 126,
+    "reading_time_min": 0.63
+  },
+  "text": "Shadows wander eternally in this land,\ndreaming of centuries gone forever;\ngreat elms rise solemnly among tombstones and mounds,\ntheir high canopy spread over a hidden world of another time.\nA light of memory illumines the whole scene,\ndead leaves whisper of vanished days,\nlonging for sights and sounds that will never return.\n\nSad and solitary, a specter glides along\nthe paths his living footsteps once took;\nnot everyone can see him, though his song\nresounds through time with strange fascination.\nOnly the few who know the secret of his magic\ncan find Poe’s shadow among these graves.",
+  "translation": {
+    "source_sha256": "60eeeda759df177aa3c0160629e4c739a4625fc7f58391b2973c26fce56986c7",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Where Poe Once Walked",
+    "editorial_note": "Imported as a translation without separate editorial review."
+  }
+}

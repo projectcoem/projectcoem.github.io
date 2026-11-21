@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 559,
+    "words": 83,
+    "reading_time_min": 0.415
+  },
+  "text": "Those nobles of old celebrated in tales,\nformidable champions\nwith imposing faces,\nwhose bodies, built of giant bones,\nseemed rooted in the earth.\n\nWere they to return, wishing to see\nthe heirs of their immortal name,\nthey would find base-born upstarts\nfrequenting ministers’ palaces,\na degraded, grasping breed;\n\nweaklings in sashes, breastplates, and padding.\nOnly then could those nobles understand\nthat in recent times their daughters\nhave mixed much servants’ blood\nwith their noble lineage.",
+  "translation": {
+    "source_sha256": "68f65bd5b4be6db5ae1ff4b63fca656bbebf4f1b84bef26db1a13ff2af127478",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Nobles and Servants",
+    "editorial_note": "Imported as a translation without separate editorial review."
+  }
+}
