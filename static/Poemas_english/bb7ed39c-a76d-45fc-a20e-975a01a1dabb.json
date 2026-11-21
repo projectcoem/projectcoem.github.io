@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 221,
+    "words": 38,
+    "reading_time_min": 0.19
+  },
+  "text": "That love,\nthat one\ntaken with my fingertips,\nthat I left, that I forgot,\nthat love,\nnow,\nin a few lines that\nfall from a drawer,\nis there,\nstill there,\nstill telling me,\nit hurts,\nit is\nstill\nbleeding.",
+  "translation": {
+    "source_sha256": "99d1a11688641436367e383cd5087297a5d1a11c28df2da65c98ff207aed8b0c",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Aquel amor...",
+    "editorial_note": "Translated directly from the supplied Spanish source; no separate editorial review occurred.\n\nImported as a translation without separate editorial review."
+  }
+}

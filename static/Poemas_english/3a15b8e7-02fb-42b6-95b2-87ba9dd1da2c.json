@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 169,
+    "words": 28,
+    "reading_time_min": 0.14
+  },
+  "text": "In your arms\nin my arms\nbetween the soft sheets\nbetween the night\ntender\nalone\nfierce\nbetween the shadows\nbetween the hours\nbetween\nbefore and after.",
+  "translation": {
+    "source_sha256": "f4f0afe4cb31b4b805486a9187f791153505a3fabceec6b63e1cc831ad4b6ee5",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Entre tus brazos",
+    "editorial_note": "Translated directly from the supplied Spanish source; no separate editorial review occurred.\n\nImported as a translation without separate editorial review."
+  }
+}

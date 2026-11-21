@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 141,
+    "words": 24,
+    "reading_time_min": 0.12
+  },
+  "text": "We search\nevery night,\nwith effort,\namong heavy, suffocating lands,\nfor that light bird of light\nthat burns and escapes us\nwith a moan.",
+  "translation": {
+    "source_sha256": "9f9f9e66be85ed18e199fcbf2674c2f3234e15ec4b0a83ad8ce49794880610ad",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Buscamos",
+    "editorial_note": "Translated directly from the supplied Spanish source; no separate editorial review occurred.\n\nImported as a translation without separate editorial review."
+  }
+}

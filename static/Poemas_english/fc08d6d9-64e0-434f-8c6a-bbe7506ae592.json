@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 266,
+    "words": 51,
+    "reading_time_min": 0.255
+  },
+  "text": "It is another woman,\nperhaps another,\nwho is recovering\nher hair, her dress, her way;\nwho now regains\nher uprightness,\nher weight,\nand after lustful, tender sessions\nleaves through the door whole and pure,\nand does not seek to know,\ndoes not need to,\ndoes not want to know\nanything about anyone.",
+  "translation": {
+    "source_sha256": "e847b862ef581107584d07f18c1106a013381f4a5099ad44458fa060a80de086",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Después",
+    "editorial_note": "Translated directly from the supplied Spanish source; no separate editorial review occurred.\n\nImported as a translation without separate editorial review."
+  }
+}

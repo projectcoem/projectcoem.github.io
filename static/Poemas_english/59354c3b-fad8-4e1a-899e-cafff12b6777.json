@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 45,
+    "words": 8,
+    "reading_time_min": 0.04
+  },
+  "text": "Without him\nhere\nwithout him.\nHis fire whispering.",
+  "translation": {
+    "source_sha256": "bd39821d0a3b9bc5292db36878ce67502ce1338e2a0948dc97516d3c0ed7c973",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "El fuego",
+    "editorial_note": "Translated directly from the supplied Spanish source; no separate editorial review occurred.\n\nImported as a translation without separate editorial review."
+  }
+}

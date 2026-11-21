@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 183,
+    "words": 33,
+    "reading_time_min": 0.165
+  },
+  "text": "It passes, goes, is lost,\ndoes not stop,\nflows,\nsprings endlessly,\nslips from our hands,\nruns, flies toward its end,\nglides,\ngoes dark,\nannihilates itself,\nfades,\ncomes undone,\nis over.",
+  "translation": {
+    "source_sha256": "a609056e043e7fa3ada5b9b3b63f4a28469b80864ba6922b4c0cc6e94e1a103a",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Pasa se va se pierde",
+    "editorial_note": "Translated directly from the supplied Spanish source; no separate editorial review occurred.\n\nImported as a translation without separate editorial review."
+  }
+}
