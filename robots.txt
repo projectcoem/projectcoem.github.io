@@ -1,0 +1,3 @@
+# COEM English edition: https://projectcoem.github.io/
+User-agent: *
+Allow: /
