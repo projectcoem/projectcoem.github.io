@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 512,
+    "words": 100,
+    "reading_time_min": 0.5
+  },
+  "text": "What I feel for you is so difficult.\n\nIt is not roses opening in the air,\n\nit is roses opening in water.\n\n\nWhat I feel for you. This thing that rolls\n\nor breaks with so many of your gestures\n\nor that you shatter with your words\n\nand then gather up again in a gesture\n\nand that overwhelms me in the yellow hours\n\nand leaves me with a sweet, folded thirst.\n\n\nWhat I feel for you, so painful\n\nas the poor light of the stars\n\nthat arrives in pain and weariness.\n\n\nWhat I feel for you, and yet\n\nthat travels so far it sometimes does not reach you.",
+  "translation": {
+    "source_sha256": "77c549888c007641f08565f6e8cdfbf00af3e7308b520fece648934282bd801d",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "What I Feel for You",
+    "editorial_note": "Translated directly from the supplied source text; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 143,
+    "words": 30,
+    "reading_time_min": 0.15
+  },
+  "text": "Over there on the table\n\nare my hands\n\nBelow, on the floor\n\nare my feet\n\nOutside\n\nfar away somewhere\n\nI do not see\n\nwhat you see\n\nwith my eyes",
+  "translation": {
+    "source_sha256": "5527bf61fe452a31d65d08c77f415bf7d45e89f72824e5013e3269897c978180",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Over There at the Table…",
+    "editorial_note": "Translated directly from the supplied source text; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}
