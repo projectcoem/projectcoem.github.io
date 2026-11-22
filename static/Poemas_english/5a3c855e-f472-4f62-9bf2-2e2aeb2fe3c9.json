@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 212,
+    "words": 35,
+    "reading_time_min": 0.175
+  },
+  "text": "Anoint me, hands pierced by a\nsolid gold nail;\nhands hanging from the man,\nhands pricked.\nI hunger,\nhunger for the dream that flows\nin the smallest grain of salt.\nMy whole body sticky\nwith dirty, golden flies.",
+  "translation": {
+    "source_sha256": "fee48f6f85d6e03799ad158a2fae64acd1fd89f3a2f3138187cf6135f69a74d4",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Doto mi vida de una esperanza agónica",
+    "editorial_note": "Translated directly from the supplied Spanish source; no separate editorial review occurred.\n\nImported as a translation without separate editorial review."
+  }
+}

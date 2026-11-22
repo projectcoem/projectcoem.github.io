@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 732,
+    "words": 116,
+    "reading_time_min": 0.58
+  },
+  "text": "The winter sunset, glowing behind the spires\nand half-detached chimneys of this shadowy sphere,\nopens wide doors to some forgotten year\nof ancient splendors and divine desires.\nFuture wonders burn in those fires,\nfull of adventure and untouched by fear;\na row of sphinxes marks the way\nbetween trembling walls and towers toward distant lyres.\n\nIt is the land where beauty’s sense flowers,\nwhere every unexplained memory has its root,\nwhere Time’s great river begins its downward course\nthrough the vast abyss in dreams of starlit hours.\nDreams draw us near… but ancient knowledge repeats\nthat no human foot has ever trod its secrets.",
+  "translation": {
+    "source_sha256": "e63b1899c3a9be5ac2f1a63139f7316d2f5ab7ae8e57ba32b687da9d23678689",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Hesperia",
+    "editorial_note": "Imported as a translation without separate editorial review."
+  }
+}

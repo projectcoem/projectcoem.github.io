@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 477,
+    "words": 83,
+    "reading_time_min": 0.415
+  },
+  "text": "Once I dreamed of ardent love,\nof lovely curls, myrtle and mignonette,\nsweet lips and bitter words,\nsad melodies of sorrowful songs.\n\nLong since my dream lies scattered, lifeless;\nmy dearest dream is scattered now.\nOnly what I once poured\nwith untamed ardor into tender rhymes remains.\n\nDo you remain, orphaned song?\nFade away too, and seek the dream I lost long ago;\nif you find it, greet it for me.\nI send a fleeting breath to a fleeting shadow.",
+  "translation": {
+    "source_sha256": "8627d5fc10a6e3770fe4d7e4df8a9d1c1240eb3f12f710bc24df121932aa5f84",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Once I Dreamed of Ardor",
+    "editorial_note": "Imported as a translation without separate editorial review."
+  }
+}

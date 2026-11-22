@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 517,
+    "words": 79,
+    "reading_time_min": 0.395
+  },
+  "text": "Lofty mountain, where Rome’s devastation\nwill forever proclaim your memory;\nproud buildings where the glory\nof great Carthage still shines;\n\ndeserted shore, once a peaceful lake,\nfilled with triumphs and victories;\nshattered marbles, a history\nthat shows us what the world repays;\n\narches, amphitheaters, baths, temple,\ncelebrated buildings that you were,\nwhose traces we now scarcely see;\n\nyour example is a great remedy for my pain:\nif time brought you down,\ntime can bring down my sorrows.",
+  "translation": {
+    "source_sha256": "e2534b705a012241cdf89599641c337f0f6b1ce715746248df5c1fd0a03e24a5",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Al monte donde fue Cartago",
+    "editorial_note": "Imported as a translation without separate editorial review."
+  }
+}

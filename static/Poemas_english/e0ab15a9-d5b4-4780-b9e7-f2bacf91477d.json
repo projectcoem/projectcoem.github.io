@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 196,
+    "words": 36,
+    "reading_time_min": 0.18
+  },
+  "text": "To say no,\nto say no,\ntie myself to the mast,\nbut\nwishing the wind would overturn it,\nthat the siren would rise and with her teeth\ncut the ropes and drag me to the depths,\nsaying no no no\nwhile following her.",
+  "translation": {
+    "source_sha256": "8cd00c67274f020dad1de20f5b6c9b61664ebc253823302ddf5e8a5537ed432f",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Decir no",
+    "editorial_note": "Translated directly from the supplied Spanish source; no separate editorial review occurred.\n\nImported as a translation without separate editorial review."
+  }
+}

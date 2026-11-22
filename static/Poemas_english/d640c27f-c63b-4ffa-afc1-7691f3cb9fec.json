@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 114,
+    "words": 20,
+    "reading_time_min": 0.1
+  },
+  "text": "My soul is like the sea:\nit has waves and storms;\nbut in its depths\nmany pearls are to be found.",
+  "translation": {
+    "source_sha256": "dad2c0dce369fd8d1a16f9819037b46c1e74954e3de02068524822a43e341727",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "My Soul Is Like the Sea",
+    "editorial_note": "Imported as a translation without separate editorial review."
+  }
+}

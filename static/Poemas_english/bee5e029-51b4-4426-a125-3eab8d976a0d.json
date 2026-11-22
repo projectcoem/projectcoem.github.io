@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 545,
+    "words": 88,
+    "reading_time_min": 0.44
+  },
+  "text": "Many tales I have heard;\nnone so cruel as this:\na well-born gentleman\nlies grievously wounded by love,\nand his lady is unfaithful.\n\nFor her treachery and betrayal,\nhe, foolishly adoring her,\nshould scorn her;\nhe should regard his pain\nas an infamous weakness.\n\nHe would challenge her in the lists,\ncrying out:\n“I love a lovely maiden;\nwhoever finds fault with her,\ncome forth and cross swords with me.”\n\nPerhaps all would fall silent;\nbut not his distress.\nAt last their weapons would have to wound,\nif they wished to fight,\nhis wretched heart.",
+  "translation": {
+    "source_sha256": "21ff530fe89bdfa183ca9f07e0ac890a3c054dc26ff1d917ca141193e131fa82",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "The Wounded Knight",
+    "editorial_note": "Imported as a translation without separate editorial review."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 272,
+    "words": 52,
+    "reading_time_min": 0.26
+  },
+  "text": "Everything is very simple, much\nsimpler, and yet\nthere are still moments\nwhen it is too much for me,\nwhen I do not understand,\nand I do not know whether to laugh aloud\nor cry with fear,\nor stay here without tears,\nwithout laughter,\nin silence,\naccepting my life,\nmy passage,\nmy time.",
+  "translation": {
+    "source_sha256": "aecb05d607a4a22c0e710e6069d19ff5ba83dc18b721526c4526bd7d9587d095",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Todo es muy simple",
+    "editorial_note": "Translated directly from the supplied Spanish source; no separate editorial review occurred.\n\nImported as a translation without separate editorial review."
+  }
+}

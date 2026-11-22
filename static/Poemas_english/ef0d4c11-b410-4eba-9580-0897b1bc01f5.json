@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 656,
+    "words": 111,
+    "reading_time_min": 0.555
+  },
+  "text": "Do you know, Daphne, that old romance\nbeneath the sycamore… under white mulberries,\nbeneath the weeping olive or trembling willows,\nthat love song forever beginning anew?\n\nDo you recognize the temple’s vast peristyle,\nthe bitter lemons whose rind you bit,\nand the fatal cave of unwary guests\nwhere the defeated serpent’s seed sleeps?\n\nDo you know why the volcano has opened again?\nOne day we touched it with our nimble feet,\ncovering the far horizon with its dust!\n\nSince a ship broke our clay gods,\nbeneath the palm of Virgil’s urn,\npale hydrangeas mingle with green laurel.",
+  "translation": {
+    "source_sha256": "13729e914f8a11a15081c4ac091d0970e202e35fb2b576ab60a00f6f88eb52cb",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "To J.-Y. Colonna",
+    "editorial_note": "Imported as a translation without separate editorial review."
+  }
+}
