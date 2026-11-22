@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 122,
+    "words": 25,
+    "reading_time_min": 0.125
+  },
+  "text": "If I am standing\n\nalone in the snow\n\nit is logical\n\nthat I should be a clock\n\n\nhow else would eternity\n\nfind its way?",
+  "translation": {
+    "source_sha256": "75c14dd34b995e6d69bc74037c967e89cc07ec316b4f2e76996f77953ad93d75",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "If I Am Standing",
+    "editorial_note": "Translated directly from the supplied source text; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

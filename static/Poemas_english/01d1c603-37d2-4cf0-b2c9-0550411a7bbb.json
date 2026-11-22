@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 133,
+    "words": 25,
+    "reading_time_min": 0.125
+  },
+  "text": "As on the virgin beach\nthe wind bends\nthe slender green reed\nthat draws\na delicate circle in the sand,\nso in me\nyour memory.",
+  "translation": {
+    "source_sha256": "7633aa52eea5ffa6a51dd6348d243f56c1390178979e15ea7c77f973e650bc2d",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Como en la playa virgen...",
+    "editorial_note": "Translated directly from the supplied Spanish source; no separate editorial review occurred.\n\nImported as a translation without separate editorial review."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 555,
+    "words": 100,
+    "reading_time_min": 0.5
+  },
+  "text": "Amid arms, war, fire, anger, and fury,\nwhich hold the haughty Frenchman captive,\nwhen the air is darkest and thickest,\nthere the fierce ardor of love grips me.\n\nI look at the sky, the trees, the flowers,\nand in them I find my pain expressed;\nin the coldest and most bitter season\nmy fears are born and green again.\n\nI say through tears: “Oh, sweet spring,\nwhen will I see my hope\nbring some peace to my soul?”\n\nBut I fear my cruel fate means my end\nmust lie so far from my beloved\namid war and fury, anger, arms, and fire.",
+  "translation": {
+    "source_sha256": "c6443512d45cf4bce3346987c67b0a48101f4439a8f58a3b934902ff588acbe0",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Entre armas, guerra, fuego, ira y furores",
+    "editorial_note": "Imported as a translation without separate editorial review."
+  }
+}

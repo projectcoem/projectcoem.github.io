@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 472,
+    "words": 83,
+    "reading_time_min": 0.415
+  },
+  "text": "In love, the butterfly\nflies from the cool rose\nover its fragrant cup;\na ray of burning sun\nbathes it lovingly\nin golden light.\n\nBut whom does the rose love?\nWho deserves the fair one’s love,\nI would like to know?\nIs it the nightingale who sings,\nor the star that rises\nas evening wanes?\n\nI know not whom the rose adores;\nbut my breast holds tender love\nfor all: fair rose,\nray of sun, bright star,\nbutterfly and nightingale.",
+  "translation": {
+    "source_sha256": "a9ad298137a10e07b91f2aff39c2bd72d25f22ecd0922e0d9fd651796ee40ba1",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "The Butterfly in Love",
+    "editorial_note": "Imported as a translation without separate editorial review."
+  }
+}

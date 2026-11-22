@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 643,
+    "words": 115,
+    "reading_time_min": 0.575
+  },
+  "text": "There is a tune for which I would give\nall Mozart, Rossini, and all of Weber,\nan old, languishing, mournful tune\nthat brings its secret charms to me alone.\n\nEach time I hear it, my soul grows\ntwo hundred years younger—it is set in Louis XIII’s time—\nand I seem to see a green hillside\nturning gold in the sunset,\n\nthen a castle of brick and stone,\nwith windows tinted red,\nringed by broad parks, with a stream at its feet\nrunning among the flowers;\n\nthen a lady at her lofty window,\nfair-haired, dark-eyed, dressed in old-fashioned clothes,\nwhom perhaps I saw in another life,\nand whom I remember.",
+  "translation": {
+    "source_sha256": "b18a65d35126c34b8b80f77c2fa10bb9d7a717e773d16105fede829251fe66f8",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Fantasy",
+    "editorial_note": "Imported as a translation without separate editorial review."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 127,
+    "words": 22,
+    "reading_time_min": 0.11
+  },
+  "text": "Where is the fulfilled dream\nand where the mad love\nthat all of us,\nor some of us,\nalways\nbehind the serene mask\nask for on our knees",
+  "translation": {
+    "source_sha256": "7d7fc4b71ca389de4bd7c2de02303627af1bf15b31c1ec3f734b8e9da9821203",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Dónde el sueño cumplido",
+    "editorial_note": "Translated directly from the supplied Spanish source; no separate editorial review occurred.\n\nImported as a translation without separate editorial review."
+  }
+}

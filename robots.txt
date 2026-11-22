@@ -1,0 +1,5 @@
+# COEM English edition: https://projectcoem.github.io/
+User-agent: *
+Allow: /
+
+Sitemap: https://projectcoem.github.io/sitemap.xml

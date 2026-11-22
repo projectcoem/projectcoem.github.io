@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 119,
+    "words": 16,
+    "reading_time_min": 0.08
+  },
+  "text": "I write\nthink\nread\ntranslate twenty pages\nlisten to the news\nwrite\nwrite\nread.\n\nWhere are you\nwhere are you.",
+  "translation": {
+    "source_sha256": "bbb30bea8d0e4033ceb70e96abc172e7d3adb2301799addc94da60dfdb07b6a6",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Escribo, pienso, leo",
+    "editorial_note": "Translated directly from the supplied Spanish source; no separate editorial review occurred.\n\nImported as a translation without separate editorial review."
+  }
+}

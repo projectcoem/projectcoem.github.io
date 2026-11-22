@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 202,
+    "words": 36,
+    "reading_time_min": 0.18
+  },
+  "text": "She lived in a country bounded\n\nby the nearby coast of death\n\nand the garden of childhood, which she never forgot.\n\n\nHers was a more innocent world.\n\nMysterious, because simple,\n\nlike a sundial.",
+  "translation": {
+    "source_sha256": "9b294da0d7d8c2469a9776af2cc06fbbf3cb5b1338b95e00fb2aca1122477305",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "She Lived in a Bordered Country…",
+    "editorial_note": "Translated directly from the supplied source text; no separate editorial review was performed.\n\nImported as a translation without separate editorial review."
+  }
+}

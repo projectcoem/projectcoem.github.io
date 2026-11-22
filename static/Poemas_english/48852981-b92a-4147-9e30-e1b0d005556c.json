@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 310,
+    "words": 50,
+    "reading_time_min": 0.25
+  },
+  "text": "My weariness,\nmy anguish,\nmy joy,\nmy terror,\nmy humility,\nall my nights,\nmy nostalgia for the year\nnineteen thirty,\nmy common sense,\nmy rebellion.\n\nMy disdain,\nmy cruelty and my grief,\nmy abandonment,\nmy weeping,\nmy agony,\nmy inescapable and painful inheritance,\nmy suffering,\nin the end,\nmy poor life.",
+  "translation": {
+    "source_sha256": "9ea3c2c66ea69a233b4d36dcb8651f541c6f5760db7ee0960d3a800e901ca260",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Eso",
+    "editorial_note": "Translated directly from the supplied Spanish source; no separate editorial review occurred.\n\nImported as a translation without separate editorial review."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 867,
+    "words": 133,
+    "reading_time_min": 0.665
+  },
+  "text": "On the shore of the deserted sea,\nbeside the restless deep,\na young man, full of doubts,\nstops in thought,\nand thus speaks to the troubled waves:\n\n“Explain to me life’s unknown secret,\nthe riddle whose discovery\nhas set so many brows aflame;\nheads adorned with pontifical ornaments,\nforeheads with solemn miters,\nwith Damascene turbans,\ndoctoral caps,\nwigs and false hair,\nand so many other heads\nhave sought to know the hidden riddle.\nTell me, I beg you:\nWhat is man? Whence does he come?\nWhere does his road lead?\nWhat dwells in the high heavens\nbeyond the burning stars?”\n\nThe sea murmurs its eternal song,\nsad and drowsy;\nthe wind blows, the clouds flee;\nstars in the void\nshine indifferent with their cold radiance,\nwhile a madman waits anxiously for an answer.",
+  "translation": {
+    "source_sha256": "63984b91a7aa3dfb42824255d99fdb1ee1bb5f990f4a4b46e0a88d4ce079b1a3",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "On the Shore of the Deserted Sea",
+    "editorial_note": "Imported as a translation without separate editorial review."
+  }
+}

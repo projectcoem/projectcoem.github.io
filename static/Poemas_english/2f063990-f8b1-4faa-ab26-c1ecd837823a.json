@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 779,
+    "words": 126,
+    "reading_time_min": 0.63
+  },
+  "text": "The place was dark and dusty, a lost corner\nin a maze of old lanes beside the docks,\nsmelling of strange things from overseas,\namid curious scraps of fog scattered by the west wind.\nSmoke- and frost-clouded diamond panes\nbarely revealed heaps of books, like twisted trees\nrotting from floor to ceiling… traces\nof ancient knowledge crumbling at bargain prices.\n\nI entered, spellbound, and from a cobwebbed heap\npicked up the nearest volume and read at random,\ntrembling at strange words that seemed to conceal\nsome monstrous secret for whoever found it.\nThen, searching for an old, sly bookseller,\nI found only the echo of a laugh.",
+  "translation": {
+    "source_sha256": "3feb7ec835a389e23b14defc40f819620519391b1e9b1a389b48a7e68847aab7",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "The Book",
+    "editorial_note": "Imported as a translation without separate editorial review."
+  }
+}
