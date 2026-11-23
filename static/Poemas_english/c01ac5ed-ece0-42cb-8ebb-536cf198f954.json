@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 300,
+    "words": 51,
+    "reading_time_min": 0.255
+  },
+  "text": "It is raining on the sea.\nAt the open window,\nwatching it, you rest\nyour temple against the glass.\n\nAn image for a few seconds:\nstill against the light,\nyour changed body, still\nnaked from the night.\n\nAnd you turn toward me,\nsmiling. I think\nhow time has passed,\nand remember you this way.",
+  "translation": {
+    "source_sha256": "caff19115e10f52c3a1e5765ea8547108680951f99eef9402b54de119d9c2d49",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "It Is Raining on the Sea...",
+    "editorial_note": "Direct translation; no separate editorial review was conducted.\n\nImported as a translation without separate editorial review."
+  }
+}

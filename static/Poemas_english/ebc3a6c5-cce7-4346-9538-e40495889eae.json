@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 362,
+    "words": 55,
+    "reading_time_min": 0.275
+  },
+  "text": "Fear comes on in a motionless\nwave. Suddenly, here,\nit hints at itself:\nthe familiar structures, the possible\n\nanticipated consequences (which do not rule out\nthe worst),\nall the slow command of intelligence\nand its alternative decisions, all\n\nis clouded in an instant.\nAnd only the root remains,\nsomething like a painful antenna,\nfallen one knows not where, still throbbing.",
+  "translation": {
+    "source_sha256": "ba8c64d83b0a5b19c547ae99fa574eda7e7e77cd39fb7a5efcc515266f962e1f",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "Fear Comes On",
+    "editorial_note": "Direct translation; no separate editorial review was conducted.\n\nImported as a translation without separate editorial review."
+  }
+}
