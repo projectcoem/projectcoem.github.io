@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "length": 224,
+    "words": 43,
+    "reading_time_min": 0.215
+  },
+  "text": "This morning I imagined my death,\n\ndriving over a cliff or taking a bullet.\n\nI felt sorry for myself. I cried over my corpse for a good while.\n\nThen I talked about cows, the government,\n\nhow expensive life has become,\n\nand I felt better, a little good.",
+  "translation": {
+    "source_sha256": "d2620ef9ada942e61898236d26413901388b44f08efc86a28829804f0ec96532",
+    "source_language": "es",
+    "target_language": "en",
+    "status": "translated",
+    "translator": "Codex literary translation",
+    "title": "This Morning I Imagined My Death",
+    "editorial_note": "Direct translation; no separate editorial review was conducted.\n\nImported as a translation without separate editorial review."
+  }
+}
